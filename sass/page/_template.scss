@@ -1,0 +1,330 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #e1e3e4;
+    &.noscroll {
+        position: static !important;
+        width: 100%;
+        height: 100%;
+        overflow: hidden !important;
+        overflow-y: hidden !important;
+        margin: 0;
+        padding: 0;
+    }
+}
+// 最外圍預設為100%
+.wrapper {
+    max-width: $container-max;
+    margin: 0px auto;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 0px 20px, rgba(0, 0, 0, 0.23) 0px 0px 6px;
+    background-color: #fff;
+    @include screen('mobile') {
+        background: #FFF;
+        overflow: hidden;
+        overflow-y: auto;
+    }
+    &.mpwrap {
+        background-image: $mainbg;
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+}
+// 整體共用container樣式，請注意首頁切版頁面的整齊
+.container {
+    padding: 0;
+    margin: 0 auto;
+    max-width: $container-max; //請看_variable.scss
+}
+.main {
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+    // 可先設定一個中央區塊最大寬，限制accesskey對齊
+    // @include screen('tablet') {
+    //     padding: 6em 0 0 0;
+    // }
+    
+    >section {
+        padding: 50px 0 30px;
+        @include screen('tablet') {
+            padding: 30px 0 20px;
+        }
+        .container {
+            // outline: 1px solid red;
+            text-align: center;
+            @include gutter(180px);
+            @include box-sizing;
+            @include screen('tablet') {
+                @include gutter(100px);
+            }
+            @include screen('xs_mobile') {
+                @include gutter(30px); //gutter 代表左右要留白
+            }
+            .col-xs-12 {
+                padding-bottom: 25px;
+            }
+        }
+    }
+    h2 {
+        line-height: 1.25em;
+        display: inline-block;
+        color: $primaryColor;
+        background-image: $h2bg;
+        background-repeat: no-repeat;
+        background-position: center top;
+        padding: 40px 0 0 0;
+        text-align: center;
+        margin: 0 0 20px;
+        font-family: 'Noto Serif TC', serif;
+        font-weight: 700;
+        font-size: 1.75em;
+        letter-spacing: 0.05em;
+    }
+}
+////////////////////////////////////////////////////////////
+// 為了與首頁區隔，請在內頁加上innerpage ClassName
+.innerpage {
+    padding: 0px 0 30px 0;
+    background-image: none;
+    @include screen('tablet') {
+        padding: 0px 0 30px 0;
+    }
+    >.container {
+        @include gutter(40px); //gutter 代表左右要留白
+        display: flex;
+    }
+    .innerbg {
+        margin-bottom: 15px;
+        flex: none;
+        flex-basis: 100%;
+        width: 100%;
+        img {
+            width: 100%;
+        }
+    }
+    .left_block {
+        flex: 0 0 260px;
+        flex-basis: 260px;
+        max-width: 260px;
+        
+        @include screen('tablet') {
+            display: none;
+        }
+        nav {
+            margin-right: 2em;
+            @include screen('mobile') {
+                margin-right: 0;
+                display: none;
+            }
+            .left_title {
+                background: darken($primaryColor, 10);
+                padding: .7em 1em;
+                text-align: center;
+                color: #fff;
+                font-size: 1.25em;
+                font-weight: normal;
+                letter-spacing: 1px;
+                margin: 0;
+                display: block;
+                @include screen('mobile') {
+                    font-size: 1em;
+                    background: #444;
+                    text-align: left;
+                }
+            }
+            >ul {
+                @include li-reset;
+                border: 2px solid #ccc;
+                border-top: 0;
+                >li {
+                    border-bottom: 1px solid #ccc;
+                    &:last-child {
+                        border-bottom: 0;
+                    }
+                    >a {
+                        padding: .6em 1em .6em 2em;
+                        display: block;
+                        color: #444;
+                        font-weight: bold;
+                        position: relative;
+                        &:before {
+                            content: "";
+                            width: 0;
+                            height: 0;
+                            border-style: solid;
+                            border-width: 5px 0 5px 6px;
+                            border-color: transparent transparent transparent #444;
+                            display: block;
+                            position: absolute;
+                            left: 15px;
+                            top: 17px;
+                        }
+                        &:hover, &:focus, &.active {
+                            background: #ccc;
+                            color: $primaryColor;
+                            box-shadow: none;
+                            &:before {
+                                content: "";
+                                border-color: transparent transparent transparent $primaryColor;
+                            }
+                        }
+                        &.active {
+                            background: #ccc;
+                            &:hover {
+                                background: transparent;
+                            }
+                        }
+                    }
+                    ul {
+                        @include li-reset;
+                        font-size: 0.875em;
+                        background: #f5f5f5;
+                        li {
+                            border-top: 1px dotted #ccc;
+                            a {
+                                padding: .6em 1em .6em 2.1em;
+                                display: block;
+                                color: #444;
+                                position: relative;
+                                &:before {
+                                    content: "";
+                                    width: 5px;
+                                    height: 5px;
+                                    display: block;
+                                    border-right: 2px solid #515151;
+                                    border-top: 2px solid #515151;
+                                    transform: rotate(45deg);
+                                    vertical-align: middle;
+                                    position: absolute;
+                                    left: 13px;
+                                    top: 17px;
+                                }
+                                &.active {
+                                    // color: $linkColor;
+                                    color: #fff;
+                                    background: $primaryColor;
+                                    &:before {
+                                        content: "";
+                                        border-right: 2px solid #fff;
+                                        border-top: 2px solid #fff;
+                                    }
+                                }
+                                &:hover, &:focus {
+                                    color: $linkColor;
+                                    box-shadow: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .center_block {
+        flex: auto;
+        max-width: 100%;
+        overflow: hidden;
+        a {
+            &.doc, &.odf, &.odt, &.ods, &.pdf, &.xls, &.ppt, &.ppt, &.jpg, &.mp3, &.mov, &.txt, &.dot, &.zip, &.sevenz, &.other, &.verdict, &.searchcontent {
+                width: 21px;
+                height: 24px;
+                display: inline-block;
+                margin-right: 4px;
+                text-indent: -9999px;
+                vertical-align: text-bottom;
+                margin: 0 3px;
+                overflow: hidden;
+            }
+            &.doc {
+                background: url(../images/basic/icon_doc.jpg);
+            }
+            &.odf {
+                background: url(../images/basic/icon_odf.jpg);
+            }
+            &.odt {
+                background: url(../images/basic/icon_odt.jpg);
+            }
+            &.ods {
+                background: url(../images/basic/icon_ods.jpg);
+            }
+            &.pdf {
+                background: url(../images/basic/icon_pdf.jpg);
+            }
+            &.xls {
+                background: url(../images/basic/icon_xls.jpg);
+            }
+            &.ppt {
+                background: url(../images/basic/icon_ppt.jpg);
+            }
+            &.jpg {
+                background: url(../images/basic/icon_jpg.jpg);
+            }
+            &.mp3 {
+                background: url(../images/basic/icon_mp3.jpg);
+            }
+            &.mov {
+                background: url(../images/basic/icon_mov.jpg);
+            }
+            &.txt {
+                background: url(../images/basic/icon_txt.jpg);
+            }
+            &.dot {
+                background: url(../images/basic/icon_doc.jpg);
+            }
+            &.zip {
+                background: url(../images/basic/icon_zip.jpg);
+            }
+            &.sevenz {
+                background: url(../images/basic/icon_7z.jpg);
+            }
+            &.other {
+                background: url(../images/basic/icon_other.jpg);
+            }
+            &.verdict {
+                background: url(../images/basic/icon_verdict.jpg);
+            }
+            &.calendar {
+                width: 26px;
+                height: 26px;
+                display: inline-block;
+                margin-right: 4px;
+                text-indent: -9999px;
+                vertical-align: text-bottom;
+                margin: 0 3px;
+                overflow: hidden;
+                background: url(../images/basic/icon_calendar.jpg);
+                background-size: cover;
+            }
+            &.searchcontent {
+                width: 24px;
+                background: url(../images/basic/icon_search3.jpg);
+                background-size: cover;
+            }
+        }
+    }
+}
+.hidden {
+    display: none;
+}
+.more {
+    display: inline-block;
+    text-align: right;
+    float: right;
+    margin-bottom: 15px;
+    a {
+        display: block;
+        padding: 8px 25px;
+        background-color: $primaryColor;
+        color: #fff;
+        font-size: 0.938em;
+        transition: .5s;
+        &:hover {
+            background-color: darken($primaryColor, 8);
+        }
+    }
+}
