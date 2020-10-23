@@ -279,30 +279,30 @@
 // 大圖輪播3
 .mpSlider_block3 {
     // background-color: #fff;
-    padding:50px 0 60px!important;
+    padding: 50px 0 60px !important;
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#e5e7e7+0,e5e7e7+0,ffffff+22 */
-        background: rgb(229, 231, 231);
-        /* Old browsers */
-        background: -moz-linear-gradient(top, rgba(229, 231, 231, 1) 0%, rgba(229, 231, 231, 1) 0%, rgba(255, 255, 255, 1) 22%);
-        /* FF3.6-15 */
-        background: -webkit-linear-gradient(top, rgba(229, 231, 231, 1) 0%, rgba(229, 231, 231, 1) 0%, rgba(255, 255, 255, 1) 22%);
-        /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(to bottom, rgba(229, 231, 231, 1) 0%, rgba(229, 231, 231, 1) 0%, rgba(255, 255, 255, 1) 22%);
-        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e5e7e7', endColorstr='#ffffff', GradientType=0);
-        /* IE6-9 */
+    background: rgb(229, 231, 231);
+    /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(229, 231, 231, 1) 0%, rgba(229, 231, 231, 1) 0%, rgba(255, 255, 255, 1) 22%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(229, 231, 231, 1) 0%, rgba(229, 231, 231, 1) 0%, rgba(255, 255, 255, 1) 22%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(229, 231, 231, 1) 0%, rgba(229, 231, 231, 1) 0%, rgba(255, 255, 255, 1) 22%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e5e7e7', endColorstr='#ffffff', GradientType=0);
+    /* IE6-9 */
     .mpSlider_options {
         display: flex;
-        @include screen('tablet'){
+        @include screen('tablet') {
             display: block;
         }
         .mpSliderleft {
             flex: auto;
             flex-basis: calc(100% - 280px);
             max-width: calc(100% - 280px);
-            @include screen('tablet'){
-                 flex-basis:100%;
-                  max-width: 100%;
+            @include screen('tablet') {
+                flex-basis: 100%;
+                max-width: 100%;
             }
             // 首頁大圖輪播 
             .mpSlider {
@@ -310,15 +310,15 @@
                 margin: 0;
                 padding: 0;
                 background-color: #fff;
-                 box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; 
+                box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
                 @include screen('tablet') {
                     margin: 0;
                 }
                 .img-container {
                     @include aspect-ratio(5, 2); //PC版比例
                     min-height: 310px;
-                    @include screen('tablet'){
-                          min-height:auto;
+                    @include screen('tablet') {
+                        min-height: auto;
                     }
                     a {
                         .caption {
@@ -351,13 +351,13 @@
             flex-basis: 260px;
             max-width: 260px;
             margin-left: 20px;
-            @include screen('tablet'){
+            @include screen('tablet') {
                 flex-basis: 100%;
-            max-width: 100%;
-            margin-left: 0;
-            margin-top: 60px;
-            display: flex;
-            flex-wrap: wrap;
+                max-width: 100%;
+                margin-left: 0;
+                margin-top: 60px;
+                display: flex;
+                flex-wrap: wrap;
             }
             .options_list {
                 background-color: #fff;
@@ -366,15 +366,15 @@
                 width: 240px;
                 height: 60px;
                 transition: .5s;
-                @include screen('tablet'){
-                    width:46%;
-                    margin:0 2% 15px;
+                @include screen('tablet') {
+                    width: 46%;
+                    margin: 0 2% 15px;
                 }
-                @include screen('xs_mobile'){
-                    width:100%;
-                    margin:0 0 15px;
+                @include screen('xs_mobile') {
+                    width: 100%;
+                    margin: 0 0 15px;
                 }
-                &:hover{
+                &:hover {
                     box-shadow: rgba(0, 0, 0, 0.6) 0px 3px 8px;
                 }
                 a {
@@ -382,43 +382,41 @@
                     height: 60px;
                     display: flex;
                     align-items: center;
-                    color:#000;
-                    position:relative;
+                    color: #000;
+                    position: relative;
                     transition: .5s;
-
-                    @include screen('tablet'){
-                         width:100%;
+                    @include screen('tablet') {
+                        width: 100%;
                     }
-                    &:after{
+                    &:after {
                         content: '';
                         width: 8px;
-                         height: 60px;
-                         @include gradient(#1769b3, #21baff, vertical);
-                         position:absolute;
-                         right:0;
-                         top:0;
-                         bottom:0;
+                        height: 60px;
+                        @include gradient(#1769b3, #21baff, vertical);
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                        bottom: 0;
                     }
-                    &:hover{
-                        color:$primaryColor;
-                          font-weight: bold;
+                    &:hover {
+                        color: $primaryColor;
+                        font-weight: bold;
                     }
-
                     .image {
                         width: 60px;
                         height: 60px;
                         background-color: lighten($primaryColor, 50);
-                        position:relative;
+                        position: relative;
                         margin-right: 15px;
                         img {
-                            position:absolute;
-                            top:0;
-                            left:0;
-                            right:0;
-                            bottom:0;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            right: 0;
+                            bottom: 0;
                             width: 50px;
                             height: 50px;
-                            margin:auto;
+                            margin: auto;
                         }
                     }
                 }
@@ -471,6 +469,7 @@
                 @include screen('mobile') {
                     flex-basis: 100%;
                     margin: 0 0 10px;
+                    text-align: left;
                 }
                 a {
                     color: #000;
@@ -680,9 +679,7 @@
                 font-size: 1.25em;
                 font-weight: bolder;
                 margin-bottom: 15px;
-                a {
-                    
-                }
+                a {}
             }
             p {
                 padding: 0;
@@ -796,7 +793,7 @@
     }
     .container {
         padding: 0 !important;
-        text-align: left !important;
+        // text-align: left !important;
     }
     .service {
         /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1769b3+0,5293ae+100 */
@@ -840,6 +837,8 @@
             color: #fff;
             position: relative;
             z-index: 9;
+            display: block;
+            text-align: left;
             @media(max-width: 480px) {
                 margin: 50px 0 50px 40px;
             }
@@ -876,42 +875,48 @@
                         border-left: none;
                     }
                 }
+                // .icon {
+                //     cursor: pointer;
+                // }
+                // .icon:hover path {
+                //     fill: $primaryColor;
+                // }
                 a {
                     color: #fff;
                     display: block;
                     text-align: center;
                     padding: 10px 0 15px;
                     transition: .5s;
-                    position:relative;
-                    
+                    position: relative;
                     &:hover {
-                        background-color: darken($primaryColor, 8);
+                        background-color: darken($primaryColor, 10);
                         border-radius: 5px;
-                        span {
-                            background-color: transparent;
+                        color: #fff;
+                        img {
+                            // left: -80px;
+                            // filter: drop-shadow(#333 1px 0);
+                            // z-index: 9;
                         }
                     }
-                    &:before{
+                    &:before {
                         content: '';
-                        border-right:1px dotted rgba(255, 255, 255, 0.7);
+                        border-right: 1px dotted rgba(255, 255, 255, 0.7);
                         width: 1px;
                         height: 115px;
-                        position:absolute;
-                        right:-8px;
-                        top:5px;
+                        position: absolute;
+                        right: -8px;
+                        top: 5px;
                     }
-                }
-                img {
-                    width: 70px;
-                    height: 70px;
-                    display: block;
-                    margin: 0 auto 8px;
-                }
-                span {
-                    
-                    padding: 0;
-                    letter-spacing: 0.05em;
-                   
+                    img {
+                        width: 70px;
+                        height: 70px;
+                        display: block;
+                        margin: 0 auto 8px;
+                    }
+                    span {
+                        padding: 0;
+                        letter-spacing: 0.05em;
+                    }
                 }
             }
         }
@@ -920,6 +925,12 @@
             margin-bottom: 30px;
             position: relative;
             z-index: 9;
+            @include screen('tablet') {
+                margin-right: 50px;
+            }
+            @include screen('mobile') {
+                margin-right: 0;
+            }
         }
     }
 }
@@ -1435,7 +1446,7 @@
     background-repeat: no-repeat;
     background-position: center top;
     background-size: 100%;
-    padding: 50px 0 80px !important;
+    padding: 50px 0 30px !important;
     .know_issue {
         h2 {
             font-size: 1.5em;
@@ -1443,6 +1454,7 @@
         }
     }
     .issue_list {
+        margin-bottom: 20px;
         .issue_block {
             position: relative;
             width: 200px;
@@ -1535,7 +1547,6 @@
 }
 //每日判語
 .verdict_block {
-    padding: 70px 0 !important;
     .verdict {
         display: flex;
         align-items: center;
@@ -1732,7 +1743,7 @@
         }
     }
 }
-// 圖片輪播 
+// 司法櫥窗 圖片輪播 
 .picSlider_block {
     background-image: $announcement_bg;
     background-repeat: no-repeat;
@@ -1764,10 +1775,11 @@
             }
         }
         .tabContent {
-            padding: 50px 0;
-            max-height: 450px;
-            @include screen('xs_mobile') {
-                padding: 30px 0 60px;
+            padding: 50px 0 0px;
+            height: 400px;
+            @include screen('mobile') {
+                height: auto;
+                padding: 30px 0 0px;
             }
             .more {
                 margin-right: 90px;
@@ -1784,6 +1796,9 @@
         @include screen('tablet') {
             width: 100%;
             margin-left: 0%;
+        }
+        @include screen('mobile') {
+            margin-bottom: 70px;
         }
         .pic_content {
             position: relative;

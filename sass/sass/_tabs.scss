@@ -106,6 +106,7 @@
     text-align: left;
     @include screen('mobile') {
         position: static;
+         text-align: center;
     }
     .tablist {
         @include li-reset;
@@ -211,7 +212,7 @@
             padding: 0;
             overflow: hidden;
             @include screen('mobile') {
-                padding: 20px 0;
+                padding: 30px 0 0;
             }
         }
     }
