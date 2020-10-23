@@ -293,10 +293,17 @@
         /* IE6-9 */
     .mpSlider_options {
         display: flex;
+        @include screen('tablet'){
+            display: block;
+        }
         .mpSliderleft {
             flex: auto;
             flex-basis: calc(100% - 280px);
             max-width: calc(100% - 280px);
+            @include screen('tablet'){
+                 flex-basis:100%;
+                  max-width: 100%;
+            }
             // 首頁大圖輪播 
             .mpSlider {
                 // width: 100%;
@@ -309,6 +316,10 @@
                 }
                 .img-container {
                     @include aspect-ratio(5, 2); //PC版比例
+                    min-height: 310px;
+                    @include screen('tablet'){
+                          min-height:auto;
+                    }
                     a {
                         .caption {
                             height: 2em;
@@ -340,6 +351,14 @@
             flex-basis: 260px;
             max-width: 260px;
             margin-left: 20px;
+            @include screen('tablet'){
+                flex-basis: 100%;
+            max-width: 100%;
+            margin-left: 0;
+            margin-top: 60px;
+            display: flex;
+            flex-wrap: wrap;
+            }
             .options_list {
                 background-color: #fff;
                 box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -347,6 +366,14 @@
                 width: 240px;
                 height: 60px;
                 transition: .5s;
+                @include screen('tablet'){
+                    width:46%;
+                    margin:0 2% 15px;
+                }
+                @include screen('xs_mobile'){
+                    width:100%;
+                    margin:0 0 15px;
+                }
                 &:hover{
                     box-shadow: rgba(0, 0, 0, 0.6) 0px 3px 8px;
                 }
@@ -358,6 +385,9 @@
                     color:#000;
                     position:relative;
                     transition: .5s;
+                    @include screen('tablet'){
+                         width:100%;
+                    }
                     &:after{
                         content: '';
                         width: 8px;
@@ -467,10 +497,10 @@
                     text-overflow: ellipsis;
                     line-height: 1.5em;
                     display: -webkit-box;
-                    -webkit-line-clamp: 3;
+                    -webkit-line-clamp: 2;
                     -webkit-box-orient: vertical;
                     text-align: left;
-                    height: 70px;
+                    height: 50px;
                     padding: 0;
                     margin: 5px 0;
                 }
@@ -649,7 +679,7 @@
                 font-weight: bolder;
                 margin-bottom: 15px;
                 a {
-                    text-decoration: underline;
+                    
                 }
             }
             p {
@@ -852,7 +882,7 @@
                     transition: .5s;
                     // border-left:1px dotted rgba(255, 255, 255, 0.3);
                     &:hover {
-                        background-color: darken($primaryColor, 8);
+                        background-color:$lightColor;
                         border-radius: 5px;
                         span {
                             background-color: transparent;

@@ -124,17 +124,20 @@ footer {
             }
             @include screen('mobile') {
                 order: 0;
-                flex-basis: 200px;
-                width: 200px;
+                 background-position: center top;
+                
             }
         }
         .footer_info {
             flex: auto;
             @include screen('mobile') {
-                order: 2;
+               
+                flex-basis: 100%;
+                width: 100%;
             }
-            @include screen('xs_mobile'){
-                order: 1;
+            @include screen('xs_mobile') {
+                
+                
             }
         }
         .footer_icon {
@@ -143,16 +146,12 @@ footer {
             text-align: right;
             img {
                 width: 130px;
-                
             }
             @include screen('mobile') {
-                order: 1;
-                flex: auto;
-                flex-basis: auto;
-            }
-            @include screen('xs_mobile'){
-                 order: 2;
                
+                flex-basis: 100%;
+                width: 100%;
+                text-align: center;
             }
         }
     }
@@ -176,8 +175,8 @@ footer {
             @include screen('xs_mobile') {
                 flex: none;
                 flex-basis: 48%;
-                max-width:48%;
-                margin: 0 1% 5px; 
+                max-width: 48%;
+                margin: 0 1% 5px;
             }
             a {
                 display: block;
@@ -188,8 +187,8 @@ footer {
                 text-align: center;
                 white-space: nowrap;
                 @include transition(all, .3s, ease-out);
-                @include screen('xs_mobile'){
-                     padding: .3em ;
+                @include screen('xs_mobile') {
+                    padding: .3em;
                 }
                 &:hover,
                 &:focus {
@@ -232,6 +231,9 @@ footer {
         text-align: right;
         background-color: $primaryColor;
         font-size: 0.938em;
+        @include screen('mobile') {
+            text-align: center;
+        }
         span {
             display: inline-block;
             margin-left: 10px;

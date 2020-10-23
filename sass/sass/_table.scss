@@ -14,14 +14,14 @@ table {
         padding: .5em;
         text-align: left;
     }
-    tr {
-        &:nth-child(even) {
-            background: #F5F5F5;
-        }
-    }
+    // tr {
+    //     &:nth-child(even) {
+    //         background: #F5F5F5;
+    //     }
+    // }
     th {
-        background-color: #767676;
-        color: #fff;
+        background-color: #f5f3f3;
+        color: #333;
         border: #DDD 1px solid;
         text-align: center;
         white-space: nowrap;
