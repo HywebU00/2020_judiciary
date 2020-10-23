@@ -132,8 +132,8 @@
                     padding: 8px 0;
                     span {
                         background-color: lighten($primaryColor, 15);
-                        width: 60px;
-                        height: 60px;
+                        width: 56px;
+                        height: 56px;
                     }
                 }
             }
@@ -385,6 +385,7 @@
                     color:#000;
                     position:relative;
                     transition: .5s;
+
                     @include screen('tablet'){
                          width:100%;
                     }
@@ -400,6 +401,7 @@
                     }
                     &:hover{
                         color:$primaryColor;
+                          font-weight: bold;
                     }
 
                     .image {
@@ -880,13 +882,23 @@
                     text-align: center;
                     padding: 10px 0 15px;
                     transition: .5s;
-                    // border-left:1px dotted rgba(255, 255, 255, 0.3);
+                    position:relative;
+                    
                     &:hover {
-                        background-color:$lightColor;
+                        background-color: darken($primaryColor, 8);
                         border-radius: 5px;
                         span {
                             background-color: transparent;
                         }
+                    }
+                    &:before{
+                        content: '';
+                        border-right:1px dotted rgba(255, 255, 255, 0.7);
+                        width: 1px;
+                        height: 115px;
+                        position:absolute;
+                        right:-8px;
+                        top:5px;
                     }
                 }
                 img {
@@ -896,10 +908,10 @@
                     margin: 0 auto 8px;
                 }
                 span {
-                    font-size: 0.875em;
-                    padding: 4px 6px;
+                    
+                    padding: 0;
                     letter-spacing: 0.05em;
-                    background-color: $primaryColor;
+                   
                 }
             }
         }
