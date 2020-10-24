@@ -21,30 +21,9 @@
             right: 0;
             z-index: 1;
             border-radius: 5px;
-            /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1769b3+0,5293ae+100 */
             background: rgb(23, 105, 179);
-            /* Old browsers */
-            background: -moz-linear-gradient(left, rgba(23, 105, 179, 1) 0%, rgba(82, 147, 174, 1) 100%);
-            /* FF3.6-15 */
-            background: -webkit-linear-gradient(left, rgba(23, 105, 179, 1) 0%, rgba(82, 147, 174, 1) 100%);
-            /* Chrome10-25,Safari5.1-6 */
-            background: linear-gradient(to right, rgba(23, 105, 179, 1) 0%, rgba(82, 147, 174, 1) 100%);
-            /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1769b3', endColorstr='#5293ae', GradientType=1);
+            background: linear-gradient(90deg, rgba(23, 105, 179, 1) 0%, rgba(69, 120, 173, 1) 100%);
         }
-        // background-color:$primaryColor;
-        // >.tabItem{
-        //      &:first-child{
-        //         a{
-        //             border-radius:5px 0 0 5px;
-        //         }
-        //     }
-        //     &:nth-last-child(2){
-        //         a{
-        //             border-radius:0 5px 5px 0;
-        //         }
-        //     }
-        // }
         &>.tabItem {
             &.active>a {
                 background-color: $lightColor;
@@ -106,7 +85,7 @@
     text-align: left;
     @include screen('mobile') {
         position: static;
-         text-align: center;
+        text-align: center;
     }
     .tablist {
         @include li-reset;

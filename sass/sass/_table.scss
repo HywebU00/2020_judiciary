@@ -20,9 +20,11 @@ table {
     //     }
     // }
     th {
-        background-color: #f5f3f3;
-        color: #333;
+        background-color: #767676;
+        color: #fff;
          border: #ddd 1px solid;
+         border-right: 0;
+        border-left: 0;
         text-align: center;
         white-space: nowrap;
         font-weight: normal;

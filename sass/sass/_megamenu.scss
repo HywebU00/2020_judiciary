@@ -5,8 +5,7 @@
     // 預設選單 ul
     clear: both;
     margin: 0 40px;
-    @include screen('tablet')
-   {
+    @include screen('tablet') {
         display: none;
     }
     >ul {
@@ -16,17 +15,8 @@
         display: flex;
         flex-wrap: wrap;
         border-radius: 5px;
-        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1769b3+0,5293ae+100 */
         background: rgb(23, 105, 179);
-        /* Old browsers */
-        background: -moz-linear-gradient(left, rgba(23, 105, 179, 1) 0%, rgba(82, 147, 174, 1) 100%);
-        /* FF3.6-15 */
-        background: -webkit-linear-gradient(left, rgba(23, 105, 179, 1) 0%, rgba(82, 147, 174, 1) 100%);
-        /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(to right, rgba(23, 105, 179, 1) 0%, rgba(82, 147, 174, 1) 100%);
-        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1769b3', endColorstr='#5293ae', GradientType=1);
-        /* IE6-9 */
+        background: linear-gradient(90deg, rgba(23, 105, 179, 1) 0%, rgba(69, 120, 173, 1) 100%);
         // 第一層選單樣式
         >li {
             flex: none;
@@ -51,20 +41,18 @@
                     left: 0;
                     width: 16px;
                     height: 50px;
-                    @include screen('tablet'){
+                    @include screen('tablet') {
                         display: none;
                     }
                 }
-
             }
-             &:first-child{
-                 >a{
+            &:first-child {
+                >a {
                     &:before {
-                        background-image:none;
+                        background-image: none;
                     }
-                 }   
                 }
-            
+            }
             &.hasChild {
                 >a {
                     &:after {
@@ -105,7 +93,7 @@
             .megamenu_2nd {
                 display: none;
                 overflow: visible;
-                background: rgba(0, 0, 0, .8);
+                background: rgba(0, 0, 0, .9);
                 border-radius: 5px;
                 width: 100%;
                 padding: 20px 10px;
@@ -141,8 +129,8 @@
                     flex-basis: 23%;
                     margin: 0 1% 5px;
                     line-height: 1.3em;
-                    @include screen('tablet'){
-                        margin:0;
+                    @include screen('tablet') {
+                        margin: 0;
                     }
                     a {
                         padding: .3em 1.2em;
@@ -185,13 +173,13 @@
                 flex: none;
                 flex-basis: 400px;
                 max-width: 400px;
-                a{
+                a {
                     text-align: center;
                 }
                 img {
                     width: 365px;
                 }
-               @include screen('tablet') {
+                @include screen('tablet') {
                     display: none;
                 }
             }
@@ -372,11 +360,8 @@
                 margin: 0;
                 padding: 0;
                 @include box-sizing;
-                
-                &.search_block{
-                   
-                        display: none
-                    
+                &.search_block {
+                    display: none
                 }
                 a {
                     display: block;

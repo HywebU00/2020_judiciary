@@ -80,14 +80,17 @@
             display: block;
             flex: none;
             flex-basis: 36px;
-            background-color: #fff;
+            background-color: $primaryColor;
+            color: #fff;
             text-align: center;
             padding: 20px 5px;
             height: 110px;
             @include box-sizing;
             z-index: 12;
             box-shadow: rgba(50, 50, 93, 0.2) -2px 1px 4px -1px, rgba(0, 0, 0, 0.2) -2px 1px 3px -1px;
-            background-color: #fff;
+            a {
+                color: #fff;
+            }
         }
     }
     ul {
@@ -278,19 +281,8 @@
 }
 // 大圖輪播3
 .mpSlider_block3 {
-    // background-color: #fff;
-    padding: 50px 0 60px !important;
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#e5e7e7+0,e5e7e7+0,ffffff+22 */
-    background: rgb(229, 231, 231);
-    /* Old browsers */
-    background: -moz-linear-gradient(top, rgba(229, 231, 231, 1) 0%, rgba(229, 231, 231, 1) 0%, rgba(255, 255, 255, 1) 22%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(229, 231, 231, 1) 0%, rgba(229, 231, 231, 1) 0%, rgba(255, 255, 255, 1) 22%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, rgba(229, 231, 231, 1) 0%, rgba(229, 231, 231, 1) 0%, rgba(255, 255, 255, 1) 22%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e5e7e7', endColorstr='#ffffff', GradientType=0);
-    /* IE6-9 */
+    background: rgb(229,231,231);
+background: linear-gradient(180deg, rgba(229,231,231,1) 0%, rgba(255,255,255,1) 40%);
     .mpSlider_options {
         display: flex;
         @include screen('tablet') {
@@ -324,6 +316,10 @@
                         .caption {
                             height: 2em;
                             line-height: 2em;
+                            @include screen('tablet') {
+                                height: 3em;
+                                line-height: 3em;
+                            }
                         }
                     }
                 }
@@ -435,17 +431,8 @@
         background-size: 100%;
     }
     &.havecolor {
-        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#e5e7e7+0,e5e7e7+0,ffffff+22 */
-        background: rgb(229, 231, 231);
-        /* Old browsers */
-        background: -moz-linear-gradient(top, rgba(229, 231, 231, 1) 0%, rgba(229, 231, 231, 1) 0%, rgba(255, 255, 255, 1) 22%);
-        /* FF3.6-15 */
-        background: -webkit-linear-gradient(top, rgba(229, 231, 231, 1) 0%, rgba(229, 231, 231, 1) 0%, rgba(255, 255, 255, 1) 22%);
-        /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(to bottom, rgba(229, 231, 231, 1) 0%, rgba(229, 231, 231, 1) 0%, rgba(255, 255, 255, 1) 22%);
-        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e5e7e7', endColorstr='#ffffff', GradientType=0);
-        /* IE6-9 */
+        background: rgb(229,231,231);
+background: linear-gradient(180deg, rgba(229,231,231,1) 0%, rgba(255,255,255,1) 40%);
     }
     .tabContent {
         padding: 0;
@@ -581,6 +568,8 @@
                 border-bottom: #DDD 1px solid;
                 font-size: 0.938;
                 font-weight: normal;
+                background-color: #f5f3f3;
+                color: #666;
             }
             td {
                 padding: 0.8em .5em;
@@ -599,17 +588,8 @@
 }
 // 最新消息文字區塊
 .newsword_block {
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#e5e7e7+0,e5e7e7+0,ffffff+22 */
-    background: rgb(229, 231, 231);
-    /* Old browsers */
-    background: -moz-linear-gradient(top, rgba(229, 231, 231, 1) 0%, rgba(229, 231, 231, 1) 0%, rgba(255, 255, 255, 1) 22%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(229, 231, 231, 1) 0%, rgba(229, 231, 231, 1) 0%, rgba(255, 255, 255, 1) 22%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, rgba(229, 231, 231, 1) 0%, rgba(229, 231, 231, 1) 0%, rgba(255, 255, 255, 1) 22%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e5e7e7', endColorstr='#ffffff', GradientType=0);
-    /* IE6-9 */
+    background: rgb(229,231,231);
+background: linear-gradient(180deg, rgba(229,231,231,1) 0%, rgba(255,255,255,1) 40%);   
     .newsword {}
     .news_no01 {
         display: flex;
@@ -719,17 +699,8 @@
 }
 //熱門服務
 .popular_services_block {
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#e5e7e7+0,e5e7e7+0,ffffff+22 */
-    background: rgb(229, 231, 231);
-    /* Old browsers */
-    background: -moz-linear-gradient(top, rgba(229, 231, 231, 1) 0%, rgba(229, 231, 231, 1) 0%, rgba(255, 255, 255, 1) 22%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(229, 231, 231, 1) 0%, rgba(229, 231, 231, 1) 0%, rgba(255, 255, 255, 1) 22%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, rgba(229, 231, 231, 1) 0%, rgba(229, 231, 231, 1) 0%, rgba(255, 255, 255, 1) 22%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e5e7e7', endColorstr='#ffffff', GradientType=0);
-    /* IE6-9 */
+    background: rgb(229,231,231);
+background: linear-gradient(180deg, rgba(229,231,231,1) 0%, rgba(255,255,255,1) 40%);
     padding: 50px 0 !important;
     .popular_services {
         display: flex;
@@ -755,11 +726,12 @@
             padding: 0 30px;
         }
         div {
-            text-align: center;
+                text-align: center;
             img {
                 display: block;
                 width: 70px;
                 margin: 0 auto 10px;
+                transition: .5s;
             }
             a {
                 color: #000;
@@ -768,6 +740,7 @@
                 transition: .5s;
                 &:hover {
                     color: $primaryColor;
+                    
                 }
             }
         }
@@ -796,16 +769,8 @@
         // text-align: left !important;
     }
     .service {
-        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1769b3+0,5293ae+100 */
         background: rgb(23, 105, 179);
-        /* Old browsers */
-        background: -moz-linear-gradient(left, rgba(23, 105, 179, 1) 0%, rgba(82, 147, 174, 1) 100%);
-        /* FF3.6-15 */
-        background: -webkit-linear-gradient(left, rgba(23, 105, 179, 1) 0%, rgba(82, 147, 174, 1) 100%);
-        /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(to right, rgba(23, 105, 179, 1) 0%, rgba(82, 147, 174, 1) 100%);
-        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1769b3', endColorstr='#5293ae', GradientType=1);
+        background: linear-gradient(90deg, rgba(23, 105, 179, 1) 0%, rgba(69, 120, 173, 1) 100%);
         margin-left: 30%;
         position: relative;
         overflow: hidden;
@@ -889,13 +854,11 @@
                     transition: .5s;
                     position: relative;
                     &:hover {
-                        background-color: darken($primaryColor, 10);
+                        background-color: $lightColor;
                         border-radius: 5px;
-                        color: #fff;
+                        color: #000;
                         img {
-                            // left: -80px;
-                            // filter: drop-shadow(#333 1px 0);
-                            // z-index: 9;
+                            filter: invert(100%);
                         }
                     }
                     &:before {
@@ -1390,30 +1353,30 @@
             }
             h3 {
                 text-align: left;
-                color: darken($primaryColor, 10);
-                a {
-                    color: $primaryColor;
+                color: $aColor;
+                a { 
+                    color: $aColor;
                     &:hover {
-                        color: $linkColor;
+                        color:$aHover;
                     }
                 }
             }
             .keyword {
-                color: $primaryColor;
+                color: #333;
                 text-align: left;
                 font-size: 0.938em;
                 span {
                     margin-right: 8px;
                     margin-bottom: 0px;
                     display: inline-block;
-                    color: darken($primaryColor, 10);
+                    color:#333;
                     a {
-                        color: $primaryColor;
+                        color: $aColor;
                         &:hover {
-                            color: $linkColor;
+                            color:$aHover;
                         }
                     }
-                }
+                }   
             }
         }
     }
@@ -1547,6 +1510,10 @@
 }
 //每日判語
 .verdict_block {
+     background-image: $announcement_bg;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100%;
     .verdict {
         display: flex;
         align-items: center;
@@ -1579,21 +1546,13 @@
             border-radius: 50px;
             padding: 30px 10px;
         }
-        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1769b3+0,5293ae+100 */
         background: rgb(23, 105, 179);
-        /* Old browsers */
-        background: -moz-linear-gradient(left, rgba(23, 105, 179, 1) 0%, rgba(82, 147, 174, 1) 100%);
-        /* FF3.6-15 */
-        background: -webkit-linear-gradient(left, rgba(23, 105, 179, 1) 0%, rgba(82, 147, 174, 1) 100%);
-        /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(to right, rgba(23, 105, 179, 1) 0%, rgba(82, 147, 174, 1) 100%);
-        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1769b3', endColorstr='#5293ae', GradientType=1);
+        background: linear-gradient(90deg, rgba(23, 105, 179, 1) 0%, rgba(69, 120, 173, 1) 100%);
         .what {
-            color: $color-yellow;
+            color: #fce787;
             margin-bottom: 20px;
             margin-left: 25px;
-            font-size: 1.063em;
+            font-sizse: 1.063em;
             @include screen('mobile') {
                 margin-left: 0;
             }
@@ -1634,12 +1593,12 @@
             }
             a {
                 border-radius: 50px;
-                background-color: #f24f47;
+                background-color: $color-red;
                 color: #fff;
                 padding: 13px 30px;
                 transition: .5s;
                 &:hover {
-                    background-color: darken(#f24f47, 15);
+                    background-color: darken($color-red, 5);
                 }
             }
         }
@@ -1647,17 +1606,7 @@
 }
 //議題討論
 .topic_discussion_block {
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+74,d8d8d8+100 */
-    background: rgb(255, 255, 255);
-    /* Old browsers */
-    background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 74%, rgba(216, 216, 216, 1) 100%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 74%, rgba(216, 216, 216, 1) 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 74%, rgba(216, 216, 216, 1) 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#d8d8d8', GradientType=0);
-    /* IE6-9 */
+    
     padding: 50px 0 80px !important;
     .topic_discussion {
         height: 174px;
