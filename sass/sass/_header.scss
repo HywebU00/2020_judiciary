@@ -1,13 +1,16 @@
 //header
 .header {
-     position: relative;
+    position: relative;
     z-index: 1030;
     margin: 0px auto;
-    background: rgb(253,253,253);
-background: linear-gradient(180deg, rgba(253,253,253,1) 45%, rgba(231,232,231,1) 100%);
+    background: rgb(253, 253, 253);
+    background: linear-gradient(180deg, rgba(253, 253, 253, 1) 45%, rgba(231, 232, 231, 1) 100%);
+    // transition: .5s;
     @include screen('tablet') {
         background-color: #fff;
         box-shadow: 0px 2px 5px RGBA(0, 0, 0, 0.3);
+        position: fixed;
+        width: 100%;
     }
     // 虛擬底色 - navigation bg
     // &:before {
@@ -111,13 +114,12 @@ background: linear-gradient(180deg, rgba(253,253,253,1) 45%, rgba(231,232,231,1)
             text-align: center;
             height: 64px;
             margin: 0;
-            a{
+            a {
                 background-position: left 5px;
                 margin: 0px auto;
-                background-size:100%;
+                background-size: 100%;
                 width: 220px;
             }
-            
         }
     }
     // 導覽列
@@ -165,7 +167,6 @@ background: linear-gradient(180deg, rgba(253,253,253,1) 45%, rgba(231,232,231,1)
                         padding-right: 25px;
                     }
                 }
-                
                 a {
                     display: block;
                     padding: 12px 14px;
@@ -211,14 +212,14 @@ background: linear-gradient(180deg, rgba(253,253,253,1) 45%, rgba(231,232,231,1)
                         &:hover {
                             background-color: lighten($lightColor, 10px);
                         }
-                        &:focus{
+                        &:focus {
                             box-shadow: 0 0px 0px 2px darken($primaryColor, 5) inset;
                         }
                         &:before {
                             content: '';
                             width: 14px;
                             height: 14px;
-                            background-color:darken($primaryColor, 5);
+                            background-color: darken($primaryColor, 5);
                             border-radius: 50%;
                             position: absolute;
                             left: 15px;
@@ -238,23 +239,22 @@ background: linear-gradient(180deg, rgba(253,253,253,1) 45%, rgba(231,232,231,1)
                     &.casebtn01 {
                         background-color: $casebtn01;
                         display: block;
-                        margin-left:7px;
-                        border-radius:5px;
+                        margin-left: 7px;
+                        border-radius: 5px;
                         &:hover {
                             background-color: darken($casebtn01, 5);
                         }
                     }
                     &.casebtn02 {
-                        background-color:$casebtn02;
+                        background-color: $casebtn02;
                         display: block;
-                         margin-left: 7px;
-                         border-radius:5px;
+                        margin-left: 7px;
+                        border-radius: 5px;
                         &:hover {
                             background-color: darken($casebtn02, 5);
                         }
                     }
                 }
-
             }
         }
         .language {
@@ -393,7 +393,7 @@ background: linear-gradient(180deg, rgba(253,253,253,1) 45%, rgba(231,232,231,1)
                 flex: auto;
                 flex-basis: 50%;
                 &[type="submit"] {
-                   flex: auto;
+                    flex: auto;
                     flex-basis: 15%;
                     margin: .5em;
                     &:hover, &:focus {}
@@ -435,16 +435,8 @@ background: linear-gradient(180deg, rgba(253,253,253,1) 45%, rgba(231,232,231,1)
     right: 0;
     top: 0;
     background-image: none;
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1769b3+0,5293ae+100 */
     background: rgb(23, 105, 179);
-    /* Old browsers */
-    background: -moz-linear-gradient(left, rgba(23, 105, 179, 1) 0%, rgba(82, 147, 174, 1) 100%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, rgba(23, 105, 179, 1) 0%, rgba(82, 147, 174, 1) 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, rgba(23, 105, 179, 1) 0%, rgba(82, 147, 174, 1) 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1769b3', endColorstr='#5293ae', GradientType=1);
+    background: linear-gradient(90deg, rgba(23, 105, 179, 1) 0%, rgba(69, 120, 173, 1) 100%);
     z-index: 999;
     @include screen('tablet') {
         background: #FFF;

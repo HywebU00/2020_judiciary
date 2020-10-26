@@ -339,7 +339,7 @@ $(function() {
         megamenuH = Math.floor(_megamenu.outerHeight(true));
         $(window).bind("load scroll resize", function(e) {
             ww = _window.outerWidth();
-            if (ww >= wwSmall && $(this).scrollTop() > stickyMenuTop2) {
+            if (ww >= wwMedium && $(this).scrollTop() > stickyMenuTop2) {
                 $('.header').addClass('fixed');
                 $('.header').css('margin-top', -1 * customHeight);
                 // $('.main').css('margin-top', headerHeight);
