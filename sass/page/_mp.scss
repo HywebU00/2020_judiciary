@@ -168,6 +168,7 @@
             }
         }
         .slick-next {
+            right:9%;
             @include screen('mobile') {
                 top: 45%;
                 right: 2%;
