@@ -168,10 +168,9 @@
             }
         }
         .slick-next {
-            right:9%;
+            right: 9%;
             @include screen('mobile') {
                 top: 45%;
-              
             }
         }
         // 點點
@@ -330,7 +329,6 @@
                     }
                 }
                 .slick-next {
-                   
                     @include screen('mobile') {
                         top: 45%;
                         right: 2%;
@@ -914,10 +912,16 @@
         .update_block {
             display: flex;
             justify-content: flex-end;
+            @media(max-width: 480px) {
+                display: block;
+            }
             .update_time {
                 padding: 8px;
                 margin-right: 50px;
                 font-weight: bolder;
+                @media(max-width: 480px) {
+                    margin-right: 0px;
+                }
             }
         }
     }
