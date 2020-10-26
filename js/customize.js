@@ -7,7 +7,7 @@ $(function() {
         arrows: true,
         infinite: true,
         speed: 500,
-        autoplay: true,
+        autoplay: false,
         fade: true,
         lazyLoaded: true,
         lazyLoad: 'ondemand',

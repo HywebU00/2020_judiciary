@@ -1,12 +1,13 @@
 // https://github.com/twbs/bootstrap-sass/blob/master/assets/stylesheets/bootstrap/mixins/_image.scss
 @mixin img-responsive($display: block) {
-  display: $display;
-  max-width: 100%; // Part 1: Set a maximum relative to the parent
-  height: auto; // Part 2: Scale the height according to the width, otherwise you get stretching
+    display: $display;
+    max-width: 100%; // Part 1: Set a maximum relative to the parent
+    height: auto; // Part 2: Scale the height according to the width, otherwise you get stretching
 }
 //https://css-tricks.com/snippets/sass/maintain-aspect-ratio-mixin/
 @mixin aspect-ratio($width, $height) {
     overflow: hidden;
+    line-height: 0;
     &:before {
         display: inline-block;
         content: "";
@@ -29,7 +30,7 @@
     text-align: left;
     overflow: hidden;
 }
-@mixin make_col($pic_length,$m_pic_length) {
+@mixin make_col($pic_length, $m_pic_length) {
     $outer_W: 100%;
     $pic_col: $pic_length;
     $pic_Margin: 1%;
@@ -43,14 +44,14 @@
     overflow: hidden;
     @include box-sizing(border-box);
     @include screen('mobile') {
-        float:none;
+        float: none;
         display: inline-block;
         $outer_W: 100%;
         $pic_col: $m_pic_length;
         $pic_Margin: 1%;
         $pic_W: ($outer_W/$pic_col)-($pic_Margin*2);
         width: $pic_W;
-        margin:$pic_Margin auto;
+        margin: $pic_Margin auto;
     }
     img {
         position: absolute;
@@ -58,4 +59,3 @@
         left: 0;
     }
 }
-
