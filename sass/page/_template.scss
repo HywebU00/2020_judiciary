@@ -215,7 +215,7 @@ body {
                                     }
                                 }
                                 &:hover, &:focus {
-                                    color: $linkColor;
+                                    color: $aHover;
                                     box-shadow: none;
                                      &.active{
                                         color:#fff;
