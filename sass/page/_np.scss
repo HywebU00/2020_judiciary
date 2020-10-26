@@ -14,11 +14,9 @@
         flex-basis: 48%;
         margin-bottom: 10px;
         border-radius: 5px;
-       
         &:nth-child(odd) {
-            margin-right:10px;
+            margin-right: 10px;
         }
-        
         @include screen('mobile') {
             flex: 1 1 100%;
             &:nth-child(odd) {
@@ -27,17 +25,16 @@
         }
         a {
             border-radius: 4px;
-           border-left:5px solid $primaryColor;
-         box-shadow: rgba(14, 30, 37, 0.12) 0px 0px 4px 0px, rgba(14, 30, 37, 0.32) 0px 0px 5px 0px;
+            border-left: 5px solid $primaryColor;
+            box-shadow: rgba(14, 30, 37, 0.12) 0px 0px 4px 0px, rgba(14, 30, 37, 0.32) 0px 0px 5px 0px;
             padding: 1em 1em 1em 2.5em;
             display: block;
             vertical-align: top;
             position: relative;
-            height: 100%; 
-            background-color: #f9fafc; 
+            height: 100%;
+            background-color: #f9fafc;
             @include box-sizing;
             @include aSetting_nocolor;
-            
             // @include text-overflow;
             .num {
                 position: absolute;
@@ -51,8 +48,8 @@
             }
             &:hover,
             &:focus {
-              background-color:$nphover;
-                color:#fff;
+                background-color: $nphover;
+                color: #fff;
             }
         }
     }

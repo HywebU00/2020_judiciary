@@ -435,8 +435,8 @@
     right: 0;
     top: 0;
     background-image: none;
-    background: rgb(23, 105, 179);
-    background: linear-gradient(90deg, rgba(23, 105, 179, 1) 0%, rgba(69, 120, 173, 1) 100%);
+    background: $megamenu;
+    background: $megamenulinear;
     z-index: 999;
     @include screen('tablet') {
         background: #FFF;
