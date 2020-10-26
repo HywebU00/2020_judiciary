@@ -8,7 +8,9 @@
     .fatfooter,
     footer,
     .accesskey,
-    .submenu {
+    .submenu,
+    .innerbg
+    .container>.left_block, .function_panel {
         display: none;
     }
 

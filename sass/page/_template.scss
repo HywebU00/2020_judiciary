@@ -48,7 +48,6 @@ body {
     // @include screen('tablet') {
     //     padding: 6em 0 0 0;
     // }
-    
     >section {
         padding: 50px 0 30px;
         @include screen('tablet') {
@@ -91,6 +90,12 @@ body {
 .innerpage {
     padding: 0px 0 30px 0;
     background-image: none;
+    &.small_size {
+        font-size: .938em;
+    }
+    &.large_size {
+        font-size: 1.125em;
+    }
     @include screen('tablet') {
         padding: 0px 0 30px 0;
     }
@@ -111,7 +116,6 @@ body {
         flex: 0 0 260px;
         flex-basis: 260px;
         max-width: 260px;
-        
         @include screen('tablet') {
             display: none;
         }
@@ -217,9 +221,9 @@ body {
                                 &:hover, &:focus {
                                     color: $aHover;
                                     box-shadow: none;
-                                     &.active{
-                                        color:#fff;
-                                     }
+                                    &.active {
+                                        color: #fff;
+                                    }
                                 }
                             }
                         }
@@ -319,7 +323,7 @@ body {
     text-align: right;
     float: right;
     margin-bottom: 15px;
-    @include screen('mobile'){
+    @include screen('mobile') {
         float: none;
     }
     a {

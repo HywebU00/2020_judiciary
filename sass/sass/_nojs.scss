@@ -26,6 +26,16 @@ a.goCenter {
 }
 // no-js
 .no-js {
+    .header .navigation{
+        float:none;
+        display: block;
+    }
+    .header .navigation .navlist ul{
+        display: inline-block;
+        li{
+            display: inline-block;
+        }
+    }
     noscript {
         display: block;
         padding: .5em;
@@ -35,8 +45,9 @@ a.goCenter {
         overflow: hidden;
         line-height: 1.45em;
         font-size: .813em;
-        margin: 0 .5em .5em;
+        margin:120px .5em .5em;
         border-radius: 4px;
+        width: 100%;
         @include box-sizing;
         a {
             color: $primaryColor;
@@ -57,7 +68,7 @@ a.goCenter {
         }
     }
     .navigation {
-        padding-right: 170px;
+        
         .language {
             width: auto;
             position: absolute;
@@ -156,5 +167,38 @@ a.goCenter {
                 object-fit: cover;
             }
         }
+    }
+    .services_slider>div {
+        display: inline-block;
+    }
+    .close_people {
+        .tabs {
+            &.closepeopletab {
+                height: 100% !important;
+                .tabItem {
+                    width: 100%;
+                    .tabContent {
+                        left: 0!important;
+                        .closepeople_slider {
+                            .closepeople_list {
+                                display: inline-block !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .close_people .tabs .tabContent{
+         left: 0!important;
+    }
+    .close_people_block .close_people .tabSet .tabContent .closepeople_slider .closepeople_list{
+        display: inline-block !important;
+    }
+    .know_issue_block .issue_list .issue_block{
+        display: inline-block;
+    }
+    .adSlider2 .img-container, .adSlider3 .img-container{
+        display: inline-block;
     }
 }
