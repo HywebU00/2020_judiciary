@@ -20,24 +20,24 @@
     border: none;
     outline: none;
     border: none;
-    background: url(icon_arrow_left_inverse.png) center center no-repeat RGBA(255, 255, 255, .3);
+    background: url(icon_arrow_left_inverse.png) center center no-repeat RGBA(255, 255, 255, 0);
     background-size: 30px 48px;
     box-shadow: none;
 }
 .slick-next {
-    background: url(icon_arrow_right_inverse.png) center center no-repeat RGBA(255, 255, 255, .3);
+    background: url(icon_arrow_right_inverse.png) center center no-repeat RGBA(255, 255, 255, 0);
     background-size: 30px 48px;
 }
 .slick-prev:hover, .slick-prev:focus {
     color: transparent;
     border: none;
-    background: url(icon_arrow_left_inverse.png) center center no-repeat RGBA(255, 255, 255, .6);
+    background: url(icon_arrow_left_inverse.png) center center no-repeat RGBA(255, 255, 255, 1);
     background-size: 30px 48px;
 }
 .slick-next:hover, .slick-next:focus {
     color: transparent;
     border: none;
-    background: url(icon_arrow_right_inverse.png) center center no-repeat RGBA(255, 255, 255, .6);
+    background: url(icon_arrow_right_inverse.png) center center no-repeat RGBA(255, 255, 255, 1);
    background-size: 30px 48px;
 }
 .slick-prev:hover:before, .slick-prev:focus:before, .slick-next:hover:before, .slick-next:focus:before {
