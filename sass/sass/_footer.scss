@@ -19,7 +19,7 @@ footer {
     }
     .footer_connection {
         padding: 35px 7em;
-        background-color: darken($primaryColor, 5);
+        background-color: $footer_connection;
         overflow: hidden;
         @include screen('tablet') {
             padding: 35px 5em;

@@ -620,7 +620,7 @@
                 width: auto;
                 height: auto;
                 margin-right: 0;
-                border-radius: 0;
+                border-radius: 3px;
                 text-align: left;
             }
             span {
@@ -777,6 +777,7 @@
         margin-left: 30%;
         position: relative;
         overflow: hidden;
+        border-radius: 3px 0 0 3px;
         &:after {
             content: '';
             background-image: $service_beforebg;
@@ -858,7 +859,7 @@
                     position: relative;
                     &:hover {
                         background-color: $lightColor;
-                        border-radius: 5px;
+                        border-radius: 3px;
                         color: #000;
                         img {
                             filter: invert(100%);
@@ -1155,7 +1156,7 @@
                 }
                 .period_list {
                     background-color: #fff;
-                    border-radius: 5px;
+                    border-radius: 3px;
                     text-align: center;
                 }
                 .court {
@@ -1165,7 +1166,7 @@
                     padding: 8px 5px;
                     text-align: center;
                     margin-bottom: 20px;
-                    border-radius: 5px 5px 0 0;
+                    border-radius: 3px 3px 0 0;
                 }
                 .content {
                     color: #000;
@@ -1318,7 +1319,7 @@
                     top: 45px;
                     background-color: #ccc;
                     padding: 5px;
-                    border-radius: 5px;
+                    border-radius: 3px;
                     box-shadow: 0 0 0 RGBA(0, 0, 0, 0);
                     display: flex;
                     flex-flow: column;
@@ -1732,7 +1733,7 @@
             left: 90px;
             right: 90px;
             z-index: 1;
-            border-radius: 5px;
+            border-radius: 3px;
             @include screen('tablet') {
                 left: 0;
                 right: 0;
