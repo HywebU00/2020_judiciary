@@ -49,20 +49,20 @@
                 }
             }
             &:before {
-                background: #fff;
+                background: $slickdots;
             }
         }
         &.slick-active {
             button {
                 &:before {
-                    background: $primaryColor;
+                    background: $slickdots-active;
                 }
                 &:hover,
                 &:focus {
                     &:before {
                         opacity: .9;
                         color: black;
-                        background: $primaryColor;
+                        background: $slickdots-active;
                     }
                 }
             }

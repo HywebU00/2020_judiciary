@@ -20,9 +20,9 @@
             left: 0;
             right: 0;
             z-index: 1;
-            border-radius: 5px;
-            background: rgb(23, 105, 179);
-            background: linear-gradient(90deg, rgba(23, 105, 179, 1) 0%, rgba(69, 120, 173, 1) 100%);
+            border-radius: 3px;
+            background: rgb(15, 96, 182);
+            background: linear-gradient(90deg, rgba(15, 96, 182, 1) 0%, rgba(69, 120, 173, 1) 100%);
         }
         &>.tabItem {
             &.active>a {
@@ -33,7 +33,7 @@
             // float: left;
             margin: 0;
             padding: 0;
-            font-size:1.063em;
+            font-size:1.125em;
             line-height: 1;
             // letter-spacing: 0.05em;
             @include screen('mobile') {

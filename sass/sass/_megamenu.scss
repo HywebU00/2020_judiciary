@@ -14,7 +14,7 @@
         list-style-type: none;
         display: flex;
         flex-wrap: wrap;
-        border-radius: 5px;
+        border-radius: 3px;
         background: $megamenu;
         background: $megamenulinear;
         // 第一層選單樣式
@@ -34,7 +34,7 @@
                 position: relative;
                 &:before {
                     content: '';
-                    background-image: url('../images/menu_line.png');
+                    background-image: $megamenu_line;
                     background-repeat: no-repeat;
                     position: absolute;
                     top: 7px;
@@ -94,7 +94,7 @@
                 display: none;
                 overflow: visible;
                 background: rgba(0, 0, 0, .9);
-                border-radius: 5px;
+                border-radius: 3px;
                 width: 100%;
                 padding: 20px 10px;
                 box-sizing: border-box;

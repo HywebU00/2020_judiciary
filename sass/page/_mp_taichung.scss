@@ -53,22 +53,22 @@
 }
 // fastlink 快捷列
 .fastbtn_blcok {
-    width: 80px;
+    width: 90px;
     position: fixed;
     top: 180px;
     right: 50%;
-    margin-right: -600px;
+    margin-right: -590px;
     z-index: 10;
     padding: 0 !important;
     @include screen('notebook') {
-        right: 0;
+        right: 15px;
         margin-right: 0;
     }
     @include screen('tablet') {
         display: block;
         top: 96px;
-        width: 80px;
-        margin-right: -80px;
+        width: 90px;
+        margin-right: -90px;
         transition: .5s;
         &.open {
             margin-right: 0px;
@@ -82,7 +82,9 @@
             left: -36px;
             top: 0;
             width: 36px;
-            border-radius: 3px 0 0 3px;
+            // flex: none;
+            // flex-basis: 36px;
+            // margin-left: -36px;
             background-color: $primaryColor;
             color: #fff;
             text-align: center;
@@ -98,32 +100,32 @@
     }
     ul {
         margin: 0;
-        padding: 20px 0;
+        padding: 40px 15px;
         list-style-type: none;
         text-align: center;
-        width: 80px;
+        width: 90px;
         box-shadow: rgba(50, 50, 93, 0.25) 0px 0px 5px -1px, rgba(0, 0, 0, 0.3) 0px 0px 3px -1px;
         background-color: #fff;
         position: relative;
-        border-radius: 3px 0 0 3px;
+        border-radius: 50px;
+        @include box-sizing;
         z-index: 10;
-        @include screen('tablet') {
-            border-radius: 0px 0 0 3px;
-        }
         li {
-            margin-bottom: 5px;
+            margin-bottom: 25px;
+            &:last-child {
+                margin-bottom: 0;
+            }
             a {
                 display: block;
                 color: #333;
                 text-align: center;
                 font-size: 0.875em;
                 transition: .5s;
+                line-height: 1.2em;
                 span {
                     width: 56px;
                     height: 56px;
                     margin: 0 auto;
-                    background-color: $primaryColor;
-                    border-radius: 50%;
                     display: block;
                     position: relative;
                     transition: .5s;
@@ -133,17 +135,16 @@
                         right: 0;
                         bottom: 0;
                         left: 0;
-                        width: 36px;
-                        height: 36px;
+                        width: 50px;
+                        height: 50px;
                         margin: auto;
                         transition: .5s;
                     }
                 }
                 &:hover {
-                    color: $primaryColor;
+                    color: $secondaryColor;
                     padding: 8px 0;
                     span {
-                        background-color: lighten($primaryColor, 15);
                         width: 56px;
                         height: 56px;
                     }
@@ -619,7 +620,7 @@
                 width: auto;
                 height: auto;
                 margin-right: 0;
-                border-radius: 3px;
+                border-radius: 0;
                 text-align: left;
             }
             span {
@@ -771,24 +772,11 @@
         // text-align: left !important;
     }
     .service {
-        // background: rgb(15, 96, 182);
-        // background: linear-gradient(90deg, rgba(15, 96, 182, 1) 0%, rgba(69, 120, 173, 1) 100%);
+        background: rgb(23, 105, 179);
+        background: linear-gradient(90deg, rgba(23, 105, 179, 1) 0%, rgba(69, 120, 173, 1) 100%);
         margin-left: 30%;
         position: relative;
         overflow: hidden;
-        border-radius: 3px 0 0 3px;
-        &:before {
-            content: '';
-            background: rgb(15, 96, 182);
-            background: linear-gradient(124deg, rgba(15, 96, 182, 1) 51%, rgba(69, 120, 173, 1) 100%);
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 1;
-        }
         &:after {
             content: '';
             background-image: $service_beforebg;
@@ -801,8 +789,7 @@
             right: 0;
             width: 100%;
             height: 100%;
-            z-index: 2;
-            opacity: .8;
+            z-index: 1;
         }
         @include screen('tablet') {
             margin-left: 25%;
@@ -871,7 +858,7 @@
                     position: relative;
                     &:hover {
                         background-color: $lightColor;
-                        border-radius: 3px;
+                        border-radius: 5px;
                         color: #000;
                         img {
                             filter: invert(100%);
@@ -1168,7 +1155,7 @@
                 }
                 .period_list {
                     background-color: #fff;
-                    border-radius: 3px;
+                    border-radius: 5px;
                     text-align: center;
                 }
                 .court {
@@ -1178,7 +1165,7 @@
                     padding: 8px 5px;
                     text-align: center;
                     margin-bottom: 20px;
-                    border-radius: 3px 3px 0 0;
+                    border-radius: 5px 5px 0 0;
                 }
                 .content {
                     color: #000;
@@ -1331,7 +1318,7 @@
                     top: 45px;
                     background-color: #ccc;
                     padding: 5px;
-                    border-radius: 3px;
+                    border-radius: 5px;
                     box-shadow: 0 0 0 RGBA(0, 0, 0, 0);
                     display: flex;
                     flex-flow: column;
@@ -1575,8 +1562,8 @@
             border-radius: 30px;
             padding: 30px 10px;
         }
-        background: rgb(23, 105, 179);
-        background: linear-gradient(90deg, rgba(23, 105, 179, 1) 0%, rgba(69, 120, 173, 1) 100%);
+        background: rgb(15, 96, 182);
+        background: linear-gradient(90deg, rgba(15, 96, 182, 1) 0%, rgba(69, 120, 173, 1) 100%);
         .what {
             color: #fce787;
             margin-bottom: 20px;
@@ -1712,7 +1699,6 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                border-radius: 0;
                 @include screen('mobile') {
                     padding: 15px 0;
                     letter-spacing: 0.05em;
@@ -1746,7 +1732,7 @@
             left: 90px;
             right: 90px;
             z-index: 1;
-            border-radius: 3px;
+            border-radius: 5px;
             @include screen('tablet') {
                 left: 0;
                 right: 0;
