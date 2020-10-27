@@ -27,6 +27,12 @@
         outline: none;
         box-shadow: 0 0 0 2px $color-yellow inset;
     }
+    @include screen('xs_mobile'){
+        background-size: 25px 42px;
+        &:hover, &:focus{
+            background-size: 25px 42px;
+        }
+    }
 }
 // slick._scss
 

@@ -65,9 +65,9 @@
         margin-right: 0;
     }
     @include screen('tablet') {
-        display: flex;
+        display:block;
         top: 96px;
-        width: 116px;
+        width: 80px;
         margin-right: -80px;
         transition: .5s;
         &.open {
@@ -78,8 +78,13 @@
         display: none;
         @include screen('tablet') {
             display: block;
-            flex: none;
-            flex-basis: 36px;
+            position:absolute;
+            left:-36px;
+            top:0;
+            width: 36px;
+            // flex: none;
+            // flex-basis: 36px;
+            // margin-left: -36px;
             background-color: $primaryColor;
             color: #fff;
             text-align: center;
@@ -101,6 +106,8 @@
         width: 80px;
         box-shadow: rgba(50, 50, 93, 0.25) 0px 0px 5px -1px, rgba(0, 0, 0, 0.3) 0px 0px 3px -1px;
         background-color: #fff;
+        position:relative;
+         z-index: 10;
         li {
             margin-bottom: 5px;
             a {
@@ -160,7 +167,6 @@
         }
         .img-container {
             @include aspect-ratio(5, 2); //PC版比例
-            line-height: 0;
         }
         .slick-prev {
             @include screen('mobile') {
@@ -177,6 +183,9 @@
         // 點點
         .slick-dots {
             bottom: 70px;
+            @include screen('mobile'){
+                 bottom: 50px;
+            }
         }
     }
 }
@@ -191,7 +200,7 @@
         position: relative;
         top: auto;
         right: auto;
-        padding: 20px 0 !important;
+        padding: 20px 0 0 !important;
     }
     .mpvideo {
         display: flex;
@@ -248,6 +257,9 @@
 .mpSlider_block2 {
     background-color: #fff;
     padding-bottom: 80px !important;
+    @include screen('tablet') {
+        padding-top: 20px!important;
+    }
     .container {}
     // 首頁大圖輪播 
     .mpSlider {
@@ -312,16 +324,6 @@
                     @include screen('tablet') {
                         min-height: auto;
                     }
-                    a {
-                        .caption {
-                            height: 2em;
-                            line-height: 2em;
-                            @include screen('tablet') {
-                                height: 3em;
-                                line-height: 3em;
-                            }
-                        }
-                    }
                 }
                 .slick-prev {
                     @include screen('mobile') {
@@ -363,11 +365,11 @@
                 transition: .5s;
                 @include screen('tablet') {
                     width: 46%;
-                    margin: 0 2% 15px;
+                    margin: 0 2% 10px;
                 }
                 @include screen('xs_mobile') {
                     width: 100%;
-                    margin: 0 0 15px;
+                    margin: 0 0 10px;
                 }
                 &:hover {
                     box-shadow: rgba(0, 0, 0, 0.6) 0px 3px 8px;

@@ -26,7 +26,7 @@ footer {
         }
         @include screen('mobile') {
             text-align: center;
-            padding: 35px 2em;
+            padding: 35px 1em;
         }
         .title {
             font-size: 1.063em;
@@ -78,6 +78,12 @@ footer {
                     li {
                         padding: 0;
                         margin: 0;
+                        br{
+                            display: none;
+                            @media(max-width: 480px){
+                                display: block;
+                            }
+                        }
                         &:before {
                             display: none;
                         }
@@ -233,6 +239,7 @@ footer {
         font-size: 0.938em;
         @include screen('mobile') {
             text-align: center;
+            padding: 20px 1em;
         }
         span {
             display: inline-block;
