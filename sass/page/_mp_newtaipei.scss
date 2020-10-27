@@ -224,7 +224,7 @@
             @include screen('mobile') {
                 width: 100%;
                 height: 315px;
-                margin-bottom: 15px;
+                margin:0 0 15px;
             }
             a.close {
                 width: 30px;
@@ -1549,7 +1549,7 @@
         }
         @include screen('mobile') {
             text-align: center;
-            border-radius: 50px;
+            border-radius: 30px;
             padding: 30px 10px;
         }
         background: rgb(23, 105, 179);
@@ -1709,7 +1709,7 @@
             padding: 0 50px !important;
         }
         @include screen('xs_mobile') {
-            padding: 0 15px !important; //gutter 代表左右要留白
+            padding: 0 30px !important; //gutter 代表左右要留白
         }
     }
     .tabs {

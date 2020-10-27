@@ -62,7 +62,7 @@ body {
                 @include gutter(100px);
             }
             @include screen('xs_mobile') {
-                @include gutter(30px); //gutter 代表左右要留白
+                @include gutter(60px); //gutter 代表左右要留白
             }
             .col-xs-12 {
                 padding-bottom: 25px;
