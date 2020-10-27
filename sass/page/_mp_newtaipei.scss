@@ -881,6 +881,13 @@
                         letter-spacing: 0.05em;
                     }
                 }
+                &:last-child{
+                    a{
+                        &:before{
+                            display: none;
+                        }
+                    }
+                }
             }
         }
         .more {
