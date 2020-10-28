@@ -139,6 +139,10 @@
                                 top:50%;
                                 background-color:#fff;
                             }
+                            &:hover, &:focus{
+                                background-color:$aColor;
+                                color:#fff;
+                            }
                         }
                     }
                     //第三層關閉
