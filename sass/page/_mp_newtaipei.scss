@@ -856,12 +856,6 @@
                         border-left: none;
                     }
                 }
-                // .icon {
-                //     cursor: pointer;
-                // }
-                // .icon:hover path {
-                //     fill: $primaryColor;
-                // }
                 a {
                     color: #fff;
                     display: block;
@@ -1810,6 +1804,7 @@
                     }
                 }
                 img {
+                    object-fit: cover;
                     // @include screen('tablet') {
                     //     width: auto !important;
                     //     // height: 100% !important;
