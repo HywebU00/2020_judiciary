@@ -49,9 +49,9 @@ footer {
             }
             >li {
                 flex: none;
-                flex-basis: 48%;
-                margin: 0 1% 20px 0;
-                padding: 0 0 0px 15px;
+                flex-basis: calc(46% - 15px);
+                margin: 0 2% 20px 0;
+                padding: 0 0 0 15px;
                 position: relative;
                 @include box-sizing;
                 @include screen('mobile') {
@@ -68,7 +68,7 @@ footer {
                     border-radius: 50%;
                     background-color: #fff;
                     position: absolute;
-                    left: 0;
+                    left: 0px;
                     top: 8px;
                 }
                 @include box-sizing;
