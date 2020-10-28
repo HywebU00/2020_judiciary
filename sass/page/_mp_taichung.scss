@@ -1797,6 +1797,7 @@
                     }
                 }
                 img {
+                    object-fit: cover;
                     // @include screen('tablet') {
                     //     width: auto !important;
                     //     // height: 100% !important;
@@ -1807,6 +1808,7 @@
                     // }
                 }
                 .moviebtn {
+
                     position: absolute;
                     top: 35%;
                     left: 50%;
