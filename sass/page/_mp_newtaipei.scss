@@ -1784,12 +1784,13 @@
             @include screen('mobile') {
                 padding: 0;
             }
-            .img-container {
+            .images {
                 @include aspect-ratio(16, 9);
                 position: relative;
                 a {
                     display: block;
                     text-align: center;
+                   
                     &:before {
                         content: '';
                         position: absolute;
