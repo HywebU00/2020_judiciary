@@ -32,8 +32,8 @@ $LIVEcolor_hover:darken($primaryColor, 5px);
 $LIVEcolor_focus:$lightColor;
 $LIVEcolor_before:#fff;
 $LIVEcolor_after:$primaryColor;
-$casebtn01: #028080;
-$casebtn02:#aa6436;
+$casebtn01: #875875;
+$casebtn02:#195c7d;
 
 // megamenu
 $megamenu: $primaryColor;
@@ -52,11 +52,12 @@ $slickdots:#fff;
 $slickdots-active:$secondaryColor;
 
 // footer
-$footer_connection:#135ba8;
+$footer_connection:$secondaryColor;
+$footer_link:$secondaryColor;
 
 // template
 $morebg: $secondaryColor;
-$morebg_hover:darken($secondaryColor, 10);
+$morebg_hover:darken($secondaryColor, 5);
 //-------------------------------------------------------------字型--------//
 // 字型設定
 $font-family: Lato, 'PingFang TC', 'Helvetica Neue', Helvetica, 微軟正黑體,
@@ -74,15 +75,15 @@ $screen-sm: 768px !default; //手機
 $screen-xs: 576px !default; //極小尺寸
 //-------------------------------------------------------------客製化------//
 $fatfooter-length: 6; //fatfooter選單一行個數
-$fatfooterBgColor: #1769b3; //fatFooter 底色
+$fatfooterBgColor: #0060b3; //fatFooter 底色
 //-------------------------------------------------------------客製化------//
 $rounded-angle: 				 10px; //整站導角
-$logo: 							 url('../images/taichung/logo.png');
+$logo: 							 url('../images/taichung/logo.svg');
 // $mainbg:						 url('../images/taichung/bg01.jpg');
 $h2bg: 							 url('../images/taichung/h2_icon01.png');
 $megamenu_line: 				 url('../images/taichung/menu_line.png');
 $announcement_bg: 				 url('../images/taichung/news_bg.jpg');
-$service_blockbg: 				 url('../images/taichung/service_leftbg.jpg');
+$service_blockbg: 				 url('../images/taichung/service_blockbg.jpg');
 $service_beforebg: 				 url('../images/taichung/service_rightbg.png');
 $fatfooterbg: 					 url('../images/taichung/fatfooter_bg01.jpg');
 $qaTitle: 						 url('../images/taichung/icon_logo.png');

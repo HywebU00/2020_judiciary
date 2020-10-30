@@ -873,6 +873,10 @@
                     flex-basis: 31%;
                     margin: 0 1.16% 30px;
                 }
+                @media(max-width: 380px) {
+                    flex-basis: 46%;
+                    margin: 0 2% 30px;
+                }
                 &:first-child {
                     a {
                         border-left: none;
@@ -976,6 +980,7 @@
     padding: 50px 0 80px !important;
     @include screen('mobile') {
         background-repeat: repeat-y;
+        background-position: left top;
     }
     .close_people {
         h2 {
@@ -1068,6 +1073,9 @@
     background-position: center top;
     padding: 80px 0 !important;
     position: relative;
+    @include screen('mobile') {
+         background-position: left top;
+    }
     &:before {
         content: '';
         width: 338px;

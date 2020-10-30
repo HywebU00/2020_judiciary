@@ -350,9 +350,10 @@
             display: flex;
             justify-content: flex-start !important;
             list-style-type: none;
+            flex-wrap:wrap;
             &:before {}
             li {
-                margin: 0 6px 0 0;
+                margin: 0 6px 6px 0;
                 padding:0;
                 flex: 0 0 auto;
             }

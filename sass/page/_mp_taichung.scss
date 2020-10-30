@@ -29,7 +29,7 @@
                 height: 3px;
                 background-color: $primaryColor;
                 position: absolute;
-                left: -30px;
+                margin-left: -30px;
                 top: 16px;
             }
         }
@@ -305,10 +305,21 @@
 .mpSlider_block2 {
     background-color: #fff;
     padding-bottom: 80px !important;
+    background-image: url('../images/taichung/mpSlider_block2_bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center top;
     @include screen('tablet') {
         padding-top: 20px !important;
     }
     .container {}
+    h2 {
+        color: #fff;
+        span {
+            &:before {
+                background-color: #fff;
+            }
+        }
+    }
     // 首頁大圖輪播 
     .mpSlider {
         // width: 100%;
@@ -342,7 +353,7 @@
 // 大圖輪播3
 .mpSlider_block3 {
     background: rgb(229, 231, 231);
-    background: linear-gradient(180deg, rgba(229, 231, 231, 1) 0%, rgba(255, 255, 255, 1) 40%);
+    background: linear-gradient(180deg, rgba(229, 231, 231, .6) 0%, rgba(255, 255, 255, 1) 40%);
     .mpSlider_options {
         display: flex;
         @include screen('tablet') {
@@ -437,20 +448,20 @@
                         content: '';
                         width: 8px;
                         height: 60px;
-                        @include gradient(#1769b3, #21baff, vertical);
+                        @include gradient(#618100, #618100, vertical);
                         position: absolute;
                         right: 0;
                         top: 0;
                         bottom: 0;
                     }
                     &:hover {
-                        color: $primaryColor;
+                        color: $aHover;
                         font-weight: bold;
                     }
                     .image {
                         width: 60px;
                         height: 60px;
-                        background-color: lighten($primaryColor, 50);
+                        background-color: #dee8c1;
                         position: relative;
                         margin-right: 15px;
                         img {
@@ -481,8 +492,9 @@
         background-size: 100%;
     }
     &.havecolor {
-        background: rgb(229, 231, 231);
-        background: linear-gradient(180deg, rgba(229, 231, 231, 1) 0%, rgba(255, 255, 255, 1) 40%);
+        background-color: #fff;
+        // background: rgb(229, 231, 231);
+        // background: linear-gradient(180deg, rgba(229, 231, 231, 1) 0%, rgba(255, 255, 255, 1) 40%);
     }
     .tabContent {
         padding: 0;
@@ -638,8 +650,9 @@
 }
 // 最新消息文字區塊
 .newsword_block {
-    background: rgb(229, 231, 231);
-    background: linear-gradient(180deg, rgba(229, 231, 231, 1) 0%, rgba(255, 255, 255, 1) 40%);
+    background-color: #fff;
+    // background: rgb(229, 231, 231);
+    // background: linear-gradient(180deg, rgba(229, 231, 231, 1) 0%, rgba(255, 255, 255, 1) 40%);
     .newsword {}
     .news_no01 {
         display: flex;
@@ -750,7 +763,7 @@
 //熱門服務
 .popular_services_block {
     background: rgb(229, 231, 231);
-    background: linear-gradient(180deg, rgba(229, 231, 231, 1) 0%, rgba(255, 255, 255, 1) 40%);
+    background: linear-gradient(180deg, rgba(229, 231, 231, .6) 0%, rgba(255, 255, 255, 1) 40%);
     padding: 50px 0 !important;
     .popular_services {
         display: flex;
@@ -789,7 +802,7 @@
                 font-weight: bolder;
                 transition: .5s;
                 &:hover {
-                    color: $primaryColor;
+                    color: $aHover;
                 }
             }
         }
@@ -807,43 +820,22 @@
 }
 // 服務專區
 .service_block {
+    background-image: $service_blockbg;
+    background-color: #e0b600;
+    background-repeat: no-repeat;
+    background-position: center top;
     .container {
         padding: 0 !important;
         // text-align: left !important;
     }
     .service {
-        background: rgb(23, 105, 179);
-        background: linear-gradient(90deg, rgba(23, 105, 179, 1) 0%, rgba(69, 120, 173, 1) 100%);
         margin-left: 0;
         position: relative;
-        overflow: hidden;
-        border-radius: 3px 0 0 3px;
-        &:after {
-            content: '';
-            background-image: $service_beforebg;
-            background-repeat: no-repeat;
-            background-position: right top;
-            background-size: 100%;
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 1;
-        }
-        @include screen('tablet') {
-            margin-left: 25%;
-        }
-        @include screen('mobile') {
-            margin-left: 0;
-            margin-top: 0;
-        }
         h2 {
-            color: #fff;
+            color: #405500;
             span {
                 &:before {
-                    background-color: #fff;
+                    background-color: $secondaryColor;
                 }
             }
         }
@@ -864,67 +856,50 @@
             }
             li {
                 flex: none;
-                flex-basis: 18%;
-                margin: 0 1% 30px;
+                flex-basis: 17%;
+                margin: 0 1.5% 30px;
                 @include screen('tablet') {
-                    flex-basis: 23%;
-                    margin: 0 1% 30px;
+                    flex-basis: 22%;
+                    margin: 0 1.5% 30px;
+                }
+                @media(max-width:630px) {
+                    flex-basis: 30%;
+                    margin: 0 1.66% 20px;
                 }
                 @media(max-width: 480px) {
-                    flex-basis: 31%;
-                    margin: 0 1.16% 30px;
+                    flex-basis: 46%;
+                    margin: 0 2% 20px;
                 }
                 &:first-child {
                     a {
                         border-left: none;
                     }
                 }
-                // .icon {
-                //     cursor: pointer;
-                // }
-                // .icon:hover path {
-                //     fill: $primaryColor;
-                // }
                 a {
-                    color: #fff;
+                    color: #333;
                     display: block;
                     text-align: center;
-                    padding: 10px 0 15px;
+                    padding: 20px 0;
                     transition: .5s;
                     position: relative;
+                    background-color: #fbf6e7;
+                    border-radius: 3px;
                     &:hover {
-                        background-color: $lightColor;
-                        border-radius: 3px;
-                        color: #000;
-                        img {
-                            filter: invert(100%);
-                        }
+                        color: #333;
+                        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
                     }
-                    &:before {
-                        content: '';
-                        border-right: 1px dotted rgba(255, 255, 255, 0.7);
-                        width: 1px;
-                        height: 115px;
-                        position: absolute;
-                        right: -8px;
-                        top: 5px;
+                    &:focus {
+                        box-shadow: 0 0px 0px 2px $primaryColor inset;
                     }
                     img {
-                        width: 70px;
-                        height: 70px;
+                        width: 100px;
+                        height: 100px;
                         display: block;
                         margin: 0 auto 8px;
                     }
                     span {
                         padding: 0;
                         letter-spacing: 0.05em;
-                    }
-                }
-                &:last-child {
-                    a {
-                        &:before {
-                            display: none;
-                        }
                     }
                 }
             }
@@ -940,15 +915,22 @@
             @include screen('mobile') {
                 margin-right: 0;
             }
+            a {
+                &:focus {
+                    box-shadow: 0 0px 0px 2px $primaryColor inset;
+                }
+            }
         }
     }
 }
 // 民刑事統計
 .summary_graph_block {
-    background-image: $announcement_bg;
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: 100%;
+    // background-image: $announcement_bg;
+    // background-repeat: no-repeat;
+    // background-position: center top;
+    // background-size: 100%;
+    background: rgb(229, 231, 231);
+    background: linear-gradient(180deg, rgba(229, 231, 231, .6) 0%, rgba(255, 255, 255, 1) 40%);
     .summary_graph {
         .image {
             margin-bottom: 10px;
@@ -983,10 +965,16 @@
     padding: 50px 0 80px !important;
     @include screen('mobile') {
         background-repeat: repeat-y;
+        background-position: left top;
     }
     .close_people {
         h2 {
             color: #fff;
+            span {
+                &:before {
+                    background-color: #fff;
+                }
+            }
         }
         .tabSet {
             overflow: visible;
@@ -1075,6 +1063,9 @@
     background-position: center top;
     padding: 80px 0 !important;
     position: relative;
+    @include screen('mobile') {
+        background-position: left top;
+    }
     &:before {
         content: '';
         width: 338px;
@@ -1112,6 +1103,11 @@
             }
             h2 {
                 color: #fff;
+                span {
+                    &:before {
+                        background-color: #fff;
+                    }
+                }
             }
             .current_time {
                 font-size: 0.938em;
@@ -1466,6 +1462,9 @@
         h2 {
             font-size: 1.5em;
             margin-bottom: 40px;
+            span{
+                font-size:0.938em;
+            }
         }
     }
     .issue_list {
@@ -1497,7 +1496,7 @@
                 bottom: 0;
                 left: 0;
                 margin: auto;
-                background-color: darken($primaryColor, 10);
+                background-color: darken($secondaryColor, 10);
                 z-index: 1;
             }
             a {
@@ -1598,8 +1597,8 @@
             border-radius: 30px;
             padding: 30px 10px;
         }
-        background: rgb(15, 96, 182);
-        background: linear-gradient(90deg, rgba(15, 96, 182, 1) 0%, rgba(69, 120, 173, 1) 100%);
+        background: rgb(0, 79, 154);
+        background: linear-gradient(90deg, rgba(0, 79, 154, 1) 0%, rgba(0, 72, 140, 1) 100%);
         .what {
             color: #fce787;
             margin-bottom: 20px;
@@ -1745,10 +1744,10 @@
 }
 // 司法櫥窗 圖片輪播 
 .picSlider_block {
-    background-image: $announcement_bg;
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: 100%;
+    // background-image: $announcement_bg;
+    // background-repeat: no-repeat;
+    // background-position: center top;
+    // background-size: 100%;
     .container {
         padding: 0 !important;
         @include screen('tablet') {

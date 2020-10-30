@@ -176,7 +176,7 @@
                 @include text-overflow;
                 @include box-sizing;
                 &:hover {
-                    background-color: darken($primaryColor, 5);
+                    background-color: darken($primaryColor, 20);
                 }
                 &:focus {
                     background-color: $lightColor;

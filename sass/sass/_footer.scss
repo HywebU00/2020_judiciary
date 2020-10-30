@@ -227,10 +227,10 @@ footer {
         }
         .footer_icon {
             flex: none;
-            flex-basis: 130px;
+            flex-basis: 148px;
             text-align: right;
             img {
-                width: 130px;
+                width: 148px;
             }
             @include screen('mobile') {
                 flex-basis: 100%;
@@ -265,7 +265,7 @@ footer {
             a {
                 display: block;
                 padding: .3em 1em;
-                background-color: darken($primaryColor, 15);
+                background-color: $footer_link;
                 color: #FFF;
                 border-radius: 2px;
                 text-align: center;
@@ -276,7 +276,7 @@ footer {
                 }
                 &:hover,
                 &:focus {
-                    background: darken($primaryColor, 10);
+                    background: darken($footer_link, 10);
                 }
             }
         }
