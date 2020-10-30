@@ -19,8 +19,8 @@ $color-dark: #333333;
 $color-hr: #666; //hr顏色
 $color-word: #222; //一般字的顏色
 // 連結顏色
-$aColor: darken($primaryColor, 10);
-$aHover: $primaryColor;
+$aColor: darken($secondaryColor, 10);
+$aHover: $secondaryColor;
 // 表單focus顏色
 $form-focus: #21baff; //表單
 $form-btn: #21baff; //表單
@@ -53,6 +53,10 @@ $slickdots-active:$secondaryColor;
 
 // footer
 $footer_connection:#135ba8;
+
+// template
+$morebg: $secondaryColor;
+$morebg_hover:darken($secondaryColor, 10);
 //-------------------------------------------------------------字型--------//
 // 字型設定
 $font-family: Lato, 'PingFang TC', 'Helvetica Neue', Helvetica, 微軟正黑體,

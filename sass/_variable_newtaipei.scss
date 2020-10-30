@@ -53,6 +53,10 @@ $slickdots-active:$primaryColor;
 
 // footer
 $footer_connection:#135ba8;
+
+// template
+$morebg: $primaryColor;
+$morebg_hover:darken($primaryColor, 10);
 //-------------------------------------------------------------字型--------//
 // 字型設定
 $font-family: Lato, 'PingFang TC', 'Helvetica Neue', Helvetica, 微軟正黑體,
@@ -73,7 +77,7 @@ $fatfooter-length: 6; //fatfooter選單一行個數
 $fatfooterBgColor: #1f6eb6; //fatFooter 底色
 //-------------------------------------------------------------客製化------//
 $rounded-angle:					 10px; //整站導角
-$logo: 							 url('../images/newtaipei/logo.png');
+$logo: 							 url('../images/newtaipei/logo.svg');
 // $mainbg:			 			 url('../images/newtaipei/bg01.jpg');
 $h2bg: 							 url('../images/newtaipei/h2_icon01.png');
 $megamenu_line: 				 url('../images/newtaipei/menu_line.png');

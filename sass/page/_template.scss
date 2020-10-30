@@ -69,21 +69,7 @@ body {
             }
         }
     }
-    h2 {
-        line-height: 1.25em;
-        display: inline-block;
-        color: $primaryColor;
-        background-image: $h2bg;
-        background-repeat: no-repeat;
-        background-position: center top;
-        padding: 40px 0 0 0;
-        text-align: center;
-        margin: 0 0 20px;
-        font-family: 'Noto Serif TC', serif;
-        font-weight: 700;
-        font-size: 1.75em;
-        letter-spacing: 0.05em;
-    }
+    
 }
 ////////////////////////////////////////////////////////////
 // 為了與首頁區隔，請在內頁加上innerpage ClassName
@@ -329,13 +315,13 @@ body {
     a {
         display: block;
         padding: 8px 25px;
-        background-color: $primaryColor;
+        background-color: $morebg;
         color: #fff;
         font-size: 0.938em;
         transition: .5s;
         border-radius:3px;
         &:hover {
-            background-color: darken($primaryColor, 10);
+            background-color: $morebg_hover;
             padding: 8px 30px;
         }
     }

@@ -7,6 +7,27 @@
     //     background: #DEDEDE;
     // }
 }
+.main{
+    h2 {
+        line-height: 1.25em;
+        display: inline-block;
+        color: $primaryColor;
+        background-image: $h2bg;
+        background-repeat: no-repeat;
+        background-position: center top;
+        padding: 40px 0 0 0;
+        text-align: center;
+        margin: 0 0 20px;
+        font-family: 'Noto Serif TC', serif;
+        font-weight: 700;
+        font-size: 1.75em;
+        letter-spacing: 0.05em;
+        span{
+            display: none;
+        }
+    }
+    
+}
 // 廣告輪播
 .adSlider {
     @include gutter(70px);
@@ -83,16 +104,17 @@
             top: 0;
             width: 36px;
             border-radius: 3px 0 0 3px;
-            background-color: $primaryColor;
-            color: #fff;
             text-align: center;
-            padding: 20px 5px;
             height: 110px;
-            @include box-sizing;
             z-index: 12;
             box-shadow: rgba(50, 50, 93, 0.2) -2px 1px 4px -1px, rgba(0, 0, 0, 0.2) -2px 1px 3px -1px;
             a {
                 color: #fff;
+                display: block;
+                padding: 20px 5px;
+                background-color: $primaryColor;
+                color: #fff;
+                @include box-sizing;
             }
         }
     }
