@@ -285,7 +285,7 @@ body {
                 width: 26px;
                 height: 26px;
                 display: inline-block;
-                margin-right: 4px;
+                margin-sright: 4px;
                 text-indent: -9999px;
                 vertical-align: text-bottom;
                 margin: 0 3px;
@@ -303,26 +303,4 @@ body {
 }
 .hidden {
     display: none;
-}
-.more {
-    display: inline-block;
-    text-align: right;
-    float: right;
-    margin-bottom: 15px;
-    @include screen('mobile') {
-        float: none;
-    }
-    a {
-        display: block;
-        padding: 8px 25px;
-        background-color: $morebg;
-        color: #fff;
-        font-size: 0.938em;
-        transition: .5s;
-        border-radius:3px;
-        &:hover {
-            background-color: $morebg_hover;
-            padding: 8px 30px;
-        }
-    }
 }

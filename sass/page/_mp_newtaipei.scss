@@ -7,6 +7,28 @@
     //     background: #DEDEDE;
     // }
 }
+.more {
+    display: inline-block;
+    text-align: right;
+    float: right;
+    margin-bottom: 15px;
+    @include screen('mobile') {
+        float: none;
+    }
+    a {
+        display: block;
+        padding: 8px 25px;
+        background-color: $morebg;
+        color: #fff;
+        font-size: 0.938em;
+        transition: .5s;
+        border-radius:3px;
+        &:hover {
+            background-color: $morebg_hover;
+            padding: 8px 30px;
+        }
+    }
+}
 .main{
     h2 {
         line-height: 1.25em;
