@@ -53,10 +53,10 @@
 @import "page/_sp";						//sP
 @import "page/_sitemap";				//Sitemap
 @import "page/_left_block";				//左欄left_block
-// @import "page/_taichung_adjustment.scss";	//微調整
+@import "page/_high_adjustment.scss";	//微調整
 
 // 外掛
-@import "sass/_slick";					//slick
+@import "sass/_slick_high";					//slick
 
 // 無障礙
 @import "sass/_nojs";					//無障礙關閉js設定

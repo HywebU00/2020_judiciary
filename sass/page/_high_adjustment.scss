@@ -1,0 +1,16 @@
+.megamenu {
+    margin: 0;
+    >ul {
+        border-radius: 0;
+    }
+    ul {
+        li {
+            .megamenu_2nd {
+                border-radius: 0;
+            }
+        }
+    }
+}
+.fatfooter{
+    background-image:none;
+}

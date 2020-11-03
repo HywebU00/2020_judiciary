@@ -240,12 +240,13 @@
     top: 30px;
     right: 100px;
     padding: 0 !important;
+    z-index: 9;
     @include screen('tablet') {
         background-color: #fff;
         position: relative;
         top: auto;
         right: auto;
-        padding: 20px 0  !important;
+        padding: 20px 0 !important;
     }
     .mpvideo {
         display: flex;
@@ -363,11 +364,23 @@
                 @include screen('tablet') {
                     margin: 0;
                 }
+                .slick-list {
+                    overflow: visible;
+                }
                 .img-container {
                     @include aspect-ratio(5, 2); //PC版比例
                     min-height: 310px;
+                    overflow: visible;
                     @include screen('tablet') {
                         min-height: auto;
+                    }
+                    a {
+                        .caption {
+                            bottom: -2.5em;
+                            height: 2.5em;
+                            line-height: 2.5em;
+                            background-color: #000;
+                        }
                     }
                 }
                 .slick-prev {
@@ -384,7 +397,7 @@
                 }
                 // 點點
                 .slick-dots {
-                    bottom: -30px;
+                    bottom: 15px;
                 }
             }
         }
@@ -406,7 +419,7 @@
                 box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
                 margin-bottom: 10px;
                 width: 240px;
-                height: 60px;
+                height: 64px;
                 transition: .5s;
                 @include screen('tablet') {
                     width: 46%;
@@ -421,7 +434,7 @@
                 }
                 a {
                     width: 240px;
-                    height: 60px;
+                    height: 64px;
                     display: flex;
                     align-items: center;
                     color: #000;
@@ -433,7 +446,7 @@
                     &:after {
                         content: '';
                         width: 8px;
-                        height: 60px;
+                        height: 64px;
                         @include gradient(#1769b3, #21baff, vertical);
                         position: absolute;
                         right: 0;
@@ -446,7 +459,7 @@
                     }
                     .image {
                         width: 60px;
-                        height: 60px;
+                        height: 64px;
                         background-color: lighten($primaryColor, 50);
                         position: relative;
                         margin-right: 15px;
@@ -533,7 +546,6 @@
                         height: 100%;
                         object-fit: cover;
                     }
-
                 }
                 time {
                     color: #333;

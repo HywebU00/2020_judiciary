@@ -280,6 +280,7 @@
     top: 30px;
     right: 100px;
     padding: 0 !important;
+     z-index:9;
     @include screen('tablet') {
         background-color: #fff;
         position: relative;
@@ -414,11 +415,23 @@
                 @include screen('tablet') {
                     margin: 0;
                 }
+                .slick-list {
+                    overflow: visible;
+                }
                 .img-container {
                     @include aspect-ratio(5, 2); //PC版比例
                     min-height: 310px;
+                    overflow: visible;
                     @include screen('tablet') {
                         min-height: auto;
+                    }
+                    a {
+                        .caption {
+                            bottom: -2.5em;
+                            height: 2.5em;
+                            line-height: 2.5em;
+                            background-color: #000;
+                        }
                     }
                 }
                 .slick-prev {
@@ -435,7 +448,7 @@
                 }
                 // 點點
                 .slick-dots {
-                    bottom: -30px;
+                    bottom: 15px;
                 }
             }
         }
@@ -457,7 +470,7 @@
                 box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
                 margin-bottom: 10px;
                 width: 240px;
-                height: 60px;
+                height: 64px;
                 transition: .5s;
                 @include screen('tablet') {
                     width: 46%;
@@ -472,7 +485,7 @@
                 }
                 a {
                     width: 240px;
-                    height: 60px;
+                    height: 64px;
                     display: flex;
                     align-items: center;
                     color: #000;
@@ -484,7 +497,7 @@
                     &:after {
                         content: '';
                         width: 8px;
-                        height: 60px;
+                        height: 64px;
                         @include gradient(#618100, #618100, vertical);
                         position: absolute;
                         right: 0;
@@ -497,7 +510,7 @@
                     }
                     .image {
                         width: 60px;
-                        height: 60px;
+                        height: 64px;
                         background-color: #dee8c1;
                         position: relative;
                         margin-right: 15px;
