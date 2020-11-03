@@ -914,9 +914,10 @@
                     &:hover {
                         background-color: $lightColor;
                         border-radius: 3px;
-                        color: #000;
+                        color: $primaryColor;
                         img {
-                            filter: invert(100%);
+                            // filter: invert(100%);
+                            filter: drop-shadow(2px 2px 2px #333);
                         }
                     }
                     &:before {

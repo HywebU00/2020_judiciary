@@ -16,7 +16,7 @@
     <!-- 燈箱facybox -->
     <link rel="stylesheet" type="text/css" href="vendor/facybox/dist/jquery.fancybox.min.css">
     <!-- hyUI css -->
-    <link rel="stylesheet" href="css/newtaipei.css">
+    <link rel="stylesheet" href="css/newtaipei.css" id="cssStyle">
     <!-- favicon -->
     <link href="images/favicon.png" rel="icon" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@700&family=Oswald&display=swap" rel="stylesheet">
@@ -677,6 +677,19 @@
         <!-- footer End -->
     </div>
     <a href="javascript:;" class="scrollToTop">回頁首</a>
+    <!-- 測試換顏色，正式上線請刪除此div及js -->
+    <div class="ColorSet" style="position: fixed;right: 0;top: 45%;">
+        <a href="javascript:mm_changeStyle('css/newtaipei.css');" class="" style="display: block;padding: 10px;background: #0f60b6;color: #fff;">新北</a>
+        <a href="javascript:mm_changeStyle('css/taichung.css');" class="" style="display: block;padding: 10px;background: #618100;color: #fff;">臺中</a>
+        <!-- <a href="javascript:mm_changeStyle('css/copyright.css');" class="" style="display: block;padding: 10px;background: #008477;color: #fff;">高等</a>
+       <a href="javascript:mm_changeStyle('css/copyright.css');" class="" style="display: block;padding: 10px;background: #008477;color: #fff;">智財</a> -->
+    </div>
+    <script type="text/javascript">
+    function mm_changeStyle(file) {
+        document.getElementById("cssStyle").setAttribute("href", file);
+    }
+    </script>
+    <!-- 測試換顏色，正式上線請刪除此div及js end-->
     <!-- JQ -->
     <script src="js/jquery-3.5.1.min.js"></script>
     <!-- 外掛 plugin js -->

@@ -28,7 +28,7 @@ $form-btn: #21baff; //表單
 $headerbg:$primaryColor;
 $LIVEbg:$lightColor;
 $LIVEcolor:darken($primaryColor, 5);
-$LIVEcolor_hover:lighten($lightColor, 10px);
+$LIVEcolor_hover:lighten($lightColor, 10);
 $LIVEcolor_focus:darken($primaryColor, 5);
 $LIVEcolor_before:darken($primaryColor, 5);
 $LIVEcolor_after:$lightColor;
@@ -41,8 +41,10 @@ $megamenulinear:linear-gradient(90deg, rgba(15,96,182,1) 0%, rgba(69,120,173,1) 
 
 // 內頁左欄menu
 $left_title: #3870bb;
-$first-active:#eee;
+$first-active:#dbdbdb;
+$first-active-color:$primaryColor;
 $second_active:#0b7fa6;
+$second_hover-color:$primaryColor;
 
 // np
 $nphover:darken($primaryColor, 5);

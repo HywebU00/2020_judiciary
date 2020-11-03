@@ -155,18 +155,18 @@ body {
                             top: 17px;
                         }
                         &:hover, &:focus, &.active {
-                            background: #ccc;
-                            color: $primaryColor;
+                            background: $first-active;
+                            color: $first-active-color;
                             box-shadow: none;
                             &:before {
                                 content: "";
-                                border-color: transparent transparent transparent $primaryColor;
+                                border-color: transparent transparent transparent $first-active-color;
                             }
                         }
                         &.active {
                             background: $first-active;
                             &:hover {
-                                background: transparent;
+                                // background: transparent;
                             }
                         }
                     }
@@ -181,6 +181,7 @@ body {
                                 display: block;
                                 color: #444;
                                 position: relative;
+                                background-color:#f5f5f5;
                                 &:before {
                                     content: "";
                                     width: 5px;
@@ -205,7 +206,7 @@ body {
                                     }
                                 }
                                 &:hover, &:focus {
-                                    color: $aHover;
+                                    color: $second_hover-color;
                                     box-shadow: none;
                                     &.active {
                                         color: #fff;
