@@ -22,14 +22,14 @@
         color: #fff;
         font-size: 0.938em;
         transition: .5s;
-        border-radius:3px;
+        border-radius: 3px;
         &:hover {
             background-color: $morebg_hover;
             padding: 8px 30px;
         }
     }
 }
-.main{
+.main {
     h2 {
         line-height: 1.25em;
         display: inline-block;
@@ -44,11 +44,10 @@
         font-weight: 700;
         font-size: 1.75em;
         letter-spacing: 0.05em;
-        span{
+        span {
             display: none;
         }
     }
-    
 }
 // 廣告輪播
 .adSlider {
@@ -246,7 +245,7 @@
         position: relative;
         top: auto;
         right: auto;
-        padding: 20px 0 0 !important;
+        padding: 20px 0  !important;
     }
     .mpvideo {
         display: flex;
@@ -515,14 +514,26 @@
                     }
                 }
                 .images {
-                    padding: 7px 7px 0;
+                    padding: 7px;
                     margin-bottom: 10px;
                     background-color: #fff;
                     box-shadow: rgba(50, 50, 93, 0.25) 0px 0px 5px -1px, rgba(0, 0, 0, 0.3) 0px 0px 3px -1px;
                     position: relative;
+                    height: 168px;
+                    @include box-sizing;
+                    @include screen('tablet') {
+                        height: 300px;
+                    }
+                    @include screen('mobile') {
+                        height: auto;
+                        padding-bottom: 0;
+                    }
                     img {
                         width: 100%;
+                        height: 100%;
+                        object-fit: cover;
                     }
+
                 }
                 time {
                     color: #333;
@@ -570,15 +581,9 @@
                     height: 220px;
                     position: relative;
                     img {
-                        position: absolute;
-                        top: 0;
-                        right: 0;
-                        bottom: 0;
-                        left: 0;
                         width: 100%;
                         height: 100%;
-                        max-height: 220px;
-                        margin: auto;
+                        object-fit: cover;
                     }
                 }
                 time {
@@ -1097,7 +1102,7 @@
     padding: 80px 0 !important;
     position: relative;
     @include screen('mobile') {
-         background-position: left top;
+        background-position: left top;
     }
     &:before {
         content: '';

@@ -1,5 +1,11 @@
 // 自動產生編號：https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Lists_and_Counters/Using_CSS_counters
+.npbg{
+    background-image:url('../images/npbg.png');
+    background-repeat:no-repeat;
+    background-position: right bottom;
+}
 .np {
+    
     ul, ol {
         display: flex;
         flex-direction: row;

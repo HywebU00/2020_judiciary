@@ -496,7 +496,7 @@
                 padding: 0 3.5em 0 1em;
                 letter-spacing: .05em;
                 display: block;
-                background: darken($primaryColor, 10);
+                background:$search_btn;
                 transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
                 &:after {
                     content: "";
@@ -509,7 +509,7 @@
                     display: block;
                 }
                 &:hover, &:focus {
-                    background: $linkColor;
+                    background: lighten($search_btn,5);
                     box-shadow: none;
                 }
             }
@@ -667,7 +667,7 @@
             padding: 0 3.5em 0 1em;
             letter-spacing: .05em;
             display: block;
-            background: darken($primaryColor, 10);
+            background: $search_btn;
             transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
             &:after {
                 content: "";
@@ -680,7 +680,7 @@
                 display: block;
             }
             &:hover, &:focus {
-                background: $linkColor;
+                background: lighten($search_btn,10);
                 box-shadow: none;
             }
         }

@@ -24,6 +24,8 @@ $aHover: $secondaryColor;
 // 表單focus顏色
 $form-focus: #21baff; //表單
 $form-btn: #21baff; //表單
+
+// 首內頁區塊顏色變數
 // header nav
 $headerbg:$secondaryColor;
 $LIVEbg:$primaryColor;
@@ -48,6 +50,24 @@ $second_hover-color:darken($secondaryColor,5);
 
 // np
 $nphover:darken($primaryColor, 5);
+//category
+$categorycolor:$secondaryColor;
+// tableth
+$tableth:#e0b500;
+$tableth_color:#000;
+// page
+$pagecolor:$secondaryColor;
+// thumbnail
+$thumbnail_h3:$secondaryColor;
+// document
+$search_btn:$primaryColor;
+
+// cp
+$block_title_color:$secondaryColor;
+$info_leftborder:$secondaryColor;
+
+// sitemap
+$sitemap_color:$secondaryColor;
 
 // slick
 $slickdots:#fff;

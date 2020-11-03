@@ -1,8 +1,8 @@
 .category {
     @extend %clearfix;
     text-align: left;
-    border-bottom: 2px solid darken($primaryColor, 20);
-  border-top: 2px solid darken($primaryColor, 20);
+    border-bottom: 2px solid darken($categorycolor, 20);
+  border-top: 2px solid darken($categorycolor, 20);
   margin-top: 0;
   margin-bottom: 10px;
     ul {
@@ -56,7 +56,7 @@
     a {
     padding: .4em .75em;
     display: block;
-    color: $primaryColor;
+    color: $categorycolor;
     width: 100%;
     @include box-sizing();
     &:before{
@@ -65,14 +65,14 @@
       height: 0;
       border-style: solid;
       border-width: 5px 0 5px 6px;
-      border-color: transparent transparent transparent $primaryColor;
+      border-color: transparent transparent transparent $categorycolor;
       display: inline-block;
       margin-right: 8px;
     }
     &:hover,
     &:focus {
       color: #FFF;
-      background: $primaryColor;
+      background: $categorycolor;
       box-shadow: none;
       &:before{
         border-color: transparent transparent transparent #fff;
@@ -80,7 +80,7 @@
     }
     &.active {
       color: #FFF;
-      background: $primaryColor;
+      background: $categorycolor;
     }
     span {
       font-size: .813em;

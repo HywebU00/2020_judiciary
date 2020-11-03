@@ -125,7 +125,7 @@ h1.title, h2.title {
     line-height: 1.5em;
     list-style: none;
     margin: 1em 0;
-    border-left: solid 5px $primaryColor;
+    border-left: solid 5px $info_leftborder;
     @include box-sizing;
     padding: 0.8em 1.5em 0.8em;
     background: #F2F2F2;
@@ -148,7 +148,7 @@ h1.title, h2.title {
     a {
       padding: .4em .75em;
       display: block;
-      color: $primaryColor;
+      color: $categorycolor;
       width: 100%;
       @include box-sizing();
       line-height: 1.45em;
@@ -158,14 +158,14 @@ h1.title, h2.title {
         height: 0;
         border-style: solid;
         border-width: 5px 0 5px 6px;
-        border-color: transparent transparent transparent #5978a4;
+        border-color: transparent transparent transparent $categorycolor;
         display: inline-block;
         margin-right: 8px;
       }
       &:hover,
       &:focus {
         color: #FFF;
-        background: $primaryColor;
+        background: $categorycolor;
         box-shadow: none;
         &:before{
           border-color: transparent transparent transparent #fff;
@@ -272,9 +272,9 @@ h1.title, h2.title {
 }
 .block_title {
   font-size: 1.25em;
-  color: $primaryColor;
+  color: $block_title_color;
   padding-bottom: 6px;
-  border-bottom: 2px solid $primaryColor;
+  border-bottom: 2px solid $block_title_color;
   line-height: 1.5em;
   &:before{
     content: "";

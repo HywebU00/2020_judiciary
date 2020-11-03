@@ -48,10 +48,10 @@
              display: block;
              font-size: 1.25em;
              font-weight: bold;
-             border-bottom: 2px solid $primaryColor;
+             border-bottom: 2px solid $sitemap_color;
              &:hover,
              &:focus {
-                 color: $primaryColor !important;
+                 color: $sitemap_color !important;
                  text-decoration: none;
              }
          }

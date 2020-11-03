@@ -20,8 +20,8 @@ table {
     //     }
     // }
     th {
-        background-color: #767676;
-        color: #fff;
+        background-color: $tableth;
+        color: $tableth_color;
          border: #ddd 1px solid;
          border-right: 0;
         border-left: 0;

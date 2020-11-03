@@ -6,7 +6,7 @@
     font-size: .938em;
     @extend %clearfix; // outline: 1px solid red;
     span {
-        color: $primaryColor;
+        color: $pagecolor;
         margin: 0px .5em;
     }
     .page {
@@ -35,7 +35,7 @@
                 border: #ccc solid 1px;
                 &:hover,
                 &:focus {
-                    background: $primaryColor;
+                    background: $pagecolor;
                     color: #fff !important;
                     border: $primaryColor solid 1px;
                 }
@@ -43,8 +43,8 @@
             &.active {
                 a {
                     color: #fff !important;
-                    background: $primaryColor;
-                    border: darken($primaryColor, 5) solid 1px;
+                    background: $pagecolor;
+                    border: darken($pagecolor, 5) solid 1px;
                 }
             }
             %arrow {
@@ -146,7 +146,7 @@
         padding: 1px 4px;
         margin: 0;
         display: inline-block;
-        color: $primaryColor;
+        color: $pagecolor;
         &:first-child{
           margin-left: 5px;
         }
@@ -159,13 +159,13 @@
           text-decoration: underline;
         }
         &:focus{
-          background: $primaryColor;
+          background: $pagecolor;
           color: #fff;
           border-radius: 3px;
           box-shadow: 0 0 0 0 transparent inset;
         }
         &.active{
-          background: $primaryColor;
+          background:$pagecolor;
           color: #fff;
           border-radius: 2px;
           &:focus{
