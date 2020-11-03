@@ -380,16 +380,24 @@
                             height: 2.5em;
                             line-height: 2.5em;
                             background-color: #000;
+                            @include screen('tablet') {
+                                bottom: 0;
+                                height: 3em;
+                                line-height: 3em;
+                                background-color: rgba(0, 0, 0, .65);
+                            }
                         }
                     }
                 }
                 .slick-prev {
+                    top: 55%;
                     @include screen('mobile') {
                         top: 45%;
                         left: 2%;
                     }
                 }
                 .slick-next {
+                    top: 55%;
                     @include screen('mobile') {
                         top: 45%;
                         right: 2%;
@@ -398,6 +406,9 @@
                 // 點點
                 .slick-dots {
                     bottom: 15px;
+                    @include screen('tablet') {
+                        bottom: -30px;
+                    }
                 }
             }
         }
