@@ -34,16 +34,37 @@
         line-height: 1.25em;
         display: inline-block;
         color: $primaryColor;
-        background-image: $h2bg;
-        background-repeat: no-repeat;
-        background-position: center top;
-        padding: 40px 0 0 0;
+        // background-image: $h2bg;
+        // background-repeat: no-repeat;
+        // background-position: center top;
+        padding: 0 30px;
         text-align: center;
         margin: 0 0 20px;
         font-family: 'Noto Serif TC', serif;
         font-weight: 700;
         font-size: 1.75em;
-        letter-spacing: 0.05em;
+        letter-spacing: 0.2em;
+        position: relative;
+        &:before {
+            content: '';
+            width: 2px;
+            height: 30px;
+            @include gradient(#ef4c46, #772b61, vertical);
+            position: absolute;
+            left: 0;
+            top: 5px;
+            transform: rotate(45deg);
+        }
+        &:after {
+            content: '';
+            width: 2px;
+            height: 30px;
+            @include gradient(#ef4c46, #772b61, vertical);
+            position: absolute;
+            right: 0;
+            top: 5px;
+            transform: rotate(45deg);
+        }
         span {
             display: none;
         }
@@ -238,20 +259,33 @@
 .mpvideoblock {
     position: absolute;
     top: 30px;
-    right: 100px;
+    right: 160px;
     padding: 0 !important;
     z-index: 9;
+    width: 300px;
+    text-align: center;
     @include screen('tablet') {
         background-color: #fff;
         position: relative;
         top: auto;
         right: auto;
+        width: 100%;
         padding: 20px 0 !important;
+    }
+    .container {
+        padding: 0 !important;
+        @include screen('tablet') {
+            padding: 0 50px !important;
+        }
+        @include screen('xs_mobile') {
+            padding: 0 30px !important;
+        }
     }
     .mpvideo {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
+        overflow: hidden;
         @include screen('tablet') {
             flex-direction: row;
             justify-content: center;
@@ -461,7 +495,7 @@
                         content: '';
                         width: 8px;
                         height: 64px;
-                        @include gradient(#1769b3, #21baff, vertical);
+                        @include gradient(#722962, #813e46, vertical);
                         position: absolute;
                         right: 0;
                         top: 0;
@@ -591,25 +625,50 @@
                     margin: 0 0 10px;
                 }
                 a {
-                    color: #000;
+                    color: #ccc;
                     display: block;
-                    background-color: lighten($color-gray, 5);
+                    background-color:#000;
                     position: relative;
-                    padding-bottom: 3px;
+                    padding:0;
                     &:hover {
                         color: $aHover;
                     }
                 }
                 .images {
                     padding: 0;
-                    margin-bottom: 10px;
+                    margin:0;
                     background-color: #fff;
-                    height: 220px;
+                    // height: 220px;
                     position: relative;
+                    @include aspect-ratio(4, 3);
                     img {
                         width: 100%;
                         height: 100%;
                         object-fit: cover;
+                    }
+                    .explaincontent {
+                        overflow: hidden;
+                        display:block;
+                        position:absolute;
+                        bottom:0;
+                        right:0;
+                        left:0;
+                        text-overflow: ellipsis;
+                        line-height: 1.5em;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 3;
+                        -webkit-box-orient: vertical;
+                        text-align: left;
+                        padding: 15px 20px;
+                        margin: 0;
+                        background-color:#d9d9d9;
+                        color:#333;
+                        
+                        span{
+                            border-left: 3px solid $primaryColor;
+                            padding-left:15px;
+                             display:block;
+                        }
                     }
                 }
                 time {
@@ -620,18 +679,6 @@
                     top: 10px;
                     left: -10px;
                     box-sizing: border-box;
-                }
-                p {
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-                    line-height: 1.5em;
-                    display: -webkit-box;
-                    -webkit-line-clamp: 3;
-                    -webkit-box-orient: vertical;
-                    text-align: left;
-                    padding: 0 0 0 15px;
-                    margin: 10px 15px;
-                    border-left: 3px solid $primaryColor;
                 }
             }
         }
