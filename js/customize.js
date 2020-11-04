@@ -559,7 +559,7 @@ $(function() {
 // 首頁影音
 $(function() {
     $('.video_content a.close').click(function() {
-        $(this).parent('.video_content').hide();
+        $(this).parents('.mpvideo').hide();
     })
 })
 // svg圖檔變色
