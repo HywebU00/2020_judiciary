@@ -365,7 +365,10 @@
                     margin: 0;
                 }
                 .slick-list {
-                    overflow: visible;
+                    padding-bottom: 3em;
+                    @include screen('tablet') {
+                        padding-bottom: 0;
+                    }
                 }
                 .img-container {
                     @include aspect-ratio(5, 2); //PC版比例
@@ -405,7 +408,7 @@
                 }
                 // 點點
                 .slick-dots {
-                    bottom: 15px;
+                    bottom: 60px;
                     @include screen('tablet') {
                         bottom: -30px;
                     }
