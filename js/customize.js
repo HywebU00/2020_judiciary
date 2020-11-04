@@ -472,9 +472,18 @@ $(function() {
         }]
     });
     // search
-    $('.header  .searchbtn').click(function() {
-        $('.header .search').slideToggle();
+    var _navlist = $('.header .navigation .navlist ul')
+    _navlist.find('.searchbtn').click(function() {
+        $(this).siblings('.search').stop().slideToggle();
+        $(this).parent('li').siblings().find('.list_second').slideUp();
+
     })
+    // emailbtn
+     _navlist.find('.emailbtn').click(function() {
+        $(this).siblings('.list_second').stop().slideToggle();
+        $(this).parent('li').siblings().find('.search').slideUp();
+    })
+
     // fast_btn 快捷列
     $('.fast_btn').click(function() {
         $('.fastbtn_blcok').toggleClass('open');
