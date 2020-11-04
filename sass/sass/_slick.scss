@@ -20,22 +20,21 @@
     &:hover {
         border: none !important;
         outline: none;
-        box-shadow:none !important;
+        box-shadow: none !important;
     }
-     &:hover, &:focus {
+    &:hover, &:focus {
         border: none !important;
         outline: none;
         box-shadow: 0 0 0 2px $color-yellow inset;
     }
-    @include screen('xs_mobile'){
+    @include screen('xs_mobile') {
         background-size: 25px 42px;
-        &:hover, &:focus{
+        &:hover, &:focus {
             background-size: 25px 42px;
         }
     }
 }
 // slick._scss
-
 // slick dots
 .slick-dots {
     li {
@@ -361,12 +360,6 @@
 .Syncing_slider {
     @extend %clearfix;
     position: relative;
-    h3 {
-        font-size: 1.5em;
-        padding: 12px 0px 6px 0px;
-        margin: 0.5em 0px 1.2em;
-        border-bottom: 2px solid $block_title_color;
-    }
     .slick-slide {
         position: relative;
     }
@@ -375,23 +368,39 @@
         font-weight: bold;
         max-width: 100px;
         color: #FFF;
-        padding: .2em .5em;
+        padding: .1em .5em;
         margin: 0px auto;
         background: $primaryColor;
-        border-radius: 20px;
-        text-shadow: 1px 1px 2px RGBA(0, 0, 0, .8);
+        border-radius: 3px;
     }
-    .img-container {
-        @include aspect-ratio(16, 9);
-        img {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            object-fit: cover;
+    .Slider-for {
+        .img-container {
+            @include aspect-ratio(16, 9);
+            img {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                object-fit: contain;
+            }
+        }
+    }
+    .Slider-nav {
+        .img-container {
+            @include aspect-ratio(16, 9);
+            img {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                object-fit:cover;
+            }
         }
     }
     p {
@@ -419,18 +428,18 @@
         right: -6%;
     }
     // .slick-next {
-    //     background: url(../vendor/slick/icon_arrow_right.png) center center no-repeat;
-    //     background-size: 80%;
-    //     @include screen('mobile') {
-    //         right: .5em;
-    //     }
+    //   background: url(../vendor/slick/icon_arrow_right.png) center center no-repeat;
+    //   background-size: 80%;
+    //   @include screen('mobile') {
+    //     right: .5em;
+    //   }
     // }
     // .slick-prev {
-    //     background: url(../vendor/slick/icon_arrow_left.png) center center no-repeat;
-    //     background-size: 80%;
-    //     @include screen('mobile') {
-    //         left: .5em;
-    //     }
+    //   background: url(../vendor/slick/icon_arrow_left.png) center center no-repeat;
+    //   background-size: 80%;
+    //   @include screen('mobile') {
+    //     left: .5em;
+    //   }
     // }
     .Slider-for {
         width: 90%;

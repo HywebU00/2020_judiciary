@@ -290,26 +290,7 @@ $(function() {
         lazy: true
     });
     // 
-    $('.Slider-for').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
-        fade: true,
-        asNavFor: '.Slider-nav',
-        autoplay: false,
-        // autoplaySpeed: 2000,
-        infinite: true
-    });
-    $('.Slider-nav').slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        asNavFor: '.Slider-for',
-        dots: false,
-        arrows: true,
-        autoplay: false,
-        focusOnSelect: true,
-        infinite: true,
-    });
+    
     // 
     $('.cppic_slider').slick({
         dots: true,
@@ -351,30 +332,29 @@ $(function() {
         }]
     });
     // cp_photo
-    $('.Slider-for').on('init reInit afterChange', function(event, slick, currentSlide) {
-        var i = (currentSlide ? currentSlide : 0) + 1;
-        $('.controls').html(i + '/' + slick.slideCount);
-    });
+    // $('.Slider-for').on('init reInit afterChange', function(event, slick, currentSlide) {
+    //   var i = (currentSlide ? currentSlide : 0) + 1;
+    //   $('.controls').html(i + '/' + slick.slideCount);
+    // });
     $('.Slider-for').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
         fade: true,
-        swipe: false,
-        swipeToSlide: false,
-        lazyLoad: 'ondemand',
         asNavFor: '.Slider-nav',
+        autoplay: false,
+        // autoplaySpeed: 2000,
         infinite: true
     });
     $('.Slider-nav').slick({
-        slidesToShow: 2,
+        slidesToShow: 3,
         slidesToScroll: 1,
         asNavFor: '.Slider-for',
-        dots: true,
+        dots: false,
         arrows: true,
-        lazyLoad: 'ondemand',
+        autoplay: false,
         focusOnSelect: true,
-        infinite: true
+        infinite: true,
     });
     // 熱門服務
     $('.services_slider').slick({
@@ -476,14 +456,12 @@ $(function() {
     _navlist.find('.searchbtn').click(function() {
         $(this).siblings('.search').stop().slideToggle();
         $(this).parent('li').siblings().find('.list_second').slideUp();
-
     })
     // emailbtn
-     _navlist.find('.emailbtn').click(function() {
+    _navlist.find('.emailbtn').click(function() {
         $(this).siblings('.list_second').stop().slideToggle();
         $(this).parent('li').siblings().find('.search').slideUp();
     })
-
     // fast_btn 快捷列
     $('.fast_btn').click(function() {
         $('.fastbtn_blcok').toggleClass('open');

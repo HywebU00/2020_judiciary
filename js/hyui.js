@@ -794,6 +794,14 @@ $(function() {
         $(this).addClass('active');
     });
     /*-----------------------------------*/
+    /////////////// lazyload  /////////////
+    /*-----------------------------------*/
+    // cp_photo
+    $('.Slider-for').on('init reInit afterChange', function(event, slick, currentSlide) {
+      var i = (currentSlide ? currentSlide : 0) + 1;
+      $('.controls').html(i + '/' + slick.slideCount);
+    });
+    /*-----------------------------------*/
     /////////// 無障礙快捷鍵盤組合  //////////
     /*-----------------------------------*/
     $(document).on('keydown', function(e) {
