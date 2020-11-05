@@ -86,7 +86,7 @@
             display: flex;
             flex-wrap: wrap;
             @include li-reset;
-            font-size: 1.25em;
+            
 
             li {
                 flex:none;
@@ -94,6 +94,7 @@
                 margin:0 .5% 30px;
                 @include box-sizing;
                 letter-spacing: 0.1em;
+                font-size: 1.125em;
 
                 a {
                     line-height: 1.5;
@@ -112,7 +113,7 @@
                     
                     margin: 0;
                     padding:0 1em 0 0;  
-                    font-size: 0.938em;                
+                                
                     @include screen('mobile') {
                         width: auto;
                     }
@@ -120,6 +121,7 @@
                         display: 0 0 100%;
                           margin-bottom:0;
                           letter-spacing: 0.05em;
+                          font-size: 0.875em;    
                         a {
                             display: block;
                             @include aSetting_nocolor;
