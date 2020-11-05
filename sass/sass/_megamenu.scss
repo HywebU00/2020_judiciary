@@ -35,13 +35,10 @@
                 background-image: $megamenu_line;
                 background-repeat: no-repeat;
                 background-position: left center;
-                
             }
             &:first-child {
                 >a {
-                    &:before {
-                        background-image: none;
-                    }
+                    background-image: none;
                 }
             }
             &.hasChild {
@@ -91,11 +88,12 @@
                 display: block;
                 outline: none;
                 text-decoration: none;
+
             }
             .megamenu_2nd {
                 display: none;
                 overflow: visible;
-                background: rgba(0, 0, 0, .9);
+                background: $megamenu_2ndbgcolor;
                 border-radius: 3px;
                 width: 100%;
                 padding: 20px 10px;
@@ -136,7 +134,7 @@
                     }
                     a {
                         padding: .3em 1.2em;
-                        color: #FFF;
+                        color: $megamenu_2nd_acolor;
                         font-weight: normal;
                         @include box-sizing;
                         &:hover, &:focus {
