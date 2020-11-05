@@ -1,7 +1,7 @@
 .fatfooter {
     @include make-fatfooter($fatfooter-length, 100%);
     @extend %clearfix;
-    overflow: hidden;
+    
     padding-bottom: 1em;
     margin: 0 auto;
     background: $fatfooterBgColor;
@@ -13,7 +13,7 @@
         display: none;
     }
     .container {
-        overflow: hidden;
+       
         @include box-sizing;
         @include gutter;
     }
@@ -22,17 +22,17 @@
         font-size: .813em;
         display: block;
         width: 64px;
-        height: 64px;
+    height: 40px;
         color: #FFF;
         border: none;
         background: #e2e2e2;
         position: absolute;
-        right: 40px;
-        top:0;
+        right: 50%;
+    top: -22px;
         z-index: 9;
         text-indent: -9999px;
         border-radius:0;
-        margin:0;
+        margin: 0 -32px 0 0;
         padding:0.5em;
         &:before {
             content: "";
@@ -44,7 +44,7 @@
             border-bottom: none;
             transform: rotate(135deg);
             left: 50%;
-            top: 42%;;
+            top: 32%;
             margin-left: -5px;
             transition: .3s ease-out;
         }
@@ -86,7 +86,7 @@
             display: flex;
             flex-wrap: wrap;
             @include li-reset;
-            font-size: 0.938em;
+            font-size: 1.25em;
 
             li {
                 flex:none;
