@@ -609,6 +609,7 @@ $(function() {
                     // _tabItemNow.next().slideDown();
                     _tabItemNow.next().slideDown("0", function() {
                         $(".closepeople_slider").slick("setPosition", 0);
+                        $(".closepeople_slider2").slick("setPosition", 0);
                     });
                     $("html,body").stop(true, false).animate({ scrollTop: scollDistance });
                 } else {
@@ -618,6 +619,7 @@ $(function() {
                     _tabItem.not(".active").next().fadeOut();
                     _tabItemNow.next().fadeIn("0", function() {
                         $(".closepeople_slider").slick("setPosition", 0);
+                        $(".closepeople_slider2").slick("setPosition", 0);
                     });
                     tabContentHeight = _tabItemNow.next().innerHeight();
                     _tab.height(tabContentHeight + tabItemHeight);

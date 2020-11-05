@@ -231,6 +231,27 @@ $(function() {
             }
         }]
     });
+    // 司法親民
+    $('.closepeople_slider2').slick({
+        // mobileFirst: true,
+        dots: false,
+        infinite: true,
+        autoplaySpeed: 3000,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        arrow: true,
+        lazyLoaded: true,
+        lazyLoad: 'ondemand',
+        ease: 'ease',
+        responsive: [{
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            }
+        }]
+    });
     // 今日排定庭期
     $('.period_slider').slick({
         // mobileFirst: true,
