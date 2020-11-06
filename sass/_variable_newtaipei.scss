@@ -27,7 +27,9 @@ $form-btn: #21baff; //表單
 
 // 首內頁區塊顏色變數
 // header nav
-$headerbg:$primaryColor;
+$header_navbg:$primaryColor;
+$header_navhover:$lightColor;
+$header_navhovercolor:darken($primaryColor, 5);
 $LIVEbg:$lightColor;
 $LIVEcolor:darken($primaryColor, 5);
 $LIVEcolor_hover:lighten($lightColor, 10);

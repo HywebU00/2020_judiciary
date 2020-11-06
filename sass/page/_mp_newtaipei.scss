@@ -414,14 +414,14 @@
                     }
                 }
                 .slick-prev {
-                    top: 55%;
+                    top: 50%;
                     @include screen('mobile') {
                         top: 45%;
                         left: 2%;
                     }
                 }
                 .slick-next {
-                    top: 55%;
+                    top: 50%;
                     @include screen('mobile') {
                         top: 45%;
                         right: 2%;
@@ -1149,6 +1149,33 @@
                         right: 0;
                     }
                 }
+                
+                .more {
+                    margin-right: 12px;
+                }
+            }
+        }
+    }
+}
+// 司法親民 單一圖 
+.close_people_block2 {
+    background-image: $closepeoplebg;
+    background-repeat: no-repeat;
+    background-position: center top;
+    padding: 50px 0 80px !important;
+    @include screen('mobile') {
+        background-repeat: repeat-y;
+        background-position: left top;
+    }
+    .close_people {
+        h2 {
+            color: #fff;
+        }
+        .tabSet {
+            overflow: visible;
+            .tabs {}
+            .tabContent {
+                
                 .closepeople_slider2 {
                     margin-bottom: 15px;
                     .closepeople_list {
