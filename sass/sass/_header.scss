@@ -211,12 +211,12 @@
                                 height: 22px;
                                 vertical-align: middle;
                             }
-                            &:hover{
-                                img{
-                                    filter: invert(100%);
-                                }
+                            // &:hover{
+                            //     img{
+                            //         filter: invert(100%);
+                            //     }
                                 
-                            }
+                            // }
                             &:before {
                                 content: '';
                                 width: 1px;
