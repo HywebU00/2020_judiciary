@@ -198,27 +198,29 @@ footer {
         .footer_logo {
             flex: none;
             flex-basis: 200px;
-            background-image: $logo;
-            background-repeat: no-repeat;
-            background-position: left top;
-            background-size: 200px 50px;
             width: 200px;
             height: 50px;
             img {
-                display: none;
+               width: 200px;
             }
             @include screen('tablet') {
                 flex-basis: 100%;
                 margin-bottom: 20px;
                 width: 100%;
+               
             }
             @include screen('mobile') {
                 order: 0;
-                background-position: center top;
+                text-align: center;
             }
         }
         .footer_info {
             flex: auto;
+            
+            @include screen('tablet'){
+               flex: none;
+                flex-basis: calc( 100% - 148px);
+            }
             @include screen('mobile') {
                 flex-basis: 100%;
                 width: 100%;
@@ -256,6 +258,9 @@ footer {
         li {
             flex: 0 1 auto;
             margin: 0px 5px 5px;
+            @include screen('tablet'){
+                 margin: 0px 3px 5px;
+            }
             @include screen('xs_mobile') {
                 flex: none;
                 flex-basis: 48%;

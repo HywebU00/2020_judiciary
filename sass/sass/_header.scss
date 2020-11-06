@@ -105,14 +105,12 @@
         float: left;
         @include box-sizing;
         a {
-            display: inline-block;
-            background-image: $logo;
-            background-repeat: no-repeat;
-            background-position: left top;
+            display: block;
+            
             width: 272px;
             height: 64px;
             img {
-                display: none;
+               width: 100%;;
             }
         }
         @include screen('tablet') {
@@ -125,7 +123,10 @@
                 background-position: left 5px;
                 margin: 0px auto;
                 background-size: 100%;
-                width: 220px;
+                width: 215px;
+                img{
+                    margin-top:6px;
+                }
             }
         }
     }
