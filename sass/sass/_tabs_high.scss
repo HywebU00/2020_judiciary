@@ -114,9 +114,9 @@
         margin: 5px 0px 20px;
         li {
             margin: 0;
-            padding: 15px 0;
+            padding: 12px 0;
             line-height: 1.3;
-            border-bottom: 1px #CCC solid;
+            // border-bottom: 1px #CCC solid;
             display: flex;
             @include screen('mobile') {
                 @include text-overflow();
