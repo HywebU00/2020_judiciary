@@ -27,6 +27,10 @@
         &>.tabItem {
             &.active>a {
                 color: $primaryColor;
+                @include screen('mobile') {
+                    background-color: $color-yellow;
+                    color:$primaryColor;
+                }
                 &:before {
                     content: '';
                     width: 100%;
@@ -72,6 +76,7 @@
                 @include box-sizing;
                 @include screen('mobile') {
                     background-color: $primaryColor;
+                    color:#fff;
                 }
                 &:hover {
                     color: $primaryColor;
@@ -149,23 +154,26 @@
         }
         &>.tabItem {
             &.active>a {
-                background-color: $lightColor;
-                color: darken($primaryColor, 10);
+                background-color: #f24d45;
+                color: #fff;
                 position: relative;
                 overflow: inherit;
                 &:after {
                     content: "";
                     border-style: solid;
                     border-width: 10px;
-                    border-color: transparent transparent transparent $lightColor;
+                    border-color: transparent transparent transparent #f24d45;
                     position: absolute;
                     right: -20px;
                     top: 50%;
                     margin-top: -10px;
+                     @include screen('mobile'){
+                        display:none;
+                    }
                 }
                 &:hover {
-                    background-color: $lightColor;
-                    color: darken($primaryColor, 10);
+                    background-color: #f24d45;
+                    color:#fff;
                 }
             }
             float: none;
@@ -201,8 +209,8 @@
                     background-color: darken($primaryColor, 20);
                 }
                 &:focus {
-                    background-color: $lightColor;
-                    color: darken($primaryColor, 10);
+                    background-color:#f24d45;
+                    color: #fff;
                     box-shadow: none;
                 }
             }

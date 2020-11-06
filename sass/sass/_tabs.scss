@@ -140,6 +140,9 @@
                     right: -20px;
                     top: 50%;
                     margin-top: -10px;
+                     @include screen('mobile'){
+                        display:none;
+                    }
                 }
                 &:hover {
                     background-color: $lightColor;

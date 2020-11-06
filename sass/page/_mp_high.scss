@@ -956,6 +956,7 @@
             z-index: 9;
             display: block;
             text-align: left;
+            text-shadow: 0 0 5px #fff, 0 0 5px #fff, 0 0 5px #fff;
             &:after, &:before {
                 display: none;
             }
@@ -982,6 +983,9 @@
             @include screen('mobile') {
                 margin: 0px 30px;
             }
+            @media(max-width:500px){
+                 margin: 0px 10px;
+            }
             li {
                 flex: none;
                 flex-basis: 22%;
@@ -994,6 +998,14 @@
                     flex-basis: 22%;
                     margin: 0 1.5% 30px;
                 }
+                @media(max-width:660px){
+                    flex-basis: 31%;
+                    margin: 0 1.16% 30px;
+                }
+                 @media(max-width:500px){
+                    flex-basis: 48%;
+                    margin: 0 1% 30px;
+                }
                 a {
                     color: #333;
                     display: block;
@@ -1002,6 +1014,7 @@
                     transition: .5s;
                     position: relative;
                     height: 120px;
+                    
                     &:before {
                         content: '';
                         width: 78px;
@@ -1009,7 +1022,7 @@
                         background-color: $primaryColor;
                         border-radius: 50%;
                         position: absolute;
-                        top: 0;
+                        top: 0px;
                         right: 0;
                         left: 0;
                         margin: auto;
@@ -1019,17 +1032,21 @@
                     &:hover {
                         color: $primaryColor;
                         &:before {
-                            padding: 3px;
+                            width: 84px;
+                        height: 84px;
+                        top: -3px;
+                        background-color:#f1cc66;
                         }
-                        img {
-                            margin-top: 3px;
+                        img{
+                          filter: drop-shadow(2px 2px 2px #333);
                         }
+                        
                     }
                     img {
                         width: 78px;
                         height: 78px;
                         display: block;
-                        margin: 0 auto 10px;
+                        margin: 0px auto 15px;
                         position: relative;
                         z-index: 1;
                         transition: .5s;
@@ -1063,6 +1080,7 @@
     background-repeat: no-repeat;
     background-position: center top;
     background-size: 100%;
+     padding: 30px 0 50px!important;
     .summary_graph {
         .image {
             margin-bottom: 10px;
@@ -1333,7 +1351,7 @@
                 span {
                     display: block;
                     &.now {
-                        color: lighten($primaryColor, 40);
+                        color: #d3a8cc;
                     }
                     em {
                         font-style: normal;

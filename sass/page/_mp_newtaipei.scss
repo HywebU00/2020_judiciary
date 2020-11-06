@@ -975,14 +975,14 @@
                     padding: 10px 0 15px;
                     transition: .5s;
                     position: relative;
-                    font-weight:bolder;
+                    font-weight: bolder;
                     &:hover {
                         background-color: $lightColor;
                         border-radius: 3px;
                         color: $primaryColor;
                         img {
                             // filter: invert(100%);
-                            filter: drop-shadow(2px 2px 2px #333);
+                            filter: drop-shadow(2px 2px 0px #333);
                         }
                     }
                     &:before {
@@ -1149,7 +1149,6 @@
                         right: 0;
                     }
                 }
-                
                 .more {
                     margin-right: 12px;
                 }
@@ -1175,7 +1174,6 @@
             overflow: visible;
             .tabs {}
             .tabContent {
-                
                 .closepeople_slider2 {
                     margin-bottom: 15px;
                     .closepeople_list {
