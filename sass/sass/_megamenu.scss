@@ -136,6 +136,7 @@
                         padding: .3em 1.2em;
                         color: $megamenu_2nd_acolor;
                         font-weight: normal;
+                        font-weight:bolder;
                         @include box-sizing;
                         &:hover, &:focus {
                             color: $lightColor;
