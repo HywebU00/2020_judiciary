@@ -1,0 +1,211 @@
+.tabSet {
+    max-width: 100%;
+    margin: 1em auto 0;
+    overflow: hidden;
+    @extend %clearfix;
+    @include screen('mobile') {
+        width: auto;
+        height: auto !important;
+    }
+}
+.announcement, .pictab_block {
+    .tabs {
+        position: relative;
+        &:before {
+            content: '';
+            width: 100%;
+            height: 62px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1;
+            border-radius: 3px;
+            background: rgb(158, 107, 17);
+            background: linear-gradient(90deg, rgba(158, 107, 17, 1) 83%, rgba(251, 214, 112, 1) 100%);
+        }
+        &>.tabItem {
+            &.active>a {
+                background-color: #3e3321;
+                color:#fff;
+            }
+            display: inline-block;
+            // float: left;
+            margin: 0;
+            padding: 0;
+            font-size:1.125em;
+            line-height: 1;
+            // letter-spacing: 0.05em;
+            @include screen('mobile') {
+                display: block;
+                &>a {
+                    width: 100% !important;
+                    border-bottom: 1px solid #888;
+                }
+                &.active>a {
+                    border-color: #bbb;
+                }
+            }
+            &>a {
+                display: block;
+                padding: 25px 25px 19px;
+                text-align: center;
+                background-color: transparent;
+                color: #fff;
+                font-weight: bold;
+                text-decoration: none;
+                position: relative;
+                z-index: 2;
+                width: auto;
+                @include text-overflow;
+                @include box-sizing;
+                @include screen('mobile') {
+                    background-color: $primaryColor;
+                }
+                &:hover {
+                    background-color: #3e3321;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+.active+.tabContent {
+    display: block;
+}
+.tabContent {
+    position: absolute;
+    top: auto;
+    left: 0;
+    right: 0;
+    clear: both;
+    padding: 15px 0px 0;
+    display: none;
+    // background-color:#fff;
+    text-align: left;
+    @include screen('mobile') {
+        position: static;
+        text-align: center;
+    }
+    .tablist {
+        @include li-reset;
+        margin: 5px 0px 20px;
+        li {
+            margin: 0;
+            padding: 15px 0;
+            line-height: 1.3;
+            border-bottom: 1px #CCC solid;
+            display: flex;
+            @include screen('mobile') {
+                @include text-overflow();
+            }
+            a {
+                @include text-overflow;
+                width: calc(100% - 200px);
+                color: #000;
+                &:hover {
+                    color: $aHover;
+                }
+            }
+            time {
+                margin: 0;
+                color: #333;
+                width: 170px;
+                text-align: center;
+            }
+        }
+    }
+}
+.close_people {
+    .tabs {
+        position: relative;
+        &.closepeopletab {
+            height: 300px !important;
+            @include screen('mobile') {
+                height: auto !important;
+            }
+        }
+        &>.tabItem {
+            &.active>a {
+                background-color:#f9e7bc;
+                color: darken($primaryColor, 10);
+                position: relative;
+                overflow: inherit;
+                &:after {
+                    content: "";
+                    border-style: solid;
+                    border-width: 10px;
+                    border-color: transparent transparent transparent #f9e7bc;
+                    position: absolute;
+                    right: -20px;
+                    top: 50%;
+                    margin-top: -10px;
+                    @include screen('mobile') {
+                        display: none;
+                    }
+                }
+                &:hover {
+                    background-color: #f9e7bc;
+                    color: darken($primaryColor, 10);
+                }
+            }
+            float: none;
+            width:23% !important;
+            margin: 0 0 1px 0;
+            padding: 0;
+            font-size:1.063em;
+            line-height: 1;
+            top: auto !important;
+            right:auto !important;
+            @include screen('mobile') {
+                float: none;
+                width: 100% !important;
+                &>a {
+                    width: 100% !important;
+                    border-bottom: 1px solid #fff;
+                }
+                &.active>a {
+                    border-color: #bbb;
+                }
+            }
+            &>a {
+                display: block;
+                padding: 20px 0;
+                text-align: center;
+                background-color:rgba(0, 0, 0, .62);
+                color: #fff;
+                font-weight: bold;
+                text-decoration: none;
+                @include text-overflow;
+                @include box-sizing;
+                &:hover {
+                    background-color: rgba(0, 0, 0, .8);
+                }
+                &:focus {
+                    background-color: #f9e7bc;
+                    color: darken($primaryColor, 10);
+                    box-shadow: none;
+                }
+            }
+        }
+        .tabContent {
+            top: 0;
+            left: 28%;
+            padding: 0;
+            overflow: hidden;
+            @include screen('mobile') {
+                padding: 30px 0 0;
+            }
+        }
+    }
+}
+//多組 可設定差異
+// .example-2 {
+//     .tabItem>a:hover {
+//         background: $secondaryColor;
+//     }
+//     .tabItem.active>a {
+//         background: $secondaryColor;
+//     }
+// }
+// 顯示content

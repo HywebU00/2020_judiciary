@@ -311,7 +311,6 @@ $(function() {
         lazy: true
     });
     // 
-    
     // 
     $('.cppic_slider').slick({
         dots: true,
@@ -483,6 +482,13 @@ $(function() {
         $(this).siblings('.list_second').stop().slideToggle();
         $(this).parent('li').siblings().find('.search').slideUp();
     })
+    // 如果點在外面
+    $('.main').off().on('click touchend', function(e) {
+        $('.search').stop().slideUp();
+        $('.list_second').stop().slideUp();
+    });
+    
+    
     // fast_btn 快捷列
     $('.fast_btn').click(function() {
         $('.fastbtn_blcok').toggleClass('open');

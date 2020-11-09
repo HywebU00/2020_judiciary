@@ -1,0 +1,47 @@
+.main{
+    background-image: $announcement_bg;
+    background-repeat: repeat-y;
+    background-position: center top;
+}
+.header {
+    background: none;
+    background-image: $headerbg;
+    background-repeat: no-repeat;
+    background-position: center top;
+    @include screen('tablet'){
+        background-image:none;
+        background: rgb(253, 253, 253);
+    background: linear-gradient(180deg, rgba(253, 253, 253, 1) 45%, rgba(231, 232, 231, 1) 100%);
+    }
+    .navigation {
+        .navlist {
+            ul {
+                >li {
+                    a {
+                        &.casebtn01 {
+                            background: rgb(38, 72, 112);
+                            background: linear-gradient(180deg, rgba(38, 72, 112, 1) 0%, rgba(21, 48, 76, 1) 100%);
+                        }
+                        &.casebtn02 {
+                            background: rgb(117, 53, 60);
+                            background: linear-gradient(180deg, rgba(117, 53, 60, 1) 0%, rgba(90, 38, 45, 1) 100%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.megamenu {
+    margin: 0;
+    >ul {
+        border-radius: 0;
+    }
+    ul {
+        li {
+            .megamenu_2nd {
+                border-radius: 0;
+            }
+        }
+    }
+}

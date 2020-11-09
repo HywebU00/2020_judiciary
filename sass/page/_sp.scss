@@ -672,7 +672,7 @@
             transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
             &:after {
                 content: "";
-                background: $color-yellow url('../images/icon_more_.png') no-repeat center center;
+                background: $search_arrowbgcolor url('../images/icon_more_.png') no-repeat center center;
                 position: absolute;
                 right: 0;
                 top: 0;

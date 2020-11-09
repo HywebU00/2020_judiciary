@@ -810,7 +810,9 @@ $(function() {
         // alt+S 查詢
         if (e.altKey && e.keyCode == 83) {
             $('html, body').animate({ scrollTop: 0 }, 200, 'easeOutExpo');
-            $('.search').find('input[type="text"]').focus();
+            $('.navlist .search').slideDown();
+            $('.navlist .search').find('input[type="text"]').focus();
+            
         }
         // alt+U header
         if (e.altKey && e.keyCode == 85) {
@@ -819,12 +821,12 @@ $(function() {
         }
         // alt+C 主要內容區
         if (e.altKey && e.keyCode == 67) {
-            $('html, body').stop(true, true).animate({ scrollTop: $('.main').find('.accesskey').offset().top }, 800, 'easeOutExpo');
-            $('.main').find('.accesskey').focus();
+            $('html, body').stop(true, true).animate({ scrollTop: $('.main').find('.accesskey').offset().top - 70}, 800, 'easeOutExpo');
+            $('.main').find('.accesskey ').focus();
         }
-        // alt+B footer
+        // alt+Z footer
         if (e.altKey && e.keyCode == 90) {
-            $('html, body').stop(true, true).animate({ scrollTop: $('footer').find('.accesskey').offset().top }, 800, 'easeOutExpo');
+            $('html, body').stop(true, true).animate({ scrollTop: $('footer').find('.accesskey').offset().top - 100}, 800, 'easeOutExpo');
             $('footer').find('.accesskey').focus();
         }
     });

@@ -269,22 +269,22 @@
                             }
                         }
                         &.casebtn01 {
-                            background-color: $casebtn01;
+                            background: $casebtn01;
                             display: block;
                             margin-left: 7px;
                             border-radius: 3px;
                             &:hover {
-                                background-color: darken($casebtn01, 5);
+                                background-color: darken($casebtn01, 10);
                                 color:#fff;
                             }
                         }
                         &.casebtn02 {
-                            background-color: $casebtn02;
+                            background: $casebtn02;
                             display: block;
                             margin-left: 7px;
                             border-radius: 3px;
                             &:hover {
-                                background-color: darken($casebtn02, 5);
+                                background-color: darken($casebtn02, 10);
                                  color:#fff;
                             }
                         }
