@@ -19,7 +19,7 @@ $color-dark: #333333;
 $color-hr: #666; //hr顏色
 $color-word: #222; //一般字的顏色
 // 連結顏色
-$aColor: darken($primaryColor, 10);
+$aColor: darken($primaryColor, 5);
 $aHover: darken($secondaryColor, 10);
 // 表單focus顏色
 $form-focus: #21baff; //表單
@@ -46,10 +46,10 @@ $megamenu_hover:$color-yellow;
 $megamenu_2ndbgcolor: rgba(0, 0, 0, .9);
 $megamenu_2nd_acolor:#fff;	
 // 內頁左欄menu
-$left_title: #3870bb;
+$left_title: #3e3322;
 $first-active:#dbdbdb;
 $first-active-color:$primaryColor;
-$second_active:#0b7fa6;
+$second_active:#6c4c0d;
 $second_hover-color:$primaryColor;
 
 // np
@@ -64,7 +64,7 @@ $pagecolor:$primaryColor;
 // thumbnail
 $thumbnail_h3:$primaryColor;
 // document
-$search_btn: darken($primaryColor, 10);
+$search_btn: $primaryColor;
 //箭頭底色
 $search_arrowbgcolor:$color-yellow;
 
@@ -82,6 +82,7 @@ $slickdots-active:#4d3f20;
 // footer
 $footer_connection: url('../images/property/footer_connection_bg.jpg');
 $footer_link:darken($primaryColor, 15);
+$footer_accesskey_color:#f6d06b;
 
 // template
 $morebg: $primaryColor;

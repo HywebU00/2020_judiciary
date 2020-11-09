@@ -15,7 +15,10 @@ footer {
         }
     }
     .accesskey {
-        color: darken($primaryColor, 5);
+        color: $footer_accesskey_color;
+        &:hover, &:focus{
+            color:#fff;
+        }
     }
     .footer_connection {
         padding: 35px 7em;

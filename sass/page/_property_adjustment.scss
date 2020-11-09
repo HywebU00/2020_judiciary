@@ -3,6 +3,12 @@
     background-repeat: repeat-y;
     background-position: center top;
 }
+.innerpage { background-image: none;}
+.npbg {
+    background-image: url('../images/npbg.png');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
 .header {
     background: none;
     background-image: $headerbg;
@@ -12,6 +18,9 @@
         background-image: none;
         background: rgb(253, 253, 253);
         background: linear-gradient(180deg, rgba(253, 253, 253, 1) 45%, rgba(231, 232, 231, 1) 100%);
+    }
+    .accesskey{
+        color:#d3a826;
     }
     .navigation {
         .navlist {
