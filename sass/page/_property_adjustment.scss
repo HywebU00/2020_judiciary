@@ -1,4 +1,4 @@
-.main{
+.main {
     background-image: $announcement_bg;
     background-repeat: repeat-y;
     background-position: center top;
@@ -8,10 +8,10 @@
     background-image: $headerbg;
     background-repeat: no-repeat;
     background-position: center top;
-    @include screen('tablet'){
-        background-image:none;
+    @include screen('tablet') {
+        background-image: none;
         background: rgb(253, 253, 253);
-    background: linear-gradient(180deg, rgba(253, 253, 253, 1) 45%, rgba(231, 232, 231, 1) 100%);
+        background: linear-gradient(180deg, rgba(253, 253, 253, 1) 45%, rgba(231, 232, 231, 1) 100%);
     }
     .navigation {
         .navlist {

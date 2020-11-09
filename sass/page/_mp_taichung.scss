@@ -326,6 +326,10 @@
                 height: 100%;
                 min-height: 350px;
             }
+            p{
+                padding:0;
+                margin:0;
+            }
             iframe {
                 position: absolute;
                 top: 0;
@@ -1065,6 +1069,12 @@
     background-repeat: no-repeat;
     background-position: center top;
     padding: 50px 0 80px !important;
+    @include screen('tablet') {
+        padding: 50px 0 100px !important;
+    }
+    @media(max-width: 900px) {
+        padding: 50px 0 80px !important;
+    }
     @include screen('mobile') {
         background-repeat: repeat-y;
         background-position: left top;

@@ -40,10 +40,10 @@
                 display: block;
                 &>a {
                     width: 100% !important;
-                    border-bottom: 1px solid #888;
+                    border-bottom: 1px solid #f7f3ee;
                 }
                 &.active>a {
-                    border-color: #bbb;
+                    border-color: #f7f3ee;
                 }
             }
             &>a {
@@ -60,7 +60,7 @@
                 @include text-overflow;
                 @include box-sizing;
                 @include screen('mobile') {
-                    background-color: $primaryColor;
+                    background-color:$secondaryColor;
                 }
                 &:hover {
                     background-color: #3e3321;
