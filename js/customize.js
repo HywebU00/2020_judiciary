@@ -482,7 +482,6 @@ $(function() {
         $(this).siblings('.list_second').stop().slideToggle();
         $(this).parent('li').siblings().find('.search').slideUp();
     })
-   
     // 點外面關閉
     $(document).on('touchend click', function(e) {
         var container = $(".header .navigation .navlist ul li a.searchbtn ,.header .navigation .navlist ul li a.emailbtn");
@@ -490,7 +489,6 @@ $(function() {
             $('.header .navigation .navlist ul li .list_second ,.header .navigation .navlist ul li .search').slideUp();
         }
     });
-    
     // fast_btn 快捷列
     $('.fast_btn').click(function() {
         $('.fastbtn_blcok').toggleClass('open');
@@ -578,73 +576,68 @@ $(function() {
         $(this).parents('.mpvideo').hide();
     })
 })
-
 // 高等柱狀圖
-$(function(){
-                            var chart = {
-      type: 'column'
-   };
-   var title = {
-       text: '移付調解事件調解成立件數'   
-   };
-   var subtitle = {
-      text: '99-109年度'  
-   };
-   var xAxis = {
-      categories:  ['105年','106年','107年','108年','109年1-9月'],
-      crosshair: true
-   };
-   var yAxis = {
-      min: 0,
-      title: {
-         text: '件數'         
-      }      
-   };
-   var tooltip = {
-      
-       formatter: function () {
-         return '<b>' + this.x + '</b><br/>' +
-         Highcharts.numberFormat(this.point.y,0,".",",")+ '件';
-      }
-       
-   };
-   var plotOptions = {
-      column: {
-         pointPadding: 0.2,
-         borderWidth: 0
-      },
-        series: {
-                borderWidth: 0,
-                dataLabels: {
-                    enabled: true,
-                    format: '{point.y:.0f}'
-                }
-            }
-   };  
-   var credits = {
-      enabled: false
-   };
-    var legend = {
-      enabled: false
-   };  
-   var exporting = {
-      enabled: false
-   };
-   var series= [{
-        data: [468, 515, 701, 840, {y: 565, color:"#00a39b"}]
-        }];     
-      
-   var json = {};   
-   json.chart = chart; 
-   json.title = title;   
-   json.subtitle = subtitle; 
-   json.tooltip = tooltip;
-   json.xAxis = xAxis;
-   json.yAxis = yAxis;  
-   json.series = series;
-    json.legend = legend; 
-   json.plotOptions = plotOptions;  
-   json.credits = credits;
- json.exporting = exporting;
-   $('#container').highcharts(json);
-                           })
+// $(function() {
+//     var chart = {
+//         type: 'column'
+//     };
+//     var title = {
+//         text: '移付調解事件調解成立件數'
+//     };
+//     var subtitle = {
+//         text: '99-109年度'
+//     };
+//     var xAxis = {
+//         categories: ['105年', '106年', '107年', '108年', '109年1-9月'],
+//         crosshair: true
+//     };
+//     var yAxis = {
+//         min: 0,
+//         title: {
+//             text: '件數'
+//         }
+//     };
+//     var tooltip = {
+//         formatter: function() {
+//             return '<b>' + this.x + '</b><br/>' + Highcharts.numberFormat(this.point.y, 0, ".", ",") + '件';
+//         }
+//     };
+//     var plotOptions = {
+//         column: {
+//             pointPadding: 0.2,
+//             borderWidth: 0
+//         },
+//         series: {
+//             borderWidth: 0,
+//             dataLabels: {
+//                 enabled: true,
+//                 format: '{point.y:.0f}'
+//             }
+//         }
+//     };
+//     var credits = {
+//         enabled: false
+//     };
+//     var legend = {
+//         enabled: false
+//     };
+//     var exporting = {
+//         enabled: false
+//     };
+//     var series = [{
+//         data: [468, 515, 701, 840, { y: 565, color: "#00a39b" }]
+//     }];
+//     var json = {};
+//     json.chart = chart;
+//     json.title = title;
+//     json.subtitle = subtitle;
+//     json.tooltip = tooltip;
+//     json.xAxis = xAxis;
+//     json.yAxis = yAxis;
+//     json.series = series;
+//     json.legend = legend;
+//     json.plotOptions = plotOptions;
+//     json.credits = credits;
+//     json.exporting = exporting;
+//     $('#container').highcharts(json);
+// })
