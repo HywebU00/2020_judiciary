@@ -539,7 +539,7 @@
                         height: 64px;
                         background-color: lighten($primaryColor, 50);
                         position: relative;
-                        margin-right: 15px;
+                        // margin-right: 15px;
                         img {
                             position: absolute;
                             top: 0;
@@ -549,6 +549,19 @@
                             width: 50px;
                             height: 50px;
                             margin: auto;
+                        }
+                    }
+                    span{
+                        word-break: normal;
+                        width: 172px;
+                        text-align: center;
+                        margin-right: 8px;
+                        padding:0 10px;
+                        @include box-sizing;
+                        @include screen('tablet'){
+                            width: auto;
+                            text-align: left;
+                            padding:0 15px
                         }
                     }
                 }
