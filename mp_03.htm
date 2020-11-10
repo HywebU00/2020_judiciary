@@ -670,9 +670,71 @@
                 <div class="container">
                     <div class="mediation">
                         <h2><span>Mediation</span>移付調解事件調解成立件數</h2>
-                        <div class="data">
-                            圖片只是暫時的，換成資料即可<img src="images/mediation_pic01.png" alt=""></div>
-                        
+                        <!-- <div class="data">
+                            圖片只是暫時的，換成資料即可<img src="images/mediation_pic01.png" alt=""></div> -->
+                        <div class="chart6">
+                            <div class="chart"></div>
+                        </div>
+                        <script type="text/javascript">
+                        $(function() {
+                            $('.chart6 .chart').highcharts({
+                                exporting: {
+                                    enabled: false
+                                },
+                                credits: {
+                                    enabled: false
+                                },
+                                chart: {
+                                    type: 'column',
+                                    backgroundColor: 'rgba(255, 255, 255, 0.1)'
+                                },
+                                title: {
+                                    text: '原鄉離島公費生養成身份與籍屬'
+                                },
+                                subtitle: {
+                                    text: '107年2-11月'
+                                },
+                                xAxis: {
+                                    categories: ['醫師', '牙醫師', '護理人員', '其他']
+                                },
+                                yAxis: {
+                                    min: 0,
+                                    title: {
+                                        text: '件數'
+                                    },
+                                    stackLabels: {
+                                        enabled: true,
+                                    }
+                                },
+                                tooltip: {
+                                    formatter: function() {
+                                        return '<b>' + this.x + '</b><br/>' + this.series.name + ': ' + this.y + ' 件<br/>' + '總數: ' + this.point.stackTotal + ' 件';
+                                    }
+                                },
+                                plotOptions: {
+                                    column: {
+                                        stacking: 'normal',
+                                        dataLabels: {
+                                            enabled: true,
+                                            color: (Highcharts.theme && Highcharts.theme.dataLabelsColor) || 'white',
+                                            style: {
+                                                textShadow: '0 0 3px black'
+                                            }
+                                        }
+                                    }
+                                },
+                                series: [{
+                                    name: '籍屬原住民',
+                                    data: [253, 35, 84, 68],
+                                    color: "#ff6633"
+                                }, {
+                                    name: '籍屬離島地區',
+                                    data: [258, 39, 167, 45],
+                                    color: "#b04fad"
+                                }]
+                            });
+                        })
+                        </script>
                     </div>
                 </div>
             </section>
