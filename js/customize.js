@@ -581,62 +581,70 @@ $(function() {
 
 // 高等柱狀圖
 $(function(){
-     $('.chart6 .chart').highcharts({
-      exporting: { 
-        enabled: false
-      },
-      credits: {
-        enabled: false
-      },
-      chart: {
-        type: 'column',
-        backgroundColor:'rgba(255, 255, 255, 0.1)'            
-      },
+     var chart = {
+      type: 'column'
+   };
+   var title = {
+       text: '移付調解事件調解成立件數'   
+   };
+   var subtitle = {
+      text: '99-109年度'  
+   };
+   var xAxis = {
+      categories:  ['105年','106年','107年','108年','109年1-9月'],
+      crosshair: true
+   };
+   var yAxis = {
+      min: 0,
       title: {
-        text: '原鄉離島公費生養成身份與籍屬'
+         text: '件數'         
+      }      
+   };
+   var tooltip = {
+      
+       formatter: function () {
+         return '<b>' + this.x + '</b><br/>' +
+         Highcharts.numberFormat(this.point.y,0,".",",")+ '件';
+      }
+       
+   };
+   var plotOptions = {
+      column: {
+         pointPadding: 0.2,
+         borderWidth: 0
       },
-      subtitle: {
-        text: '107年2-11月'
-      },
-      xAxis: {
-        categories: ['醫師','牙醫師','護理人員','其他' ]
-      },
-      yAxis: {
-        min: 0,
-        title: {
-          text: '件數'
-        },
-        stackLabels: {
-          enabled: true,
-        }
-      },       
-      tooltip: {
-        formatter: function () {
-          return '<b>' + this.x + '</b><br/>' +
-          this.series.name + ': ' + this.y + ' 件<br/>' +
-          '總數: ' + this.point.stackTotal + ' 件';
-        }
-      },
-      plotOptions: {
-        column: {
-          stacking: 'normal',
-          dataLabels: {
-            enabled: true,
-            color: (Highcharts.theme && Highcharts.theme.dataLabelsColor) || 'white',
-            style: {
-              textShadow: '0 0 3px black'
+        series: {
+                borderWidth: 0,
+                dataLabels: {
+                    enabled: true,
+                    format: '{point.y:.0f}'
+                }
             }
-          }
-        }
-      },
-      series: [{
-        name: '籍屬原住民',
-        data: [253, 35, 84, 68],
-        color:"#ff6633"
-      }, {
-        name: '籍屬離島地區',
-        data: [258, 39, 167, 45],
-        color:"#b04fad"
-      }]
-    });
+   };  
+   var credits = {
+      enabled: false
+   };
+    var legend = {
+      enabled: false
+   };  
+   var exporting = {
+      enabled: false
+   };
+   var series= [{
+        data: [468, 515, 701, 840, {y: 565, color:"#00a39b"}]
+        }];     
+      
+   var json = {};   
+   json.chart = chart; 
+   json.title = title;   
+   json.subtitle = subtitle; 
+   json.tooltip = tooltip;
+   json.xAxis = xAxis;
+   json.yAxis = yAxis;  
+   json.series = series;
+    json.legend = legend; 
+   json.plotOptions = plotOptions;  
+   json.credits = credits;
+ json.exporting = exporting;
+   $('#container').highcharts(json);
 })
