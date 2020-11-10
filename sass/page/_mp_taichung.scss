@@ -711,6 +711,14 @@
                             border-left: 3px solid $primaryColor;
                             padding-left: 15px;
                             display: block;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            line-height: 1.5em;
+                            display: -webkit-box;
+                            -webkit-line-clamp: 2;
+                            -webkit-box-orient: vertical;
+                            text-align: left;
+                            height: 50px;
                         }
                     }
                 }
