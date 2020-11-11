@@ -13,7 +13,6 @@
         padding: 0;
         list-style-type: none;
         display: flex;
-        
         border-radius: 3px;
         background: $megamenu;
         background: $megamenulinear;
@@ -88,7 +87,6 @@
                 display: block;
                 outline: none;
                 text-decoration: none;
-
             }
             .megamenu_2nd {
                 display: none;
@@ -136,7 +134,7 @@
                         padding: .3em 1.2em;
                         color: $megamenu_2nd_acolor;
                         font-weight: normal;
-                        font-weight:bolder;
+                        font-weight: bolder;
                         @include box-sizing;
                         &:hover, &:focus {
                             color: $lightColor;
@@ -262,6 +260,7 @@
             }
             ul {
                 display: flex;
+                flex-wrap: wrap;
                 li {
                     flex: 1 1 100%;
                     flex-basis: 100%;
