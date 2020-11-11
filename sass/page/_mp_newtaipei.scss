@@ -904,12 +904,11 @@
         // text-align: left !important;
     }
     .service {
-        // background: rgb(15, 96, 182);
-        // background: linear-gradient(90deg, rgba(15, 96, 182, 1) 0%, rgba(69, 120, 173, 1) 100%);
         margin-left: 30%;
         position: relative;
         overflow: hidden;
         border-radius: 3px 0 0 3px;
+        padding-bottom: 30px;
         &:before {
             content: '';
             background: rgb(15, 96, 182);
@@ -1041,7 +1040,7 @@
         }
         .more {
             margin-right: 90px;
-            margin-bottom: 30px;
+            margin-bottom: 0;
             position: relative;
             z-index: 9;
             @include screen('tablet') {

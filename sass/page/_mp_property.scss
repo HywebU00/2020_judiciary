@@ -909,6 +909,7 @@
     // background-image: $service_blockbg;
     // background-repeat: no-repeat;
     // background-position: left center;
+        padding: 50px 0 60px !important;
     @include screen('mobile') {
         background-image: none;
     }
@@ -1001,7 +1002,7 @@
         }
         .more {
             margin-right: 90px;
-            margin-bottom: 30px;
+            margin-bottom: 0;
             position: relative;
             z-index: 9;
             @include screen('tablet') {

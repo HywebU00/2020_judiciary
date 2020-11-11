@@ -951,6 +951,7 @@
     background-color: #e0b600;
     background-repeat: no-repeat;
     background-position: center top;
+    padding:50px 0 !important;
     .container {
         padding: 0 !important;
         // text-align: left !important;
@@ -1033,7 +1034,7 @@
         }
         .more {
             margin-right: 90px;
-            margin-bottom: 30px;
+            margin-bottom:0;
             position: relative;
             z-index: 9;
             @include screen('tablet') {
