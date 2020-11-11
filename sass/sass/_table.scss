@@ -14,11 +14,11 @@ table {
         padding: .5em;
         text-align: left;
     }
-    // tr {
-    //     &:nth-child(even) {
-    //         background: #F5F5F5;
-    //     }
-    // }
+    tr {
+        &:nth-child(even) {
+            background: #F5F5F5;
+        }
+    }
     th {
         background-color: $tableth;
         color: $tableth_color;
@@ -154,6 +154,13 @@ table {
                 font-weight: bold;
                 color: #000;
             }
+        }
+    }
+}
+.table_thleft{
+    @include screen('xs_mobile'){
+        th,td{
+            display: block;
         }
     }
 }

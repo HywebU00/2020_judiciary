@@ -114,6 +114,13 @@
             }
         }
     }
+    table {
+        tr {
+            &:nth-child(even) {
+                background: transparent;
+            }
+        }
+    }
 }
 .close_people {
     .tabs {

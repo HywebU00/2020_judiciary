@@ -115,6 +115,13 @@
             }
         }
     }
+    table {
+        tr {
+            &:nth-child(even) {
+                background: transparent;
+            }
+        }
+    }
 }
 .close_people {
     .tabs {
@@ -140,8 +147,8 @@
                     right: -20px;
                     top: 50%;
                     margin-top: -10px;
-                     @include screen('mobile'){
-                        display:none;
+                    @include screen('mobile') {
+                        display: none;
                     }
                 }
                 &:hover {
