@@ -6,7 +6,7 @@ $primaryColor: #722962; //主色
 $secondaryColor: #813e46; //輔色
 $lightColor: #f7dc58; //點綴
 $linkColor: #21baff; //連結
-$importantColor: #f24d45; //重要
+$importantColor: #db190f; //重要
 // 但注意真實顏色與語意的關聯必須易於辨識
 $color-blue: #21baff;
 $color-green: #099;
@@ -28,14 +28,14 @@ $form-btn: #21baff; //表單
 // 首內頁區塊顏色變數
 // header nav
 $header_navbg:$primaryColor;
-$header_navhover:darken($secondaryColor, 5);
+$header_navhover:$importantColor;
 $header_navhovercolor:#fff;
-$LIVEbg:#f24d45;
+$LIVEbg:$importantColor;
 $LIVEcolor:#fff;
-$LIVEcolor_hover:darken(#f24d45, 10);
+$LIVEcolor_hover:darken($importantColor, 5);
 $LIVEcolor_focus:darken($primaryColor, 5);
 $LIVEcolor_before:#fff;
-$LIVEcolor_after:#f24d45;
+$LIVEcolor_after:$importantColor;
 $casebtn01: #4f772d;
 $casebtn02:#895737;
 
