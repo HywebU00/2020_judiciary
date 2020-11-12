@@ -125,6 +125,10 @@ h1.title, h2.title {
     }
     a {
         @include aSetting;
+        color:$cp_acolor;
+        &:hover{
+           color:$color-red; 
+        }
     }
     .info {
         font-size: 0.938em;
