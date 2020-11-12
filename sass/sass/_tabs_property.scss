@@ -63,8 +63,11 @@
                     background-color:$secondaryColor;
                 }
                 &:hover {
-                    background-color: #3e3321;
-                    color: #fff;
+                    background-color:darken($secondaryColor, 6);
+                    color:#fff;
+                }
+                &:focus{
+                    box-shadow:none;
                 }
             }
         }

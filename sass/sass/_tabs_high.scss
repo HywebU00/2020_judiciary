@@ -93,6 +93,9 @@
                         background-color: $color-yellow;
                     }
                 }
+                &:focus{
+                    box-shadow:none;
+                }
             }
         }
     }

@@ -63,8 +63,11 @@
                     background-color: $primaryColor;
                 }
                 &:hover {
-                    background-color: $lightColor;
-                    color: darken($primaryColor, 10);
+                    background-color:darken($primaryColor, 10);
+                    color:#fff;
+                }
+                &:focus{
+                    box-shadow:none;
                 }
             }
         }

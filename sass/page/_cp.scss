@@ -23,6 +23,24 @@ h1.title, h2.title {
     @include screen('mobile') {
         margin-top: 0;
     }
+    h2 {
+        font-size: 1.5em !important;
+        line-height: 1.33333em !important;
+        color: #000;
+        background-image: none;
+        margin: 0;
+        padding: 0;
+        letter-spacing: 0;
+        font-weight: bold;
+        font-family: Lato, "PingFang TC", "Helvetica Neue", Helvetica, 微軟正黑體, Arial, sans-serif;
+        &:before {
+            display: none;
+        }
+        &:after {
+            display: none;
+        }
+    }
+
     .author {
         overflow: hidden;
         margin: .3em 0;
@@ -125,9 +143,9 @@ h1.title, h2.title {
     }
     a {
         @include aSetting;
-        color:$cp_acolor;
-        &:hover{
-           color:$color-red; 
+        color: $cp_acolor;
+        &:hover {
+            color: $color-red;
         }
     }
     .info {
