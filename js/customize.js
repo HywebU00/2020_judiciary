@@ -383,7 +383,7 @@ $(function() {
         speed: 300,
         slidesToShow: 4,
         slidesToScroll: 1,
-        autoplay: false,
+        autoplay: true,
         arrow: true,
         lazyLoaded: true,
         lazyLoad: 'ondemand',
