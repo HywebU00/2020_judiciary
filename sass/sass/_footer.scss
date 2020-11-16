@@ -114,7 +114,7 @@ footer {
                     @include box-sizing;
                     @include screen('mobile') {
                         flex-basis: 100%;
-                        max-width: 100%;
+                        width: 100%;
                         &:before {
                             display: none;
                         }
