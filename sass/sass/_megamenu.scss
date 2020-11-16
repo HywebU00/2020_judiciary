@@ -135,9 +135,11 @@
                         color: $megamenu_2nd_acolor;
                         font-weight: normal;
                         font-weight: bolder;
+                        border-radius:3px;
                         @include box-sizing;
                         &:hover, &:focus {
-                            color: $lightColor;
+                            color: $megamenu_2nd_ahovercolor;
+                            background-color:$megamenu_2nd_ahoverbg;
                         }
                     }
                 }

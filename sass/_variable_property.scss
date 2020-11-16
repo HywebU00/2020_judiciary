@@ -45,6 +45,9 @@ $megamenulinear:rgba(9, 9, 8, .68);
 $megamenu_hover:$color-yellow;
 $megamenu_2ndbgcolor: rgba(0, 0, 0, .9);
 $megamenu_2nd_acolor:#fff;	
+$megamenu_2nd_ahovercolor:$lightColor;
+$megamenu_2nd_ahoverbg:transparent;
+
 // 內頁左欄menu
 $left_title: #3e3322;
 $first-active:#dbdbdb;
@@ -72,6 +75,9 @@ $search_arrowbgcolor:$color-yellow;
 $block_title_color:$primaryColor;
 $info_leftborder:$primaryColor;
 $cp_acolor:$secondaryColor;
+
+// sp
+$question_leftcolorbg:$primaryColor;
 
 // sitemap
 $sitemap_color:darken($primaryColor, 10);

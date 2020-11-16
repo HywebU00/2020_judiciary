@@ -547,10 +547,10 @@ $(function() {
     $('.qa_list>ul>li,.meeting_list>ul>li').each(function() {
         $(this).find('.answer').hide();
         var _qaItem = $(this).children('.question').children('a');
-        var _scrollTop = $(this).offset().top - 55;
+        var _scrollTop = $(this).offset().top - 310;
         _qaItem.each(function() {
             function qa(e) {
-                $('html, body').stop(true, true).animate({ scrollTop: _scrollTop }, 800, 'easeOutExpo');
+                $('html, body').stop(true, true).animate({ scrollTop: _scrollTop }, 100, 'easeOutExpo');
                 $(this).parents('li').siblings().children('.question').children('a').removeClass('active');
                 $(this).toggleClass('active');
                 $(this).parents('li').siblings().children('.answer').slideUp();
