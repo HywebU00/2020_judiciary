@@ -73,10 +73,10 @@
             a {
                 word-wrap: break-word;
             }
-            a[href^="http"]:after {
-                content: " ("attr(href) ")";
-                font-size: 90%;
-            }
+            // a[href^="http"]:after {
+            //     content: " ("attr(href) ")";
+            //     font-size: 90%;
+            // }
             a[href^="#"]:after {
                 display: none;
             }
