@@ -547,10 +547,11 @@ $(function() {
     $('.qa_list>ul>li,.meeting_list>ul>li').each(function() {
         $(this).find('.answer').hide();
         var _qaItem = $(this).children('.question').children('a');
-        var _scrollTop = $(this).offset().top - 300;
+        var _scrollTop = Math.floor($(this).offset().top - 150);
         _qaItem.each(function() {
             function qa(e) {
                 $('html, body').stop(true, true).animate({ scrollTop: _scrollTop }, 100, 'easeOutExpo');
+                console.log(_scrollTop);
                 $(this).parents('li').siblings().children('.question').children('a').removeClass('active');
                 $(this).toggleClass('active');
                 $(this).parents('li').siblings().children('.answer').slideUp();
@@ -576,3 +577,8 @@ $(function() {
         $(this).parents('.mpvideo').hide();
     })
 })
+// 
+$(document).on('click', 'a[href^="#"]', function (event) {
+    event.preventDefault();
+    $('html, body').stop().animate({scrollTop: $($.attr(this, 'href')).offset().top - 85},50, 'easeOutExpo');
+});

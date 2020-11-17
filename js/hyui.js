@@ -323,7 +323,7 @@ $(function() {
             if (ww >= wwSmall && $(this).scrollTop() > 0) {
                 $('.header').addClass('fixed');
                 $('.header').css('margin-top', -1 * customHeight);
-                // $('.main').css('margin-top', headerHeight);
+                // $('.main').css('margin-top', 195 );
                 // $('.main').css('margin-top', 0);
             } else {
                 $('.header').removeClass('fixed');
@@ -342,7 +342,7 @@ $(function() {
             if (ww >= wwMedium && $(this).scrollTop() > stickyMenuTop2) {
                 $('.header').addClass('fixed');
                 $('.header').css('margin-top', -1 * customHeight);
-                // $('.main').css('margin-top', headerHeight);
+                $('.main').css('margin-top', 159);
                 // $('.main').css('margin-top', 0);
             } else {
                 $('.header').removeClass('fixed');
@@ -860,7 +860,7 @@ $(function() {
     $('a.goCenter').keydown(function(e) {
         if (e.which == 13) {
             $('#aC').focus();
-            $('html, body').stop(true, true).animate({ scrollTop: $('.main').find('.accesskey').offset().top }, 800, 'easeOutExpo');
+            $('html, body').stop(true, true).animate({ scrollTop: $('.main').find('.accesskey').offset().top}, 800, 'easeOutExpo');
         }
     });
     /*-----------------------------------*/
