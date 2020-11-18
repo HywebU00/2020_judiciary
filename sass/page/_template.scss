@@ -229,7 +229,7 @@ body {
         max-width: 100%;
         overflow: hidden;
         a {
-            &.doc, &.odf, &.odt, &.ods, &.pdf, &.xls, &.ppt, &.ppt, &.jpg, &.mp3, &.mov, &.txt, &.dot, &.zip, &.sevenz, &.other, &.verdict, &.searchcontent {
+            &.doc, &.docx, &.odf, &.xml, &.odt, &.ods, &.pdf, &.epub, &.xls, &.xlsx, &.csv, &.ppt, &.ppt, &.pptx, &.odp, &.jpg, &.tif, &.mp3, &.mp4, &.wma, &.wmv, &.avi, &.mov, &.txt, &.dot, &.zip, &.sevenz, &.other, &.verdict, &.searchcontent {
                 width: 21px;
                 height: 24px;
                 display: inline-block;
@@ -241,6 +241,12 @@ body {
             }
             &.doc {
                 background: url(../images/basic/icon_doc.jpg);
+            }
+            &.docx {
+                background: url(../images/basic/icon_docx.jpg);
+            }
+            &.xml {
+                background: url(../images/basic/icon_xml.jpg);
             }
             &.odf {
                 background: url(../images/basic/icon_odf.jpg);
@@ -254,17 +260,47 @@ body {
             &.pdf {
                 background: url(../images/basic/icon_pdf.jpg);
             }
+            &.epub {
+                background: url(../images/basic/icon_epub.jpg);
+            }
             &.xls {
                 background: url(../images/basic/icon_xls.jpg);
+            }
+            &.xlsx {
+                background: url(../images/basic/icon_xlsx.jpg);
+            }
+            &.csv {
+                background: url(../images/basic/icon_csv.jpg);
             }
             &.ppt {
                 background: url(../images/basic/icon_ppt.jpg);
             }
+            &.pptx {
+                background: url(../images/basic/icon_pptx.jpg);
+            }
+            &.odp {
+                background: url(../images/basic/icon_odp.jpg);
+            }
             &.jpg {
                 background: url(../images/basic/icon_jpg.jpg);
             }
+            &.tif {
+                background: url(../images/basic/icon_tif.jpg);
+            }
             &.mp3 {
                 background: url(../images/basic/icon_mp3.jpg);
+            }
+            &.mp4 {
+                background: url(../images/basic/icon_mp4.jpg);
+            }
+            &.wma {
+                background: url(../images/basic/icon_wma.jpg);
+            }
+            &.wmv {
+                background: url(../images/basic/icon_wmv.jpg);
+            }
+            &.avi {
+                background: url(../images/basic/icon_avi.jpg);
             }
             &.mov {
                 background: url(../images/basic/icon_mov.jpg);
