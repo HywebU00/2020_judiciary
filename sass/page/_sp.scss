@@ -255,7 +255,7 @@
             }
             &:focus {
                 box-shadow: none;
-                box-shadow: 8px 0px 0px 0px $linkColor inset;
+                box-shadow: 8px 0px 0px 0px $question_leftcolorbg inset;
                 .text {
                     color: $secondaryColor;
                 }

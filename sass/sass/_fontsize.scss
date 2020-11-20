@@ -33,7 +33,8 @@
                     color: #FFF;
                 }
                 &.active {
-                    background: #F1F1F1;
+                     background: $aHover;
+                    color: #FFF;
                     &:hover, &:focus {
                         background: $aHover;
                         color: #FFF;

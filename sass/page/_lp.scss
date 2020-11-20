@@ -34,7 +34,7 @@
                 }
                 &>a {
                     display: block;
-                    padding-left: 2em;
+                    padding-left: 3em;
                     position: relative;
                     line-height: 1.45em;
                     color: $color-word;
@@ -42,9 +42,10 @@
                         color: $aHover;
                     }
                     .num {
-                        width: 1.5em;
+                        width: 2.5em;
                         text-align: right;
                         position: absolute;
+                        padding-right: 3px;
                         top: 0;
                         left: 0;
                         &:after {
