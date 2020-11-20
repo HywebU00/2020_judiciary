@@ -497,7 +497,7 @@
                 padding: 0 3.5em 0 1em;
                 letter-spacing: .05em;
                 display: block;
-                background:$search_btn;
+                background: $search_btn;
                 transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
                 &:after {
                     content: "";
@@ -510,7 +510,7 @@
                     display: block;
                 }
                 &:hover, &:focus {
-                    background: lighten($search_btn,5);
+                    background: lighten($search_btn, 5);
                     box-shadow: none;
                 }
             }
@@ -522,12 +522,11 @@
             display: block;
             clear: both;
             position: relative;
-            
             .form_grid {
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                border:none;
+                border: none;
                 @include screen('notebook') {
                     flex-wrap: wrap;
                 }
@@ -681,7 +680,7 @@
                 display: block;
             }
             &:hover, &:focus {
-                background: lighten($search_btn,10);
+                background: lighten($search_btn, 10);
                 box-shadow: none;
             }
         }
@@ -900,6 +899,195 @@
                         li {}
                     }
                 }
+            }
+        }
+    }
+}
+// 家事調解委員名冊
+.schedule, .interpreter {
+    .schedule_search_block, .interpreter_search_block {
+        background: #e5e5e5;
+        padding: .8em;
+        box-sizing: border-box;
+        overflow: hidden;
+        clear: both;
+        margin: .6em 0;
+        text-align: center;
+        position: relative;
+        @include screen('mobile') {
+            text-align: left;
+        }
+        .form_inline {
+            label {
+                display: inline-block;
+                vertical-align: middle;
+                margin-right: .5em;
+            }
+        }
+        .form_grp {
+            margin-left: .5em;
+            @include screen('mobile') {
+                width: 100%;
+                margin-left: 0;
+                margin-bottom: 10px;
+            }
+            label {
+                color: #202020;
+                margin-bottom: 0;
+                margin-left: 0;
+                @include screen('mobile') {
+                    width: 100%;
+                    margin-bottom: .5em;
+                }
+            }
+            input[type="text"], select {
+                margin-bottom: 0;
+                @include screen('mobile') {
+                    width: 100%;
+                }
+            }
+        }
+        .btn_grp {
+            margin: 0;
+            padding: 0;
+            text-align: left;
+            @include screen('mobile') {
+                display: block !important;
+                margin: 0 !important;
+            }
+            input {
+                width: 100%;
+            }
+        }
+        input[type="button"], input[type="submit"], input[type="reset"] {
+            // // border-radius: 0;
+            // // border:0;
+            // // background: $linkColor;
+            // color: #fff;
+            padding: 0.4em 1em !important;
+            margin-top: 0 !important;
+            vertical-align: middle;
+            margin-bottom: 0;
+            @include screen('mobile') {
+                margin-bottom: 5px;
+            }
+        }
+        input[type="reset"] {
+            background: #999;
+        }
+        .code {
+            color: #202020;
+            &:before {
+                filter: invert(1);
+                opacity: .8;
+            }
+        }
+    }
+    table {
+        tr:first-child {
+            th {
+                border-right: 1px solid #ddd;
+            }
+        }
+        th{
+            background: $tableth;
+                color:$tableth_color!important;
+        }
+    }
+    .interpreter_search_block {
+        background: #e5e5e5;
+        padding: .8em;
+        box-sizing: border-box;
+        overflow: hidden;
+        clear: both;
+        margin: .6em 0;
+        text-align: center;
+        position: relative;
+        @include screen('mobile') {
+            text-align: left;
+        }
+        .code {
+            color: #202020;
+            position: relative;
+            display: inline-block;
+            right: auto;
+            bottom: auto;
+            vertical-align: middle;
+            @include screen('mobile') {
+                position: absolute;
+                right: 1.5em;
+                bottom: 1.2em;
+            }
+        }
+        .btn_grp {
+            margin: 0;
+            padding: 0;
+            text-align: left;
+            @include screen('mobile') {
+                display: block !important;
+                margin: 0 !important;
+            }
+            input {
+                width: 100%;
+            }
+        }
+        +.category {
+            border-top: 0;
+            border-bottom: 0;
+        }
+    }
+    .interpretertable {
+        table {
+            border: #ddd 1px solid;
+            margin-bottom: 1em;
+            tr {
+                &:first-child th {
+                    color: #fff;
+                    text-align: center;
+                    
+                    border-right: 1px solid #ddd;
+                    &:first-child, &:nth-child(2) {
+                        font-size: 1.125em;
+                    }
+                    &:nth-child(2) {
+                        text-align: left;
+                    }
+                    &:last-child {
+                        border-right: 0px solid #fff;
+                    }
+                }
+                &:nth-child(even) {
+                    background: #fff;
+                }
+                td:last-child {
+                    text-align: left;
+                }
+            }
+            th, td {
+                border: #ddd 0px solid;
+                text-align: left;
+                color: #202020;
+                background: #fff;
+                padding: .3em;
+            }
+            th {
+                background: $tableth;
+                color:$tableth_color!important;
+                @include screen('mobile') {
+                    white-space: normal;
+                    text-align: center;
+                }
+            }
+            +div.right {
+                text-align: right;
+                ;
+                font-size: 0.9375em;
+                margin-top: -8px;
+                margin-bottom: 10px;
+            }
+            caption {
+                font-weight: bold;
+                color: $primaryColor;
             }
         }
     }

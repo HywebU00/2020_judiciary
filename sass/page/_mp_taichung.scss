@@ -1088,7 +1088,11 @@
 }
 // 司法親民 
 .close_people_block {
-    background-image: $closepeoplebg;
+    // background-image: $closepeoplebg;
+    // background-repeat: no-repeat;
+    background-color: #618100;
+    padding-bottom: 80px !important;
+    background-image: url('../images/taichung/mpSlider_block2_bg.jpg');
     background-repeat: no-repeat;
     background-position: center top;
     padding: 50px 0 80px !important;
@@ -1105,6 +1109,11 @@
     .close_people {
         h2 {
             color: #fff;
+            span {
+                &:before {
+                    background-color: #fff;
+                }
+            }
         }
         .tabSet {
             overflow: visible;
@@ -1190,7 +1199,11 @@
 }
 // 司法親民 單一圖 
 .close_people_block2 {
-    background-image: $closepeoplebg;
+    // background-image: $closepeoplebg;
+    // background-repeat: no-repeat;
+    background-color: #618100;
+    padding-bottom: 80px !important;
+    background-image: url('../images/taichung/mpSlider_block2_bg.jpg');
     background-repeat: no-repeat;
     background-position: center top;
     padding: 50px 0 80px !important;
@@ -1200,8 +1213,13 @@
     }
     .close_people {
         h2 {
-            color: #fff;
+        color: #fff;
+        span {
+            &:before {
+                background-color: #fff;
+            }
         }
+    }
         .tabSet {
             overflow: visible;
             .tabs {}
