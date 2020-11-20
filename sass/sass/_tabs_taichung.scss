@@ -39,7 +39,7 @@
                 display: block;
                 &>a {
                     width: 100% !important;
-                    border-bottom: 1px solid #888;
+                    border-bottom: 1px solid #fff;
                 }
                 &.active>a {
                     border-color: #bbb;
@@ -191,6 +191,9 @@
                 text-decoration: none;
                 @include text-overflow;
                 @include box-sizing;
+                @include screen('mobile'){
+                    text-align: center;
+                }
                 &:hover {
                     background-color: darken(#1e4000, 5);
                 }
