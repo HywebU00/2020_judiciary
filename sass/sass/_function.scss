@@ -9,7 +9,7 @@ $function_color:#888;
     margin-right: .5em;
     display: inline-block;
 }
-div.function{
+div.function {
     @include box-sizing;
     @extend %clearfix;
     margin: .5em 0;
@@ -20,7 +20,7 @@ div.function{
         list-style-type: none;
         li {
             margin: 0 0px 0px 3px;
-            flex:0 0 auto;
+            flex: 0 0 auto;
             button,
             a {
                 font-size: .813em;
@@ -42,7 +42,6 @@ div.function{
                     @extend %function_before;
                     background: url(../images/basic/icon_back.svg) no-repeat center center;
                     background-size: 16px;
-
                 }
             }
             // 友善列印
@@ -51,7 +50,6 @@ div.function{
                     @extend %function_before;
                     background: url(../images/basic/icon_print.svg) no-repeat center center;
                     background-size: 20px;
-                    
                 }
             }
             // 轉寄友人
@@ -60,14 +58,13 @@ div.function{
                     @extend %function_before;
                     background: url(../images/basic/icon_forward.svg) no-repeat center bottom;
                     background-size: 20px;
-                    
                 }
             }
         }
     }
 }
 // 放進function_panel樣式
-.function_panel, .answer  {
+.function_panel, .answer {
     .share {
         .shareButton {
             &:before {
@@ -77,7 +74,7 @@ div.function{
                 height: 60%;
                 top: 20%;
                 left: 20%;
-                background: url(../images/basic/icon_share.png) no-repeat center center  !important;
+                background: url(../images/basic/icon_share.png) no-repeat center center !important;
                 background-size: 24px !important;
             }
             text-indent:-9999px;
@@ -89,6 +86,10 @@ div.function{
             }
         }
     }
+    .font_size {
+        padding: 0;
+        flex: initial;
+    }
     .function {
         height: 40px;
         margin: 0;
@@ -97,7 +98,8 @@ div.function{
             li {
                 font-size: 1em;
                 margin: 0 .2em;
-                flex:0 0 40px;
+                flex: 0 0 40px;
+                flex-basis: 40px;
                 a {
                     display: block;
                     @include box-sizing;
@@ -113,7 +115,6 @@ div.function{
                     &:focus {
                         background: $aHover;
                         color: #FFF;
-                        
                         &:before {
                             filter: invert(100%);
                         }
