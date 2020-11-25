@@ -484,7 +484,7 @@ $(function() {
     })
     // 點外面關閉
     $(document).on('touchend click', function(e) {
-        var container = $(".header .navigation .navlist ul li a.searchbtn ,.header .navigation .navlist ul li a.emailbtn");
+        var container = $(".header .navigation .navlist ul li a.searchbtn ,.header .navigation .navlist ul li a.emailbtn, .header .navigation .navlist ul li .search");
         if (!container.is(e.target) && container.has(e.target).length === 0) {
             $('.header .navigation .navlist ul li .list_second ,.header .navigation .navlist ul li .search').slideUp();
         }
