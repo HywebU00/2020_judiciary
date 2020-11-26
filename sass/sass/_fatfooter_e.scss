@@ -76,7 +76,7 @@
         @include box-sizing;
         ul {
             display: flex;
-            // flex-wrap: wrap;
+           flex-wrap: wrap;
             @include li-reset;
             >li {
                 flex: none;
