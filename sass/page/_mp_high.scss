@@ -916,7 +916,6 @@
         }
         div {
             text-align: center;
-            
             img {
                 display: block;
                 width: 70px;
@@ -932,18 +931,18 @@
                 padding-top: 7px;
                 &:before {
                     content: '';
-                        width: 75px;
-                        height: 75px;
-                        background-color: #fff;
-                        border-radius: 5px;
-                        position: absolute;
-                        top: 0;
-                        left: 50%;
-                        margin-left: -40px;
-                        z-index: 0;
-                        transition: .5s;
+                    width: 75px;
+                    height: 75px;
+                    background-color: #fff;
+                    border-radius: 5px;
+                    position: absolute;
+                    top: 0;
+                    left: 50%;
+                    margin-left: -40px;
+                    z-index: 0;
+                    transition: .5s;
                 }
-                &:hover,&:focus {
+                &:hover, &:focus {
                     color: $primaryColor;
                     position: relative;
                     &:before {
@@ -959,7 +958,7 @@
                         z-index: 0;
                     }
                 }
-                &:focus{
+                &:focus {
                     box-shadow: none;
                 }
             }
@@ -1144,6 +1143,7 @@
         .image {
             margin-bottom: 10px;
             img {
+                max-width: 100%;
                 @include screen('tablet') {
                     width: 100%;
                 }

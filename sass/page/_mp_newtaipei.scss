@@ -514,17 +514,17 @@
                             margin: auto;
                         }
                     }
-                    span{
+                    span {
                         word-break: normal;
                         width: 172px;
                         text-align: center;
                         margin-right: 8px;
-                        padding:0 10px;
+                        padding: 0 10px;
                         @include box-sizing;
-                        @include screen('tablet'){
+                        @include screen('tablet') {
                             width: auto;
                             text-align: left;
-                            padding:0 15px
+                            padding: 0 15px
                         }
                     }
                 }
@@ -1063,6 +1063,7 @@
         .image {
             margin-bottom: 10px;
             img {
+                max-width: 100%;
                 @include screen('tablet') {
                     width: 100%;
                 }

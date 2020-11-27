@@ -1064,6 +1064,7 @@
         .image {
             margin-bottom: 10px;
             img {
+                max-width: 100%;
                 @include screen('tablet') {
                     width: 100%;
                 }
@@ -1213,13 +1214,13 @@
     }
     .close_people {
         h2 {
-        color: #fff;
-        span {
-            &:before {
-                background-color: #fff;
+            color: #fff;
+            span {
+                &:before {
+                    background-color: #fff;
+                }
             }
         }
-    }
         .tabSet {
             overflow: visible;
             .tabs {}
