@@ -1102,6 +1102,9 @@
     }
 }
 .event_introduction {
+    hr {
+        margin: 5em 0px;
+    }
     .event_sort {
         background: rgb(252, 252, 253);
         background: linear-gradient(180deg, rgba(252, 252, 253, 1) 0%, rgba(239, 243, 244, 1) 100%);
@@ -1112,11 +1115,21 @@
             @include box-sizing;
             display: flex;
             justify-content: center;
+            @include screen('mobile') {
+                padding: 0 20px;
+            }
+            @include screen('xs_mobile') {
+                flex-wrap: wrap;
+            }
             li {
                 list-style-type: none;
                 font-size: 1.25em;
                 width: 12%;
                 margin: 0 1.14%;
+                @include screen('xs_mobile') {
+                    width: 23%;
+                    margin: 0 1%;
+                }
                 a {
                     padding: 23px 0;
                     color: $primaryColor;
@@ -1124,6 +1137,7 @@
                     text-align: center;
                     display: block;
                     position: relative;
+                    white-space: nowrap;
                 }
                 &.active {
                     a {
@@ -1149,6 +1163,9 @@
         background-position: top center;
         padding: 30px 70px;
         @include box-sizing;
+        @include screen('mobile') {
+            padding: 30px 40px;
+        }
         // 對外連結
         .external_link {
             margin-bottom: 30px;
@@ -1181,19 +1198,69 @@
         .introduction {
             line-height: 1.8em;
             margin-bottom: 60px;
+            .title {
+                margin: 0 0 10px;
+                font-weight: bolder;
+                padding: 0;
+                font-size: 1.125em;
+            }
+            p {
+                margin: 0 0 10px;
+                padding: 0;
+            }
             a {
                 color: $primaryColor;
                 &:hover {
                     text-decoration: underline;
-                    ;
+                }
+            }
+            .more {
+                margin: 0 0 10px;
+                text-align: left;
+                float: none;
+                display: block;
+                a {
+                    display: inline-block;
+                    color: $primaryColor;
+                    background-color: transparent;
+                    position: relative;
+                    font-weight: bold;
+                    padding: 0px 25px;
+                    &:before {
+                        content: '';
+                        width: 16px;
+                        height: 16px;
+                        background-color: $primaryColor;
+                        border-radius: 50%;
+                        position: absolute;
+                        left: 0px;
+                        top: 6px;
+                    }
+                    &:after {
+                        content: '';
+                        border: 5px solid #fff;
+                        border-color: transparent transparent transparent #fff;
+                        position: absolute;
+                        left: 6px;
+                        top: 9px;
+                    }
                 }
             }
             ul {
-                li {}
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                ol {
+                    margin-left: 10px;
+                    margin-top: 10px;
+                }
+            }
+            .event_listblock {
+                padding-bottom: 0;
             }
         }
         // 程序名稱
-        .program_title {
+        h3.program_title {
             color: darken($primaryColor, 15);
             padding: 0 0 0 30px;
             margin-bottom: 60px;
@@ -1220,6 +1287,13 @@
                 position: relative;
                 flex-basis: 40%;
                 margin: 0 5% 60px;
+                @include screen('tablet') {
+                    flex-basis: 100%;
+                    margin: 0 0 60px;
+                }
+                @media(max-width: 500px) {
+                    padding-top: 100px;
+                }
                 .number {
                     color: $primaryColor;
                     font-weight: bold;
@@ -1240,6 +1314,11 @@
                     top: 80px;
                     left: 0;
                     right: 0;
+                    @media(max-width: 500px) {
+                        flex-wrap: wrap;
+                        position: relative;
+                        top: 0;
+                    }
                     .leftblock, .rightblock {
                         display: block;
                         position: relative;
@@ -1321,6 +1400,13 @@
                         align-items: center;
                         color: #333;
                         font-size: 0.938em;
+                        @media(max-width: 500px) {
+                            flex: auto;
+                            flex-basis: 100%;
+                            margin-left: 0;
+                            justify-content: center;
+                            padding: 20px 0;
+                        }
                         a {
                             color: $primaryColor;
                             &:hover {
@@ -1336,13 +1422,20 @@
                     padding: 70px 40px 30px;
                     background-color: #fff;
                     overflow: hidden;
+                    @include screen('xs_mobile') {
+                        padding: 30px 20px ;
+                    }
                     .title {
                         display: flex;
                         color: $primaryColor;
                         font-size: 1.5em;
                         font-weight: bolder;
                         justify-content: center;
+                        align-items: center;
                         letter-spacing: 0.05em;
+                        .name {
+                            line-height: 1.8em;
+                        }
                         .codename {
                             background-color: #747474;
                             color: #fff;
@@ -1350,6 +1443,10 @@
                             padding: 2px 5px;
                             letter-spacing: 0.1em;
                             margin-left: 3px;
+                            text-align: center;
+                            border-radius: 3px;
+                            line-height: 1.5em;
+                            height: 30px;
                         }
                     }
                     p {
@@ -1392,28 +1489,32 @@
         }
         // 流程及服務 
         .process_service {
-            // background-image: $event_contentbg;
-            // background-color: #fff;
-            // background-repeat: no-repeat;
-            // background-position: top center;
-            // padding: 30px 70px;
-            // @include box-sizing;
             .process_title {
                 color: $primaryColor;
                 margin-bottom: 35px;
                 position: relative;
-                font-size: 1.5em;
+                font-size: 1.75em;
                 font-weight: bolder;
                 text-align: center;
                 letter-spacing: 0.05em;
+                line-height: 1.3em;
             }
             // 流程事件
             .process_event {
                 display: flex;
                 align-items: center;
+                margin-bottom: 20px;
+                @media(max-width: 500px) {
+                    flex-wrap: wrap;
+                    justify-content: center;
+                }
                 .event_title {
                     flex: none;
+                    flex-basis: 140px;
                     margin-right: 8%;
+                    @media(max-width: 500px) {
+                        margin-right: 0
+                    }
                     span {
                         width: 140px;
                         height: 140px;
@@ -1431,16 +1532,187 @@
                         text-align: center;
                     }
                 }
-                .image {
-                    flex: none;
-                     margin-right: 8%;
-                }
-                .explanation {
+                .process_content {
                     flex: auto;
-                    font-size: 1.625em;
-                    line-height: 1.5em;
-                    color: darken($primaryColor, 15);
-                     font-weight: bolder;
+                    display: flex;
+                    align-items: center;
+                    @include screen('mobile') {
+                        flex-wrap: wrap;
+                    }
+                    @media(max-width: 500px) {
+                        justify-content: center;
+                    }
+                    .image {
+                        flex: none;
+                        margin-right: 8%;
+                        @include screen('mobile') {
+                            margin-right: 0;
+                        }
+                    }
+                    .explanation {
+                        flex: auto;
+                        font-size: 1.625em;
+                        line-height: 1.5em;
+                        color: darken($primaryColor, 15);
+                        font-weight: bolder;
+                        @include screen('mobile') {
+                            flex-basis: 100%;
+                        }
+                        @media(max-width: 500px) {
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+            // 流程區塊
+            .process_block {
+                position: relative;
+                padding: 70px 0 10px;
+                &:before {
+                    content: '';
+                    width: 15px;
+                    height: 100%;
+                    background-color: lighten($primaryColor, 8);
+                    position: absolute;
+                    left: 65px;
+                    top: 0;
+                    bottom: 0;
+                    border-radius: 50px;
+                    z-index: 0;
+                    @media(max-width: 500px) {
+                        left: 48%;
+                    }
+                }
+                .process_list {
+                    display: flex;
+                    background-color: #fff;
+                    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+                    border-radius: 10px;
+                    margin-bottom: 55px;
+                    position: relative;
+                    @include screen('tablet') {
+                        flex-wrap: wrap;
+                    }
+                    @include screen('xs_mobile') {
+                        display: block;
+                    }
+                    &:nth-child(even) {
+                        .process_list_title {
+                            background-color: darken($primaryColor, 8);
+                        }
+                    }
+                    .process_list_title {
+                        flex: none;
+                        flex-basis: 150px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: $process_block_bgclolr;
+                        color: #fff;
+                        font-size: 1.5em;
+                        font-weight: bold;
+                        border-radius: 10px 0 0 10px;
+                        padding: 10px;
+                        line-height: 1.5em;
+                        text-align: center;
+                        @include screen('xs_mobile') {
+                            flex: auto;
+                            flex-basis: 100%;
+                            padding: 30px;
+                            border-radius: 10px 10px 0 0;
+                        }
+                    }
+                    .process_content {
+                        flex: auto;
+                        flex-basis: calc(100% - 160px);
+                        padding: 25px 15px;
+                        display: flex;
+                        @media(max-width: 900px) {
+                            flex-wrap: wrap;
+                        }
+                        @include screen('xs_mobile') {
+                            flex-basis: 100%;
+                        }
+                        .process_item {
+                            flex: auto;
+                            @media(max-width: 900px) {
+                                flex-basis: 100%;
+                            }
+                            ul {
+                                margin: 0 40px;
+                                padding: 0;
+                                @media(max-width: 900px) {
+                                    margin: 0 10px 40px 30px;
+                                }
+                                li {
+                                    margin: 0 0 5px;
+                                    list-style-type: none;
+                                    position: relative;
+                                    &:last-child {
+                                        margin: 0;
+                                    }
+                                    &:before {
+                                        content: '';
+                                        width: 7px;
+                                        height: 7px;
+                                        border-radius: 50%;
+                                        background-color: $process_block_bgclolr;
+                                        position: absolute;
+                                        left: -18px;
+                                        top: 9px;
+                                    }
+                                    a {
+                                        position: relative;
+                                        padding: 0 30px 0 0px;
+                                        color: #333;
+                                        display: inline-block;
+                                        line-height: 1.8em;
+                                        &:hover {
+                                            color: $aHover;
+                                            text-decoration: underline;
+                                        }
+                                        &:after {
+                                            content: '';
+                                            width: 24px;
+                                            height: 24px;
+                                            background-color: lighten($primaryColor, 8);
+                                            background-image: url('../images/process_item_icon.png');
+                                            background-repeat: no-repeat;
+                                            background-position: center center;
+                                            position: absolute;
+                                            right: 0;
+                                            top: 4px;
+                                            border-radius: 3px;
+                                        }
+                                    }
+                                    span {
+                                        background-color: #747474;
+                                        color: #fff;
+                                        padding: 1px 5px;
+                                        letter-spacing: 0.1em;
+                                        margin-left: 5px;
+                                        text-align: center;
+                                        border-radius: 3px;
+                                        display: inline-block;
+                                        vertical-align: middle;
+                                    }
+                                }
+                            }
+                        }
+                        .image {
+                            flex: none;
+                            flex-basis: 200px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            padding: 0;
+                            @media(max-width: 900px) {
+                                flex-basis: 100%;
+                                flex: auto;
+                                justify-content: flex-end;
+                            }
+                        }
+                    }
                 }
             }
         }

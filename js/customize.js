@@ -21,7 +21,7 @@ $(function() {
         autoplaySpeed: 3000,
         slidesToShow: 4,
         slidesToScroll: 1,
-        autoplay: true,
+        autoplay:false,
         arrow: true,
         lazyLoaded: true,
         lazyLoad: 'ondemand',
