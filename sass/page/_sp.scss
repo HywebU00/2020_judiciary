@@ -1423,7 +1423,7 @@
                     background-color: #fff;
                     overflow: hidden;
                     @include screen('xs_mobile') {
-                        padding: 30px 20px ;
+                        padding: 30px 20px;
                     }
                     .title {
                         display: flex;
@@ -1620,6 +1620,19 @@
                             flex-basis: 100%;
                             padding: 30px;
                             border-radius: 10px 10px 0 0;
+                        }
+                        a {
+                             padding: 0px;
+                             color:#fff;
+                             position: relative;
+                             img{
+                                vertical-align: middle;
+                                margin-left: 5px;
+                             }
+                             &:hover{
+                                   text-decoration: underline;
+                             }
+                            
                         }
                     }
                     .process_content {
