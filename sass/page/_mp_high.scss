@@ -87,14 +87,11 @@
         }
     }
     &.eventpage {
-        .center_block {
-            text-align: center;
-        }
         h2.title {
             text-align: center;
-            display: inline-block;
+            display: block;
             position: relative;
-            padding-left: 45px;
+            clear: both;
             &:before {
                 content: '';
                 background-image: url('../images/high/icon_logo.png');
@@ -103,12 +100,13 @@
                 background-size: 34px;
                 width: 34px;
                 height: 34px;
-                position: absolute;
-                left: 0;
-                bottom: 0;
+                display: inline-block;
+                vertical-align: text-top;
+                margin-right: 10px;
+                transform: rotate(0);
+                left: auto;
                 top: auto;
-                display: block !important;
-                transform: rotate(0deg);
+                position: relative;
             }
         }
     }
@@ -175,7 +173,7 @@
             margin-right: 0px;
         }
     }
-     @include screen('tablet'){
+    @include screen('tablet') {
         top: 96px;
     }
     .fast_btn {

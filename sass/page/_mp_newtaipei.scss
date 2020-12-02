@@ -49,26 +49,22 @@
         }
     }
     &.eventpage {
-        .center_block {
-            text-align: center;
-        }
         h2.title {
             text-align: center;
-            display: inline-block;
+            display: block;
             position: relative;
-            padding-left: 45px;
+            clear: both;
             &:before {
                 content: '';
                 background-image: url('../images/newtaipei/icon_logo.png');
                 background-repeat: no-repeat;
-                background-position: left bottom;
+                background-position: center;
                 background-size: 34px;
                 width: 34px;
                 height: 34px;
-                position: absolute;
-                left: 0;
-                bottom: 0;
-                display: block !important;
+                display: inline-block;
+                vertical-align: text-top;
+                margin-right: 10px;
             }
         }
     }
@@ -135,7 +131,7 @@
             margin-right: 0px;
         }
     }
-    @include screen('tablet'){
+    @include screen('tablet') {
         top: 96px;
     }
     .fast_btn {

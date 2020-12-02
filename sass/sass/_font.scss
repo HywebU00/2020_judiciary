@@ -13,7 +13,7 @@
         cursor: pointer;
     }
 }
-@mixin aSetting_nocolor($COLOR:$primaryColor, $NOLINE:none) {
+@mixin aSetting_nocolor($COLOR:$aColor, $NOLINE:none) {
     color: $COLOR;
     text-decoration: $NOLINE;
     &:hover,

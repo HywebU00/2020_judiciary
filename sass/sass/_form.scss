@@ -1,4 +1,4 @@
-$form_title_width :150px; // 表單title寬度
+$form_title_width :200px; // 表單title寬度
 @mixin formStyle($f_color:$color-word, $f_border:$color-gray, $f_radius:$btn-radius) {
     color: $f_color;
     font-size: 1em;
@@ -25,7 +25,7 @@ select::-ms-expand {
 .form_grid {
     font-size: .938em;
     margin: .5em;
-    border-top: 1px solid #DDD;
+    // border-top: 1px solid #DDD;
     .form_grp {
         border-bottom: 1px dashed #DDD;
         overflow: hidden;
@@ -57,7 +57,7 @@ select::-ms-expand {
     .form_content {
         float: left;
         padding-top: 3px;
-        width: calc(100% - 150px);
+        width: calc(100% - 210px);
         position: relative;
         min-height: 1px;
         overflow: hidden;

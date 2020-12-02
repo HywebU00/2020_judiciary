@@ -904,8 +904,8 @@
     }
 }
 // 家事調解委員名冊
-.schedule, .interpreter {
-    .schedule_search_block, .interpreter_search_block {
+.schedule, .interpreter, .court_schedule {
+    .schedule_search_block, .interpreter_search_block, .court_schedule_search_block {
         background: #e5e5e5;
         padding: .8em;
         box-sizing: border-box;
@@ -955,15 +955,14 @@
                 display: block !important;
                 margin: 0 !important;
             }
-            input {
-                width: 100%;
-            }
+            // input {
+            //     width: 100%;
+            // }
+            // input[type="button"]{
+            //     width: auto;
+            // }
         }
         input[type="button"], input[type="submit"], input[type="reset"] {
-            // // border-radius: 0;
-            // // border:0;
-            // // background: $linkColor;
-            // color: #fff;
             padding: 0.4em 1em !important;
             margin-top: 0 !important;
             vertical-align: middle;
@@ -980,6 +979,36 @@
             &:before {
                 filter: invert(1);
                 opacity: .8;
+            }
+        }
+        .advanced_search {
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+            @include screen('xs_mobile') {
+                position: relative;
+                right: auto;
+                bottom: auto;
+                float: right;
+                margin: 10px 0 0 0;
+            }
+            a {
+                position: relative;
+                padding-right: 20px;
+                &:after {
+                    content: '';
+                    width: 15px;
+                    height: 15px;
+                    background-color: lighten($primaryColor, 8);
+                    background-image: url('../images/process_item_icon.png');
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    background-size: cover;
+                    position: absolute;
+                    right: 0;
+                    top: 4px;
+                    border-radius: 3px;
+                }
             }
         }
     }
@@ -1090,6 +1119,53 @@
             }
         }
     }
+    .court_schedule_search_block {
+        text-align: left;
+    }
+    .court_schedule_table {
+        table {
+            border: #ddd 1px solid;
+            tr {
+                &:nth-child(even) {
+                    background: #fff;
+                }
+            }
+            th, td {
+                border: #ddd 1px solid;
+                width: 16.6%;
+            }
+            th {
+                span {
+                    display: block;
+                }
+            }
+            td {
+                vertical-align: top;
+                white-space: nowrap;
+                span {
+                    display: block;
+                    background-color: lighten($primaryColor, 50);
+                    padding: 3px;
+                    text-align: center;
+                    border-radius: 3px;
+                    margin-bottom: 3px;
+                    em {
+                        font-style: normal;
+                        color: #fff;
+                        padding: 0 3px;
+                        margin: 0 3px;
+                        border-radius: 3px;
+                        font-size: 0.875em;
+                        background-color: darken($primaryColor, 10);
+                        white-space: nowrap;
+                    }
+                }
+                &.today {
+                    background-color: lighten($color-yellow, 40);
+                }
+            }
+        }
+    }
 }
 // 事件介紹
 .eventpage {
@@ -1184,9 +1260,9 @@
                     display: block;
                     position: relative;
                     white-space: nowrap;
-                    transition:.5s;
-                    &:hover{
-                       padding: 16px 0 30px;
+                    transition: .5s;
+                    &:hover {
+                        padding: 16px 0 30px;
                         text-decoration: none;
                     }
                 }

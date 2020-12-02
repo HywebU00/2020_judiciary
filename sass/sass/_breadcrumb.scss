@@ -9,6 +9,7 @@
         li {
             display: inline-block;
             margin: 0px .1em .1em 0px;
+            color:#333;
             &:before {
                 @extend %slash;
             }
@@ -22,6 +23,7 @@
         }
     }
     a {
-        @include aSetting_nocolor;
+        color:#333;
+
     }
 }

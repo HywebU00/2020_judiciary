@@ -49,14 +49,12 @@
         }
     }
     &.eventpage {
-        .center_block {
-            text-align: center;
-        }
+       
         h2.title {
-            text-align: center;
-            display: inline-block;
+             text-align: center;
+            display: block;
             position: relative;
-            padding-left: 45px;
+            clear: both;
             &:before {
                 content: '';
                 background-image: url('../images/property/icon_logo.png');
@@ -65,10 +63,9 @@
                 background-size: 34px;
                 width: 34px;
                 height: 34px;
-                position: absolute;
-                left: 0;
-                bottom: 0;
-                display: block !important;
+                display: inline-block;
+                vertical-align: text-top;
+                margin-right: 10px;
             }
         }
     }
