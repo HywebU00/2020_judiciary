@@ -79,6 +79,7 @@ table {
         }
         a {
             word-break: break-all;
+            color:$primaryColor;
             &.new, &.hot {
                 text-indent: -9999px;
                 overflow: hidden;

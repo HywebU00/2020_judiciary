@@ -48,6 +48,30 @@
             display: none;
         }
     }
+    &.eventpage {
+        .center_block {
+            text-align: center;
+        }
+        h2.title {
+            text-align: center;
+            display: inline-block;
+            position: relative;
+            padding-left: 45px;
+            &:before {
+                content: '';
+                background-image: url('../images/newtaipei/icon_logo.png');
+                background-repeat: no-repeat;
+                background-position: left bottom;
+                background-size: 34px;
+                width: 34px;
+                height: 34px;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                display: block !important;
+            }
+        }
+    }
 }
 // 廣告輪播
 .adSlider {
@@ -99,17 +123,11 @@
     position: fixed;
     top: 180px;
     right: 0px;
-    // right: 50%;
-    // margin-right: -600px;
     z-index: 10;
     padding: 0 !important;
     @include screen('notebook') {
-        right: 0;
-        margin-right: 0;
-    }
-    @include screen('tablet') {
         display: block;
-        top: 96px;
+        top: 190px;
         width: 80px;
         margin-right: -80px;
         transition: .5s;
@@ -117,9 +135,12 @@
             margin-right: 0px;
         }
     }
+    @include screen('tablet'){
+        top: 96px;
+    }
     .fast_btn {
         display: none;
-        @include screen('tablet') {
+        @include screen('notebook') {
             display: block;
             position: absolute;
             left: -36px;

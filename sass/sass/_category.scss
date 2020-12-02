@@ -7,10 +7,12 @@
     margin-bottom: 10px;
     ul {
         @include li-reset;
+        display:flex;
+        flex-wrap: wrap;
         li {
             margin: 3px 0;
             display: block;
-            float: left;
+            // float: left;
         }
     }
     &.col2 {

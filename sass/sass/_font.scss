@@ -9,11 +9,11 @@
     text-decoration: $NOLINE;
     &:hover,
     &:focus {
-        color: $aHover;
+        color:$primaryColor;
         cursor: pointer;
     }
 }
-@mixin aSetting_nocolor($COLOR:$color-word, $NOLINE:none) {
+@mixin aSetting_nocolor($COLOR:$primaryColor, $NOLINE:none) {
     color: $COLOR;
     text-decoration: $NOLINE;
     &:hover,

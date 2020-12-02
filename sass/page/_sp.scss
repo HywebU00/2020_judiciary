@@ -1102,6 +1102,7 @@
     }
 }
 .event_introduction {
+    text-align: left;
     hr {
         margin: 5em 0px 3em;
     }
@@ -1117,6 +1118,7 @@
             position: relative;
             font-weight: bold;
             padding: 0px 25px;
+            background-image: none;
             &:before {
                 content: '';
                 width: 16px;
@@ -1126,6 +1128,12 @@
                 position: absolute;
                 left: 0px;
                 top: 6px;
+                opacity: 1;
+                border: none;
+                background-image: none;
+                background-repeat: none;
+                background-position: 0;
+                background-size: 0;
             }
             &:after {
                 content: '';
@@ -1144,8 +1152,8 @@
         }
     }
     .event_sort {
-        background: rgb(252, 252, 253);
-        background: linear-gradient(180deg, rgba(252, 252, 253, 1) 0%, rgba(239, 243, 244, 1) 100%);
+        background: rgb(255, 255, 255);
+        background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(228, 229, 231, 0.7805497198879552) 100%);
         border-bottom: 2px solid #fff;
         ul {
             margin: 0;
@@ -1176,6 +1184,11 @@
                     display: block;
                     position: relative;
                     white-space: nowrap;
+                    transition:.5s;
+                    &:hover{
+                       padding: 16px 0 30px;
+                        text-decoration: none;
+                    }
                 }
                 &.active {
                     a {
@@ -1197,12 +1210,24 @@
     .event_content {
         background-image: $event_contentbg;
         background-color: #fff;
-        background-repeat: no-repeat;
+        background-repeat: repeat-y;
         background-position: top center;
-        padding: 30px 70px;
+        padding: 50px 70px;
+        position: relative;
         @include box-sizing;
         @include screen('mobile') {
-            padding: 30px 40px;
+            padding: 50px 40px;
+        }
+        &:before {
+            content: '';
+            width: 100%;
+            height: 50px;
+            background: rgb(228, 229, 231);
+            background: linear-gradient(180deg, rgba(228, 229, 231, 1) 0%, rgba(228, 229, 231, 0) 87%);
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
         }
         // 對外連結
         .external_link {
@@ -1522,8 +1547,7 @@
                     span {
                         width: 140px;
                         height: 140px;
-                        background: rgb(24, 97, 160);
-                        background: linear-gradient(133deg, rgba(24, 97, 160, 1) 0%, rgba(28, 110, 181, 1) 100%);
+                        background-color: $event_title_bgclolr;
                         color: #fff;
                         display: flex;
                         justify-content: center;

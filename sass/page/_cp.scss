@@ -17,6 +17,7 @@ h1.title, h2.title {
     &:after {
         display: none;
     }
+    
 }
 .cp {
     margin-top: 1em;
@@ -464,7 +465,7 @@ div.tag {
             height: auto;
             line-height: 1.45em;
             display: block;
-            @include aSetting_nocolor;
+            color:#333;
             &:before {
                 position: absolute;
                 top: 5px;
