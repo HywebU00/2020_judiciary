@@ -56,6 +56,7 @@ $first-active-color:$primaryColor;
 $second_active:#6c4c0d;
 $second_hover-color:$primaryColor;
 
+$font_size_bgcolor:$primaryColor; //font_size點選到的顏色
 // np
 $nphover:darken($primaryColor, 5);
 //category
@@ -80,7 +81,11 @@ $cp_acolor:$secondaryColor;
 
 // sp
 $question_leftcolorbg:$primaryColor;
-$process_block_bgclolr:$secondaryColor;  //流程區塊顏色
+$process_block_bgcolor:$secondaryColor;  //流程區塊顏色
+$event_title_bgcolor:lighten($primaryColor, 8);
+$court_schedule_span:lighten($primaryColor, 50); //表格內span的顏色
+$court_schedule_em:darken($primaryColor, 10); //表格內em的顏色
+
 
 // sitemap
 $sitemap_color:$primaryColor;

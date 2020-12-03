@@ -841,7 +841,7 @@
     }
     >ul {
         @include li-reset;
-        border-top: 3px solid $primaryColor;
+        border-top: 3px solid $font_size_bgcolor;
         margin-top: 1em;
         padding-top: 20px;
         position: relative;
@@ -1144,7 +1144,7 @@
                 white-space: nowrap;
                 span {
                     display: block;
-                    background-color: lighten($primaryColor, 50);
+                    background-color: $court_schedule_span;
                     padding: 3px;
                     text-align: center;
                     border-radius: 3px;
@@ -1156,7 +1156,7 @@
                         margin: 0 3px;
                         border-radius: 3px;
                         font-size: 0.875em;
-                        background-color: darken($primaryColor, 10);
+                        background-color: $court_schedule_em;
                         white-space: nowrap;
                     }
                 }
@@ -1623,7 +1623,7 @@
                     span {
                         width: 140px;
                         height: 140px;
-                        background-color: $event_title_bgclolr;
+                        background-color: $event_title_bgcolor;
                         color: #fff;
                         display: flex;
                         justify-content: center;
@@ -1769,7 +1769,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                background-color: $process_block_bgclolr;
+                background-color: $process_block_bgcolor;
                 color: #fff;
                 font-size: 1.438em;
                 font-weight: bold;
@@ -1831,7 +1831,7 @@
                                 width: 7px;
                                 height: 7px;
                                 border-radius: 50%;
-                                background-color: $process_block_bgclolr;
+                                background-color: $process_block_bgcolor;
                                 position: absolute;
                                 left: -18px;
                                 top: 9px;

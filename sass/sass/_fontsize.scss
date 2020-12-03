@@ -30,14 +30,14 @@
                 height: 40px;
                 color: #333;
                 &:hover, &:focus {
-                    background: $primaryColor;
+                    background: $font_size_bgcolor;
                     color: #FFF;
                 }
                 &.active {
-                     background: $primaryColor;
+                     background: $font_size_bgcolor;
                     color: #FFF;
                     &:hover, &:focus {
-                        background: $primaryColor;
+                        background: $font_size_bgcolor;
                         color: #FFF;
                     }
                 }

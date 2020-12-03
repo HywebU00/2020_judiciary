@@ -373,12 +373,12 @@
 .Syncing_slider {
     @extend %clearfix;
     position: relative;
-    h3 {
-        font-size: 1.5em;
-        padding: 12px 0px 6px 0px;
-        margin: 0.5em 0px 1.2em;
-        border-bottom: 2px solid $block_title_color;
-    }
+    // h3 {
+    //     font-size: 1.5em;
+    //     padding: 12px 0px 6px 0px;
+    //     margin: 0.5em 0px 1.2em;
+    //     border-bottom: 2px solid $block_title_color;
+    // }
     .slick-slide {
         position: relative;
     }

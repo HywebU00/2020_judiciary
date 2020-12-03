@@ -121,7 +121,7 @@
     right: 0px;
     z-index: 10;
     padding: 0 !important;
-    @include screen('notebook') {
+     @media(max-width: 1360px) {
         display: block;
         top: 190px;
         width: 80px;
@@ -136,7 +136,7 @@
     }
     .fast_btn {
         display: none;
-        @include screen('notebook') {
+         @media(max-width: 1360px) {
             display: block;
             position: absolute;
             left: -36px;

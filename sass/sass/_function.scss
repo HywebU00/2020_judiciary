@@ -113,7 +113,7 @@ div.function {
                     position: relative;
                     &:hover,
                     &:focus {
-                        background: $primaryColor;
+                        background: $font_size_bgcolor;
                         color: #FFF;
                         &:before {
                             filter: invert(100%);
