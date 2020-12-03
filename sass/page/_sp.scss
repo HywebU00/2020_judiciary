@@ -994,12 +994,12 @@
             }
             a {
                 position: relative;
-                padding-right: 20px;
-                vertical-align: text-top;
+                padding: 0 25px 0 0;
+               
                 &:after {
                     content: '';
-                    width: 15px;
-                    height: 15px;
+                    width: 18px;
+                    height: 18px;
                     background-color: lighten($primaryColor, 8);
                     background-image: url('../images/process_item_icon.png');
                     background-repeat: no-repeat;
@@ -1007,7 +1007,7 @@
                     background-size: cover;
                     position: absolute;
                     right: 0;
-                    top: 4px;
+                    top: 2px;
                     border-radius: 3px;
                 }
             }
