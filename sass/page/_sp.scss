@@ -772,7 +772,7 @@
 .event {
     .event_search_block {
         background: #e5e5e5;
-        padding: .8em;
+        padding: 15px 15px 10px 15px;
         box-sizing: border-box;
         overflow: hidden;
         clear: both;
@@ -907,7 +907,7 @@
 .schedule, .interpreter, .court_schedule {
     .schedule_search_block, .interpreter_search_block, .court_schedule_search_block {
         background: #e5e5e5;
-        padding: .8em;
+        padding: 15px 15px 10px 15px;
         box-sizing: border-box;
         overflow: hidden;
         clear: both;
@@ -984,7 +984,7 @@
         .advanced_search {
             position: absolute;
             right: 10px;
-            bottom: 10px;
+            bottom: 12px;
             @include screen('xs_mobile') {
                 position: relative;
                 right: auto;
@@ -995,6 +995,7 @@
             a {
                 position: relative;
                 padding-right: 20px;
+                vertical-align: text-top;
                 &:after {
                     content: '';
                     width: 15px;
@@ -1025,7 +1026,7 @@
     }
     .interpreter_search_block {
         background: #e5e5e5;
-        padding: .8em;
+        padding: 15px 15px 10px 15px;
         box-sizing: border-box;
         overflow: hidden;
         clear: both;
