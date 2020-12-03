@@ -982,9 +982,7 @@
             }
         }
         .advanced_search {
-            position: absolute;
-            right: 10px;
-            bottom: 12px;
+            float: right;
             @include screen('xs_mobile') {
                 position: relative;
                 right: auto;
@@ -994,8 +992,8 @@
             }
             a {
                 position: relative;
-                padding: 0 25px 0 0;
-               
+                padding: 0;
+                display: block;
                 &:after {
                     content: '';
                     width: 18px;
@@ -1005,9 +1003,9 @@
                     background-repeat: no-repeat;
                     background-position: center center;
                     background-size: cover;
-                    position: absolute;
-                    right: 0;
-                    top: 2px;
+                    display: inline-block;
+                    vertical-align: text-top;
+                    margin-left: 5px;
                     border-radius: 3px;
                 }
             }
