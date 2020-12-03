@@ -106,11 +106,11 @@
         @include box-sizing;
         a {
             display: block;
-            
             width: 272px;
             height: 64px;
             img {
-               width: 100%;;
+                width: 100%;
+                ;
             }
         }
         @include screen('tablet') {
@@ -124,8 +124,8 @@
                 margin: 0px auto;
                 background-size: 100%;
                 width: 215px;
-                img{
-                    margin-top:6px;
+                img {
+                    margin-top: 6px;
                 }
             }
         }
@@ -168,7 +168,7 @@
                             border-radius: 3px 0 0 3px;
                             padding-left: 25px;
                             @media(max-width: 1070px) {
-                                 padding-left: 15px
+                                padding-left: 15px
                             }
                         }
                     }
@@ -188,26 +188,26 @@
                             background-color: $header_navhover;
                         }
                         &.emailbtn {
-                            padding: 12px 20px 12px 8px;
+                            padding: 12px 25px 12px 8px;
                             &:after {
                                 content: '';
                                 border: 4px solid #fff;
                                 border-color: #fff transparent transparent transparent;
                                 position: absolute;
                                 top: 45%;
-                                right: 7px;
+                                right: 10px;
                             }
-                            &:hover{
-                                &:after{
-                                     border: 4px solid $header_navhovercolor;
-                                border-color: $header_navhovercolor transparent transparent transparent;
+                            &:hover {
+                                &:after {
+                                    border: 4px solid $header_navhovercolor;
+                                    border-color: $header_navhovercolor transparent transparent transparent;
                                 }
                             }
                         }
                         &.searchbtn {
                             position: relative;
                             padding: 12px 20px 12px;
-                             border-radius: 0 3px 3px 0;
+                            border-radius: 0 3px 3px 0;
                             img {
                                 width: 21px;
                                 height: 20px;
@@ -217,7 +217,6 @@
                             //     img{
                             //         filter: invert(100%);
                             //     }
-                                
                             // }
                             &:before {
                                 content: '';
@@ -269,24 +268,28 @@
                                 top: 20px;
                             }
                         }
-                        &.casebtn01 {
+                    }
+                    &.casebtn01 {
+                        a {
                             background: $casebtn01;
                             display: block;
                             margin-left: 7px;
                             border-radius: 3px;
                             &:hover {
                                 background-color: darken($casebtn01, 10);
-                                color:#fff;
+                                color: #fff;
                             }
                         }
-                        &.casebtn02 {
+                    }
+                    &.casebtn02 {
+                        a {
                             background: $casebtn02;
                             display: block;
                             margin-left: 7px;
                             border-radius: 3px;
                             &:hover {
                                 background-color: darken($casebtn02, 10);
-                                 color:#fff;
+                                color: #fff;
                             }
                         }
                     }
@@ -323,6 +326,7 @@
                 padding-left: 14px !important;
                 &:hover {
                     background-color: #666 !important;
+                    color: #fff !important;
                 }
             }
         }
@@ -337,7 +341,7 @@
     margin: 0;
     @include box-sizing;
     position: absolute;
-    right:0;
+    right: 0;
     top: auto;
     background-color: #000;
     padding: 20px;
@@ -351,7 +355,7 @@
         font-size: 0em;
     }
     .form_grp {
-       flex: auto;
+        flex: auto;
         flex-basis: 100%;
         max-width: 100%;
         display: flex;
@@ -385,7 +389,7 @@
     }
     .btn_grp {
         flex: auto;
-        flex-basis:100%;
+        flex-basis: 100%;
         max-width: 100%;
         padding: 0;
         margin: 0;

@@ -1,0 +1,139 @@
+// 此變數為框架之整體變數，控制整體網站之設定，包含 顏色、文字、格線系統
+// 於mixins 資料夾內，各個模組也有其個別使用的變數，請至個別檔案設定，個別使用變數不含在此設定
+//-------------------------------------------------------------顏色---------//
+// 定義顏色 此顏色可自由變換
+$primaryColor: #3c4556; //主色
+$secondaryColor: #e5c0b7; //輔色
+$lightColor: #fcd618; //點綴
+$linkColor: #21baff; //連結
+$importantColor: #ff3e4d; //重要
+// 但注意真實顏色與語意的關聯必須易於辨識
+$color-blue: #21baff;
+$color-green: #099;
+$color-orange: #f77810;
+$color-red: #e31c1c;
+$color-yellow: #fcc211;
+$color-purple: #7915b2;
+$color-gray: #ccc;
+$color-dark: #333333;
+$color-hr: #666; //hr顏色
+$color-word: #222; //一般字的顏色
+// 連結顏色
+$aColor: darken($secondaryColor, 10);
+$aHover: $color-red;
+// 表單focus顏色
+$form-focus: #21baff; //表單
+$form-btn: #21baff; //表單
+
+// 首內頁區塊顏色變數
+// header nav
+$header_navbg:none;
+$header_navhover:darken($secondaryColor, 5);
+$header_navhovercolor:#fff;
+$LIVEbg:$primaryColor;
+$LIVEcolor:#fff;
+$LIVEcolor_hover:darken($primaryColor, 5 );
+$LIVEcolor_focus:$lightColor;
+$LIVEcolor_before:#fff;
+$LIVEcolor_after:$primaryColor;
+$casebtn01: #875875;
+$casebtn02:#195c7d;
+
+// megamenu
+$megamenu: $primaryColor;
+$megamenulinear:$primaryColor;
+$megamenu_hover:#333;
+$megamenu_hoverbefore:$color-yellow;
+$megamenu_2ndbgcolor: #333;
+$megamenu_2nd_acolor:#fff;
+$megamenu_2nd_ahovercolor:$lightColor;
+$megamenu_2nd_ahoverbg:transparent;
+
+// 內頁左欄menu
+$left_title: #506a01;
+$first-active:#cbcbcb;
+$first-active-color:darken($secondaryColor,7);
+$second_active:#6a8b04;
+$second_hover-color:darken($secondaryColor,5);
+
+$font_size_bgcolor:$secondaryColor; //font_size點選到的顏色
+
+// np
+$nphover:darken($primaryColor, 5);
+//category
+$categorycolor:$secondaryColor;
+// tableth
+$tableth:#e0b500;
+$tableth_color:#000;
+// page
+$pagecolor:$secondaryColor;
+// thumbnail
+$thumbnail_h3:$secondaryColor;
+// document
+$search_btn:$primaryColor;
+//箭頭底色
+$search_arrowbgcolor:$color-yellow;
+
+// cp
+$block_title_color:$secondaryColor;
+$info_leftborder:$secondaryColor;
+$cp_acolor:$secondaryColor;
+
+// sp
+$question_leftcolorbg:$primaryColor;
+$process_block_bgcolor:$secondaryColor;  //流程區塊顏色
+$event_title_bgcolor:lighten($primaryColor, 8);
+$court_schedule_span:#cbd7a7; //表格內span的顏色
+$court_schedule_em:darken($secondaryColor, 10); //表格內em的顏色
+
+// sitemap
+$sitemap_color:$secondaryColor;
+
+// slick
+$slickdots:#fff;
+$slickdots-active:$secondaryColor;
+
+// footer
+$footer_connection:$secondaryColor;
+$footer_link:$secondaryColor;
+$footer_accesskey_color:$secondaryColor;
+
+// template
+$morebg: $secondaryColor;
+$morebg_hover:darken($secondaryColor, 5);
+//-------------------------------------------------------------字型--------//
+// 字型設定
+$font-family: Lato, 'PingFang TC', 'Helvetica Neue', Helvetica, 微軟正黑體,
+Arial, sans-serif;
+$font-size: 1em;
+//-------------------------------------------------------------格線系統-----//
+// 格線系統
+$grid-columns: 12 !default; //格線欄位數
+$grid-gutter-width: 30px !default; //左右padding
+$container-max: 1200px !default; //container最大寬
+//mediaquery
+$screen-lg: 1200px !default; //電腦
+$screen-md: 992px !default; //平板
+$screen-sm: 768px !default; //手機
+$screen-xs: 576px !default; //極小尺寸
+//-------------------------------------------------------------客製化------//
+$fatfooter-length: 6; //fatfooter選單一行個數
+$fatfooterBgColor: #0058af; //fatFooter 底色
+$fatfooteraColor:#fccf10;
+//-------------------------------------------------------------客製化------//
+$rounded-angle: 				 10px; //整站導角
+// $mainbg:						 url('../images/supreme/bg01.jpg');
+$h2bg: 							 url('../images/supreme/h2_icon01.png');
+$megamenu_line: 				 url('../images/supreme/menu_line.png');
+$announcement_bg: 				 url('../images/supreme/news_bg.jpg');
+$service_blockbg: 				 url('../images/supreme/service_blockbg.jpg');
+$service_beforebg: 				 url('../images/supreme/service_rightbg.png');
+$fatfooterbg: 					 url('../images/supreme/fatfooter_bg01.jpg');
+$qaTitle: 						 url('../images/supreme/icon_logo.png');
+$cph3beforebg: 					 url('../images/supreme/icon_logo_blue.png');
+$cph3afterebg: 					 url('../images/supreme/icon_category.png');
+$closepeoplebg: 				 url('../images/supreme/closepeople_bg.jpg');
+$courtperiodbg: 				 url('../images/supreme/court_period_bg.jpg');
+$event_contentbg:				 url('../images/supreme/event_content_bg01.jpg');			
+
+
