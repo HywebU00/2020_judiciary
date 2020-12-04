@@ -36,8 +36,8 @@ $LIVEcolor_hover:darken($primaryColor, 5 );
 $LIVEcolor_focus:$lightColor;
 $LIVEcolor_before:#fff;
 $LIVEcolor_after:$primaryColor;
-$casebtn01: #875875;
-$casebtn02:#195c7d;
+$casebtn01: #74412f;
+$casebtn02:#4b5a76;
 
 // megamenu
 $megamenu: $primaryColor;
@@ -91,7 +91,7 @@ $sitemap_color:$secondaryColor;
 
 // slick
 $slickdots:#fff;
-$slickdots-active:$secondaryColor;
+$slickdots-active:darken($secondaryColor, 10);
 
 // footer
 $footer_connection:$secondaryColor;

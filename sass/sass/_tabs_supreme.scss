@@ -184,8 +184,9 @@
                 display: block;
                 padding: 20px 10px;
                 text-align: right;
-                background-color: #1e4000;
-                color: #fff;
+                background: rgb(230, 195, 185);
+                background: linear-gradient(90deg, rgba(230, 195, 185, 1) 0%, rgba(242, 227, 212, 1) 100%);
+                color: $primaryColor;
                 font-weight: bold;
                 text-decoration: none;
                 @include text-overflow;
@@ -194,7 +195,7 @@
                     text-align: center;
                 }
                 &:hover {
-                    background-color: darken(#1e4000, 5);
+                    background: $secondaryColor;
                 }
                 &:focus {
                     background-color: $primaryColor;
