@@ -347,3 +347,14 @@ body {
 .hidden {
     display: none;
 }
+
+// 全文檢索
+.gsc-search-box-tools .gsc-search-box .gsc-input{
+    padding: 0 !important;
+}
+.gsc-selected-option-container{
+    max-width: 100%!important;
+}
+.gsc-above-wrapper-area{
+    border-bottom: none !important;
+}

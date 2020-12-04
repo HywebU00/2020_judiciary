@@ -99,8 +99,8 @@ $footer_link:$secondaryColor;
 $footer_accesskey_color:$secondaryColor;
 
 // template
-$morebg: $secondaryColor;
-$morebg_hover:darken($secondaryColor, 5);
+$morebg: $primaryColor;
+$morebg_hover:darken($primaryColor, 5);
 //-------------------------------------------------------------字型--------//
 // 字型設定
 $font-family: Lato, 'PingFang TC', 'Helvetica Neue', Helvetica, 微軟正黑體,

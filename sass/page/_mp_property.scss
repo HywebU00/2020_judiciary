@@ -1895,6 +1895,8 @@
                 color: #fff;
                 padding: 13px 30px;
                 transition: .5s;
+                background-image: none;
+               
                 &:hover {
                     background-color: darken($color-red, 5);
                 }
@@ -1904,10 +1906,7 @@
 }
 //議題討論
 .topic_discussion_block {
-    // background-image: $announcement_bg;
-    // background-repeat: no-repeat;
-    // background-position: center top;
-    // background-size: 100%;
+    
     padding: 50px 0 80px !important;
     .topic_discussion {
         height: 174px;
@@ -1986,9 +1985,15 @@
                 align-items: center;
                 justify-content: center;
                 border-radius: 0;
+                background-color: $morebg;
+                color:#fff;
+                background-image: none;
                 @include screen('mobile') {
                     padding: 15px 0;
                     letter-spacing: 0.05em;
+                }
+                &:hover{
+                     background-color: $morebg_hover;
                 }
             }
         }

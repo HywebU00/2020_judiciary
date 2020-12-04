@@ -48,33 +48,19 @@
     h2 {
         line-height: 1.25em;
         display: inline-block;
-        color: $secondaryColor;
+        color: $primaryColor;
         padding: 0px 0 0 0;
         text-align: center;
         margin: 0 0 20px;
         font-size: 1.75em;
         letter-spacing: 0.1em;
         span {
-            display: block;
-            letter-spacing: 0.03em;
-            font-size: 0.75em;
-            margin-bottom: 10px;
-            position: relative;
-            &:before {
-                content: '';
-                width: 18px;
-                height: 3px;
-                background-color: $primaryColor;
-                position: absolute;
-                margin-left: -30px;
-                top: 16px;
-            }
+            display:none;
         }
     }
     &.eventpage {
-       
         h2.title {
-           text-align: center;
+            text-align: center;
             display: block;
             position: relative;
             clear: both;
@@ -385,21 +371,12 @@
 }
 // 大圖輪播2
 .mpSlider_block2 {
-   
     padding-bottom: 80px !important;
-   
     @include screen('tablet') {
         padding-top: 20px !important;
     }
     .container {}
-    h2 {
-        color: #fff;
-        span {
-            &:before {
-                background-color: #fff;
-            }
-        }
-    }
+    
     // 首頁大圖輪播 
     .mpSlider {
         // width: 100%;
@@ -432,7 +409,6 @@
 }
 // 大圖輪播3
 .mpSlider_block3 {
-    
     .mpSlider_options {
         display: flex;
         @include screen('tablet') {
@@ -553,7 +529,7 @@
                         content: '';
                         width: 8px;
                         height: 64px;
-                        @include gradient(#618100, #618100, vertical);
+                        background-color:darken($secondaryColor, 5);
                         position: absolute;
                         right: 0;
                         top: 0;
@@ -566,7 +542,7 @@
                     .image {
                         width: 60px;
                         height: 64px;
-                        background-color: #dee8c1;
+                        background-color: lighten($secondaryColor, 5);
                         position: relative;
                         // margin-right: 15px;
                         img {
@@ -601,14 +577,9 @@
 // 公告選單底色
 // 最新公告
 .announcement_block {
-    border-top: 1px solid #fff;
-    background-color: #fff;
-    &.havebg {
-       
-    }
+    &.havebg {}
     &.havecolor {
         background-color: #fff;
-        
     }
     .tabContent {
         padding: 0;
@@ -789,9 +760,6 @@
 }
 // 最新消息文字區塊
 .newsword_block {
-    background-color: #fff;
-    // background: rgb(229, 231, 231);
-    // background: linear-gradient(180deg, rgba(229, 231, 231, 1) 0%, rgba(255, 255, 255, 1) 40%);
     .newsword {}
     .news_no01 {
         display: flex;
@@ -805,7 +773,7 @@
             flex-basis: 110px;
             width: 110px;
             height: 110px;
-            background-color: $secondaryColor;
+            background-color: $primaryColor;
             border-radius: 50%;
             text-align: center;
             margin-right: 15px;
@@ -861,7 +829,12 @@
                 font-size: 1.25em;
                 font-weight: bolder;
                 margin-bottom: 15px;
-                a {}
+                a {
+                    color:$primaryColor;
+                    &:hover{
+                        color:$aHover;
+                    }
+                }
             }
             p {
                 padding: 0;
@@ -901,8 +874,6 @@
 }
 //熱門服務
 .popular_services_block {
-    background: rgb(229, 231, 231);
-    background: linear-gradient(180deg, rgba(229, 231, 231, .6) 0%, rgba(255, 255, 255, 1) 40%);
     padding: 50px 0 !important;
     .popular_services {
         display: flex;
@@ -1065,12 +1036,6 @@
 }
 // 民刑事統計
 .summary_graph_block {
-    // background-image: $announcement_bg;
-    // background-repeat: no-repeat;
-    // background-position: center top;
-    // background-size: 100%;
-    background: rgb(229, 231, 231);
-    background: linear-gradient(180deg, rgba(229, 231, 231, .6) 0%, rgba(255, 255, 255, 1) 40%);
     .summary_graph {
         .image {
             margin-bottom: 10px;
@@ -1541,7 +1506,6 @@
 }
 // 調解件數
 .mediation_block {
-    background-color: #fff;
     .mediation {
         .data {
             margin-bottom: 10px;
@@ -1896,8 +1860,14 @@
                 color: #fff;
                 padding: 13px 30px;
                 transition: .5s;
+                 &:before {
+                    top: 20px;
+                }
                 &:hover {
                     background-color: darken($color-red, 5);
+                    &:before {
+                        left: 15px;
+                    }
                 }
             }
         }

@@ -32,7 +32,8 @@
             background-size: 28px;
             position: absolute;
             right: 17px;
-            top: 7px;
+            top: 50%;
+            margin-top: -15px;
             width: 30px;
             height: 30px;
             transition: .5s;
@@ -2009,10 +2010,10 @@
                 border-radius: 50px;
                 background-color: $color-red;
                 color: #fff;
-                padding: 13px 60px 13px 30px;
+                padding: 13px 30px;
                 transition: .5s;
                 &:before {
-                    top: 10px;
+                    display: none
                 }
                 &:hover {
                     background-color: darken($color-red, 5);
@@ -2105,6 +2106,10 @@
                     padding: 15px 0;
                     letter-spacing: 0.05em;
                 }
+                &:before{
+                    display: none;
+                }
+
             }
         }
     }
