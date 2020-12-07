@@ -87,14 +87,14 @@ $court_schedule_span:#cbd7a7; //表格內span的顏色
 $court_schedule_em:darken($secondaryColor, 10); //表格內em的顏色
 
 // sitemap
-$sitemap_color:$secondaryColor;
+$sitemap_color:darken($primaryColor, 10);
 
 // slick
 $slickdots:#fff;
 $slickdots-active:darken($secondaryColor, 10);
 
 // footer
-$footer_connection:$secondaryColor;
+$footer_connection: url('../images/supreme/footer_connection_bg.jpg');
 $footer_link:$secondaryColor;
 $footer_accesskey_color:$secondaryColor;
 
@@ -118,8 +118,8 @@ $screen-sm: 768px !default; //手機
 $screen-xs: 576px !default; //極小尺寸
 //-------------------------------------------------------------客製化------//
 $fatfooter-length: 6; //fatfooter選單一行個數
-$fatfooterBgColor: #0058af; //fatFooter 底色
-$fatfooteraColor:#fccf10;
+$fatfooterBgColor: #3c4556; //fatFooter 底色
+$fatfooteraColor:#fff;
 //-------------------------------------------------------------客製化------//
 $rounded-angle: 				 10px; //整站導角
 // $mainbg:						 url('../images/supreme/bg01.jpg');

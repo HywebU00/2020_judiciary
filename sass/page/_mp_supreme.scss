@@ -216,7 +216,7 @@
                     }
                 }
                 &:hover {
-                    color:darken( $secondaryColor, 20);
+                    color: darken($secondaryColor, 30);
                     padding: 0px 0 20px;
                     span {
                         width: 56px;
@@ -1060,9 +1060,9 @@
         margin-left: 0;
         position: relative;
         overflow: hidden;
-        h2{
-           color:#fff; 
-           margin-bottom: 50px;
+        h2 {
+            color: #fff;
+            margin-bottom: 50px;
         }
         ul {
             list-style-type: none;
@@ -1122,9 +1122,8 @@
                             width: 104px;
                             height: 104px;
                             top: -5px;
-                            background-color:#ffd86e;
+                            background-color: #ffd86e;
                         }
-                        
                     }
                     img {
                         width: 90px;
@@ -1139,7 +1138,6 @@
                         padding: 0;
                         letter-spacing: 0.05em;
                         font-weight: bolder;
-                        
                     }
                 }
             }
@@ -1399,11 +1397,14 @@
         }
         .titleleft {
             flex: none;
-            flex-basis: 200px;
-            width: 200px;
-            margin-left: 45px;
+            flex-basis: 240px;
+            width: 240px;
+            margin-left: 0px;
             @include screen('notebook') {
-                margin-left: 0;
+                flex-basis: 200px;
+                width: 200px;
+                padding-right: 50px;
+                @include box-sizing;
             }
             @include screen('mobile') {
                 width: auto;
@@ -1441,8 +1442,8 @@
         }
         .period_content {
             flex: auto;
-            flex-basis: calc(100% - 245px);
-            max-width: calc(100% - 245px);
+            flex-basis: calc(100% - 240px);
+            max-width: calc(100% - 240px);
             padding: 0 50px;
             display: flex;
             flex-wrap: wrap;
@@ -1498,7 +1499,7 @@
                     text-align: center;
                 }
                 .court {
-                    background-color:$primaryColor;
+                    background-color: $primaryColor;
                     color: #fff;
                     font-size: 1.063em;
                     padding: 8px 5px;
