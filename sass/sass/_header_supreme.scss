@@ -154,7 +154,7 @@
             flex: 1 1 auto;
             margin: 0;
             position: relative;
-            ul {
+            >ul {
                 padding: 0;
                 margin: 0;
                 font-size: .938em;
@@ -410,17 +410,23 @@
             justify-content: flex-start !important;
             list-style-type: none;
             flex-wrap: wrap;
+            background:none;
             &:before {}
             li {
                 margin: 0 6px 6px 0;
                 padding: 0;
                 flex: 0 0 auto;
+                a {
+                    background-color: $primaryColor;
+                    color: #fff!important;
+                    padding: .5em 0.8em !important;
+                    border-radius: 3px !important;
+                    &:hover{
+                         background-color:lighten( $primaryColor, 10);
+                    }
+                }
             }
-            a {
-                @include aSetting_nocolor;
-                padding: .5em 0.8em !important;
-                border-radius: 3px !important;
-            }
+            
         }
     }
     // m_search

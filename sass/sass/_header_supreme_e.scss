@@ -154,7 +154,7 @@
             flex: 1 1 auto;
             margin: 0;
             position: relative;
-            ul {
+            >ul {
                 padding: 0;
                 margin: 0;
                 font-size: .938em;
@@ -212,7 +212,7 @@
                         &.searchbtn {
                             position: relative;
                             padding: 12px 20px 12px;
-                             border-radius: 0 3px 3px 0;
+                            border-radius: 0 3px 3px 0;
                             img {
                                 width: 21px;
                                 height: 20px;
@@ -358,7 +358,7 @@
         font-size: 0em;
     }
     .form_grp {
-         width: 100%;
+        width: 100%;
         display: inline-block;
         vertical-align: middle;
         margin-bottom: 6px;
@@ -413,11 +413,12 @@
                 margin: 0 6px 6px 0;
                 padding: 0;
                 flex: 0 0 auto;
-            }
-            a {
-                @include aSetting_nocolor;
-                padding: .5em 0.8em !important;
-                border-radius: 3px !important;
+                 a {
+                    background-color: $primaryColor;
+                    color: #fff!important;
+                    padding: .5em 0.8em !important;
+                    border-radius: 3px !important;
+                }
             }
         }
     }
@@ -473,7 +474,7 @@
                 padding: .6em .5em !important;
                 margin: 0;
             }
-        }           
+        }
         .keywordHot {
             @extend %clearfix;
             ul {

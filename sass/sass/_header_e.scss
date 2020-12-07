@@ -152,7 +152,7 @@
             flex: 1 1 auto;
             margin: 0;
             position: relative;
-            ul {
+            >ul {
                 padding: 0;
                 margin: 0;
                 font-size: .938em;
@@ -406,11 +406,15 @@
                 margin: 0 6px 6px 0;
                 padding: 0;
                 flex: 0 0 auto;
-            }
-            a {
-                @include aSetting_nocolor;
-                padding: .5em 0.8em !important;
-                border-radius: 3px !important;
+                a {
+                     background-color: $primaryColor!important;
+                    color: #fff!important;
+                    padding: .5em 0.8em !important;
+                    border-radius: 3px !important;
+                    &:hover{
+                         background-color:$secondaryColor!important;
+                    }
+                }
             }
         }
     }

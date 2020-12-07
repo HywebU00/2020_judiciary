@@ -436,7 +436,7 @@ select {
 //---------------------------------------------reset--------//
 input[type="reset"] {
     @extend %btn;
-    @include btn_setting(darken($color-gray, 20), #FFF);
+    @include btn_setting(darken($color-gray, 30), #FFF);
     text-shadow: none;
 }
 //---------------------------------------------checkbox & radio--------//
