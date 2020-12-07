@@ -9,7 +9,7 @@
     text-decoration: $NOLINE;
     &:hover,
     &:focus {
-        color:$color-red;
+        color:$aHover;
         cursor: pointer;
     }
 }

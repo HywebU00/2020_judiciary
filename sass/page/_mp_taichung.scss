@@ -680,7 +680,7 @@
                         bottom: 0;
                     }
                     &:hover {
-                        color: $aHover;
+                        color: $primaryColor;
                         font-weight: bold;
                     }
                     .image {
@@ -1065,7 +1065,7 @@
                 font-weight: bolder;
                 transition: .5s;
                 &:hover {
-                    color: $aHover;
+                    color: $primaryColor;
                 }
             }
         }

@@ -145,7 +145,7 @@ h1.title, h2.title {
         @include aSetting;
         color: $cp_acolor;
         &:hover {
-            color: $color-red;
+            color: $aHover;
         }
     }
     .info {

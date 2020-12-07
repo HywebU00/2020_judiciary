@@ -399,6 +399,10 @@
     .keywordHot {
         width: 100%;
         margin-top: 8px;
+
+        @include screen('tablet'){
+            padding: 0 .5em;
+        }
         ul {
             font-size: .813em;
             line-height: 1.65em;
@@ -413,11 +417,15 @@
                 margin: 0 6px 6px 0;
                 padding: 0;
                 flex: 0 0 auto;
+                line-height: 2.5em;
                  a {
                     background-color: $primaryColor;
                     color: #fff!important;
                     padding: .5em 0.8em !important;
                     border-radius: 3px !important;
+                    &:hover {
+                        background-color: lighten($primaryColor, 10);
+                    }
                 }
             }
         }
