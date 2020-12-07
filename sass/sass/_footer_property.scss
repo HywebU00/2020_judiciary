@@ -7,11 +7,13 @@ footer {
     overflow: hidden;
     .container {}
     a {
-        text-decoration: none;
-        color: $primaryColor;
+        
+        color: darken($primaryColor, 10);
+        text-decoration: underline;
         &:hover,
         &:focus {
-            color: darken($primaryColor, 10);
+            color: #000;
+            text-decoration: none;
         }
     }
     .accesskey {

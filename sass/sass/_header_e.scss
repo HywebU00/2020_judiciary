@@ -334,9 +334,7 @@
 }
 //search
 .search {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
+    display: none;
     font-size: .938em;
     margin: 0;
     @include box-sizing;
@@ -355,58 +353,44 @@
         font-size: 0em;
     }
     .form_grp {
-        flex: auto;
-        flex-basis: 100%;
-        max-width: 100%;
-        display: flex;
+        width: 100%;
+        display: inline-block;
+        vertical-align: middle;
         margin-bottom: 6px;
         @include screen('tablet') {
-            flex: auto;
-            flex-basis: 100%;
-            max-width: 100%;
+            width: 100%;
         }
         input {
             margin: 0;
             padding: .2em;
             box-shadow: none;
             width: auto;
+            float: left;
             &[type="text"] {
                 min-width: auto;
                 padding: .2em .8em;
-                flex: none;
-                flex-basis: 70%;
-                max-width: 70%;
+                width: 70%;
                 margin-right: 6px;
             }
             &[type="submit"] {
                 min-width: auto;
                 padding: .2em .8em;
-                flex: none;
-                flex-basis: calc(100% - 70% - 6px);
-                max-width: calc(100% - 70% - 6px);
+                width: calc(100% - 70% - 6px);
             }
         }
     }
     .btn_grp {
-        flex: auto;
-        flex-basis: 100%;
-        max-width: 100%;
+        width: 100%;
         padding: 0;
         margin: 0;
-        @include screen('tablet') {
-            flex: auto;
-            flex-basis: 100%;
-            max-width: 100%;
-        }
         input, input[type="submit"] {
-            min-width: auto;
+            width: 100%;
             padding: .2em .8em;
             margin: 0;
-            width: 100%;
         }
     }
     .keywordHot {
-        flex: 1 1 100%;
+        width: 100%;
         margin-top: 8px;
         ul {
             font-size: .813em;

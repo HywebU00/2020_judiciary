@@ -8,16 +8,18 @@ footer {
     .container {}
     a {
         text-decoration: none;
-        color: $primaryColor;
+        color: $lightColor;
+         text-decoration: underline;
         &:hover,
         &:focus {
-            color: darken($primaryColor, 10);
+            color: lighten($lightColor, 5);
+            text-decoration:none;
         }
     }
     .accesskey {
         color: $footer_accesskey_color;
-        &:hover, &:focus{
-            color:#fff;
+        &:hover, &:focus {
+            color: #fff;
         }
     }
     .footer_connection {
@@ -107,7 +109,7 @@ footer {
                 >li {
                     flex: auto;
                     flex-basis: calc(46% - 15px);
-                    width:calc(46% - 15px);
+                    width: calc(46% - 15px);
                     margin: 0 2% 20px 0;
                     padding: 0 0 0 15px;
                     position: relative;
@@ -206,13 +208,12 @@ footer {
             width: 200px;
             height: 50px;
             img {
-               width: 200px;
+                width: 200px;
             }
             @include screen('tablet') {
                 flex-basis: 100%;
                 margin-bottom: 20px;
                 width: 100%;
-               
             }
             @include screen('mobile') {
                 order: 0;
@@ -221,10 +222,9 @@ footer {
         }
         .footer_info {
             flex: auto;
-            
-            @include screen('tablet'){
-               flex: none;
-                flex-basis: calc( 100% - 148px);
+            @include screen('tablet') {
+                flex: none;
+                flex-basis: calc(100% - 148px);
             }
             @include screen('mobile') {
                 flex-basis: 100%;
@@ -263,8 +263,8 @@ footer {
         li {
             flex: 0 1 auto;
             margin: 0px 5px 5px;
-            @include screen('tablet'){
-                 margin: 0px 3px 5px;
+            @include screen('tablet') {
+                margin: 0px 3px 5px;
             }
             @include screen('xs_mobile') {
                 flex: none;
@@ -294,7 +294,6 @@ footer {
     p {
         line-height: 1.65em;
     }
-    
     // footer_update_block
     .footer_update_block {
         padding: 20px 7em;

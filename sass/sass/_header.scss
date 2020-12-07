@@ -335,9 +335,7 @@
 }
 //search
 .search {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
+    display: none;
     font-size: .938em;
     margin: 0;
     @include box-sizing;
@@ -356,48 +354,40 @@
         font-size: 0em;
     }
     .form_grp {
-        flex: none;
-        flex-basis: 70%;
-        max-width: 70%;
-        margin-right: 6px;
-        display: flex;
+        width: 70%;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 1px;
         @include screen('tablet') {
-            flex: auto;
-            flex-basis: 100%;
-            max-width: 100%;
+            width: 100%;
         }
         input {
             margin: 0;
             padding: .2em;
             box-shadow: none;
             width: auto;
+            float: left;
             &[type="text"] {
                 min-width: auto;
                 padding: .2em .8em;
                 flex: none;
-                flex-basis: 70%;
-                max-width: 70%;
+                width: 70%;
                 margin-right: 6px;
             }
             &[type="submit"] {
                 min-width: auto;
                 padding: .2em .8em;
-                flex: none;
-                flex-basis: calc(100% - 70% - 6px);
-                max-width: calc(100% - 70% - 6px);
+                width: calc(100% - 70% - 6px);
             }
         }
     }
     .btn_grp {
-        flex: none;
-        flex-basis: calc(100% - 70% -6px);
-        max-width: calc(100% - 70% -6px);
+        width: calc(100% - 75%);
         padding: 0;
         margin: 0;
+        display: inline-block;
         @include screen('tablet') {
-            flex: auto;
-            flex-basis: 100%;
-            max-width: 100%;
+            width: 100%;
         }
         input, input[type="submit"] {
             min-width: auto;
@@ -406,7 +396,7 @@
         }
     }
     .keywordHot {
-        flex: 1 1 100%;
+        width: 100%;
         margin-top: 8px;
         ul {
             font-size: .813em;
@@ -502,7 +492,6 @@
 .header.fixed {
     position: fixed;
     width: 100%;
-    // max-width: 100%;
     right: 0;
     top: 0;
     background-image: none;
