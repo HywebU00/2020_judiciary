@@ -27,6 +27,10 @@
             &.active>a {
                 background-color: $primaryColor;
                 color: #fff;
+                 &:hover {
+                    background-color: $primaryColor;
+                    color: #fff;
+                }
             }
             display: inline-block;
             // float: left;

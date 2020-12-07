@@ -28,8 +28,8 @@
             &.active>a {
                 color:$importantColor;
                 @include screen('mobile') {
-                    background-color: $color-yellow;
-                    color:$primaryColor;
+                    background-color:lighten($color-yellow, 10); 
+                    color:$importantColor;
                 }
                 &:before {
                     content: '';
@@ -42,6 +42,9 @@
                     z-index: 1;
                     border-radius: 0;
                     background-color: $color-yellow;
+                }
+                &:hover {
+                    color:$importantColor;
                 }
             }
             display: inline-block;

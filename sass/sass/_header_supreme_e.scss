@@ -6,7 +6,7 @@
     background: rgb(253, 253, 253);
     background: linear-gradient(180deg, rgba(253, 253, 253, 1) 45%, rgba(231, 232, 231, 1) 100%);
     // transition: .5s;
-    @extend %clearfix;
+    // @extend %clearfix;
     @include screen('tablet') {
         background-color: #fff;
         box-shadow: 0px 2px 5px RGBA(0, 0, 0, 0.3);
@@ -212,6 +212,7 @@
                         &.searchbtn {
                             position: relative;
                             padding: 12px 20px 12px;
+                             border-radius: 0 3px 3px 0;
                             img {
                                 width: 21px;
                                 height: 20px;
@@ -357,10 +358,10 @@
         font-size: 0em;
     }
     .form_grp {
-        width: 70%;
+         width: 100%;
         display: inline-block;
         vertical-align: middle;
-        margin-right: 1px;
+        margin-bottom: 6px;
         @include screen('tablet') {
             width: 100%;
         }
@@ -385,15 +386,12 @@
         }
     }
     .btn_grp {
-        width: calc(100% - 75%);
+        width: 100%;
         padding: 0;
         margin: 0;
         display: inline-block;
-        @include screen('tablet') {
-            width: 100%;
-        }
         input, input[type="submit"] {
-            min-width: auto;
+            width: 100%;
             padding: .2em .8em;
             margin: 0;
         }
@@ -495,7 +493,6 @@
 .header.fixed {
     position: fixed;
     width: 100%;
-    // max-width: 100%;
     right: 0;
     top: 0;
     background-image: none;

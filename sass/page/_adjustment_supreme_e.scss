@@ -1,0 +1,27 @@
+
+.main {
+    background-image: $announcement_bg;
+    background-repeat: repeat-y;
+    background-position: center top;
+}
+.innerpage { background-image: none;}
+.megamenu {
+    margin: 0;
+    >ul {
+        border-radius: 0;
+    }
+    ul {
+        li {
+            .megamenu_2nd {
+                border-radius: 0;
+            }
+        }
+    }
+}
+.main {
+    h2{
+        letter-spacing: 0;
+        font-size: 1.625em;
+        margin: 0 0 40px;
+    }
+}

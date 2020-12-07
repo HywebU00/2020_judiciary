@@ -1048,7 +1048,7 @@
 // 服務專區
 .service_block {
     background-image: $service_blockbg;
-    background-color: #bc8d63;
+    background-color: #915f44;
     background-repeat: no-repeat;
     background-position: center bottom;
     padding: 50px 0 60px !important;
@@ -1088,11 +1088,11 @@
                 margin: 0 1% 50px;
                 @include screen('mobile') {
                     flex-basis: 22%;
-                    margin: 0 1.5% 30px;
+                    margin: 0 1.5% 50px;
                 }
                 @include screen('xs_mobile') {
                     flex-basis: 47%;
-                    margin: 0 1.5% 30px;
+                    margin: 0 1.5% 50px;
                 }
                 a {
                     color: #fff;
