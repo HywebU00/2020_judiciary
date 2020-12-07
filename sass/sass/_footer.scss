@@ -280,6 +280,7 @@ footer {
                 border-radius: 2px;
                 text-align: center;
                 white-space: nowrap;
+                 text-decoration: none;
                 @include transition(all, .3s, ease-out);
                 @include screen('xs_mobile') {
                     padding: .3em;
@@ -287,6 +288,7 @@ footer {
                 &:hover,
                 &:focus {
                     background: darken($footer_link, 10);
+                     text-decoration: none;
                 }
             }
         }
