@@ -21,7 +21,7 @@ $(function() {
         autoplaySpeed: 3000,
         slidesToShow: 4,
         slidesToScroll: 1,
-        autoplay:true,
+        autoplay: true,
         arrow: true,
         lazyLoaded: true,
         lazyLoad: 'ondemand',
@@ -253,7 +253,6 @@ $(function() {
         }]
     });
     // 今日排定庭期
-	
     $('.period_slider').slick({
         // mobileFirst: true,
         dots: true,
@@ -264,22 +263,19 @@ $(function() {
         autoplay: false,
         arrow: true,
     });
-	
-	// $(".period_slider").each(function(idx, item) {
-	// 	$(this).slick({
-	// 		initialSlide: parseInt($(this).attr("data-index")),
-	// 		dots: true,
-	// 		infinite: true,
-	// 		autoplaySpeed: 3000,
-	// 		slidesToShow: 1,
-	// 		slidesToScroll: 1,
-	// 		autoplay: false,
-	// 		arrow: true,		
-	// 	});	
-	// });	
-
-
-	$('.period_slider2').slick({
+    // $(".period_slider").each(function(idx, item) {
+    //  $(this).slick({
+    //      initialSlide: parseInt($(this).attr("data-index")),
+    //      dots: true,
+    //      infinite: true,
+    //      autoplaySpeed: 3000,
+    //      slidesToShow: 1,
+    //      slidesToScroll: 1,
+    //      autoplay: false,
+    //      arrow: true,        
+    //  }); 
+    // });  
+    $('.period_slider2').slick({
         // mobileFirst: true,
         dots: true,
         infinite: false,
@@ -301,7 +297,7 @@ $(function() {
                 slidesToScroll: 1,
             }
         }]
-    });	
+    });
     $('.period_slider3').slick({
         // mobileFirst: true,
         dots: true,
@@ -317,12 +313,20 @@ $(function() {
                 slidesToShow: 2,
                 slidesToScroll: 2,
             }
-        },{
+        }, {
             breakpoint: 800,
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,
             }
+
+        }, {
+            breakpoint: 767,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+            }
+            
         }, {
             breakpoint: 575,
             settings: {
@@ -330,7 +334,7 @@ $(function() {
                 slidesToScroll: 1,
             }
         }]
-    }); 
+    });
     //燈箱slick+lightBox組合
     $('.cp_slider').slick({
         dots: true,
@@ -646,7 +650,7 @@ $(function() {
     })
 })
 // 
-$('.cp').on('click', 'a[href^="#"]', function (event) {
+$('.cp').on('click', 'a[href^="#"]', function(event) {
     event.preventDefault();
-    $('html, body').stop().animate({scrollTop: $($.attr(this, 'href')).offset().top - 85},50, 'easeOutExpo');
+    $('html, body').stop().animate({ scrollTop: $($.attr(this, 'href')).offset().top - 85 }, 50, 'easeOutExpo');
 });

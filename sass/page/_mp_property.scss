@@ -538,8 +538,8 @@
                             background-color: rgba(0, 0, 0, .68);
                             @include screen('tablet') {
                                 bottom: 0;
-                                height: 3em;
-                                line-height: 3em;
+                                height: 2em;
+                                line-height: 2em;
                                 background-color: rgba(0, 0, 0, .65);
                             }
                         }
@@ -1661,6 +1661,10 @@
                 margin: 0 auto 55px;
                 display: flex;
                 flex-wrap: wrap;
+                @include screen('xs_mobile') {
+                    flex-basis: 85%;
+                    max-width: 85%;
+                }
                 // 箭頭
                 .slick-prev {
                     left: -40px;
@@ -1680,9 +1684,22 @@
                     background-size: 60%;
                     z-index: 9;
                 }
-                .slick-dots{
-                        bottom: -45px;
+                @include screen('xs_mobile') {
+                    .slick-prev {
+                        left: -30px!important;
+                        width: 40px!important;
+                        height: 60px!important;
                     }
+                    .slick-next {
+                        right: -30px!important;
+                        width: 40px!important;
+                        height: 60px!important;
+                    }
+                }
+                // 點
+                .slick-dots {
+                    bottom: -45px;
+                }
                 .period_slider {
                     flex: auto;
                     width: 29%;
@@ -1693,18 +1710,19 @@
                         background: url(../vendor/slick/icon_arrow_left.png) center center no-repeat;
                         background-size: 60%;
                         z-index: 9;
-                        width: 30px!important;
-                        height: 30px!important;
+                        width: 35px !important;
+                        height: 35px !important;
                     }
                     .slick-next {
                         right: -30px;
                         background: url(../vendor/slick/icon_arrow_right.png) center center no-repeat;
                         background-size: 60%;
                         z-index: 9;
-                        width: 30px!important;
-                        height: 30px!important;
+                        width: 35px !important;
+                        height: 35px !important;
                     }
-                    .slick-dots{
+                    // 點
+                    .slick-dots {
                         bottom: -25px;
                     }
                 }
