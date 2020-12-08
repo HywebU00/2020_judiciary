@@ -253,35 +253,36 @@ $(function() {
         }]
     });
     // 今日排定庭期
-	/*
+	
     $('.period_slider').slick({
-        // mobileFirst: true,	
+        // mobileFirst: true,
         dots: true,
-        infinite: true,
+        infinite: false,
         autoplaySpeed: 3000,
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: false,
-        arrow: true,		
-		initialSlide: parseInt(0),
+        arrow: true,
     });
-	*/
-	$(".period_slider").each(function(idx, item) {
-		$(this).slick({
-			initialSlide: parseInt($(this).attr("data-index")),
-			dots: true,
-			infinite: true,
-			autoplaySpeed: 3000,
-			slidesToShow: 1,
-			slidesToScroll: 1,
-			autoplay: false,
-			arrow: true,		
-		});	
-	});		
+	
+	// $(".period_slider").each(function(idx, item) {
+	// 	$(this).slick({
+	// 		initialSlide: parseInt($(this).attr("data-index")),
+	// 		dots: true,
+	// 		infinite: true,
+	// 		autoplaySpeed: 3000,
+	// 		slidesToShow: 1,
+	// 		slidesToScroll: 1,
+	// 		autoplay: false,
+	// 		arrow: true,		
+	// 	});	
+	// });	
+
+
 	$('.period_slider2').slick({
         // mobileFirst: true,
         dots: true,
-        infinite: true,
+        infinite: false,
         autoplaySpeed: 3000,
         slidesToShow: 3,
         slidesToScroll: 3,
@@ -301,6 +302,35 @@ $(function() {
             }
         }]
     });	
+    $('.period_slider3').slick({
+        // mobileFirst: true,
+        dots: true,
+        infinite: false,
+        autoplaySpeed: 3000,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        autoplay: false,
+        arrow: true,
+        responsive: [{
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+            }
+        },{
+            breakpoint: 800,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            }
+        }, {
+            breakpoint: 575,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            }
+        }]
+    }); 
     //燈箱slick+lightBox組合
     $('.cp_slider').slick({
         dots: true,
