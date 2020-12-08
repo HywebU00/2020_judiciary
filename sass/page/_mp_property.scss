@@ -1686,19 +1686,15 @@
                 }
                 @include screen('xs_mobile') {
                     .slick-prev {
-                        left: -30px!important;
-                        width: 40px!important;
-                        height: 60px!important;
+                        left: -30px !important;
+                        width: 40px !important;
+                        height: 60px !important;
                     }
                     .slick-next {
-                        right: -30px!important;
-                        width: 40px!important;
-                        height: 60px!important;
+                        right: -30px !important;
+                        width: 40px !important;
+                        height: 60px !important;
                     }
-                }
-                // 點
-                .slick-dots {
-                    bottom: -45px;
                 }
                 .period_slider {
                     flex: auto;
@@ -1720,10 +1716,6 @@
                         z-index: 9;
                         width: 35px !important;
                         height: 35px !important;
-                    }
-                    // 點
-                    .slick-dots {
-                        bottom: -25px;
                     }
                 }
             }
