@@ -28,12 +28,12 @@ table {
         text-align: center;
         white-space: nowrap;
         font-weight: normal;
-        @include screen('mobile') {
+        @include screen('xs_mobile') {
             white-space: normal;
         }
         &.nowrap {
             white-space: nowrap;
-            @include screen('mobile') {
+            @include screen('xs_mobile') {
                 white-space: normal;
             }
         }
@@ -42,7 +42,7 @@ table {
         }
         &.right {
             text-align: right;
-            @include screen('mobile') {
+            @include screen('xs_mobile') {
                 text-align: left;
             }
         }
@@ -58,13 +58,14 @@ table {
         // word-break: break-all;
         &.nowrap {
             white-space: nowrap;
-            @include screen('mobile') {
+            @include screen('xs_mobile') {
                 white-space: normal;
             }
         }
         &.date, &.num, &.center {
             text-align: center;
-            @include screen('mobile') {
+            
+            @include screen('xs_mobile') {
                 text-align: left;
             }
         }
@@ -76,7 +77,7 @@ table {
         }
         &.right {
             text-align: right;
-            @include screen('mobile') {
+            @include screen('xs_mobile') {
                 text-align: left;
             }
         }

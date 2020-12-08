@@ -227,7 +227,7 @@
                     content: '';
                     width: 51px;
                     height: 17px;
-                    background-image: url('../images/taichung/fast_line.jpg');
+                    background-image: url('../images/supreme/fast_line.jpg');
                     background-repeat: no-repeat;
                     background-position: center;
                     position: absolute;
@@ -273,11 +273,10 @@
                 z-index: 12;
                 box-shadow: rgba(50, 50, 93, 0.2) -2px 1px 4px -1px, rgba(0, 0, 0, 0.2) -2px 1px 3px -1px;
                 a {
-                    color: #fff;
+                    color: #333;
                     display: block;
                     padding: 20px 5px;
                     background-color: $secondaryColor;
-                    color: #fff;
                     @include box-sizing;
                 }
             }
@@ -333,7 +332,7 @@
                         }
                     }
                     &:hover {
-                        color: $secondaryColor;
+                      color: darken($secondaryColor, 30);
                         padding: 0px 0 20px;
                         span {
                             width: 56px;
@@ -344,7 +343,7 @@
                         content: '';
                         width: 51px;
                         height: 17px;
-                        background-image: url('../images/taichung/fast_line.jpg');
+                        background-image: url('../images/supreme/fast_line.jpg');
                         background-repeat: no-repeat;
                         background-position: center;
                         position: absolute;
@@ -968,8 +967,11 @@
             line-height: 1.3;
             border-bottom: 1px #CCC solid;
             display: flex;
-            @include screen('mobile') {
+             @include screen('mobile') {
                 @include text-overflow();
+                flex-wrap: wrap;
+                text-align: left;
+                 justify-content: flex-start;
             }
             a {
                 @include text-overflow;
@@ -978,12 +980,20 @@
                 &:hover {
                     color: $aHover;
                 }
+                 @include screen('mobile') {
+                    width: 100%
+                }
             }
             time {
                 margin: 0;
                 color: #333;
                 width: 170px;
                 text-align: center;
+                @include screen('mobile') {
+                    width: 100%;
+                    margin-bottom: 10px;
+                     text-align: left;
+                }
             }
         }
     }

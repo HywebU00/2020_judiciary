@@ -27,7 +27,7 @@
             &.active>a {
                 background-color: $primaryColor;
                 color: #fff;
-                 &:hover {
+                &:hover {
                     background-color: $primaryColor;
                     color: #fff;
                 }
@@ -63,15 +63,13 @@
                 @include text-overflow;
                 @include box-sizing;
                 @include screen('mobile') {
-                    background-color:#618100;
+                    background-color: #618100;
                 }
                 &:hover {
-                     background-color:darken($secondaryColor, 5);
-                    color:#fff;
+                    background-color: darken($secondaryColor, 5);
+                    color: #fff;
                 }
-                &:focus{
-                   
-                }
+                &:focus {}
             }
         }
     }
@@ -104,6 +102,9 @@
             display: flex;
             @include screen('mobile') {
                 @include text-overflow();
+                flex-wrap: wrap;
+                text-align: left;
+                justify-content: flex-start;
             }
             a {
                 @include text-overflow;
@@ -112,12 +113,20 @@
                 &:hover {
                     color: $aHover;
                 }
+                @include screen('mobile') {
+                    width: 100%
+                }
             }
             time {
                 margin: 0;
                 color: #333;
                 width: 170px;
                 text-align: center;
+                @include screen('mobile') {
+                    width: 100%;
+                    margin-bottom: 10px;
+                    text-align: left;
+                }
             }
         }
     }
@@ -144,10 +153,10 @@
                 color: #fff;
                 position: relative;
                 overflow: inherit;
-                background-image:url('../images/taichung/icon_mallet.png');
-                background-repeat:no-repeat;
+                background-image: url('../images/taichung/icon_mallet.png');
+                background-repeat: no-repeat;
                 background-position: left bottom;
-                background-size:70px 50px;
+                background-size: 70px 50px;
                 &:after {
                     content: "";
                     border-style: solid;
@@ -157,12 +166,12 @@
                     right: -20px;
                     top: 50%;
                     margin-top: -10px;
-                    @include screen('mobile'){
-                        display:none;
+                    @include screen('mobile') {
+                        display: none;
                     }
                 }
                 &:hover {
-                    background-color:$primaryColor;
+                    background-color: $primaryColor;
                     color: #fff;
                 }
             }
@@ -189,13 +198,13 @@
                 display: block;
                 padding: 20px 10px;
                 text-align: right;
-                background-color:#1e4000;
+                background-color: #1e4000;
                 color: #fff;
                 font-weight: bold;
                 text-decoration: none;
                 @include text-overflow;
                 @include box-sizing;
-                @include screen('mobile'){
+                @include screen('mobile') {
                     text-align: center;
                 }
                 &:hover {

@@ -2,7 +2,7 @@
     @include make-fatfooter($fatfooter-length, 100%);
     @extend %clearfix;
     padding-bottom: 1em;
-    margin: 30px auto 0;
+    margin: 2em auto 0;
     background: $fatfooterBgColor;
     background-image: $fatfooterbg;
     background-position: center top;

@@ -247,7 +247,7 @@
             }
             &.active {
                 .text {
-                    color: $secondaryColor;
+                    color: $question_activetext;
                 }
                 &:after {
                     transform: rotate(225deg);
@@ -257,13 +257,13 @@
                 box-shadow: none;
                 box-shadow: 8px 0px 0px 0px $question_leftcolorbg inset;
                 .text {
-                    color: $secondaryColor;
+                    color: $question_activetext;
                 }
             }
         }
         .num {
             font-family: 'Century Gothic', 'Futura', 'Didact Gothic', san-serif;
-            background: $secondaryColor;
+            background: $question_numbg;
             color: #fff;
             font-size: 1.375em;
             padding: .8em;
@@ -852,7 +852,7 @@
             content: "";
             width: 1px;
             height: 100%;
-            background: $secondaryColor;
+            background: $question_numbg;
             display: block;
             position: absolute;
             left: 39px;
@@ -865,7 +865,7 @@
             position: relative;
             margin-bottom: 2em;
             span.date {
-                background: $secondaryColor;
+                background: $question_numbg;
                 color: #fff;
                 border-radius: 9px;
                 padding: .6em .8em;
@@ -1124,6 +1124,7 @@
         text-align: left;
     }
     .court_schedule_table {
+       margin-bottom: 30px;
         table {
             border: #ddd 1px solid;
             tr {

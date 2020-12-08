@@ -103,6 +103,9 @@
             display: flex;
             @include screen('mobile') {
                 @include text-overflow();
+                flex-wrap: wrap;
+                text-align: left;
+                justify-content: flex-start;
             }
             a {
                 @include text-overflow;
@@ -111,12 +114,20 @@
                 &:hover {
                     color: $aHover;
                 }
+                @include screen('mobile') {
+                    width: 100%
+                }
             }
             time {
                 margin: 0;
                 color: #333;
                 width: 170px;
                 text-align: center;
+                @include screen('mobile') {
+                    width: 100%;
+                    margin-bottom: 10px;
+                    text-align: left;
+                }
             }
         }
     }

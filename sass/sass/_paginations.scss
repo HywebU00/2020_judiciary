@@ -37,7 +37,7 @@
                 &:focus {
                     background: $pagecolor;
                     color: #fff !important;
-                    border: $primaryColor solid 1px;
+                    border: $pagecolor solid 1px;
                 }
             }
             &.active {
@@ -155,7 +155,7 @@
         }
 
         &:hover{
-          color: #5a77a0;
+          color: $aHover;
           text-decoration: underline;
         }
         &:focus{
@@ -169,7 +169,7 @@
           color: #fff;
           border-radius: 2px;
           &:focus{
-            background: #5a77a0;
+            background: $aHover;
             color: #fff;
             border-radius: 3px;
             box-shadow: 0 0 0 0 transparent inset;

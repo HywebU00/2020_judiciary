@@ -19,7 +19,7 @@ $color-dark: #333333;
 $color-hr: #666; //hr顏色
 $color-word: #222; //一般字的顏色
 // 連結顏色
-$aColor: darken($secondaryColor, 10);
+$aColor: darken($secondaryColor, 45);
 $aHover: #856a01;
 // 表單focus顏色
 $form-focus: #21baff; //表單
@@ -50,41 +50,43 @@ $megamenu_2nd_ahovercolor:$lightColor;
 $megamenu_2nd_ahoverbg:transparent;
 
 // 內頁左欄menu
-$left_title: #506a01;
+$left_title: $primaryColor;
 $first-active:#cbcbcb;
-$first-active-color:darken($secondaryColor,7);
-$second_active:#6a8b04;
-$second_hover-color:darken($secondaryColor,5);
+$first-active-color:darken($secondaryColor,45);
+$second_active:lighten($primaryColor,7);
+$second_hover-color:darken($secondaryColor,35);
 
-$font_size_bgcolor:$secondaryColor; //font_size點選到的顏色
+$font_size_bgcolor:$primaryColor; //font_size點選到的顏色
 
 // np
 $nphover:darken($primaryColor, 5);
 //category
-$categorycolor:$secondaryColor;
+$categorycolor:darken($secondaryColor,35);
 // tableth
-$tableth:#e0b500;
-$tableth_color:#000;
+$tableth:#767676;
+$tableth_color:#fff;
 // page
-$pagecolor:$secondaryColor;
+$pagecolor:darken($secondaryColor,35);
 // thumbnail
-$thumbnail_h3:$secondaryColor;
+$thumbnail_h3:darken($secondaryColor,35);
 // document
 $search_btn:$primaryColor;
 //箭頭底色
 $search_arrowbgcolor:$color-yellow;
 
 // cp
-$block_title_color:$secondaryColor;
-$info_leftborder:$secondaryColor;
-$cp_acolor:$secondaryColor;
+$block_title_color:darken($secondaryColor,35);
+$info_leftborder:darken($secondaryColor,35);
+$cp_acolor:darken($secondaryColor,35);
 
 // sp
 $question_leftcolorbg:$primaryColor;
-$process_block_bgcolor:$secondaryColor;  //流程區塊顏色
+$process_block_bgcolor:darken($secondaryColor,35);  //流程區塊顏色
 $event_title_bgcolor:lighten($primaryColor, 8);
-$court_schedule_span:#cbd7a7; //表格內span的顏色
-$court_schedule_em:darken($secondaryColor, 10); //表格內em的顏色
+$court_schedule_span:$secondaryColor; //表格內span的顏色
+$court_schedule_em:darken($primaryColor, 10); //表格內em的顏色
+$question_numbg:$primaryColor;
+$question_activetext:darken($secondaryColor,35);
 
 // sitemap
 $sitemap_color:darken($primaryColor, 10);

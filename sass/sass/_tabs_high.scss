@@ -26,10 +26,10 @@
         }
         &>.tabItem {
             &.active>a {
-                color:$importantColor;
+                color: $importantColor;
                 @include screen('mobile') {
-                    background-color:lighten($color-yellow, 10); 
-                    color:$importantColor;
+                    background-color: lighten($color-yellow, 10);
+                    color: $importantColor;
                 }
                 &:before {
                     content: '';
@@ -44,7 +44,7 @@
                     background-color: $color-yellow;
                 }
                 &:hover {
-                    color:$importantColor;
+                    color: $importantColor;
                 }
             }
             display: inline-block;
@@ -79,7 +79,7 @@
                 @include box-sizing;
                 @include screen('mobile') {
                     background-color: $primaryColor;
-                    color:#fff;
+                    color: #fff;
                 }
                 &:hover {
                     color: $primaryColor;
@@ -96,9 +96,7 @@
                         background-color: $color-yellow;
                     }
                 }
-                &:focus{
-                   
-                }
+                &:focus {}
             }
         }
     }
@@ -131,6 +129,9 @@
             display: flex;
             @include screen('mobile') {
                 @include text-overflow();
+                flex-wrap: wrap;
+                text-align: left;
+                justify-content: flex-start;
             }
             a {
                 @include text-overflow;
@@ -139,12 +140,20 @@
                 &:hover {
                     color: $aHover;
                 }
+                @include screen('mobile') {
+                    width: 100%
+                }
             }
             time {
                 margin: 0;
                 color: #333;
                 width: 170px;
                 text-align: center;
+                @include screen('mobile') {
+                    width: 100%;
+                    margin-bottom: 10px;
+                    text-align: left;
+                }
             }
         }
     }
@@ -180,13 +189,13 @@
                     right: -20px;
                     top: 50%;
                     margin-top: -10px;
-                     @include screen('mobile'){
-                        display:none;
+                    @include screen('mobile') {
+                        display: none;
                     }
                 }
                 &:hover {
                     background-color: $importantColor;
-                    color:#fff;
+                    color: #fff;
                 }
             }
             float: none;
@@ -222,7 +231,7 @@
                     background-color: darken($primaryColor, 20);
                 }
                 &:focus {
-                    background-color:$importantColor;
+                    background-color: $importantColor;
                     color: #fff;
                     box-shadow: none;
                 }
