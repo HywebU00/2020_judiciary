@@ -332,7 +332,7 @@
                         }
                     }
                     &:hover {
-                      color: darken($secondaryColor, 30);
+                        color: darken($secondaryColor, 30);
                         padding: 0px 0 20px;
                         span {
                             width: 56px;
@@ -651,7 +651,7 @@
                         bottom: 0;
                     }
                     &:hover {
-                       color: $aHover;
+                        color: $aHover;
                         font-weight: bold;
                     }
                     .image {
@@ -967,11 +967,11 @@
             line-height: 1.3;
             border-bottom: 1px #CCC solid;
             display: flex;
-             @include screen('mobile') {
+            @include screen('mobile') {
                 @include text-overflow();
                 flex-wrap: wrap;
                 text-align: left;
-                 justify-content: flex-start;
+                justify-content: flex-start;
             }
             a {
                 @include text-overflow;
@@ -980,7 +980,7 @@
                 &:hover {
                     color: $aHover;
                 }
-                 @include screen('mobile') {
+                @include screen('mobile') {
                     width: 100%
                 }
             }
@@ -992,7 +992,7 @@
                 @include screen('mobile') {
                     width: 100%;
                     margin-bottom: 10px;
-                     text-align: left;
+                    text-align: left;
                 }
             }
         }
@@ -1560,6 +1560,100 @@
                 .slick-dots li button {
                     width: 22px;
                     height: 7px;
+                    position: relative;
+                }
+                .slick-dots li button:before {
+                    width: 7px;
+                    height: 7px;
+                    box-shadow: none;
+                    background-color: rgba(255, 255, 255, .4);
+                    left: 50%;
+                    margin-left: -4px;
+                }
+                .slick-dots li.slick-active {
+                    margin: 0 8px;
+                }
+                .slick-dots li.slick-active button:before {
+                    width: 22px;
+                    height: 7px;
+                    background-color: rgba(255, 255, 255, .9);
+                    border-radius: 20px;
+                    left: 0;
+                    margin-left: 0;
+                }
+            }
+            .period_slider2 {
+                flex: auto;
+                flex-basis: 90%;
+                max-width: 90%;
+                margin: 0 auto 55px;
+                @include screen('xs_mobile') {
+                    flex-basis: 85%;
+                    max-width: 85%;
+                }
+                .period_list {
+                    background-color: #fef5eb;
+                    border-radius: 3px;
+                    text-align: center;
+                    width: 32%;
+                    margin: 0 0.67%;
+                    @include screen('xs_mobile') {
+                        width: 100%;
+                        margin: 0;
+                    }
+                }
+                .court {
+                    background-color: #271d0a;
+                    color: #fff;
+                    font-size: 1.063em;
+                    padding: 8px 5px;
+                    text-align: center;
+                    margin-bottom: 20px;
+                    border-radius: 3px 3px 0 0;
+                }
+                .content {
+                    color: #000;
+                    span {
+                        display: block;
+                        margin-bottom: 15px;
+                        &.time {
+                            font-size: 1.5em;
+                            font-family: 'Noto Serif TC', serif;
+                            font-weight: 700;
+                            margin-bottom: 25px;
+                        }
+                        &.program {
+                            color: $primaryColor;
+                            margin-bottom: 20px;
+                        }
+                    }
+                }
+                // 箭頭
+                .slick-prev {
+                    left: -40px;
+                    background: url(../vendor/slick/icon_arrow_left.png) center center no-repeat;
+                    background-size: 60%;
+                    z-index: 9;
+                }
+                .slick-next {
+                    right: -40px;
+                    background: url(../vendor/slick/icon_arrow_right.png) center center no-repeat;
+                    background-size: 60%;
+                    z-index: 9;
+                }
+                // 點點
+                .slick-dots {
+                    bottom: -25px;
+                    padding: 0;
+                }
+                .slick-dots li {
+                    width: 18px !important;
+                    height: 7px !important;
+                    margin: 0;
+                }
+                .slick-dots li button {
+                    width: 22px !important;
+                    height: 7px !important;
                     position: relative;
                 }
                 .slick-dots li button:before {
