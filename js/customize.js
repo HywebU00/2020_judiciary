@@ -253,28 +253,18 @@ $(function() {
         }]
     });
     // 今日排定庭期
-    $('.period_slider').slick({
-        // mobileFirst: true,
-        dots: true,
-        infinite: false,
-        autoplaySpeed: 3000,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: false,
-        arrow: true,
-    });
-    // $(".period_slider").each(function(idx, item) {
-    //  $(this).slick({
-    //      initialSlide: parseInt($(this).attr("data-index")),
-    //      dots: true,
-    //      infinite: true,
-    //      autoplaySpeed: 3000,
-    //      slidesToShow: 1,
-    //      slidesToScroll: 1,
-    //      autoplay: false,
-    //      arrow: true,        
-    //  }); 
-    // });  
+    $(".period_slider").each(function(idx, item) {
+        $(this).slick({
+            initialSlide: parseInt($(this).attr("data-index")),
+            dots: true,
+            infinite: false,
+            autoplaySpeed: 3000,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: false,
+            arrow: true,        
+        }); 
+    });  
     $('.period_slider2').slick({
         // mobileFirst: true,
         dots: true,

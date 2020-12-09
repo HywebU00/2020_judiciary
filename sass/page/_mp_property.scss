@@ -339,7 +339,7 @@
             }
         }
         .slick-next {
-            right: 2%;
+            right: 8%;
             @include screen('mobile') {
                 top: 45%;
             }
@@ -520,7 +520,7 @@
                 .slick-list {
                     padding-bottom: 3em;
                     @include screen('tablet') {
-                        padding-bottom: 0;
+                        padding-bottom: 2.5em;
                     }
                 }
                 .img-container {
@@ -537,8 +537,8 @@
                             line-height: 2.5em;
                             background-color: rgba(0, 0, 0, .68);
                             @include screen('tablet') {
-                                bottom: 0;
-                                height: 2em;
+                                bottom: -2.5em;
+                                height: 2.5em;
                                 line-height: 2em;
                                 background-color: rgba(0, 0, 0, .65);
                             }
@@ -649,9 +649,8 @@
                         padding: 0 10px;
                         @include box-sizing;
                         @include screen('tablet') {
-                            width: auto;
                             text-align: left;
-                            padding: 0 15px
+                            padding: 0 5px 0 15px;
                         }
                     }
                 }

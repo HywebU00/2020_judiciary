@@ -382,17 +382,14 @@
             }
         }
         .slick-next {
-            right: 2%;
+            right: 8%;
             @include screen('mobile') {
                 top: 45%;
             }
         }
         // 點點
         .slick-dots {
-            bottom: 70px;
-            @include screen('mobile') {
-                bottom: 50px;
-            }
+            bottom: 10px;
         }
     }
 }
@@ -554,7 +551,7 @@
                 .slick-list {
                     padding-bottom: 3em;
                     @include screen('tablet') {
-                        padding-bottom: 0;
+                        padding-bottom: 2.5em;
                     }
                 }
                 .img-container {
@@ -569,11 +566,11 @@
                             bottom: -2.5em;
                             height: 2.5em;
                             line-height: 2.5em;
-                            background-color: #000;
+                            background-color: rgba(0, 0, 0, .68);
                             @include screen('tablet') {
-                                bottom: 0;
-                                height: 3em;
-                                line-height: 3em;
+                               bottom: -2.5em;
+                            height: 2.5em;
+                                line-height: 2em;
                                 background-color: rgba(0, 0, 0, .65);
                             }
                         }
@@ -683,9 +680,8 @@
                         padding: 0 10px;
                         @include box-sizing;
                         @include screen('tablet') {
-                            width: auto;
                             text-align: left;
-                            padding: 0 15px
+                            padding: 0 5px 0 15px;
                         }
                     }
                 }
@@ -1563,7 +1559,7 @@
             flex: auto;
             flex-basis: calc(100% - 245px);
             max-width: calc(100% - 245px);
-            padding: 0 50px;
+            padding: 50px 50px 0;
             display: flex;
             flex-wrap: wrap;
             @include screen('notebook') {
@@ -1578,6 +1574,53 @@
             }
             @media(max-width: 650px) {
                 justify-content: center;
+            }
+            // 箭頭
+            .slick-prev {
+                left: -40px;
+                background: url(../vendor/slick/icon_arrow_left.png) center center no-repeat;
+                background-size: 60%;
+                z-index: 9;
+            }
+            .slick-next {
+                right: -40px;
+                background: url(../vendor/slick/icon_arrow_right.png) center center no-repeat;
+                background-size: 60%;
+                z-index: 9;
+            }
+            // 點點
+            .slick-dots {
+                bottom: -25px;
+                padding: 0;
+            }
+            .slick-dots li {
+                width: 18px !important;
+                height: 7px !important;
+                margin: 0;
+            }
+            .slick-dots li button {
+                width: 22px !important;
+                height: 7px !important;
+                position: relative;
+            }
+            .slick-dots li button:before {
+                width: 7px;
+                height: 7px;
+                box-shadow: none;
+                background-color: rgba(255, 255, 255, .4);
+                left: 50%;
+                margin-left: -4px;
+            }
+            .slick-dots li.slick-active {
+                margin: 0 8px;
+            }
+            .slick-dots li.slick-active button:before {
+                width: 22px;
+                height: 7px;
+                background-color: rgba(255, 255, 255, .9);
+                border-radius: 20px;
+                left: 0;
+                margin-left: 0;
             }
             .period_slider {
                 flex: auto;
@@ -1618,7 +1661,7 @@
                     text-align: center;
                 }
                 .court {
-                    background-color: darken($primaryColor, 20);
+                    background-color: #270e22;
                     color: #fff;
                     font-size: 1.063em;
                     padding: 8px 5px;
@@ -1642,53 +1685,6 @@
                             margin-bottom: 20px;
                         }
                     }
-                }
-                // 箭頭
-                .slick-prev {
-                    left: -40px;
-                    background: url(../vendor/slick/icon_arrow_left.png) center center no-repeat;
-                    background-size: 60%;
-                    z-index: 9;
-                }
-                .slick-next {
-                    right: -40px;
-                    background: url(../vendor/slick/icon_arrow_right.png) center center no-repeat;
-                    background-size: 60%;
-                    z-index: 9;
-                }
-                // 點點
-                .slick-dots {
-                    bottom: -25px;
-                    padding: 0;
-                }
-                .slick-dots li {
-                    width: 18px !important;
-                    height: 7px !important;
-                    margin: 0;
-                }
-                .slick-dots li button {
-                    width: 22px !important;
-                    height: 7px !important;
-                    position: relative;
-                }
-                .slick-dots li button:before {
-                    width: 7px;
-                    height: 7px;
-                    box-shadow: none;
-                    background-color: rgba(255, 255, 255, .4);
-                    left: 50%;
-                    margin-left: -4px;
-                }
-                .slick-dots li.slick-active {
-                    margin: 0 8px;
-                }
-                .slick-dots li.slick-active button:before {
-                    width: 22px;
-                    height: 7px;
-                    background-color: rgba(255, 255, 255, .9);
-                    border-radius: 20px;
-                    left: 0;
-                    margin-left: 0;
                 }
             }
             .period_slider2 {
@@ -1701,7 +1697,7 @@
                     max-width: 85%;
                 }
                 .period_list {
-                    background-color: #fef5eb;
+                    background-color: #fff;
                     border-radius: 3px;
                     text-align: center;
                     width: 32%;
@@ -1712,7 +1708,7 @@
                     }
                 }
                 .court {
-                    background-color: #271d0a;
+                    background-color: #270e22;
                     color: #fff;
                     font-size: 1.063em;
                     padding: 8px 5px;
@@ -1737,52 +1733,70 @@
                         }
                     }
                 }
+            }
+            .period_slider3 {
+                flex: auto;
+                flex-basis: 90%;
+                max-width: 90%;
+                margin: 0 auto 55px;
+                display: flex;
+                flex-wrap: wrap;
+                @include screen('xs_mobile') {
+                    flex-basis: 85%;
+                    max-width: 85%;
+                }
                 // 箭頭
                 .slick-prev {
                     left: -40px;
-                    background: url(../vendor/slick/icon_arrow_left.png) center center no-repeat;
+                    background-color: $primaryColor;
+                    width: 40px;
+                    height: 60px;
+                    border-radius: 5px;
                     background-size: 60%;
                     z-index: 9;
                 }
                 .slick-next {
                     right: -40px;
-                    background: url(../vendor/slick/icon_arrow_right.png) center center no-repeat;
+                    background-color: $primaryColor;
+                    width: 40px;
+                    height: 60px;
+                    border-radius: 5px;
                     background-size: 60%;
                     z-index: 9;
                 }
-                // 點點
-                .slick-dots {
-                    bottom: -25px;
-                    padding: 0;
+                @include screen('xs_mobile') {
+                    .slick-prev {
+                        left: -30px !important;
+                        width: 40px !important;
+                        height: 60px !important;
+                    }
+                    .slick-next {
+                        right: -30px !important;
+                        width: 40px !important;
+                        height: 60px !important;
+                    }
                 }
-                .slick-dots li {
-                    width: 18px !important;
-                    height: 7px !important;
-                    margin: 0;
-                }
-                .slick-dots li button {
-                    width: 22px !important;
-                    height: 7px !important;
-                    position: relative;
-                }
-                .slick-dots li button:before {
-                    width: 7px;
-                    height: 7px;
-                    box-shadow: none;
-                    background-color: rgba(255, 255, 255, .4);
-                    left: 50%;
-                    margin-left: -4px;
-                }
-                .slick-dots li.slick-active {
-                    margin: 0 8px;
-                }
-                .slick-dots li.slick-active button:before {
-                    width: 22px;
-                    height: 7px;
-                    background-color: rgba(255, 255, 255, .9);
-                    border-radius: 20px;
-                    left: 0;
-                    margin-left: 0;
+                .period_slider {
+                    flex: auto;
+                    width: 29%;
+                    margin: 0 2.16%;
+                    // 箭頭
+                    .slick-prev {
+                        left: -30px;
+                        background: url(../vendor/slick/icon_arrow_left.png) center center no-repeat;
+                        background-size: 60%;
+                        z-index: 9;
+                        width: 35px !important;
+                        height: 35px !important;
+                    }
+                    .slick-next {
+                        right: -30px;
+                        background: url(../vendor/slick/icon_arrow_right.png) center center no-repeat;
+                        background-size: 60%;
+                        z-index: 9;
+                        width: 35px !important;
+                        height: 35px !important;
+                    }
                 }
             }
             .period_btnblock {
@@ -1791,11 +1805,11 @@
                 flex-basis: 100%;
                 max-width: 100%;
                 padding: 30px 0;
-                border-top: 1px solid #fff;
-                border-bottom: 1px solid #fff;
+                border-top: 1px solid #270e22;
+                border-bottom: 1px solid #270e22;
                 button {
-                    background-color: darken($primaryColor, 20);
-                    border: 1px solid darken($primaryColor, 20);
+                    background-color: #270e22;
+                    border: 1px solid #270e22;
                     padding: 0.5em 3em;
                     margin: 0 1em 1em;
                     transition: .5s;

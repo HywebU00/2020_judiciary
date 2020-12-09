@@ -181,6 +181,10 @@ footer {
             width: 334px;
             height: 200px;
             margin: 0 auto;
+            @media(max-width: 380px){
+                width: auto;
+                height: auto;
+            }
             img {
                 width: 100%;
             }
