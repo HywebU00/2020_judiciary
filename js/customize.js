@@ -257,7 +257,7 @@ $(function() {
         $(this).slick({
             initialSlide: parseInt($(this).attr("data-index")),
             dots: true,
-            infinite: false,
+            infinite: true,
             autoplaySpeed: 3000,
             slidesToShow: 1,
             slidesToScroll: 1,
