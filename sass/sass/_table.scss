@@ -245,6 +245,14 @@ table {
         }
     }
 }
+.noscroll_table{
+    @include screen('mobile'){
+        table {
+            width: 100%!important;
+            
+        }
+    }
+}
 .scroltable {
     min-width: 600px !important;
 }

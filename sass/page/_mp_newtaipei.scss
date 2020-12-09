@@ -1663,7 +1663,7 @@
                 // 箭頭
                 .slick-prev {
                     left: -40px;
-                    background-color: $primaryColor;
+                    background-color:darken($primaryColor, 15px);
                     width: 40px;
                     height: 60px;
                     border-radius: 5px;
@@ -1672,7 +1672,7 @@
                 }
                 .slick-next {
                     right: -40px;
-                    background-color: $primaryColor;
+                    background-color:darken($primaryColor, 15px);
                     width: 40px;
                     height: 60px;
                     border-radius: 5px;
