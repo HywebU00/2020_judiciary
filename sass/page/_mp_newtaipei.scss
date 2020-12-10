@@ -333,13 +333,13 @@
             @include aspect-ratio(5, 2); //PC版比例
         }
         .slick-prev {
+            left: 7.5%;
             @include screen('mobile') {
                 top: 45%;
-                left: 2%;
             }
         }
         .slick-next {
-            right: 8%;
+            right: 7.5%;
             @include screen('mobile') {
                 top: 45%;
             }
@@ -525,8 +525,8 @@
                             line-height: 2.5em;
                             background-color: rgba(0, 0, 0, .68);
                             @include screen('tablet') {
-                               bottom: -2.5em;
-                            height: 2.5em;
+                                bottom: -2.5em;
+                                height: 2.5em;
                                 line-height: 2em;
                                 background-color: rgba(0, 0, 0, .65);
                             }
@@ -1357,7 +1357,7 @@
                                 padding: 0;
                                 margin: 0;
                                 position: relative;
-                                @include aspect-ratio(16, 6);
+                                @include aspect-ratio(16, 7);
                                 @include screen('tablet') {
                                     @include aspect-ratio(16, 8);
                                 }
@@ -1663,7 +1663,7 @@
                 // 箭頭
                 .slick-prev {
                     left: -40px;
-                    background-color:darken($primaryColor, 15px);
+                    background-color: darken($primaryColor, 15px);
                     width: 40px;
                     height: 60px;
                     border-radius: 5px;
@@ -1672,7 +1672,7 @@
                 }
                 .slick-next {
                     right: -40px;
-                    background-color:darken($primaryColor, 15px);
+                    background-color: darken($primaryColor, 15px);
                     width: 40px;
                     height: 60px;
                     border-radius: 5px;
@@ -2369,6 +2369,7 @@
         width: 200px;
         height: 68px;
         margin: 0px 5px;
+        background-color:transparent;
         a {
             display: block;
             img {
@@ -2396,6 +2397,7 @@
         width: 228px;
         height: 88px;
         margin: 0px 5px;
+        background-color:transparent;
         a {
             display: block;
             img {
@@ -2423,6 +2425,7 @@
         width: 158px;
         height: 60px;
         margin: 0px 5px;
+        background-color:transparent;
         a {
             display: block;
             img {

@@ -375,13 +375,13 @@
             @include aspect-ratio(5, 2); //PC版比例
         }
         .slick-prev {
+            left: 7.5%;
             @include screen('mobile') {
                 top: 45%;
-                left: 2%;
             }
         }
         .slick-next {
-            right: 8%;
+            right: 7.5%;
             @include screen('mobile') {
                 top: 45%;
             }
@@ -1328,7 +1328,7 @@
                                 padding: 0;
                                 margin: 0;
                                 position: relative;
-                                @include aspect-ratio(16, 6);
+                                @include aspect-ratio(16, 7);
                                 @include screen('tablet') {
                                     @include aspect-ratio(16, 8);
                                 }
@@ -2358,6 +2358,7 @@
         width: 200px;
         height: 68px;
         margin: 0px 5px;
+        background-color:transparent;
         a {
             display: block;
             img {
@@ -2385,6 +2386,7 @@
         width: 228px;
         height: 88px;
         margin: 0px 5px;
+        background-color:transparent;
         a {
             display: block;
             img {
@@ -2412,6 +2414,7 @@
         width: 158px;
         height: 60px;
         margin: 0px 5px;
+        background-color:transparent;
         a {
             display: block;
             img {
