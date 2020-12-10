@@ -544,6 +544,13 @@ $(function() {
         $(this).siblings('.list_second').stop().slideToggle();
         $(this).parent('li').siblings().find('.search').slideUp();
     })
+    // 手機版emailbtn
+    
+    var _navlist_mobile = $('.sidebar .navigation .navlist ul')
+   _navlist_mobile.find('.emailbtn').click(function() {
+        $(this).siblings('.list_second').stop().slideToggle();
+       
+    })
     // 點外面關閉
     $(document).on('touchend click', function(e) {
         var container = $(".header .navigation .navlist ul li a.searchbtn ,.header .navigation .navlist ul li a.emailbtn, .header .navigation .navlist ul li .search");

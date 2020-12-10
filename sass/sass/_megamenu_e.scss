@@ -58,7 +58,7 @@
             }
             &:hover {
                 >a {
-                    background-color:$megamenu_hover;
+                    background-color: $megamenu_hover;
                     color: #fff;
                     &:after {
                         border: 2px solid $lightColor;
@@ -85,7 +85,6 @@
                 display: block;
                 outline: none;
                 text-decoration: none;
-
             }
             .megamenu_2nd {
                 display: none;
@@ -133,7 +132,7 @@
                         padding: .3em 1.2em;
                         color: $megamenu_2nd_acolor;
                         font-weight: normal;
-                        font-weight:bolder;
+                        font-weight: bolder;
                         @include box-sizing;
                         &:hover, &:focus {
                             color: $lightColor;
@@ -266,9 +265,9 @@
                     max-width: 100%;
                     flex-direction: column;
                     >a {
-                        padding: .5em 1em;
+                        padding: .8em 1em;
                         min-height: 2em;
-                        line-height: 2em;
+                        line-height: 1.2em;
                         background: #FFF;
                         border-bottom: 1px solid #CCC;
                     }
@@ -353,9 +352,12 @@
             border: 1px solid rgba(255, 255, 255, .5);
             border-bottom: none;
             border-right: none;
+            display: flex;
+            flex-wrap: wrap;
             li {
-                float: left;
-                width: 50%;
+                // float: left;
+                flex-basis: 100%;
+                width: 100%;
                 margin: 0;
                 padding: 0;
                 @include box-sizing;
@@ -364,8 +366,8 @@
                 }
                 a {
                     display: block;
-                    height: 3em;
-                    line-height: 2em;
+                    height: 3.5em;
+                    line-height: 1.2em;
                     padding: .5em 1em;
                     font-size: .938em;
                     color: #FFF;
@@ -373,6 +375,8 @@
                     text-decoration: none;
                     border: 1px solid rgba(255, 255, 255, .5);
                     @include box-sizing;
+                    display: flex;
+                    align-items: center;
                     &:nth-child(odd) {
                         border-left: none;
                         border-top: none;
@@ -380,6 +384,36 @@
                     &:hover,
                     &:focus {
                         background: darken($primaryColor, 20);
+                    }
+                }
+            }
+        }
+        .list_second {
+            position: absolute;
+            right: -.9em;
+            top: auto;
+            width: 100%;
+            z-index: 100;
+            display: none;
+            ul {
+                margin: 0;
+                padding: 0;
+                display: block !important;
+                li {
+                    display: block;
+                    width: 100% !important;
+                    a {
+                        // display: block;
+                        background-color: #333 !important;
+                        color: #fff;
+                        border-radius: 0 !important;
+                        padding-left: 14px !important;
+                        display: flex;
+                        align-items: center;
+                        &:hover {
+                            background-color: #666 !important;
+                            color: #fff !important;
+                        }
                     }
                 }
             }

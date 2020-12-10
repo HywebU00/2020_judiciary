@@ -50,6 +50,7 @@ $(function() {
         _sidebarClose = $('.sidebarClose'),
         _sidebarCtrl = $('.sidebarCtrl'),
         _overlay = $('.menu_overlay');
+       
     _mArea = $('.m_area');
     _sidebarCtrl.append('<span></span><span></span><span></span>');
     var search_mode = false;
@@ -962,5 +963,4 @@ $(function() {
         fadeTime: 600,
         threshold: 0
     });
-     
 });
