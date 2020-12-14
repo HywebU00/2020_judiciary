@@ -1593,6 +1593,10 @@
                     span {
                         display: block;
                         margin-bottom: 15px;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        padding:0 10px;
                         &.time {
                             font-size: 1.5em;
                             font-family: 'Noto Serif TC', serif;
@@ -2398,7 +2402,7 @@
         width: 200px;
         height: 68px;
         margin: 0px 5px;
-        background-color:transparent;
+        background-color: transparent;
         a {
             display: block;
             img {
@@ -2426,7 +2430,7 @@
         width: 228px;
         height: 88px;
         margin: 0px 5px;
-        background-color:transparent;
+        background-color: transparent;
         a {
             display: block;
             img {
@@ -2454,7 +2458,7 @@
         width: 158px;
         height: 60px;
         margin: 0px 5px;
-        background-color:transparent;
+        background-color: transparent;
         a {
             display: block;
             img {

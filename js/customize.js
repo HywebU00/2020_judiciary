@@ -252,19 +252,7 @@ $(function() {
             }
         }]
     });
-    // 今日排定庭期
-    $(".period_slider").each(function(idx, item) {
-        $(this).slick({
-            initialSlide: parseInt($(this).attr("data-index")),
-            dots: true,
-            infinite: true,
-            autoplaySpeed: 3000,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            autoplay: false,
-            arrow: true,        
-        }); 
-    });  
+    // 今日排定庭期    
     $('.period_slider2').slick({
         // mobileFirst: true,
         dots: true,
@@ -309,14 +297,12 @@ $(function() {
                 slidesToShow: 1,
                 slidesToScroll: 1,
             }
-
         }, {
             breakpoint: 767,
             settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2,
+                slidesToShow: 1,
+                slidesToScroll: 1,
             }
-            
         }, {
             breakpoint: 575,
             settings: {
@@ -324,6 +310,18 @@ $(function() {
                 slidesToScroll: 1,
             }
         }]
+    });
+    $(".period_slider").each(function(idx, item) {
+        $(this).slick({
+            initialSlide: parseInt($(this).attr("data-index")),
+            dots: true,
+            infinite: true,
+            autoplaySpeed: 3000,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: false,
+            arrow: true,
+        });
     });
     //燈箱slick+lightBox組合
     $('.cp_slider').slick({
@@ -545,11 +543,9 @@ $(function() {
         $(this).parent('li').siblings().find('.search').slideUp();
     })
     // 手機版emailbtn
-    
     var _navlist_mobile = $('.sidebar .navigation .navlist ul')
-   _navlist_mobile.find('.emailbtn').click(function() {
+    _navlist_mobile.find('.emailbtn').click(function() {
         $(this).siblings('.list_second').stop().slideToggle();
-       
     })
     // 點外面關閉
     $(document).on('touchend click', function(e) {
