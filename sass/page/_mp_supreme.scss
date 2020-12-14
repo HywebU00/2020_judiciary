@@ -388,9 +388,9 @@
         }
         // 點點
         .slick-dots {
-            bottom: 70px;
-            @include screen('mobile') {
-                bottom: 50px;
+            bottom: 15px;
+             @include screen('xs_mobile'){
+                  bottom: 10px;
             }
         }
     }
@@ -1568,6 +1568,7 @@
                     span {
                         display: block;
                         margin-bottom: 15px;
+                        padding: 0 10px;
                         &.time {
                             font-size: 1.5em;
                             font-family: 'Noto Serif TC', serif;
@@ -1577,6 +1578,10 @@
                         &.program {
                             color: #7a5141;
                             margin-bottom: 20px;
+                        }
+                        &.title{
+                            height: 45px;
+                            overflow: hidden;
                         }
                     }
                 }
@@ -1674,6 +1679,7 @@
                     flex: auto;
                     width: 29%;
                     margin: 0 2.16%;
+                     padding-bottom: 50px;
                     // 箭頭
                     .slick-prev {
                         left: -30px;
@@ -1690,6 +1696,11 @@
                         z-index: 9;
                         width: 35px !important;
                         height: 35px !important;
+                    }
+                    // 點點
+                    .slick-dots {
+                        bottom: 25px;
+                        padding: 0;
                     }
                 }
             }
