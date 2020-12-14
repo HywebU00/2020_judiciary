@@ -5,6 +5,11 @@
     background-position: center top;
 }
 .innerpage { background-image: none;}
+.npbg {
+    background-image: url('../images/npbg.png');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
 .megamenu {
     margin: 0;
     >ul {

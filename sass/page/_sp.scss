@@ -1124,7 +1124,7 @@
         text-align: left;
     }
     .court_schedule_table {
-       margin-bottom: 30px;
+        margin-bottom: 30px;
         table {
             border: #ddd 1px solid;
             tr {
@@ -1227,8 +1227,7 @@
     a {
         color: $primaryColor;
         &:hover {
-            
-            color:$aHover;
+            color: $aHover;
         }
     }
     .event_sort {
@@ -1354,7 +1353,7 @@
             a {
                 color: $primaryColor;
                 &:hover {
-                    color:$aHover;
+                    color: $aHover;
                 }
             }
             ul {
@@ -1408,17 +1407,25 @@
             display: flex;
             flex-wrap: wrap;
             padding-bottom: 0px;
+            justify-content: space-between;
+            @include screen('tablet') {
+                justify-content: center;
+            }
             .event_list {
                 padding-top: 255px;
                 position: relative;
                 flex-basis: 40%;
-                margin: 0 5% 60px;
+                margin: 0 5% 60px 1%;
+                &:nth-child(2n) {
+                    margin: 0 1% 60px 5%;
+                }
                 @include screen('tablet') {
                     flex-basis: 100%;
                     margin: 0 0 60px;
-                }
-                @media(max-width: 500px) {
-                    padding-top: 100px;
+                    padding-top: 0;
+                    &:nth-child(2n) {
+                        margin: 0 0 60px 0;
+                    }
                 }
                 .number {
                     color: $primaryColor;
@@ -1432,6 +1439,9 @@
                         font-weight: bolder;
                         padding-top: 10px;
                     }
+                    @include screen('tablet') {
+                        position: relative;
+                    }
                 }
                 .dialogue {
                     display: flex;
@@ -1441,19 +1451,47 @@
                     left: 0;
                     right: 0;
                     align-items: center;
-                    @media(max-width: 500px) {
-                        flex-wrap: wrap;
+                    @include screen('tablet') {
                         position: relative;
                         top: 0;
                     }
+                    @include screen('xs_mobile') {
+                        flex-wrap:wrap;
+                    }
+                    .explanation {
+                        flex: none;
+                        flex-basis: 40%;
+                        margin-left: 25px;
+                        color: #333;
+                        font-size: 0.938em;
+                        @include screen('xs_mobile') {
+                            flex: auto;
+                            flex-basis: 100%;
+                            margin-left: 0;
+                            padding: 20px 0;
+                        }
+                        a {
+                            color: $primaryColor;
+                            &:hover {
+                                color: $aHover;
+                            }
+                        }
+                    }
+                    &.bothsides{
+                        .leftblock, .rightblock {
+                            flex-basis: 50%;
+                        }
+                    }
                     .leftblock, .rightblock {
-                        display: block;
                         position: relative;
                         display: flex;
                         justify-content: center;
+                        @media(max-width: 650px) {
+                            flex-wrap: wrap;
+                        }
                         span {
                             width: 150px;
-                            height: 150px;
+                            min-height: 150px;
                             font-size: 0.875em;
                             border-radius: 45% 50% 48% 49%;
                             background-color: #fff;
@@ -1462,12 +1500,15 @@
                             text-align: center;
                             display: flex;
                             align-items: center;
-                            padding: 15px;
+                            padding: 25px 15px;
                             line-height: 1.5em;
                             justify-content: center;
                             @include box-sizing;
                             color: #666;
                             position: relative;
+                            @media(max-width: 650px) {
+                                width: 80%;
+                            }
                         }
                     }
                     .leftblock {
@@ -1478,7 +1519,7 @@
                                 border: 12px solid #fff;
                                 border-color: transparent transparent transparent #fff;
                                 position: absolute;
-                                right: -5px;
+                                right: 0px;
                                 bottom: 15px;
                                 transform: rotate(35deg);
                             }
@@ -1487,7 +1528,7 @@
                                 border: 12px solid rgba(153, 153, 153, .3);
                                 border-color: transparent transparent transparent rgba(153, 153, 153, .3);
                                 position: absolute;
-                                right: -7px;
+                                right: -2px;
                                 bottom: 13px;
                                 ;
                                 transform: rotate(35deg);
@@ -1495,46 +1536,34 @@
                         }
                     }
                     .rightblock {
-                        img {}
+                        img {
+                            @media(max-width: 650px) {
+                                order: 1;
+                            }
+                        }
                         span {
                             margin-top: -20px;
+                            @media(max-width: 650px) {
+                                order: 0;
+                            }
                             &:after {
                                 content: '';
                                 border: 12px solid #fff;
                                 border-color: transparent #fff transparent transparent;
                                 position: absolute;
-                                left: -7px;
+                                left: 0px;
                                 bottom: 15px;
                                 transform: rotate(-35deg);
                             }
                             &:before {
                                 content: '';
-                                border: 12px solid rgba(153, 153, 153, .4);
-                                border-color: transparent rgba(153, 153, 153, .4) transparent transparent;
+                                border: 12px solid rgba(153, 153, 153, .3);
+                                border-color: transparent rgba(153, 153, 153, .3) transparent transparent;
                                 position: absolute;
-                                left: -8px;
+                                left: -2px;
                                 bottom: 13px;
                                 ;
                                 transform: rotate(-35deg);
-                            }
-                        }
-                    }
-                    .explanation {
-                        flex: none;
-                        flex-basis: 40%;
-                        margin-left: 25px;
-                        color: #333;
-                        font-size: 0.938em;
-                        @media(max-width: 500px) {
-                            flex: auto;
-                            flex-basis: 100%;
-                            margin-left: 0;
-                            padding: 20px 0;
-                        }
-                        a {
-                            color: $primaryColor;
-                            &:hover {
-                               color:$aHover;
                             }
                         }
                     }
@@ -1795,8 +1824,7 @@
                         margin-left: 5px;
                     }
                     &:hover {
-                       
-                        color:$aHover;
+                        color: $aHover;
                     }
                 }
             }
@@ -1849,7 +1877,6 @@
                                 margin-right: 5px;
                                 &:hover {
                                     color: $aHover;
-                                   
                                 }
                                 &:after {
                                     content: '';
