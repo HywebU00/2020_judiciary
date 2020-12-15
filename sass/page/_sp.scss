@@ -1442,15 +1442,15 @@
             }
             .event_list {
                 position: relative;
-                flex-basis: 45%;
-                flex-basis: 40%\9;
+                flex-basis: 40%;
+               
                 margin: 0 0 60px 0;
-                padding: 255px 5% 0;
+                padding: 255px 0 0;
                 @include box-sizing;
                 @include screen('tablet') {
                     flex-basis: 100%;
                     margin: 0 0 60px 0;
-                    padding: 0 5%;
+                    padding: 0;
                 }
                 .number {
                     color: $primaryColor;
