@@ -1437,21 +1437,20 @@
             flex-wrap: wrap;
             padding-bottom: 0px;
             justify-content: space-between;
-            outline: 1px solid green;
             @include screen('tablet') {
                 justify-content: center;
             }
             .event_list {
                 position: relative;
-                flex-basis: 40%;
+                flex-basis: 45%;
+                flex-basis: 40%\9;
                 margin: 0 0 60px 0;
                 padding: 255px 5% 0;
-                outline: 1px solid red;
                 @include box-sizing;
                 @include screen('tablet') {
                     flex-basis: 100%;
                     margin: 0 0 60px 0;
-                     padding: 0 5% ;
+                    padding: 0 5%;
                 }
                 .number {
                     color: $primaryColor;
@@ -1485,7 +1484,6 @@
                     @include screen('xs_mobile') {
                         flex-wrap: wrap;
                     }
-                    
                     .explanation {
                         flex: none;
                         flex-basis: 40%;
