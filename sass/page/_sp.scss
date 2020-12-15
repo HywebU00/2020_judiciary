@@ -1443,10 +1443,11 @@
             }
             .event_list {
                 position: relative;
-                flex-basis: 44%;
+                flex-basis: 40%;
                 margin: 0 0 60px 0;
                 padding: 255px 5% 0;
                 outline: 1px solid red;
+                @include box-sizing;
                 @include screen('tablet') {
                     flex-basis: 100%;
                     margin: 0 0 60px 0;
