@@ -1409,17 +1409,19 @@
             flex-wrap: wrap;
             padding-bottom: 0px;
             justify-content: space-between;
+            outline: 1px solid green;
             @include screen('tablet') {
                 justify-content: center;
             }
             .event_list {
-                padding-top: 255px;
                 position: relative;
-                flex-basis: 40%;
-                margin: 0 5% 60px 1%;
-                &:nth-child(2n) {
-                    margin: 0 1% 60px 5%;
-                }
+                flex-basis: 44%;
+                margin: 0 0 60px 0;
+                padding: 255px 5% 0;
+                outline: 1px solid red;
+                // &:nth-child(2n) {
+                //     margin: 0 1% 60px 5%;
+                // }
                 @include screen('tablet') {
                     flex-basis: 100%;
                     margin: 0 0 60px;
@@ -1509,7 +1511,7 @@
                             position: relative;
                             @media(max-width: 650px) {
                                 width: 80%;
-                                 margin-bottom: 10px;
+                                margin-bottom: 10px;
                             }
                         }
                     }
@@ -1524,7 +1526,7 @@
                                 right: 0px;
                                 bottom: 15px;
                                 transform: rotate(35deg);
-                                @media(max-width: 500){
+                                @media(max-width: 500) {
                                     right: -5px;
                                 }
                             }
@@ -1537,7 +1539,7 @@
                                 bottom: 13px;
                                 ;
                                 transform: rotate(35deg);
-                                 @media(max-width: 500){
+                                @media(max-width: 500) {
                                     right: -6px;
                                 }
                             }
@@ -1553,7 +1555,6 @@
                             margin-top: -20px;
                             @media(max-width: 650px) {
                                 order: 0;
-
                             }
                             &:after {
                                 content: '';
@@ -1563,7 +1564,7 @@
                                 left: 0px;
                                 bottom: 15px;
                                 transform: rotate(-35deg);
-                                @media(max-width: 500){
+                                @media(max-width: 500) {
                                     right: -5px;
                                 }
                             }
@@ -1576,7 +1577,7 @@
                                 bottom: 13px;
                                 ;
                                 transform: rotate(-35deg);
-                                @media(max-width: 500){
+                                @media(max-width: 500) {
                                     right: -6px;
                                 }
                             }
