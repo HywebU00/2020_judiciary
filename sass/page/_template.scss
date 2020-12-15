@@ -94,7 +94,7 @@ body {
         font-size: 1.125em;
     }
     @include screen('tablet') {
-        padding: 0px 0 30px 0;
+        padding: 75px 0 30px 0;
     }
     >.container {
         @include gutter(40px); //gutter 代表左右要留白
@@ -107,6 +107,9 @@ body {
         width: 100%;
         img {
             width: 100%;
+        }
+        @include screen('tablet'){
+            display: none;
         }
     }
     .left_block {
