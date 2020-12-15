@@ -636,7 +636,7 @@
         height: 600px;
     }
 }
-.table_list_search_block {
+.table_list_search_block, .table_list_search_block2 {
     display: block;
     clear: both;
     margin: -42px 0 10px 0;
@@ -764,6 +764,34 @@
             input {
                 padding-left: 2em;
                 padding-right: 2em;
+            }
+        }
+    }
+}
+.table_list_search_block2 {
+    .table_list_search {
+        .form_grp {
+            .form_title {
+                flex: none;
+                flex-basis: 15%;
+                width: 15%;
+                @include screen('mobile') {
+                    flex: auto;
+                    flex-basis: 100%;
+                    width: 100%;
+                }
+            }
+            .form_content {
+                flex: none;
+                flex-basis: 85%;
+                width: 85%;
+                @include screen('mobile') {
+                    flex: auto;
+                    flex-basis: 100%;
+                    width: 100%;
+                    padding-left: 5px;
+                    padding-right: 5px;
+                }
             }
         }
     }
@@ -1419,16 +1447,10 @@
                 margin: 0 0 60px 0;
                 padding: 255px 5% 0;
                 outline: 1px solid red;
-                // &:nth-child(2n) {
-                //     margin: 0 1% 60px 5%;
-                // }
                 @include screen('tablet') {
                     flex-basis: 100%;
-                    margin: 0 0 60px;
-                    padding-top: 0;
-                    &:nth-child(2n) {
-                        margin: 0 0 60px 0;
-                    }
+                    margin: 0 0 60px 0;
+                     padding: 0 5% ;
                 }
                 .number {
                     color: $primaryColor;
@@ -1444,6 +1466,7 @@
                     }
                     @include screen('tablet') {
                         position: relative;
+                        margin-bottom: 20px;
                     }
                 }
                 .dialogue {
@@ -1461,6 +1484,7 @@
                     @include screen('xs_mobile') {
                         flex-wrap: wrap;
                     }
+                    
                     .explanation {
                         flex: none;
                         flex-basis: 40%;

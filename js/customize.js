@@ -599,8 +599,12 @@ $(function() {
     });
 });
 // 列表頁-公告
-$('.search_btn').off().click(function(e) {
+$('.table_list_search_block .search_btn').off().click(function(e) {
     $('.table_list_search_block .table_list_search').stop().slideToggle();
+    e.preventDefault();
+});
+$('.table_list_search_block2 .search_btn').off().click(function(e) {
+    $('.table_list_search_block2 .table_list_search').stop().slideToggle();
     e.preventDefault();
 });
 // 常見問答
@@ -631,8 +635,15 @@ $(function() {
 // 書狀參考範例
 $(function() {
     $('.advanced_search_block .advanced_search,.table_list_search_block .table_list_search').hide();
-    $('.search_btn').off().click(function(e) {
+    $('.table_list_search_block .search_btn').off().click(function(e) {
         $('.advanced_search_block .advanced_search,.table_list_search_block .table_list_search').stop().slideToggle();
+        e.preventDefault();
+    });
+});
+$(function() {
+    $('.advanced_search_block .advanced_search,.table_list_search_block2 .table_list_search').hide();
+    $('.table_list_search_block2 .search_btn').off().click(function(e) {
+        $('.advanced_search_block .advanced_search,.table_list_search_block2 .table_list_search').stop().slideToggle();
         e.preventDefault();
     });
 });
