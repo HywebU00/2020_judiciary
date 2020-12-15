@@ -10,16 +10,3 @@
     background-repeat: no-repeat;
     background-position: right bottom;
 }
-.megamenu {
-    margin: 0;
-    >ul {
-        border-radius: 0;
-    }
-    ul {
-        li {
-            .megamenu_2nd {
-                border-radius: 0;
-            }
-        }
-    }
-}

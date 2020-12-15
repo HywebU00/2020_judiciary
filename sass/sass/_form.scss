@@ -226,8 +226,9 @@ form {
     .radio_grp {
         label {
             position: relative;
-            display: block;
+            display: inline-block;
             z-index: 1;
+            margin-right: 10px;
             input{
                 &:checked{
                     &~span{

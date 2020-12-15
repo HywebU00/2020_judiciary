@@ -1392,6 +1392,7 @@
             position: relative;
             font-size: 1.75em;
             font-weight: bolder;
+            line-height: 1.2em;
             &:before {
                 content: '';
                 width: 10px;
@@ -1399,7 +1400,7 @@
                 background-color: darken($primaryColor, 15);
                 position: absolute;
                 left: 0;
-                top: -2px;
+                top: 3px;
             }
         }
         // 事件項目
@@ -1456,7 +1457,7 @@
                         top: 0;
                     }
                     @include screen('xs_mobile') {
-                        flex-wrap:wrap;
+                        flex-wrap: wrap;
                     }
                     .explanation {
                         flex: none;
@@ -1477,7 +1478,7 @@
                             }
                         }
                     }
-                    &.bothsides{
+                    &.bothsides {
                         .leftblock, .rightblock {
                             flex-basis: 50%;
                         }
@@ -1508,11 +1509,12 @@
                             position: relative;
                             @media(max-width: 650px) {
                                 width: 80%;
+                                 margin-bottom: 10px;
                             }
                         }
                     }
                     .leftblock {
-                        img {}
+                        div {}
                         span {
                             &:after {
                                 content: '';
@@ -1522,6 +1524,9 @@
                                 right: 0px;
                                 bottom: 15px;
                                 transform: rotate(35deg);
+                                @media(max-width: 500){
+                                    right: -5px;
+                                }
                             }
                             &:before {
                                 content: '';
@@ -1532,11 +1537,14 @@
                                 bottom: 13px;
                                 ;
                                 transform: rotate(35deg);
+                                 @media(max-width: 500){
+                                    right: -6px;
+                                }
                             }
                         }
                     }
                     .rightblock {
-                        img {
+                        div {
                             @media(max-width: 650px) {
                                 order: 1;
                             }
@@ -1545,6 +1553,7 @@
                             margin-top: -20px;
                             @media(max-width: 650px) {
                                 order: 0;
+
                             }
                             &:after {
                                 content: '';
@@ -1554,6 +1563,9 @@
                                 left: 0px;
                                 bottom: 15px;
                                 transform: rotate(-35deg);
+                                @media(max-width: 500){
+                                    right: -5px;
+                                }
                             }
                             &:before {
                                 content: '';
@@ -1564,6 +1576,9 @@
                                 bottom: 13px;
                                 ;
                                 transform: rotate(-35deg);
+                                @media(max-width: 500){
+                                    right: -6px;
+                                }
                             }
                         }
                     }

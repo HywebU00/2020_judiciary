@@ -4,7 +4,7 @@
     z-index: 99;
     // 預設選單 ul
     clear: both;
-    margin: 0 40px;
+    margin: 0;
     @include screen('tablet') {
         display: none;
     }
@@ -13,7 +13,7 @@
         padding: 0;
         list-style-type: none;
         display: flex;
-        border-radius: 3px;
+        border-radius:0;
         background: $megamenu;
         background: $megamenulinear;
         // 第一層選單樣式
@@ -93,7 +93,7 @@
                 display: none;
                 overflow: visible;
                 background: $megamenu_2ndbgcolor;
-                border-radius: 3px;
+                border-radius:0;
                 width: 100%;
                 padding: 20px 10px;
                 box-sizing: border-box;
