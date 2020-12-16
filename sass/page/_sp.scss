@@ -209,6 +209,7 @@
     }
 }
 .qa_list, .meeting_list {
+    margin-bottom: 40px;
     >ul {
         @include li-reset;
         >li {
@@ -637,7 +638,7 @@
     }
 }
 .table_list_search_block, .table_list_search_block2 {
-    display: block;
+    // display: block;
     clear: both;
     margin: -45px 0 10px 0;
     overflow: hidden;
