@@ -470,9 +470,9 @@
 // 書狀範例
 .document {
     .advanced_search_block {
-        display: block;
+        // display: block;
         clear: both;
-        margin: -42px 0 10px 0;
+        margin: -45px 0 10px 0;
         overflow: hidden;
         @include screen('mobile') {
             margin: 0 0 10px 0;
@@ -639,7 +639,7 @@
 .table_list_search_block, .table_list_search_block2 {
     display: block;
     clear: both;
-    margin: -42px 0 10px 0;
+    margin: -45px 0 10px 0;
     overflow: hidden;
     @include screen('mobile') {
         margin: -10px 0 10px 0;
