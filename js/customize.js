@@ -634,19 +634,13 @@ $(function() {
 });
 // 書狀參考範例
 $(function() {
-    $('.advanced_search_block .advanced_search,.table_list_search_block .table_list_search').hide();
-    $('.table_list_search_block .search_btn').off().click(function(e) {
-        $('.advanced_search_block .advanced_search,.table_list_search_block .table_list_search').stop().slideToggle();
+    $('.advanced_search_block .advanced_search').hide();
+    $('.advanced_search_block  .search_btn').off().click(function(e) {
+        $('.advanced_search_block .advanced_search').stop().slideToggle();
         e.preventDefault();
     });
 });
-$(function() {
-    $('.advanced_search_block .advanced_search,.table_list_search_block2 .table_list_search').hide();
-    $('.table_list_search_block2 .search_btn').off().click(function(e) {
-        $('.advanced_search_block .advanced_search,.table_list_search_block2 .table_list_search').stop().slideToggle();
-        e.preventDefault();
-    });
-});
+
 // 首頁影音
 $(function() {
     $('.video_content a.close').click(function() {
