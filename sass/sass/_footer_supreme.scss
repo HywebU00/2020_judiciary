@@ -8,12 +8,12 @@ footer {
     .container {}
     a {
         text-decoration: none;
-        color:$primaryColor;
-         text-decoration: underline;
+        color: $primaryColor;
+        text-decoration: underline;
         &:hover,
         &:focus {
             color: darken($primaryColor, 20);
-            text-decoration:none;
+            text-decoration: none;
         }
     }
     .accesskey {
@@ -29,9 +29,8 @@ footer {
         @include screen('tablet') {
             padding: 35px 5em;
         }
-        @include screen('mobile') {
-            text-align: center;
-            padding: 35px 1em;
+        @include screen('xs_mobile') {
+            padding: 35px 2em;
         }
         .title {
             font-size: 1.25em;
@@ -39,6 +38,9 @@ footer {
             margin-bottom: 25px;
             color: $primaryColor;
             letter-spacing: 0.1em;
+            @include screen('xs_mobile') {
+                text-align: center;
+            }
         }
         .contentblcok {
             display: flex;
@@ -79,11 +81,6 @@ footer {
                         left: 0px;
                         top: 8px;
                     }
-                    @include screen('mobile') {
-                        &:before {
-                            display: none;
-                        }
-                    }
                     a {
                         display: inline-block;
                     }
@@ -117,9 +114,6 @@ footer {
                     @include screen('mobile') {
                         flex-basis: 100%;
                         width: 100%;
-                        &:before {
-                            display: none;
-                        }
                     }
                     &:before {
                         content: '';
@@ -181,7 +175,7 @@ footer {
             width: 334px;
             height: 200px;
             margin: 0 auto;
-            @media(max-width: 380px){
+            @media(max-width: 380px) {
                 width: auto;
                 height: auto;
             }
@@ -279,12 +273,12 @@ footer {
             a {
                 display: block;
                 padding: .3em 1em;
-                background-color:$primaryColor;
-                color:#fff;
+                background-color: $primaryColor;
+                color: #fff;
                 border-radius: 2px;
                 text-align: center;
                 white-space: nowrap;
-                 text-decoration: none;
+                text-decoration: none;
                 @include transition(all, .3s, ease-out);
                 @include screen('xs_mobile') {
                     padding: .3em;
@@ -292,8 +286,8 @@ footer {
                 &:hover,
                 &:focus {
                     background: darken($footer_link, 10);
-                     text-decoration: none;
-                     color:$primaryColor;
+                    text-decoration: none;
+                    color: $primaryColor;
                 }
             }
         }

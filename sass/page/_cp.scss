@@ -17,7 +17,6 @@ h1.title, h2.title {
     &:after {
         display: none;
     }
-    
 }
 .cp {
     margin-top: 1em;
@@ -116,6 +115,9 @@ h1.title, h2.title {
         p {
             margin-bottom: 0;
         }
+    }
+    ul, ol {
+        margin-bottom: 0;
     }
     img {
         &.float_left {
@@ -298,7 +300,7 @@ h1.title, h2.title {
         }
     }
     .movie_container {
-        margin:20px 0;
+        margin: 20px 0;
         @include aspect-ratio(16, 9);
         position: relative;
         iframe {
@@ -465,7 +467,7 @@ div.tag {
             height: auto;
             line-height: 1.45em;
             display: block;
-            color:#333;
+            color: #333;
             &:before {
                 position: absolute;
                 top: 5px;

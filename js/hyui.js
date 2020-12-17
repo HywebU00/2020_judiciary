@@ -524,7 +524,7 @@ $(function() {
                 tabItemLength = _tabItem.length,
                 tabItemWidth;
             _tab.find('.active').next('.tabContent').show();
-            if (ww >= wwSmall) {
+            if (ww >= wwMedium) {
                 _tabContent.css('top', tabItemHeight);
                 _tab.height(tabContentHeight + tabItemHeight);
                 _tabItem.css('width', 'auto');
@@ -548,7 +548,7 @@ $(function() {
                     scollDistance = tvp + tabItemHeight * tabIndex - hh;
                 _tabItem.removeClass('active');
                 _tabItemNow.addClass('active');
-                if (ww <= wwSmall) {
+                if (ww <= wwMedium) {
                     _tabItem.not('.active').next().slideUp();
                     // _tabItemNow.next().slideDown();
                     _tabItemNow.next().slideDown("0", function() {

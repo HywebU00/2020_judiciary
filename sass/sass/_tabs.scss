@@ -9,6 +9,16 @@
     }
 }
 .announcement, .pictab_block {
+    .tabSet {
+        max-width: 100%;
+        margin: 1em auto 0;
+        overflow: hidden;
+        @extend %clearfix;
+        @include screen('tablet') {
+            width: auto;
+            height: auto !important;
+        }
+    }
     .tabs {
         position: relative;
         &:before {
@@ -40,7 +50,7 @@
             font-size:1.125em;
             line-height: 1;
             // letter-spacing: 0.05em;
-            @include screen('mobile') {
+            @include screen('tablet') {
                 display: block;
                 &>a {
                     width: 100% !important;
@@ -63,7 +73,7 @@
                 width: auto;
                 @include text-overflow;
                 @include box-sizing;
-                @include screen('mobile') {
+                @include screen('tablet') {
                     background-color: $primaryColor;
                 }
                 &:hover {
@@ -76,71 +86,71 @@
                 }
             }
         }
+        .tabContent {
+            position: absolute;
+            top: auto;
+            left: 0;
+            right: 0;
+            clear: both;
+            padding: 15px 0px 0;
+            display: none;
+            // background-color:#fff;
+            text-align: left;
+            @include screen('tablet') {
+                position: static;
+                text-align: center;
+            }
+            .tablist {
+                @include li-reset;
+                margin: 5px 0px 20px;
+                li {
+                    margin: 0;
+                    padding: 15px 0;
+                    line-height: 1.3;
+                    border-bottom: 1px #CCC solid;
+                    display: flex;
+                    @include screen('tablet') {
+                        @include text-overflow();
+                        flex-wrap: wrap;
+                        text-align: left;
+                        justify-content: flex-start;
+                    }
+                    a {
+                        @include text-overflow;
+                        width: calc(100% - 200px);
+                        color: #000;
+                        &:hover {
+                            color: $aHover;
+                        }
+                        @include screen('tablet') {
+                            width: 100%
+                        }
+                    }
+                    time {
+                        margin: 0;
+                        color: #333;
+                        width: 170px;
+                        text-align: center;
+                        @include screen('tablet') {
+                            width: 100%;
+                            margin-bottom: 10px;
+                            text-align: left;
+                        }
+                    }
+                }
+            }
+            table {
+                tr {
+                    &:nth-child(even) {
+                        background: transparent;
+                    }
+                }
+            }
+        }
     }
 }
 .active+.tabContent {
     display: block;
-}
-.tabContent {
-    position: absolute;
-    top: auto;
-    left: 0;
-    right: 0;
-    clear: both;
-    padding: 15px 0px 0;
-    display: none;
-    // background-color:#fff;
-    text-align: left;
-    @include screen('mobile') {
-        position: static;
-        text-align: center;
-    }
-    .tablist {
-        @include li-reset;
-        margin: 5px 0px 20px;
-        li {
-            margin: 0;
-            padding: 15px 0;
-            line-height: 1.3;
-            border-bottom: 1px #CCC solid;
-            display: flex;
-            @include screen('mobile') {
-                @include text-overflow();
-                flex-wrap: wrap;
-                text-align: left;
-                justify-content: flex-start;
-            }
-            a {
-                @include text-overflow;
-                width: calc(100% - 200px);
-                color: #000;
-                &:hover {
-                    color: $aHover;
-                }
-                @include screen('mobile') {
-                    width: 100%
-                }
-            }
-            time {
-                margin: 0;
-                color: #333;
-                width: 170px;
-                text-align: center;
-                @include screen('mobile') {
-                    width: 100%;
-                    margin-bottom: 10px;
-                    text-align: left;
-                }
-            }
-        }
-    }
-    table {
-        tr {
-            &:nth-child(even) {
-                background: transparent;
-            }
-        }
-    }
 }
 .close_people {
     .tabs {
@@ -215,12 +225,65 @@
             }
         }
         .tabContent {
+            position: absolute;
             top: 0;
             left: 28%;
+            right: 0;
+            clear: both;
             padding: 0;
             overflow: hidden;
+            display: none;
+            text-align: left;
             @include screen('mobile') {
+                position: static;
+                text-align: center;
                 padding: 30px 0 0;
+            }
+            .tablist {
+                @include li-reset;
+                margin: 5px 0px 20px;
+                li {
+                    margin: 0;
+                    padding: 15px 0;
+                    line-height: 1.3;
+                    border-bottom: 1px #CCC solid;
+                    display: flex;
+                    @include screen('mobile') {
+                        @include text-overflow();
+                        flex-wrap: wrap;
+                        text-align: left;
+                        justify-content: flex-start;
+                    }
+                    a {
+                        @include text-overflow;
+                        width: calc(100% - 200px);
+                        color: #000;
+                        &:hover {
+                            color: $aHover;
+                        }
+                        @include screen('mobile') {
+                            width: 100%
+                        }
+                    }
+                    time {
+                        margin: 0;
+                        color: #333;
+                        width: 170px;
+                        text-align: center;
+                        @include screen('mobile') {
+                            width: 100%;
+                            margin-bottom: 10px;
+                            text-align: left;
+                        }
+                    }
+                }
+            }
+            table {
+                tr {
+                    &:nth-child(even) {
+                        background: transparent;
+                    }
+                }
             }
         }
     }
