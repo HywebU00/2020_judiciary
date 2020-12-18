@@ -16,3 +16,14 @@
         }
     }
 }
+.megamenu{
+     margin: 0 40px;
+     >ul{
+        border-radius: 5px;
+        li{
+            .megamenu_2nd{
+               border-radius: 5px; 
+            }
+        }
+     }
+}
