@@ -1877,7 +1877,7 @@
                 }
             }
             .period_btnblock {
-                display: block;
+                // display: block;
                 flex: auto;
                 flex-basis: 100%;
                 max-width: 100%;
@@ -1898,6 +1898,23 @@
                         background-color: darken($primaryColor, 15);
                         border: 1px solid darken($primaryColor, 15);
                     }
+                }
+            }
+            .no_court_period {
+                flex: auto;
+                flex-basis: 100%;
+                max-width: 100%;
+                text-align: center;
+                font-size: 1.875em;
+                min-height: 390px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                span {
+                     background-color: darken($primaryColor, 15);
+                    color: #fff;
+                    padding: 20px 40px;
+                    border-radius: 50px;
                 }
             }
         }
