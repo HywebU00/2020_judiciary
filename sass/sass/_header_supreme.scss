@@ -100,7 +100,7 @@
         }
     }
     h1 {
-        width: 220px;
+        width: 200px;
         height: 64px;
         margin: 20px 0 15px 50px;
         padding: 0;
@@ -108,7 +108,7 @@
         @include box-sizing;
         a {
             display: block;
-            width: 220px;
+            width: 200px;
             height: 64px;
             img {
                 width: 100%;
@@ -125,7 +125,7 @@
                 background-position: left 5px;
                 margin: 0px auto;
                 background-size: 100%;
-                width: 190px;
+                width: 160px;
                 img {
                     margin-top: 6px;
                 }
