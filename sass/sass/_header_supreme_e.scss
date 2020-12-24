@@ -100,7 +100,7 @@
         }
     }
     h1 {
-        width: 220px;
+        max-width: 272px;
         height: 64px;
         margin: 20px 0 15px 50px;
         padding: 0;
@@ -108,16 +108,16 @@
         @include box-sizing;
         a {
             display: block;
-            width: 220px;
+            max-width: 272px;
             height: 64px;
             img {
-                width: 100%;
-                ;
+                height: 64px;
             }
         }
         @include screen('tablet') {
             padding: 0;
             width: 100%;
+            max-width: 100%;
             text-align: center;
             height: 64px;
             margin: 0;
@@ -125,9 +125,12 @@
                 background-position: left 5px;
                 margin: 0px auto;
                 background-size: 100%;
-                width: 190px;
+                width: 214px;
+                max-width: 100%;
                 img {
-                    margin-top: 6px;
+                    margin-top: 3px;
+                    width: 100%;
+                    height: 58px;
                 }
             }
         }
@@ -399,8 +402,7 @@
     .keywordHot {
         width: 100%;
         margin-top: 8px;
-
-        @include screen('tablet'){
+        @include screen('tablet') {
             padding: 0 .5em;
         }
         ul {
@@ -418,9 +420,9 @@
                 padding: 0;
                 flex: 0 0 auto;
                 line-height: 2.5em;
-                 a {
+                a {
                     background-color: $primaryColor;
-                    color: #fff!important;
+                    color: #fff !important;
                     padding: .5em 0.8em !important;
                     border-radius: 3px !important;
                     &:hover {
