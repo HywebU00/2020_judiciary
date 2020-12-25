@@ -37,7 +37,8 @@ $LIVEcolor_focus:darken($primaryColor, 5);
 $LIVEcolor_before:darken($primaryColor, 5);
 $LIVEcolor_after:$lightColor;
 $casebtn01:rgb(38,72,112);	;
-$casebtn02:rgb(117,53,60);;
+$casebtn02:rgb(117,53,60);
+$units_a:lighten($secondaryColor,15);
 
 // megamenu
 $megamenu:none ;

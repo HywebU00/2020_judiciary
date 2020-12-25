@@ -52,7 +52,7 @@
         padding: 0px 0 0 0;
         text-align: center;
         margin: 0 0 20px;
-        font-size: 1.5em;
+        font-size: 1.75em;
         letter-spacing: 0.1em;
          @include screen('mobile'){
             font-size: 1.375em;
@@ -70,7 +70,7 @@
                 background-color: $primaryColor;
                 position: absolute;
                 margin-left: -30px;
-                top: 14px;
+                top: 17px;
                 @include screen('mobile'){
                     top: 12px;
                 }

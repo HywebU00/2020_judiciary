@@ -25,7 +25,7 @@ footer {
     .footer_connection {
         padding: 35px 7em;
         background: $footer_connection;
-        background-position:center bottom;
+        background-position: center bottom;
         overflow: hidden;
         @include screen('tablet') {
             padding: 35px 5em;
@@ -207,7 +207,7 @@ footer {
             width: 200px;
             height: 50px;
             img {
-                width: 200px;
+                width: 160px;
             }
             @include screen('tablet') {
                 flex-basis: 100%;
@@ -217,6 +217,9 @@ footer {
             @include screen('mobile') {
                 order: 0;
                 text-align: center;
+                img {
+                    width: 160px;
+                }
             }
         }
         .footer_info {

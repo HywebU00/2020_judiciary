@@ -60,7 +60,7 @@
         margin: 0 0 20px;
         font-family: 'Noto Serif TC', serif;
         font-weight: 700;
-        font-size: 1.5em;
+        font-size: 1.75em;
         letter-spacing: 0.2em;
         position: relative;
          @include screen('mobile'){
@@ -73,7 +73,7 @@
             @include gradient(#ef4c46, #772b61, vertical);
             position: absolute;
             left: 0;
-            top: 2px;
+            top: 4px;
             transform: rotate(45deg);
             @include screen('mobile'){
                 top: 0px; 
@@ -86,7 +86,7 @@
             @include gradient(#ef4c46, #772b61, vertical);
             position: absolute;
             right: 0;
-            top: 2px;
+            top: 4px;
             transform: rotate(45deg);
             @include screen('mobile'){
                 top: 0px; 
