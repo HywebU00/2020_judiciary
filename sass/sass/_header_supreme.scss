@@ -62,6 +62,9 @@
         max-width: $container-max;
         overflow: visible;
         position: relative; // menu
+        .accesskey{
+            top:-35px;
+        }
         .sidebarCtrl {
             display: none;
             left: 0px;
