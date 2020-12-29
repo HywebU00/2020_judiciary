@@ -120,7 +120,7 @@
 .fastbtn_blcok {
     width: 80px;
     position: fixed;
-    top: 180px;
+    top: 197px;
     right: 0px;
     z-index: 10;
     padding: 0 !important;
@@ -866,7 +866,7 @@
                         background: rgb(0, 0, 0);
                         background: linear-gradient(0deg, rgba(0, 0, 0, 1) 65%, rgba(0, 0, 0, 0) 100%);
                         color: #fff;
-                        @include screen('mobile'){
+                        @include screen('mobile') {
                             padding: 10px 15px;
                         }
                         span {
@@ -893,7 +893,7 @@
                     box-sizing: border-box;
                     font-size: 0.938em;
                 }
-                .unit{
+                .unit {
                     color: #fff;
                     background-color: darken($primaryColor, 10);
                     padding: 4px 8px;
@@ -902,16 +902,16 @@
                     right: 0;
                     box-sizing: border-box;
                     font-size: 0.938em;
-                   @media(max-width: 900px){
-                    top: 35px;
-                    right:auto;
-                    left:0;
-                   }
-                   @include screen('mobile'){
-                    top: 0;
-                    right: 0;
-                    left:auto;
-                   }
+                    @media(max-width: 900px) {
+                        top: 35px;
+                        right: auto;
+                        left: 0;
+                    }
+                    @include screen('mobile') {
+                        top: 0;
+                        right: 0;
+                        left: auto;
+                    }
                 }
             }
         }
