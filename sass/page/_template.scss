@@ -73,10 +73,9 @@ body {
 ////////////////////////////////////////////////////////////
 // 為了與首頁區隔，請在內頁加上innerpage ClassName
 .innerpage {
-    padding: 0 ;
+    padding: 0;
     background-image: none;
     position: relative;
-   
     &.small_size {
         font-size: .938em;
     }
@@ -89,6 +88,9 @@ body {
     >.container {
         @include gutter(40px); //gutter 代表左右要留白
         display: flex;
+        @include screen('tablet') {
+            display: block;
+        }
     }
     .innerbg {
         margin-bottom: 15px;
@@ -98,7 +100,7 @@ body {
         img {
             width: 100%;
         }
-        @include screen('tablet'){
+        @include screen('tablet') {
             display: none;
         }
     }
@@ -108,11 +110,52 @@ body {
         max-width: 260px;
         padding-bottom: 1.5em;
         @include screen('tablet') {
+            flex:auto;
+            flex-basis: 100%;
+            max-width: 100%;
+        }
+        .leftCtrl {
             display: none;
+            @include screen('tablet') {
+                display: block;
+                width: 100%;
+                text-align: center;
+                border: 0;
+                padding: .7em 1em;
+                border-radius: 0px;
+                margin: 0 0 4px 0;
+                background: $primaryColor;
+                font-size: 1.125em;
+                position: relative;
+                &:after {
+                    content: "";
+                    position: absolute;
+                    right: 20px;
+                    top: 18px;
+                    width: 10px;
+                    height: 10px;
+                    border-top: 2px solid #fff;
+                    border-left: 2px solid #fff;
+                    transform: rotate(225deg);
+                    display: block;
+                    transition: .5s;
+                }
+            }
+            &.active {
+                @include screen('tablet') {
+                    &:after {
+                        content: "";
+                        top: 24px;
+                        transform: rotate(45deg);
+                        
+                    }
+                }
+            }
         }
         nav {
             margin-right: 2em;
-            @include screen('mobile') {
+            display: block;
+            @include screen('tablet') {
                 margin-right: 0;
                 display: none;
             }
@@ -126,7 +169,7 @@ body {
                 letter-spacing: 1px;
                 margin: 0;
                 display: block;
-                @include screen('mobile') {
+                @include screen('tablet') {
                     font-size: 1em;
                     background: #444;
                     text-align: left;
@@ -234,7 +277,7 @@ body {
         flex: auto;
         max-width: 100%;
         overflow: hidden;
-         padding-bottom: 1.5em;
+        padding-bottom: 1.5em;
         a {
             &.doc, &.docx, &.odf, &.xml, &.odt, &.ods, &.pdf, &.epub, &.xls, &.xlsx, &.csv, &.ppt, &.ppt, &.pptx, &.odp, &.jpg, &.tif, &.mp3, &.mp4, &.wma, &.wmv, &.avi, &.mov, &.txt, &.dot, &.zip, &.sevenz, &.other, &.verdict, &.searchcontent {
                 width: 21px;

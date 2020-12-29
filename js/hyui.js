@@ -50,7 +50,6 @@ $(function() {
         _sidebarClose = $('.sidebarClose'),
         _sidebarCtrl = $('.sidebarCtrl'),
         _overlay = $('.menu_overlay');
-       
     _mArea = $('.m_area');
     _sidebarCtrl.append('<span></span><span></span><span></span>');
     var search_mode = false;
@@ -128,6 +127,14 @@ $(function() {
         liHasChild2_level2 = $('aside .megamenu ul .megamenu_2nd .menu_block>ul').children('li.hasChild');
     liHasChild2_level3 = $('aside .megamenu ul .megamenu_2nd .menu_block>ul ul').children('li.hasChild'),
         subMenuWidth2 = liHasChild2.first().children('ul').outerWidth();
+    // 無障礙tab電子信箱
+    $('.list_second').find('li:last>a').focusout(function() {
+        $('.list_second').hide();
+    });
+    // 無障礙tab查詢
+    $('.navlist .search .keywordHot').find('li:last>a').focusout(function() {
+        $('.navlist .search').hide();
+    });
     // 切換PC/Mobile 選單
     function mobileMenu() {
         ww = _window.outerWidth();
@@ -210,6 +217,7 @@ $(function() {
             _body.off('touchmove');
             $('.m_search').hide();
             $('.language').find('ul').hide();
+            // 
         } else {
             /*-----------------------------------*/
             /////////////// PC版設定 /////////////
@@ -828,7 +836,7 @@ $(function() {
         }
         // alt+C 主要內容區
         if (e.altKey && e.keyCode == 67) {
-            $('html, body').stop(true, true).animate({ scrollTop: $('.main').find('.accesskey').offset().top - 70 }, 800, 'easeOutExpo');
+            $('html, body').stop(true, true).animate({ scrollTop: $('.main').find('.accesskey').offset().top - 100 }, 800, 'easeOutExpo');
             $('.main').find('.accesskey ').focus();
         }
         // alt+Z footer
@@ -962,5 +970,35 @@ $(function() {
         effect: "fadeIn",
         fadeTime: 600,
         threshold: 0
+    });
+    /*-----------------------------------*/
+    ////////////// 左欄 //////////////
+    /*-----------------------------------*/
+    $('.left_block').prepend('<button type="button" class="leftCtrl">次選單</button>');
+    _window.on("load resize", function(e) {
+        ww = $(window).width();
+        var navStatus = false; //空的判斷 判斷選單有沒有被打開的狀態
+        if (ww < wwMedium) {
+            $('.leftCtrl').show();
+            $(".left_block nav").hide();
+            $('.leftCtrl').click(function(e) {
+                if (navStatus == false) { //初始值都是關閉 false  
+                    $(this).addClass('active');
+                    $(".left_block nav").stop().slideDown();
+                    navStatus = true; //被打開的狀態
+                    // console.log(navStatus);
+                } else {
+                    $(this).removeClass('active');
+                    $(".left_block nav").stop().slideUp();
+                    navStatus = false; //被關閉的狀態
+                    // console.log(navStatus);
+                }
+            });
+        } else {
+            $('.leftCtrl').removeClass('active').hide();
+            $(".left_block nav").show();
+            // navStatus = false; //沒有被打開的狀態
+        };
+        e.preventDefault();
     });
 });

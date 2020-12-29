@@ -640,7 +640,6 @@ $(function() {
         e.preventDefault();
     });
 });
-
 // 首頁影音
 $(function() {
     $('.video_content a.close').click(function() {
@@ -679,3 +678,5 @@ $('nav.units_block>ul>li:last-child>ul>li:last-child a').focusout(function() {
 $('.units').click(function(event) {
     openuni();
 });
+
+

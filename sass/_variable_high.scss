@@ -99,6 +99,7 @@ $slickdots-active:#fff;
 $footer_connection: linear-gradient(90deg, rgba(114, 41, 98, 1) 0%, rgba(129, 62, 70, 1) 100%);
 $footer_link:darken($primaryColor, 15);
 $footer_accesskey_color:#722961;
+$footer_acolor:lighten($lightColor, 5);
 
 // template
 $morebg: $primaryColor;

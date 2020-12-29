@@ -8,11 +8,11 @@ footer {
     .container {}
     a {
         text-decoration: none;
-        color: $lightColor;
+        color: $footer_acolor;
         text-decoration: underline;
         &:hover,
         &:focus {
-            color: lighten($lightColor, 5);
+            color: $footer_acolor;
             text-decoration: none;
         }
     }

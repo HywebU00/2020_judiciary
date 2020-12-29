@@ -390,11 +390,19 @@
                 flex: none;
                 width: 70%;
                 margin-right: 6px;
+                &:focus {
+                    box-shadow: 0 0px 0px 2px $color-yellow ;
+                    border: none;
+                }
             }
             &[type="submit"] {
                 min-width: auto;
                 padding: .2em .8em;
                 width: calc(100% - 70% - 6px);
+            }
+             &:focus{
+                box-shadow: 0 0px 0px 2px $color-yellow inset;
+                border:none;
             }
         }
     }

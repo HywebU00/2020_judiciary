@@ -1,10 +1,11 @@
-
 .main {
     background-image: $announcement_bg;
     background-repeat: repeat-y;
     background-position: center top;
 }
-.innerpage { background-image: none;}
+.innerpage {
+    background-image: none;
+}
 .npbg {
     background-image: url('../images/npbg.png');
     background-repeat: no-repeat;
