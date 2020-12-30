@@ -13,6 +13,7 @@
         padding: 0;
         list-style-type: none;
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
         background: $megamenu;
         background: $megamenulinear;
@@ -20,13 +21,13 @@
         >li {
             >a {
                 display: block;
-                padding: 10px 1.2em;
+                padding: 10px 2em;
                 min-height: 2.5em;
                 font-weight: bold;
                 line-height: 2.5em;
                 color: #fff;
                 text-align: center;
-                white-space: nowrap;
+                // white-space: nowrap;
                 // width: 100%;
                 position: relative;
                 background-image: $megamenu_line;
