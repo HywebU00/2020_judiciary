@@ -647,11 +647,18 @@ $(function() {
     /*-----------------------------------*/
     ///////////////置頂go to top////////////
     /*-----------------------------------*/
-    $(window).bind('scroll', function() {
+     // _window.on("load resize", function(e) {
+    $(window).bind('load scroll', function(e) {
         if ($(this).scrollTop() > 200) {
             $('.scrollToTop').fadeIn();
+            $('.mpwrap .fastbtn_blcok').css('top', '70px')
         } else {
             $('.scrollToTop').fadeOut();
+            if (ww < wwMedium) {
+                $('.mpwrap .fastbtn_blcok').css('top', '70px')
+            } else {
+                $('.mpwrap .fastbtn_blcok').css('top', '197px')
+            }
         }
     });
     /*-----------------------------------*/

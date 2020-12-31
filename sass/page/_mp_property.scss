@@ -124,6 +124,7 @@
     right: 0px;
     z-index: 10;
     padding: 0 !important;
+    transition: .5s;
     @include screen('tablet') {
         display: block;
         top: 190px;
