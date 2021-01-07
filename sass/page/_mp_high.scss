@@ -270,13 +270,13 @@
     .fastbtn_blcok {
         width: 80px;
         position: fixed;
-        top: 180px;
+        top: 197px;
         right: 0px;
         z-index: 10;
         padding: 0 !important;
         @media(max-width: 1360px) {
             display: block;
-            top: 190px;
+            top: 197px;
             width: 80px;
             margin-right: -80px;
             transition: .5s;

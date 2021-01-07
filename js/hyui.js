@@ -651,13 +651,13 @@ $(function() {
     $(window).bind('load scroll', function(e) {
         if ($(this).scrollTop() > 200) {
             $('.scrollToTop').fadeIn();
-            $('.mpwrap .fastbtn_blcok').css('top', '70px')
+            $('.fastbtn_blcok').css('top', '85px')
         } else {
             $('.scrollToTop').fadeOut();
             if (ww < wwMedium) {
-                $('.mpwrap .fastbtn_blcok').css('top', '70px')
+                $('.fastbtn_blcok').css('top', '85px')
             } else {
-                $('.mpwrap .fastbtn_blcok').css('top', '197px')
+                $('.fastbtn_blcok').css('top', '197px')
             }
         }
     });
