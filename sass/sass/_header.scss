@@ -5,7 +5,7 @@
     margin: 0px auto;
     background: rgb(253, 253, 253);
     background: linear-gradient(180deg, rgba(253, 253, 253, 1) 45%, rgba(231, 232, 231, 1) 100%);
-    padding-top: 38px;
+    padding-top: 0px;
     // transition: .5s;
     @extend %clearfix;
     @include screen('tablet') {
@@ -16,18 +16,18 @@
         padding-top: 0;
     }
     // 虛擬底色 - navigation bg
-    &:before {
-        content: "";
-        width: 100%;
-        height: 2.4em;
-        border-bottom: 1px solid #cbcbcb;
-        position: absolute;
-        top: 0;
-        left: 0;
-        @include screen('tablet') {
-            display: none;
-        }
-    }
+    // &:before {
+    //     content: "";
+    //     width: 100%;
+    //     height: 2.4em;
+    //     border-bottom: 1px solid #cbcbcb;
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    //     @include screen('tablet') {
+    //         display: none;
+    //     }
+    // }
     // mobile btn for extend
     %mobileCtrlBtn {
         width: 60px !important;
@@ -183,7 +183,6 @@
                     position: relative;
                     &:first-child {
                         a {
-                            border-radius: 3px 0 0 3px;
                             padding-left: 25px;
                             @media(max-width: 1070px) {
                                 padding-left: 15px
@@ -222,7 +221,7 @@
                                 }
                             }
                         }
-                        &.searchbtn {
+                        &.searchbtn, &.unitsbtn {
                             position: relative;
                             padding: 12px 20px 12px;
                             img {
@@ -230,8 +229,8 @@
                                 height: 20px;
                                 vertical-align: middle;
                             }
-                            // &:hover{
-                            //     img{
+                            // &:hover {
+                            //     img {
                             //         filter: invert(100%);
                             //     }
                             // }
@@ -247,8 +246,8 @@
                         }
                         &.live {
                             display: block;
-                            background-color: $LIVEbg;
-                            color: $LIVEcolor;
+                            background-color: #fff;
+                            color: $color-red;
                             position: relative;
                             font-weight: 400;
                             padding-left: 40px;
@@ -257,18 +256,27 @@
                             font-size: 1.188em;
                             letter-spacing: 0.1em;
                             transition: .5s;
-                            border-radius: 0 3px 3px 0;
                             &:hover {
-                                background-color: $LIVEcolor_hover;
+                                background-color: $color-red;
+                                color: #fff;
+                                &:before {
+                                    background-color: #fff;
+                                }
+                                &:after {
+                                    border: 4px solid $color-red;
+                                    border-top-color: transparent;
+                                    border-right-color: transparent;
+                                    border-bottom-color: transparent;
+                                }
                             }
                             &:focus {
-                                box-shadow: 0 0px 0px 2px $LIVEcolor_focus inset;
+                                box-shadow: 0 0px 0px 2px $color-red inset;
                             }
                             &:before {
                                 content: '';
                                 width: 14px;
                                 height: 14px;
-                                background-color: $LIVEcolor_before;
+                                background-color: $color-red;
                                 border-radius: 50%;
                                 position: absolute;
                                 left: 15px;
@@ -276,7 +284,44 @@
                             }
                             &:after {
                                 content: '';
-                                border: 4px solid $LIVEcolor_after;
+                                border: 4px solid #fff;
+                                border-top-color: transparent;
+                                border-right-color: transparent;
+                                border-bottom-color: transparent;
+                                position: absolute;
+                                left: 21px;
+                                top: 20px;
+                            }
+                        }
+                        &.QA {
+                            display: block;
+                            background-color: $QAbg;
+                            color: $QAcolor;
+                            position: relative;
+                            font-weight: 400;
+                            padding-left: 35px;
+                            padding-right: 15px;
+                            font-size: 1.063em;
+                            transition: .5s;
+                            &:hover {
+                                background-color: $QAcolor_hover;
+                            }
+                            &:focus {
+                                box-shadow: 0 0px 0px 2px $QAcolor_focus inset;
+                            }
+                            &:before {
+                                content: '';
+                                width: 14px;
+                                height: 14px;
+                                background-color: $QAcolor_before;
+                                border-radius: 50%;
+                                position: absolute;
+                                left: 15px;
+                                top: 17px;
+                            }
+                            &:after {
+                                content: '';
+                                border: 4px solid $QAcolor_after;
                                 border-top-color: transparent;
                                 border-right-color: transparent;
                                 border-bottom-color: transparent;
@@ -390,7 +435,7 @@
                 width: 70%;
                 margin-right: 6px;
                 &:focus {
-                    box-shadow: 0 0px 0px 2px $color-yellow ;
+                    box-shadow: 0 0px 0px 2px $color-yellow;
                     border: none;
                 }
             }

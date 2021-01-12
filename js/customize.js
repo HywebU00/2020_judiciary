@@ -675,7 +675,7 @@ $('nav.units_block .close, nav.units_block .overlay').click(function(event) {
 $('nav.units_block>ul>li:last-child>ul>li:last-child a').focusout(function() {
     closeuni();
 });
-$('.units').click(function(event) {
+$('.navlist ul li .unitsbtn').click(function(event) {
     openuni();
 });
 

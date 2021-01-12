@@ -179,7 +179,6 @@
                     position: relative;
                     &:first-child {
                         a {
-                            border-radius: 3px 0 0 3px;
                             padding-left: 25px;
                             @media(max-width: 1070px) {
                                 padding-left: 15px
@@ -218,17 +217,16 @@
                                 }
                             }
                         }
-                        &.searchbtn {
+                        &.searchbtn, &.unitsbtn {
                             position: relative;
                             padding: 12px 20px 12px;
-                            border-radius: 0 3px 3px 0;
                             img {
                                 width: 21px;
                                 height: 20px;
                                 vertical-align: middle;
                             }
-                            // &:hover{
-                            //     img{
+                            // &:hover {
+                            //     img {
                             //         filter: invert(100%);
                             //     }
                             // }
@@ -244,8 +242,8 @@
                         }
                         &.live {
                             display: block;
-                            background-color: $LIVEbg;
-                            color: $LIVEcolor;
+                            background-color: #fff;
+                            color: $color-red;
                             position: relative;
                             font-weight: 400;
                             padding-left: 40px;
@@ -254,18 +252,27 @@
                             font-size: 1.188em;
                             letter-spacing: 0.1em;
                             transition: .5s;
-                            border-radius: 0 3px 3px 0;
                             &:hover {
-                                background-color: $LIVEcolor_hover;
+                                background-color: $color-red;
+                                color: #fff;
+                                &:before {
+                                    background-color: #fff;
+                                }
+                                &:after {
+                                    border: 4px solid $color-red;
+                                    border-top-color: transparent;
+                                    border-right-color: transparent;
+                                    border-bottom-color: transparent;
+                                }
                             }
                             &:focus {
-                                box-shadow: 0 0px 0px 2px $LIVEcolor_focus inset;
+                                box-shadow: 0 0px 0px 2px $color-red inset;
                             }
                             &:before {
                                 content: '';
                                 width: 14px;
                                 height: 14px;
-                                background-color: $LIVEcolor_before;
+                                background-color: $color-red;
                                 border-radius: 50%;
                                 position: absolute;
                                 left: 15px;
@@ -273,7 +280,44 @@
                             }
                             &:after {
                                 content: '';
-                                border: 4px solid $LIVEcolor_after;
+                                border: 4px solid #fff;
+                                border-top-color: transparent;
+                                border-right-color: transparent;
+                                border-bottom-color: transparent;
+                                position: absolute;
+                                left: 21px;
+                                top: 20px;
+                            }
+                        }
+                        &.QA {
+                            display: block;
+                            background-color: $QAbg;
+                            color: $QAcolor;
+                            position: relative;
+                            font-weight: 400;
+                            padding-left: 35px;
+                            padding-right: 15px;
+                            font-size: 1.063em;
+                            transition: .5s;
+                            &:hover {
+                                background-color: $QAcolor_hover;
+                            }
+                            &:focus {
+                                box-shadow: 0 0px 0px 2px $QAcolor_focus inset;
+                            }
+                            &:before {
+                                content: '';
+                                width: 14px;
+                                height: 14px;
+                                background-color: $QAcolor_before;
+                                border-radius: 50%;
+                                position: absolute;
+                                left: 15px;
+                                top: 17px;
+                            }
+                            &:after {
+                                content: '';
+                                border: 4px solid $QAcolor_after;
                                 border-top-color: transparent;
                                 border-right-color: transparent;
                                 border-bottom-color: transparent;
@@ -386,7 +430,7 @@
                 width: 70%;
                 margin-right: 6px;
                 &:focus {
-                    box-shadow: 0 0px 0px 2px $color-yellow ;
+                    box-shadow: 0 0px 0px 2px $color-yellow;
                     border: none;
                 }
             }
@@ -395,9 +439,9 @@
                 padding: .2em .8em;
                 width: calc(100% - 70% - 6px);
             }
-             &:focus{
+            &:focus {
                 box-shadow: 0 0px 0px 2px $color-yellow inset;
-                border:none;
+                border: none;
             }
         }
     }

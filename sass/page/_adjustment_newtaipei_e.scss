@@ -1,15 +1,14 @@
-.navigation{
+.navigation {
     .navlist {
-        ul{
-            >li{
-                a{
-                    &.searchbtn {
-                         &:hover{
-                                img{
-                                    filter: invert(100%);
-                                }
-                                
+        ul {
+            >li {
+                a {
+                    &.searchbtn, &.unitsbtn {
+                        &:hover {
+                            img {
+                                filter: invert(100%);
                             }
+                        }
                     }
                 }
             }
@@ -17,21 +16,20 @@
     }
 }
 .main {
-    h2{
+    h2 {
         letter-spacing: 0;
         font-size: 1.625em;
         margin: 0 0 40px;
     }
 }
-.megamenu{
-     margin: 0 30px;
-     >ul{
+.megamenu {
+    margin: 0 30px;
+    >ul {
         border-radius: 5px;
-        li{
-            .megamenu_2nd{
-               border-radius: 5px; 
+        li {
+            .megamenu_2nd {
+                border-radius: 5px;
             }
         }
-     }
+    }
 }
-
