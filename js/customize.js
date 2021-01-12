@@ -679,4 +679,6 @@ $('.navlist ul li .unitsbtn').click(function(event) {
     openuni();
 });
 
-
+$('.units').click(function(event) {
+    openuni();
+});

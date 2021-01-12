@@ -101,7 +101,7 @@
             &:before {
                 width: 40px;
                 height: 40px;
-                background: url(../images/basic/icon_search.png) no-repeat center center;
+                background: url(../images/basic/icon_search.svg) no-repeat center center;
                 background-size: 28px;
                 opacity: .6;
                 content: "";
@@ -599,11 +599,13 @@
     top: -38px;
     left: 30px;
     line-height: 38px;
+    display: none;
     @include screen('tablet') {
         left: 60px;
         border: 0;
         width: 60px;
         top: 0px;
+        display: block;
     }
     @include screen('xs_mobile') {
         left: 40px;
@@ -636,7 +638,7 @@
 .units_block {
     display: none;
     width: 100%;
-    height: auto;
+    height:100%;
     position: fixed;
     z-index: 9999;
     background: rgba(51, 51, 51, .98);

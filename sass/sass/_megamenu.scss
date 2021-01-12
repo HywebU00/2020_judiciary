@@ -367,7 +367,7 @@
                 margin: 0;
                 padding: 0;
                 @include box-sizing;
-                &.search_block {
+                &.search_block, &.unitsbtn_block {
                     display: none
                 }
                 a {
