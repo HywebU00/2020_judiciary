@@ -3,11 +3,14 @@
         ul {
             >li {
                 a {
-                    &.searchbtn, &.unitsbtn {
+                    &.searchbtn {
                         &:hover {
-                            img {
-                                filter: invert(100%);
-                            }
+                            background-image: url('../images/icon/icon_search_black.svg');
+                        }
+                    }
+                    &.unitsbtn {
+                        &:hover {
+                            background-image: url('../images/icon/icon_sitemap_black.svg');
                         }
                     }
                 }
