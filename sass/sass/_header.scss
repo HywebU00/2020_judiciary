@@ -223,12 +223,13 @@
                         }
                         &.searchbtn, &.unitsbtn {
                             position: relative;
-                            padding: 12px 30px 12px;
+                            padding: 12px 30px;
                             font-size: 0;
                             background-position: center;
                             background-repeat: no-repeat;
                             background-size: 21px 20px;
                             display: block;
+                            height:47px; 
                             &:before {
                                 content: '';
                                 width: 1px;
