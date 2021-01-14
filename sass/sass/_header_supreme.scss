@@ -242,11 +242,7 @@
                                 background-color: #082354;
                             }
                         }
-                        &.searchbtn, &.unitsbtn{
-                            img{
-                                filter: invert(100%);
-                            }
-                        }
+                        
                         &.live {
                             display: block;
                             background-color: #fdfdfd;
