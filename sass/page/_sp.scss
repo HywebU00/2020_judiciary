@@ -384,6 +384,26 @@
             @include screen('mobile') {
                 margin: 0 40px 0 10px;
             }
+            h2 {
+                font-size: 1.5em !important;
+                line-height: 1.33333em !important;
+                color: #000;
+                background-image: none;
+                margin: 0;
+                padding: 0;
+                letter-spacing: 0;
+                font-weight: bold;
+                font-family: Lato, "PingFang TC", "Helvetica Neue", Helvetica, 微軟正黑體, Arial, sans-serif;
+                &:before {
+                    display: none;
+                }
+                &:after {
+                    display: none;
+                }
+            }
+            ul,ol{
+                margin-bottom: 20px;
+            }
         }
         .dep {
             text-align: right;
@@ -1444,7 +1464,6 @@
             .event_list {
                 position: relative;
                 flex-basis: 40%;
-               
                 margin: 0 0 60px 0;
                 padding: 255px 2% 0;
                 @include box-sizing;
