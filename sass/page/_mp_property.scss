@@ -71,6 +71,15 @@
             }
         }
     }
+    &.innerpage {
+        h2 {
+            display: block;
+            text-align: left;
+            span {
+                display: block;
+            }
+        }
+    }
 }
 // 廣告輪播
 .adSlider {
@@ -227,7 +236,7 @@
         padding: 0 !important;
         @media(max-width: 1360px) {
             display: block;
-           top: 197px;
+            top: 197px;
             width: 80px;
             margin-right: -80px;
             transition: .5s;

@@ -97,6 +97,21 @@
             }
         }
     }
+    &.innerpage {
+        h2 {
+            display: block;
+            text-align: left;
+            span {
+                display: block;
+                font-size: 1em;
+                letter-spacing: 0em;
+                margin-bottom: 0px;
+                &:before {
+                    display: none;
+                }
+            }
+        }
+    }
 }
 // 廣告輪播
 .adSlider {

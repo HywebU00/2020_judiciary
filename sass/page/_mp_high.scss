@@ -63,7 +63,7 @@
         font-size: 1.75em;
         letter-spacing: 0.2em;
         position: relative;
-         @include screen('mobile'){
+        @include screen('mobile') {
             font-size: 1.375em;
         }
         &:before {
@@ -75,8 +75,8 @@
             left: 0;
             top: 4px;
             transform: rotate(45deg);
-            @include screen('mobile'){
-                top: 0px; 
+            @include screen('mobile') {
+                top: 0px;
             }
         }
         &:after {
@@ -88,8 +88,8 @@
             right: 0;
             top: 4px;
             transform: rotate(45deg);
-            @include screen('mobile'){
-                top: 0px; 
+            @include screen('mobile') {
+                top: 0px;
             }
         }
         span {
@@ -117,6 +117,15 @@
                 left: auto;
                 top: auto;
                 position: relative;
+            }
+        }
+    }
+    &.innerpage {
+        h2 {
+            display: block;
+            text-align: left;
+            span {
+                display: block;
             }
         }
     }
@@ -400,8 +409,8 @@
         // 點點
         .slick-dots {
             bottom: 15px;
-             @include screen('xs_mobile'){
-                  bottom: 10px;
+            @include screen('xs_mobile') {
+                bottom: 10px;
             }
         }
     }
@@ -581,8 +590,8 @@
                             line-height: 2.5em;
                             background-color: rgba(0, 0, 0, .68);
                             @include screen('tablet') {
-                               bottom: -2.5em;
-                            height: 2.5em;
+                                bottom: -2.5em;
+                                height: 2.5em;
                                 line-height: 2em;
                                 background-color: rgba(0, 0, 0, .65);
                             }
@@ -863,7 +872,7 @@
                     box-sizing: border-box;
                 }
             }
-             // news_pic3
+            // news_pic3
             .news_pic3 {
                 flex: none;
                 flex-basis: 31%;
@@ -916,7 +925,7 @@
                         background: rgb(0, 0, 0);
                         background: linear-gradient(0deg, rgba(0, 0, 0, 1) 65%, rgba(0, 0, 0, 0) 100%);
                         color: #fff;
-                        @include screen('mobile'){
+                        @include screen('mobile') {
                             padding: 10px 15px;
                         }
                         span {
@@ -943,7 +952,7 @@
                     box-sizing: border-box;
                     font-size: 0.938em;
                 }
-                .unit{
+                .unit {
                     color: #fff;
                     background-color: darken($primaryColor, 10);
                     padding: 4px 8px;
@@ -952,16 +961,16 @@
                     right: 0;
                     box-sizing: border-box;
                     font-size: 0.938em;
-                   @media(max-width: 900px){
-                    top: 35px;
-                    right:auto;
-                    left:0;
-                   }
-                   @include screen('mobile'){
-                    top: 0;
-                    right: 0;
-                    left:auto;
-                   }
+                    @media(max-width: 900px) {
+                        top: 35px;
+                        right: auto;
+                        left: 0;
+                    }
+                    @include screen('mobile') {
+                        top: 0;
+                        right: 0;
+                        left: auto;
+                    }
                 }
             }
         }
@@ -1799,7 +1808,7 @@
                             color: $primaryColor;
                             margin-bottom: 20px;
                         }
-                        &.title{
+                        &.title {
                             height: 45px;
                             overflow: hidden;
                         }
@@ -1899,7 +1908,7 @@
                     flex: auto;
                     width: 29%;
                     margin: 0 2.16%;
-                     padding-bottom: 50px;
+                    padding-bottom: 50px;
                     // 箭頭
                     .slick-prev {
                         left: -30px;
@@ -1959,7 +1968,7 @@
                 align-items: center;
                 justify-content: center;
                 span {
-                   background-color: darken($primaryColor, 15);
+                    background-color: darken($primaryColor, 15);
                     color: #fff;
                     padding: 20px 40px;
                     border-radius: 50px;
@@ -2656,7 +2665,7 @@
         width: 160px;
         height: 56px;
         margin: 0px 5px;
-        background-color:transparent;
+        background-color: transparent;
         a {
             display: block;
             img {
@@ -2684,7 +2693,7 @@
         width: 228px;
         height: 88px;
         margin: 0px 5px;
-        background-color:transparent;
+        background-color: transparent;
         a {
             display: block;
             img {
@@ -2712,7 +2721,7 @@
         width: 158px;
         height: 60px;
         margin: 0px 5px;
-        background-color:transparent;
+        background-color: transparent;
         a {
             display: block;
             img {

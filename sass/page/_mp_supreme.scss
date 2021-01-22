@@ -81,6 +81,15 @@
             }
         }
     }
+    &.innerpage {
+        h2 {
+            display: block;
+            text-align: left;
+            span {
+                display: block;
+            }
+        }
+    }
 }
 // 廣告輪播
 .adSlider {
