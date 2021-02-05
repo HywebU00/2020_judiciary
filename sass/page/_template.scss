@@ -45,6 +45,11 @@ body {
     margin: 0 auto;
     padding: 0;
     // 可先設定一個中央區塊最大寬，限制accesskey對齊
+    .accesskey {
+            top: -8px;
+            left: 0;
+            z-index: 999;
+        }
     @include screen('tablet') {
         padding: 61px 0 0 0;
     }
@@ -109,8 +114,9 @@ body {
         flex-basis: 260px;
         max-width: 260px;
         padding-bottom: 1.5em;
+        position: relative;
         @include screen('tablet') {
-            flex:auto;
+            flex: auto;
             flex-basis: 100%;
             max-width: 100%;
         }
@@ -147,7 +153,6 @@ body {
                         content: "";
                         top: 24px;
                         transform: rotate(45deg);
-                        
                     }
                 }
             }
@@ -278,6 +283,9 @@ body {
         max-width: 100%;
         overflow: hidden;
         padding-bottom: 1.5em;
+        padding-top:5px;
+        position: relative;
+        
         a {
             &.doc, &.docx, &.odf, &.xml, &.odt, &.ods, &.pdf, &.epub, &.xls, &.xlsx, &.csv, &.ppt, &.ppt, &.pptx, &.odp, &.jpg, &.tif, &.mp3, &.mp4, &.wma, &.wmv, &.avi, &.mov, &.txt, &.dot, &.zip, &.sevenz, &.other, &.verdict, &.searchcontent {
                 width: 21px;

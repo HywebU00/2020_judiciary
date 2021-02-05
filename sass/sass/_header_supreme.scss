@@ -63,7 +63,7 @@
         overflow: visible;
         position: relative; // menu
         .accesskey{
-            top:-35px;
+            top:5px;
         }
         .sidebarCtrl {
             display: none;
@@ -207,6 +207,9 @@
                             color: $header_navhovercolor;
                             background-color: $header_navhover;
                         }
+                        &:focus{
+                            box-shadow: 0 0px 0px 2px $header_navfocus inset !important;
+                         }
                         &.emailbtn {
                             padding: 12px 25px 12px 8px;
                             &:after {
@@ -650,7 +653,7 @@
     padding: 30px;
     // min-height: auto;
     overflow-y: auto;
-    font-size: 1.066em !important;
+    font-size: 1.125em !important;
     box-sizing: border-box;
     .overlay {
         position: absolute;
@@ -677,6 +680,11 @@
         img {
             width: 40px;
             height: 40px;
+        }
+         a {
+            display: block;
+            background-color: transparent !important;
+            padding: 0 !important;
         }
     }
     .units_title {
@@ -732,18 +740,19 @@
                 @include make-md-column(3);
                 @include make-lg-column(3);
                 @include gutter();
-                font-size: 0.938em;
                 font-weight: normal;
+                font-size: 0.938em;
                 @include screen('tablet') {
                     @include gutter(0);
                 }
                 a {
-                    padding: .6em 0;
+                    padding: .6em 0!important;
                     display: block;
-                    color: #fff;
+                    color: #fff!important;
                     width: 100%;
                     @include box-sizing();
                     border-bottom: 1px dotted rgba(255, 255, 255, .3);
+                    background-color: transparent!important;
                     &:before {
                         content: "";
                         width: 13px;
@@ -754,10 +763,10 @@
                     }
                     &:hover,
                     &:focus {
-                        color:$units_a;
+                        color: $units_a!important;
                     }
                     &:focus {
-                        box-shadow: 0 0px 0px 2px $units_a inset;
+                        box-shadow: 0 0px 0px 2px $units_a inset!important;
                     }
                     &.active {
                         color: $units_a;

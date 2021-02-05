@@ -205,6 +205,9 @@
                             color: $header_navhovercolor;
                             background-color: $header_navhover;
                         }
+                        &:focus{
+                            box-shadow: 0 0px 0px 2px $header_navfocus inset !important;
+                         }
                         &.emailbtn {
                             padding: 12px 25px 12px 8px;
                             &:after {

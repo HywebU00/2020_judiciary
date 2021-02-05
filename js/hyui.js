@@ -127,14 +127,7 @@ $(function() {
         liHasChild2_level2 = $('aside .megamenu ul .megamenu_2nd .menu_block>ul').children('li.hasChild');
     liHasChild2_level3 = $('aside .megamenu ul .megamenu_2nd .menu_block>ul ul').children('li.hasChild'),
         subMenuWidth2 = liHasChild2.first().children('ul').outerWidth();
-    // 無障礙tab電子信箱
-    $('.list_second').find('li:last>a').focusout(function() {
-        $('.list_second').hide();
-    });
-    // 無障礙tab查詢
-    $('.navlist .search .keywordHot').find('li:last>a').focusout(function() {
-        $('.navlist .search').hide();
-    });
+    
     // 切換PC/Mobile 選單
     function mobileMenu() {
         ww = _window.outerWidth();
@@ -647,7 +640,7 @@ $(function() {
     /*-----------------------------------*/
     ///////////////置頂go to top////////////
     /*-----------------------------------*/
-     // _window.on("load resize", function(e) {
+    // _window.on("load resize", function(e) {
     $(window).bind('load scroll', function(e) {
         if ($(this).scrollTop() > 200) {
             $('.scrollToTop').fadeIn();
@@ -843,7 +836,7 @@ $(function() {
         }
         // alt+C 主要內容區
         if (e.altKey && e.keyCode == 67) {
-            $('html, body').stop(true, true).animate({ scrollTop: $('.main').find('.accesskey').offset().top - 100 }, 800, 'easeOutExpo');
+            $('html, body').stop(true, true).animate({ scrollTop: $('.main').find('.accesskey').offset().top - 200 }, 800, 'easeOutExpo');
             $('.main').find('.accesskey ').focus();
         }
         // alt+Z footer

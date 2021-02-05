@@ -30,6 +30,7 @@ $form-btn: #21baff; //表單
 $header_navbg:none;
 $header_navhover:darken($secondaryColor, 5);
 $header_navhovercolor:#082354;
+$header_navfocus:$color-red;
 $QAbg:$primaryColor;
 $QAcolor:#fff;
 $QAcolor_hover:darken($primaryColor, 5 );
@@ -39,7 +40,7 @@ $QAcolor_after:$primaryColor;
 $casebtn01: #74412f;
 $casebtn02:#4b5a76;
 $units_a:#ffcbbd;
-
+$goCenter_bgcolor:$primaryColor;
 // megamenu
 $megamenu: $primaryColor;
 $megamenulinear:$primaryColor;
