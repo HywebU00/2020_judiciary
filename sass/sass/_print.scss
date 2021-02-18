@@ -36,8 +36,8 @@
     .main,
     .content {
         @include gutter(0);
-        width: 100% !important;
-        max-width: 100%;
+        width: 90% !important;
+        max-width: 90%;
         box-shadow: none;
         float: none;
         // font-size: 12pt;
