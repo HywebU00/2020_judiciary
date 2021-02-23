@@ -92,15 +92,15 @@ body {
     }
     >.container {
         @include gutter(40px); //gutter 代表左右要留白
-        display: flex;
-        @include screen('tablet') {
-            display: block;
-        }
+        display: block;
+        // @include screen('tablet') {
+        //     display: block;
+        // }
     }
     .innerbg {
         margin-bottom: 15px;
-        flex: none;
-        flex-basis: 100%;
+        // flex: none;
+        // flex-basis: 100%;
         width: 100%;
         img {
             width: 100%;
@@ -110,15 +110,15 @@ body {
         }
     }
     .left_block {
-        flex: 0 0 260px;
-        flex-basis: 260px;
-        max-width: 260px;
+        // flex: 0 0 260px;
+        // flex-basis: 260px;
+        width: 260px;
+        float:left;
         padding-bottom: 1.5em;
         position: relative;
         @include screen('tablet') {
-            flex: auto;
-            flex-basis: 100%;
-            max-width: 100%;
+            float: none;
+            width: 100%;
         }
         .leftCtrl {
             display: none;
@@ -279,8 +279,8 @@ body {
         }
     }
     .center_block {
-        flex: auto;
-        max-width: 100%;
+        // flex: auto;
+        // max-width: 100%;
         overflow: hidden;
         padding-bottom: 1.5em;
         padding-top:5px;
