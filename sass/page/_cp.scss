@@ -144,10 +144,17 @@ h1.title, h2.title {
         }
     }
     a {
+
         @include aSetting;
         color: $cp_acolor;
         &:hover {
             color: $aHover;
+        }
+        &:focus{
+            img{
+              box-shadow: 0 0px 0px 2px $color-yellow ; 
+            }
+            
         }
     }
     .info {

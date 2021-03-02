@@ -587,9 +587,20 @@ $(function() {
         }
     });
     // fast_btn 快捷列
+    var fast_btnStatus = false; // 假的判斷式，先設定沒有開啟
     $('.fast_btn').click(function() {
         $('.fastbtn_blcok').toggleClass('open');
     })
+    $('.fastbtn_blcok ul').find('li:last>a').focusout(function() {
+            $('.fastbtn_blcok').removeClass('open');
+        });
+    if (fast_btnStatus = true) {
+        $('body').keydown(function(e) {
+            if (e.keyCode == 27) {
+                $('.fastbtn_blcok').removeClass('open');
+            }
+        });
+    }
     // 
     $('.picslider').slick({
         arrows: false,
