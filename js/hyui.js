@@ -576,7 +576,7 @@ $(function() {
         $('.closepeopletab').each(function() {
             var _tab = $(this),
                 _tabItem = _tab.find('.tabItem'),
-                _tabItemA = _tabItem.children('a'),
+                // _tabItemA = _tabItem.children('a'),
                 _tabContent = _tab.find('.tabContent'),
                 tabwidth = _tab.width(),
                 tabItemHeight = _tabItem.outerHeight(),
@@ -599,11 +599,11 @@ $(function() {
                 _tabItem.width(tabwidth);
                 _tabItem.css('margin-left', 0).last().css('position', 'relative');
             }
-            _tabItemA.focus(tabs);
-            _tabItemA.click(tabs);
+            _tabItem.focus(tabs);
+            _tabItem.click(tabs);
 
             function tabs(e) {
-                var _tabItemNow = $(this).parent(),
+                var _tabItemNow = $(this),
                     tvp = _tab.offset().top,
                     tabIndex = _tabItemNow.index() / 2,
                     scollDistance = tvp + tabItemHeight * tabIndex - hh;

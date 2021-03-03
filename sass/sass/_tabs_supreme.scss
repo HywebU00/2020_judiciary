@@ -157,8 +157,10 @@
                 height: auto !important;
             }
         }
-        &>.tabItem {
-            &.active>a {
+        &>button.tabItem {
+            border-radius: 0;
+            border: none;
+            &.active {
                 background-color: $primaryColor;
                 color: #fff;
                 position: relative;
@@ -195,38 +197,33 @@
             line-height: 1;
             top: auto !important;
             right:auto !important;
+            display: block;
+            padding: 20px 10px;
+            text-align: right;
+            background: rgb(230, 195, 185);
+            background: linear-gradient(90deg, rgba(230, 195, 185, 1) 0%, rgba(242, 227, 212, 1) 100%);
+            color: $primaryColor;
+            font-weight: bold;
+            text-decoration: none;
+            @include text-overflow;
+            @include box-sizing;
+            &:hover {
+                background-color: $secondaryColor;
+                border: none !important;
+            }
+            &:focus {
+                background-color: $primaryColor;
+                color: #fff;
+                box-shadow: none;
+                border: none !important;
+            }
             @include screen('mobile') {
                 float: none;
                 width: 100% !important;
-                &>a {
-                    width: 100% !important;
-                    border-bottom: 1px solid #fff;
-                }
-                &.active>a {
+                border-bottom: 1px solid #fff;
+                text-align: center;
+                &.active {
                     border-color: #bbb;
-                }
-            }
-            &>a {
-                display: block;
-                padding: 20px 10px;
-                text-align: right;
-                background: rgb(230, 195, 185);
-                background: linear-gradient(90deg, rgba(230, 195, 185, 1) 0%, rgba(242, 227, 212, 1) 100%);
-                color: $primaryColor;
-                font-weight: bold;
-                text-decoration: none;
-                @include text-overflow;
-                @include box-sizing;
-                @include screen('mobile') {
-                    text-align: center;
-                }
-                &:hover {
-                    background-color: $secondaryColor;
-                }
-                &:focus {
-                    background-color: $primaryColor;
-                    color: #fff;
-                    box-shadow: none;
                 }
             }
         }
