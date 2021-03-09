@@ -19,6 +19,8 @@
         background: $megamenulinear;
         // 第一層選單樣式
         >li {
+             flex-grow:  1;
+            
             >a {
                 display: block;
                 padding: 10px 2em;
