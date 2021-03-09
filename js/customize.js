@@ -591,6 +591,9 @@ $(function() {
     $('.fast_btn').click(function() {
         $('.fastbtn_blcok').toggleClass('open');
     })
+    $('.fast_btn').focusout(function() {
+        $('.fastbtn_blcok').toggleClass('open');
+    })
     $('.fastbtn_blcok ul').find('li:last>a').focusout(function() {
             $('.fastbtn_blcok').removeClass('open');
         });

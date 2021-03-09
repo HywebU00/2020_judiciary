@@ -230,7 +230,7 @@
                     }
                 }
                 &:hover {
-                    color: darken($secondaryColor, 30);
+                    color: darken($secondaryColor, 35);
                     padding: 0px 0 20px;
                     span {
                         width: 46px;
@@ -348,7 +348,7 @@
                         }
                     }
                     &:hover {
-                        color: $secondaryColor;
+                        color: darken($secondaryColor, 35);
                         padding-bottom: 20px;
                         span {
                             width: 46px;
