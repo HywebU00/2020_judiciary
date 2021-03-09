@@ -644,13 +644,13 @@ $(function() {
     $(window).bind('load scroll', function(e) {
         if ($(this).scrollTop() > 200) {
             $('.scrollToTop').fadeIn();
-            $('.fastbtn_blcok').css('top', '85px')
+            $('.fastbtn_block').css('top', '85px')
         } else {
             $('.scrollToTop').fadeOut();
             if (ww < wwMedium) {
-                $('.fastbtn_blcok').css('top', '85px')
+                $('.fastbtn_block').css('top', '85px')
             } else {
-                $('.fastbtn_blcok').css('top', '197px')
+                $('.fastbtn_block').css('top', '197px')
             }
         }
     });

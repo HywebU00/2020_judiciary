@@ -126,7 +126,7 @@
     }
 }
 // fastlink 快捷列
-.fastbtn_blcok {
+.fastbtn_block {
     width: 80px;
     position: fixed;
     top: 197px;
@@ -227,7 +227,7 @@
     }
 }
 .innerpage {
-    .fastbtn_blcok {
+    .fastbtn_block {
         width: 80px;
         position: fixed;
         top: 197px;
@@ -1358,7 +1358,7 @@
                     .closepeople_list {
                         // background-color: #fff;
                         margin: 0 15px;
-                        padding:2px;
+                        padding: 2px;
                         a {
                             display: block;
                             position: relative;
@@ -1416,8 +1416,8 @@
                                 }
                             }
                             &:hover {}
-                            &:focus{
-                               box-shadow: 0 0px 0px 2px #fcc211 !important;
+                            &:focus {
+                                box-shadow: 0 0px 0px 2px #fcc211 !important;
                             }
                         }
                     }
@@ -1459,7 +1459,7 @@
                         // background-color: #fff;
                         width: 336px;
                         margin: 0 15px;
-                        padding:2px;
+                        padding: 2px;
                         a {
                             display: block;
                             height: 100%;
@@ -1506,8 +1506,8 @@
                                 line-height: 1.5em;
                             }
                             &:hover {}
-                            &:focus{
-                               box-shadow: 0 0px 0px 2px #fcc211 !important;
+                            &:focus {
+                                box-shadow: 0 0px 0px 2px #fcc211 !important;
                             }
                         }
                     }
@@ -1525,7 +1525,6 @@
         }
     }
 }
-
 // 今日排定庭期
 .court_period_block {
     background-image: $courtperiodbg;
