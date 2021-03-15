@@ -609,24 +609,17 @@
     a {
         padding: 0 10px;
         display: block;
-        background: #f5f5f5;
         color: #444;
-        &:hover, &:focus {
-            background: $primaryColor;
-            color: #fff;
-        }
-        @include screen('tablet') {
-            text-indent: -9999px;
-            width: 60px;
-            height: 60px;
-            display: block;
-            background: url(../images/basic/icon_sitemap.png) no-repeat center center;
-            background-size: 30px;
-            opacity: .6;
-            padding: 0;
-        }
+        text-indent: -9999px;
+        width: 60px;
+        height: 60px;
+        background: url('../images/icon/icon_sitemap_black.svg') no-repeat center center;
+        background-size: 30px;
+        padding: 0;
+        &:hover, &:focus {}
         @include screen('xs_mobile') {
             width: 40px;
+            background-size: 24px;
         }
     }
 }
@@ -686,6 +679,8 @@
         padding-bottom: 1em;
         margin: 0px auto 1em;
         font-size: 1.75em;
+        padding-right: 1em;
+        line-height: 1.2em;
         @include screen('tablet') {
             font-size: 1.25em;
             text-align: left;
@@ -735,7 +730,7 @@
                     @include gutter(0);
                 }
                 a {
-                    padding: .6em 0!important;
+                    padding: .6em 0 !important;
                     display: block;
                     color: #fff !important;
                     width: 100%;

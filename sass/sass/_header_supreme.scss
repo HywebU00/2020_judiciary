@@ -62,8 +62,8 @@
         max-width: $container-max;
         overflow: visible;
         position: relative; // menu
-        .accesskey{
-            top:5px;
+        .accesskey {
+            top: 5px;
         }
         .sidebarCtrl {
             display: none;
@@ -207,9 +207,9 @@
                             color: $header_navhovercolor;
                             background-color: $header_navhover;
                         }
-                        &:focus{
+                        &:focus {
                             box-shadow: 0 0px 0px 2px $header_navfocus inset !important;
-                         }
+                        }
                         &.emailbtn {
                             padding: 12px 25px 12px 8px;
                             &:after {
@@ -235,7 +235,7 @@
                             background-repeat: no-repeat;
                             background-size: 21px 20px;
                             display: block;
-                            height:47px; 
+                            height: 47px;
                             &:before {
                                 content: '';
                                 width: 1px;
@@ -252,7 +252,6 @@
                         &.unitsbtn {
                             background-image: url('../images/icon/icon_sitemap_black.svg');
                         }
-                        
                         &.live {
                             display: block;
                             background-color: #fdfdfd;
@@ -449,7 +448,7 @@
                 width: 70%;
                 margin-right: 6px;
                 &:focus {
-                    box-shadow: 0 0px 0px 2px $color-yellow ;
+                    box-shadow: 0 0px 0px 2px $color-yellow;
                     border: none;
                 }
             }
@@ -458,9 +457,9 @@
                 padding: .2em .8em;
                 width: calc(100% - 70% - 6px);
             }
-            &:focus{
+            &:focus {
                 box-shadow: 0 0px 0px 2px $color-yellow inset;
-                border:none;
+                border: none;
             }
         }
     }
@@ -620,31 +619,24 @@
     a {
         padding: 0 10px;
         display: block;
-        background: #f5f5f5;
         color: #444;
-        &:hover, &:focus {
-            background: $primaryColor;
-            color: #fff;
-        }
-        @include screen('tablet') {
-            text-indent: -9999px;
-            width: 60px;
-            height: 60px;
-            display: block;
-            background: url(../images/basic/icon_sitemap.png) no-repeat center center;
-            background-size: 30px;
-            opacity: .6;
-            padding: 0;
-        }
+        text-indent: -9999px;
+        width: 60px;
+        height: 60px;
+        background: url('../images/icon/icon_sitemap_black.svg') no-repeat center center;
+        background-size: 30px;
+        padding: 0;
+        &:hover, &:focus {}
         @include screen('xs_mobile') {
             width: 40px;
+            background-size: 24px;
         }
     }
 }
 .units_block {
     display: none;
     width: 100%;
-    height:100%;
+    height: 100%;
     position: fixed;
     z-index: 9999;
     background: rgba(51, 51, 51, .98);
@@ -681,7 +673,7 @@
             width: 40px;
             height: 40px;
         }
-         a {
+        a {
             display: block;
             background-color: transparent !important;
             padding: 0 !important;
@@ -697,6 +689,8 @@
         padding-bottom: 1em;
         margin: 0px auto 1em;
         font-size: 1.75em;
+        padding-right: 1em;
+        line-height: 1.2em;
         @include screen('tablet') {
             font-size: 1.25em;
             text-align: left;
@@ -746,13 +740,13 @@
                     @include gutter(0);
                 }
                 a {
-                    padding: .6em 0!important;
+                    padding: .6em 0 !important;
                     display: block;
-                    color: #fff!important;
+                    color: #fff !important;
                     width: 100%;
                     @include box-sizing();
                     border-bottom: 1px dotted rgba(255, 255, 255, .3);
-                    background-color: transparent!important;
+                    background-color: transparent !important;
                     &:before {
                         content: "";
                         width: 13px;
@@ -763,10 +757,10 @@
                     }
                     &:hover,
                     &:focus {
-                        color: $units_a!important;
+                        color: $units_a !important;
                     }
                     &:focus {
-                        box-shadow: 0 0px 0px 2px $units_a inset!important;
+                        box-shadow: 0 0px 0px 2px $units_a inset !important;
                     }
                     &.active {
                         color: $units_a;

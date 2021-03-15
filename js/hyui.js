@@ -52,6 +52,7 @@ $(function() {
         _overlay = $('.menu_overlay');
     _mArea = $('.m_area');
     _sidebarCtrl.append('<span></span><span></span><span></span>');
+    _units_block = $('.units_block')
     var search_mode = false;
     // 打開選單 function
     function showSidebar() {
@@ -111,7 +112,7 @@ $(function() {
     _megamenu.find('li:last>a').focusout(function() {
         _megamenu.find('li .megamenu_2nd').hide();
     });
-    if (ww <= wwSmall) {
+    if (ww <= wwMedium) {
         // 先複製過去
         _nav.clone().prependTo(_mArea);
         _menu.clone().prependTo(_mArea);
@@ -127,7 +128,6 @@ $(function() {
         liHasChild2_level2 = $('aside .megamenu ul .megamenu_2nd .menu_block>ul').children('li.hasChild');
     liHasChild2_level3 = $('aside .megamenu ul .megamenu_2nd .menu_block>ul ul').children('li.hasChild'),
         subMenuWidth2 = liHasChild2.first().children('ul').outerWidth();
-    
     // 切換PC/Mobile 選單
     function mobileMenu() {
         ww = _window.outerWidth();
@@ -138,6 +138,7 @@ $(function() {
             menu_status = false;
             _sidebar.hide();
             _overlay.hide();
+            _units_block.insertAfter('.header .units');
             _mArea.css({
                 'margin-left': _mArea.width() * -1 + 'px'
             });
