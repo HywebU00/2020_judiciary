@@ -31,7 +31,6 @@
             right: 0;
             z-index: 1;
             border-radius: 3px;
-            background: rgb(238, 224, 203);
             background: linear-gradient(90deg, rgba(238, 224, 203, 1) 0%, rgba(236, 208, 189, 1) 100%);
         }
         &>.tabItem {
@@ -63,7 +62,7 @@
                 padding: 25px 25px 19px;
                 text-align: center;
                 background: transparent;
-                color: $primaryColor;
+                color: $tabItem_acolor;
                 font-weight: bold;
                 text-decoration: none;
                 position: relative;
@@ -77,7 +76,7 @@
                 }
                 &:hover {
                     background-color: darken($secondaryColor, 5);
-                    color: $primaryColor;
+                    color: $tabItem_acolor;
                 }
                 &:focus {}
             }

@@ -178,8 +178,7 @@
                 display: flex;
                 justify-content: flex-end;
                 align-items: center;
-                background: rgb(242, 227, 212);
-                background: linear-gradient(90deg, rgba(242, 227, 212, 1) 0%, rgba(229, 192, 183, 1) 100%);
+                @extend %header_navbg2;
                 border-radius: 3px;
                 >li {
                     flex: 0 0 auto;

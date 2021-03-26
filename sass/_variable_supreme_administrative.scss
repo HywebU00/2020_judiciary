@@ -1,0 +1,137 @@
+// 此變數為框架之整體變數，控制整體網站之設定，包含 顏色、文字、格線系統
+// 於mixins 資料夾內，各個模組也有其個別使用的變數，請至個別檔案設定，個別使用變數不含在此設定
+//-------------------------------------------------------------顏色---------//
+// 定義顏色 此顏色可自由變換
+$primaryColor: #5e579d; //主色
+$secondaryColor: #e9d3db; //輔色
+$lightColor: #fcd618; //點綴
+$linkColor: #21baff; //連結
+$importantColor: #ff3e4d; //重要
+// 但注意真實顏色與語意的關聯必須易於辨識
+$color-blue: #21baff;
+$color-green: #099;
+$color-orange: #f77810;
+$color-red: #e31c1c;
+$color-yellow: #fcc211;
+$color-purple: #7915b2;
+$color-gray: #ccc;
+$color-dark: #333333;
+$color-hr: #666; //hr顏色
+$color-word: #222; //一般字的顏色
+// 連結顏色
+$aColor: darken($secondaryColor, 45);
+$aHover: #856a01;
+// 表單focus顏色
+$form-focus: #21baff; //表單
+$form-btn: #21baff; //表單
+// 首內頁區塊顏色變數
+// header nav
+$header_navbg:none;
+%header_navbg2 {
+    background: linear-gradient(90deg, rgba(178, 166, 216, 1) 0%, rgba(233, 211, 219, 1) 100%);
+}
+$header_navhover:darken($secondaryColor, 10);
+$header_navhovercolor:#082354;
+$header_navfocus:$color-red;
+$QAbg:$primaryColor;
+$QAcolor:#fff;
+$QAcolor_hover:darken($primaryColor, 10);
+$QAcolor_focus:$lightColor;
+$QAcolor_before:#fff;
+$QAcolor_after:$primaryColor;
+$casebtn01: #74412f;
+$casebtn02:#4b5a76;
+$units_a:darken($secondaryColor, 10);
+$goCenter_bgcolor:$primaryColor;
+// megamenu
+$megamenu: $primaryColor;
+$megamenulinear:$primaryColor;
+$megamenu_hover:darken($primaryColor, 10);
+$megamenu_hoverbefore:$color-yellow;
+$megamenu_2ndbgcolor: darken($primaryColor, 10);
+$megamenu_2nd_acolor:#fff;
+$megamenu_2nd_ahovercolor:$lightColor;
+$megamenu_2nd_ahoverbg:transparent;
+//tab
+$tabItem_acolor:#333;
+
+// 內頁左欄menu
+$left_title: $primaryColor;
+$first-active:#cbcbcb;
+$first-active-color:darken($secondaryColor, 45);
+$second_active:lighten($primaryColor, 7);
+$second_hover-color:darken($secondaryColor, 35);
+$font_size_bgcolor:$primaryColor; //font_size點選到的顏色
+// np
+$nphover:darken($primaryColor, 5);
+//category
+$categorycolor:darken($secondaryColor, 35);
+// tableth
+$tableth:#767676;
+$tableth_color:#fff;
+// page
+$pagecolor:darken($secondaryColor, 35);
+// thumbnail
+$thumbnail_h3:darken($secondaryColor, 35);
+// document
+$search_btn:$primaryColor;
+//箭頭底色
+$search_arrowbgcolor:$color-yellow;
+// cp
+$block_title_color:darken($secondaryColor, 35);
+$info_leftborder:darken($secondaryColor, 35);
+$cp_acolor:darken($secondaryColor, 35);
+// sp
+$question_leftcolorbg:$primaryColor;
+$process_block_bgcolor:darken($secondaryColor, 35); //流程區塊顏色
+$event_title_bgcolor:lighten($primaryColor, 8);
+$court_schedule_span:$secondaryColor; //表格內span的顏色
+$court_schedule_em:darken($primaryColor, 10); //表格內em的顏色
+$question_numbg:$primaryColor;
+$question_activetext:darken($secondaryColor, 35);
+// sitemap
+$sitemap_color:darken($primaryColor, 10);
+// slick
+$slickdots:#fff;
+$slickdots-active:darken($secondaryColor, 10);
+// footer
+$footer_connection: url('../images/supreme_administrative/footer_connection_bg.jpg');
+$footer_link:$secondaryColor;
+$footer_accesskey_color:$secondaryColor;
+// template
+$morebg: $primaryColor;
+$morebg_hover:darken($primaryColor, 5);
+//-------------------------------------------------------------字型--------//
+// 字型設定
+$font-family: Lato, 'PingFang TC', 'Helvetica Neue', Helvetica, 微軟正黑體,
+Arial, sans-serif;
+$font-size: 1em;
+//-------------------------------------------------------------格線系統-----//
+// 格線系統
+$grid-columns: 12 !default; //格線欄位數
+$grid-gutter-width: 30px !default; //左右padding
+$container-max: 1200px !default; //container最大寬
+//mediaquery
+$screen-lg: 1200px !default; //電腦
+$screen-md: 992px !default; //平板
+$screen-sm: 768px !default; //手機
+$screen-xs: 576px !default; //極小尺寸
+//-------------------------------------------------------------客製化------//
+$fatfooter-length: 6; //fatfooter選單一行個數
+$fatfooterBgColor: #3c4556; //fatFooter 底色
+$fatfooteraColor:#fff;
+//-------------------------------------------------------------客製化------//
+$rounded-angle: 10px; //整站導角
+// $mainbg:						 url('../images/supreme_administrative/bg01.jpg');
+$h2bg: url('../images/supreme_administrative/h2_icon01.png');
+$megamenu_line: url('../images/supreme_administrative/menu_line.png');
+$announcement_bg: url('../images/supreme_administrative/news_bg.jpg');
+$service_blockbg: url('../images/supreme_administrative/service_blockbg.jpg');
+$service_beforebg: url('../images/supreme_administrative/service_rightbg.png');
+$fatfooterbg: url('../images/supreme_administrative/fatfooter_bg01.jpg');
+$qaTitle: url('../images/supreme_administrative/icon_logo.png');
+$cph3beforebg: url('../images/supreme_administrative/icon_logo_blue.png');
+$cph3afterebg: url('../images/supreme_administrative/icon_category.png');
+$closepeoplebg: url('../images/supreme_administrative/closepeople_bg.jpg');
+$courtperiodbg: url('../images/supreme_administrative/court_period_bg.jpg');
+$event_contentbg: url('../images/supreme_administrative/event_content_bg01.jpg');
