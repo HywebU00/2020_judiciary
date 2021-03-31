@@ -11,7 +11,10 @@ $(function() {
         fade: true,
         lazyLoaded: true,
         lazyLoad: 'ondemand',
-        ease: 'ease'
+        ease: 'ease',
+        customPaging: function(slider, i) {
+            return $('<button type="button" />').text($(slider.$slides[i]).find('img').attr('alt').trim());
+        }
     });
     // 廣告輪播1
     $('.adSlider').slick({
@@ -255,7 +258,7 @@ $(function() {
     // 今日排定庭期    
     $('.period_slider2').slick({
         // mobileFirst: true,
-        dots: true,
+        dots: false,
         infinite: false,
         autoplaySpeed: 3000,
         slidesToShow: 3,
@@ -274,11 +277,11 @@ $(function() {
                 slidesToShow: 1,
                 slidesToScroll: 1,
             }
-        }]
+        }],
     });
     $('.period_slider3').slick({
         // mobileFirst: true,
-        dots: true,
+        dots: false,
         infinite: false,
         autoplaySpeed: 3000,
         slidesToShow: 3,
@@ -321,6 +324,9 @@ $(function() {
             slidesToScroll: 1,
             autoplay: false,
             arrow: true,
+            customPaging: function(slider, i) {
+                return $('<button type="button" />').text($(slider.$slides[i]).find('.title').html().trim());
+            }
         });
     });
     //燈箱slick+lightBox組合
@@ -373,7 +379,7 @@ $(function() {
     // 
     // 
     $('.cppic_slider').slick({
-        dots: true,
+        dots: false,
         infinite: false,
         speed: 500,
         slidesToShow: 4,
@@ -390,16 +396,15 @@ $(function() {
             breakpoint: 768,
             settings: {
                 slidesToShow: 2,
-                slidesToScroll: 2,
+                slidesToScroll: 1,
                 infinite: true,
-                dots: true
             }
         }, {
             breakpoint: 545,
             settings: {
                 arrows: true,
                 slidesToShow: 2,
-                slidesToScroll: 2
+                slidesToScroll: 1,
             }
         }, {
             breakpoint: 480,
@@ -409,7 +414,10 @@ $(function() {
                 slidesToScroll: 1,
                 arrows: false
             }
-        }]
+        }],
+        customPaging: function(slider, i) {
+            return $('<button type="button" />').text($(slider.$slides[i]).find('img').attr('alt').trim());
+        }
     });
     // cp_photo
     // $('.Slider-for').on('init reInit afterChange', function(event, slick, currentSlide) {
@@ -624,7 +632,10 @@ $(function() {
             settings: {
                 slidesToShow: 1
             }
-        }]
+        }],
+        customPaging: function(slider, i) {
+            return $('<button type="button" />').text($(slider.$slides[i]).find('img').attr('alt').trim());
+        }
     });
 });
 // 內頁左欄nav
