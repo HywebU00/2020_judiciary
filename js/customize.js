@@ -13,7 +13,8 @@ $(function() {
         lazyLoad: 'ondemand',
         ease: 'ease',
         customPaging: function(slider, i) {
-            return $('<button type="button" />').text($(slider.$slides[i]).find('img').attr('alt').trim());
+             var title = $(slider.$slides[i]).find('img').attr('alt').trim();
+            return $('<button type="button" aria-label="'+title+'"/>').text(title);
         }
     });
     // 廣告輪播1
@@ -325,7 +326,8 @@ $(function() {
             autoplay: false,
             arrow: true,
             customPaging: function(slider, i) {
-                return $('<button type="button" />').text($(slider.$slides[i]).find('.title').html().trim());
+                var title = $(slider.$slides[i]).find('.title').html().trim();
+                return $('<button type="button" aria-label="'+title+'"/>').text(title);
             }
         });
     });
@@ -416,7 +418,8 @@ $(function() {
             }
         }],
         customPaging: function(slider, i) {
-            return $('<button type="button" />').text($(slider.$slides[i]).find('img').attr('alt').trim());
+            var title = $(slider.$slides[i]).find('img').attr('alt').trim();
+            return $('<button type="button" aria-label="'+title+'"/>').text(title);
         }
     });
     // cp_photo
@@ -634,7 +637,8 @@ $(function() {
             }
         }],
         customPaging: function(slider, i) {
-            return $('<button type="button" />').text($(slider.$slides[i]).find('img').attr('alt').trim());
+            var title = $(slider.$slides[i]).find('img').attr('alt').trim();
+            return $('<button type="button" aria-label="'+title+'"/>').text(title);
         }
     });
 });
