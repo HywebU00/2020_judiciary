@@ -1,0 +1,35 @@
+.megamenu {
+    margin: 0 50px;
+    >ul {
+        position: relative;
+        &:before {
+            content: '';
+            height: 60px;
+            width: 20px;
+            background-color: $secondaryColor;
+            transform: skew(-5deg);
+            position: absolute;
+            left: -10px;
+            top: 0;
+            @include screen('tablet') {
+                display: none;
+            }
+        }
+        &:after {
+            content: '';
+            height: 60px;
+            width: 20px;
+            background-color: $secondaryColor;
+            transform: skew(-5deg);
+            position: absolute;
+            right: -10px;
+            top: 0;
+            @include screen('tablet') {
+                display: none;
+            }
+        }
+        li {
+            .megamenu_2nd {}
+        }
+    }
+}

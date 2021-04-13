@@ -1,0 +1,145 @@
+// 此變數為框架之整體變數，控制整體網站之設定，包含 顏色、文字、格線系統
+// 於mixins 資料夾內，各個模組也有其個別使用的變數，請至個別檔案設定，個別使用變數不含在此設定
+//-------------------------------------------------------------顏色---------//
+// 定義顏色 此顏色可自由變換
+$primaryColor: #707070; //主色
+$secondaryColor: #992732; //輔色
+$lightColor: #f7dc58; //點綴
+$linkColor: #21baff; //連結
+$importantColor: #ff3e4d; //重要
+// 但注意真實顏色與語意的關聯必須易於辨識
+$color-blue: #21baff;
+$color-green: #099;
+$color-orange: #f77810;
+$color-red: #e31c1c;
+$color-yellow: #fcc211;
+$color-purple: #7915b2;
+$color-gray: #ccc;
+$color-dark: #333333;
+$color-hr: #666; //hr顏色
+$color-word: #222; //一般字的顏色
+// 連結顏色
+$aColor: darken($secondaryColor, 10);
+$aHover: #856a01;
+// 表單focus顏色
+$form-focus: #21baff; //表單
+$form-btn: #21baff; //表單
+
+// 首內頁區塊顏色變數
+// header nav
+$header_navbg:$primaryColor;
+$header_navhover:darken($primaryColor, 15);
+$header_navhovercolor:darken($primaryColor, 5);
+$header_navfocus:$color-yellow;
+$QAbg:#e3e3e3;
+$QAcolor:darken($primaryColor, 5);
+$QAcolor_hover:$secondaryColor;
+$QAcolor_focus:$secondaryColor;
+$QAcolor_before:darken($primaryColor, 5);
+$QAcolor_after:$lightColor;
+$casebtn01: #028080;
+$casebtn02:#aa6436;
+$units_a:lighten($secondaryColor,30);
+$goCenter_bgcolor:$secondaryColor;
+// megamenu
+$megamenu: $secondaryColor;
+$megamenulinear:$secondaryColor;
+$megamenu_hover:transparent;
+$megamenu_hoverbefore:$color-yellow;
+$megamenu_2ndbgcolor:rgba(184, 184, 184, .9);
+$megamenu_2nd_acolor:darken($primaryColor, 13);
+$megamenu_2nd_ahovercolor:$lightColor;
+$megamenu_2nd_ahoverbg:darken($primaryColor, 13);
+
+// $megamenu_2ndbgcolor:#3d74b9;
+// $megamenu_2nd_acolor:#fff;
+// 內頁左欄menu
+$left_title: $secondaryColor;
+$first-active:#dbdbdb;
+$first-active-color:$secondaryColor;
+$second_active:$primaryColor;
+$second_hover-color:$secondaryColor;
+
+$font_size_bgcolor:$secondaryColor; //font_size點選到的顏色
+// np
+$nphover:darken($primaryColor, 5);
+//category
+$categorycolor:$secondaryColor;
+// tableth
+$tableth:#767676;
+$tableth_color:#fff;
+// page
+$pagecolor:$secondaryColor;
+// thumbnail
+$thumbnail_h3:$primaryColor;
+// document
+$search_btn: darken($primaryColor, 10);
+//箭頭底色
+$search_arrowbgcolor:$color-yellow;
+
+// cp
+$block_title_color:$secondaryColor;
+$info_leftborder:$primaryColor;
+$cp_acolor:$primaryColor;
+
+// sp
+$question_leftcolorbg:$primaryColor;
+$process_block_bgcolor:darken($secondaryColor, 10);  //流程區塊顏色
+$event_title_bgcolor:lighten($secondaryColor, 8);
+$court_schedule_span:lighten($secondaryColor, 50); //表格內span的顏色
+$court_schedule_em:darken($secondaryColor, 10); //表格內em的顏色
+$question_numbg:$secondaryColor;
+$question_activetext:$secondaryColor;
+
+// sitemap
+$sitemap_color:$secondaryColor;
+
+// slick
+$slickdots:#fff;
+$slickdots-active:$secondaryColor;
+
+// footer
+$footer_connection:url('../images/judges/footer_connection_bg.jpg');
+$footer_link:$secondaryColor;
+$footer_accesskey_color:$secondaryColor;
+$footer_acolor:lighten($lightColor, 5);
+
+// template
+$morebg: $secondaryColor;
+$morebg_hover:darken($secondaryColor, 10);
+//-------------------------------------------------------------字型--------//
+// 字型設定
+$font-family: Lato, 'PingFang TC', 'Helvetica Neue', Helvetica, 微軟正黑體,
+Arial, sans-serif;
+$font-size: 1em;
+//-------------------------------------------------------------格線系統-----//
+// 格線系統
+$grid-columns: 12 !default; //格線欄位數
+$grid-gutter-width: 30px !default; //左右padding
+$container-max: 1200px !default; //container最大寬
+//mediaquery
+$screen-lg: 1200px !default; //電腦
+$screen-md: 992px !default; //平板
+$screen-sm: 768px !default; //手機
+$screen-xs: 576px !default; //極小尺寸
+//-------------------------------------------------------------客製化------//
+$fatfooter-length: 6; //fatfooter選單一行個數
+$fatfooterBgColor: #707070; //fatFooter 底色
+$fatfooteraColor:#fff;
+//-------------------------------------------------------------客製化------//
+$rounded-angle:					 10px; //整站導角
+// $mainbg:			 			 url('../images/judges/bg01.jpg');
+$h2bg: 							 url('../images/judges/h2_icon01.png');
+$megamenu_line: 				 url('../images/judges/menu_line.png');
+$announcement_bg:				 url('../images/judges/news_bg.jpg');
+$e_course_block:                 url('../images/judges/e_course_bg.jpg');;
+$service_blockbg:				 url('../images/judges/service_leftbg.jpg');
+$service_beforebg: 				 url('../images/judges/service_rightbg.png');
+$fatfooterbg: 					 url('../images/judges/fatfooter_bg01.jpg');
+$qaTitle:						 url('../images/judges/icon_logo.png');
+$cph3beforebg:					 url('../images/judges/icon_logo_blue.png');
+$cph3afterebg:					 url('../images/judges/icon_category.png');
+$closepeoplebg:					 url('../images/judges/closepeople_bg.jpg');
+$courtperiodbg:					 url('../images/judges/court_period_bg.jpg');
+$event_contentbg:				 url('../images/judges/event_content_bg01.jpg');			
+

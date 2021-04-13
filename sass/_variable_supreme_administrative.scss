@@ -65,12 +65,12 @@ $font_size_bgcolor:$primaryColor; //font_size點選到的顏色
 // np
 $nphover:darken($primaryColor, 5);
 //category
-$categorycolor:darken($secondaryColor, 35);
+$categorycolor:$primaryColor;
 // tableth
 $tableth:#767676;
 $tableth_color:#fff;
 // page
-$pagecolor:darken($secondaryColor, 35);
+$pagecolor:$primaryColor;
 // thumbnail
 $thumbnail_h3:darken($secondaryColor, 35);
 // document
