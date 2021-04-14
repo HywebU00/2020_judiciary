@@ -2888,8 +2888,12 @@
     }
 }
 // 廣告輪播
-.ad_block {}
-.ad_block2 {}
+.ad_block, .ad_block2 {
+    padding: 50px 0 !important;
+    h2 {
+        margin-bottom: 50px
+    }
+}
 // adSlider
 .adSlider {
     @include gutter(70px);
