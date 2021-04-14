@@ -257,72 +257,7 @@
     <script src="js/hyui.js"></script>
     <!-- 客製js -->
     <script src="js/customize.js"></script>
-    <script language="JavaScript">
-    $(document).ready(function() {
-        var chart = {
-            type: 'column'
-        };
-        var title = {
-            text: '移付調解事件調解成立件數'
-        };
-        var subtitle = {
-            text: '99-109年度'
-        };
-        var xAxis = {
-            categories: ['105年', '106年', '107年', '108年', '109年1-9月'],
-            crosshair: true
-        };
-        var yAxis = {
-            min: 0,
-            title: {
-                text: '件數'
-            }
-        };
-        var tooltip = {
-            formatter: function() {
-                return '<b>' + this.x + '</b><br/>' + Highcharts.numberFormat(this.point.y, 0, ".", ",") + '件';
-            }
-        };
-        var plotOptions = {
-            column: {
-                pointPadding: 0.2,
-                borderWidth: 0
-            },
-            series: {
-                borderWidth: 0,
-                dataLabels: {
-                    enabled: true,
-                    format: '{point.y:.0f}'
-                }
-            }
-        };
-        var credits = {
-            enabled: false
-        };
-        var legend = {
-            enabled: false
-        };
-        var exporting = {
-            enabled: false
-        };
-        var series = [{
-            data: [{ y: 468, color: "#f4be2b" }, { y: 515, color: "#f4be2b" }, { y: 701, color: "#f4be2b" }, { y: 840, color: "#f4be2b" }, { y: 565, color: "#f24d45" }]
-        }];
-        var json = {};
-        json.chart = chart;
-        json.title = title;
-        json.subtitle = subtitle;
-        json.tooltip = tooltip;
-        json.xAxis = xAxis;
-        json.yAxis = yAxis;
-        json.series = series;
-        json.legend = legend;
-        json.plotOptions = plotOptions;
-        json.credits = credits;
-        json.exporting = exporting;
-        $('#chart').highcharts(json);
-    });
-    </script>
+    
 </body>
 
 </html>
