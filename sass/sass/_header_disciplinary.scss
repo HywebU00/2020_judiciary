@@ -8,7 +8,7 @@
     // transition: .5s;
     @extend %clearfix;
     @include screen('tablet') {
-         background-color: $primaryColor;
+        background-color: $primaryColor;
         box-shadow: 0px 2px 5px RGBA(0, 0, 0, 0.3);
         position: fixed;
         width: 100%;
@@ -83,8 +83,8 @@
                 &:nth-child(3) {
                     top: 36px;
                 }
-                @include screen('tablet'){
-                     background: #fff;
+                @include screen('tablet') {
+                    background: #fff;
                 }
                 @include screen('xs_mobile') {
                     width: 60%;
@@ -111,10 +111,10 @@
                 top: 10px;
                 left: 10px;
                 display: block;
-                @include screen('tablet'){
-                     background: url('../images/icon/icon_search_white.svg') no-repeat center center;
-                     background-size: 28px;
-                     opacity: 1;
+                @include screen('tablet') {
+                    background: url('../images/icon/icon_search_white.svg') no-repeat center center;
+                    background-size: 28px;
+                    opacity: 1;
                 }
             }
         }
@@ -484,7 +484,7 @@
             padding: .2em .8em;
             margin: 0;
             background-color: lighten($primaryColor, 15);
-                border: 1px solid lighten($primaryColor, 10);
+            border: 1px solid lighten($primaryColor, 10);
         }
     }
     .keywordHot {
@@ -510,12 +510,12 @@
                 flex: 0 0 auto;
                 line-height: 2.5em;
                 a {
-                    background-color:lighten($primaryColor, 15);
+                    background-color: lighten($primaryColor, 15);
                     color: #fff !important;
                     padding: .5em 0.8em !important;
                     border-radius: 3px !important;
                     &:hover {
-                        background-color: lighten($primaryColor, 20)!important;
+                        background-color: lighten($primaryColor, 20) !important;
                     }
                 }
             }
@@ -604,6 +604,17 @@
     @include screen('tablet') {
         background: #FFF;
     }
+    .megamenu {
+        >ul {
+            border-bottom: none;
+            border-top: none;
+            >li {
+                >a {
+                    padding: 10px 0em;
+                }
+            }
+        }
+    }
 }
 // 所屬機關區
 .units {
@@ -636,9 +647,9 @@
         background: url('../images/icon/icon_sitemap_black.svg') no-repeat center center;
         background-size: 30px;
         padding: 0;
-        @include screen('tablet'){
-             background: url('../images/icon/icon_sitemap.svg') no-repeat center center;
-              background-size: 30px;
+        @include screen('tablet') {
+            background: url('../images/icon/icon_sitemap.svg') no-repeat center center;
+            background-size: 30px;
         }
         &:hover, &:focus {}
         @include screen('xs_mobile') {

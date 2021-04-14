@@ -601,6 +601,17 @@
     @include screen('tablet') {
         background: #FFF;
     }
+    .megamenu {
+        >ul {
+            border-bottom: none;
+            border-top: none;
+            >li {
+                >a {
+                    padding: 10px 0em;
+                }
+            }
+        }
+    }
 }
 // 所屬機關區
 .units {
