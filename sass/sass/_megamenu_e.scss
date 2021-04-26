@@ -19,11 +19,10 @@
         background: $megamenulinear;
         // 第一層選單樣式
         >li {
-             flex-grow:  1;
-            
+            flex-grow: 1;
             >a {
                 display: block;
-               padding: 10px 0em;
+                padding: 10px 0em;
                 min-height: 2.5em;
                 font-weight: bold;
                 line-height: 2.5em;
@@ -83,6 +82,7 @@
         }
     }
     ul {
+        list-style-type: none;
         li {
             a {
                 display: block;

@@ -13,17 +13,16 @@
         padding: 0;
         list-style-type: none;
         display: flex;
-        border-radius:0;
+        border-radius: 0;
         background: $megamenu;
         background: $megamenulinear;
-        justify-content:flex-start;
+        justify-content: flex-start;
         border-bottom: 3px solid $secondaryColor;
-        border-top:3px solid $secondaryColor;
+        border-top: 3px solid $secondaryColor;
         // 第一層選單樣式
         >li {
-            flex-grow:  1;
+            flex-grow: 1;
             flex-basis: 12.5%;
-           
             >a {
                 display: block;
                 padding: 7px 0em;
@@ -85,6 +84,7 @@
         }
     }
     ul {
+        list-style-type: none;
         li {
             display: flex;
             a {
@@ -96,7 +96,7 @@
                 display: none;
                 overflow: visible;
                 background: $megamenu_2ndbgcolor;
-                border-radius:0;
+                border-radius: 0;
                 width: 100%;
                 padding: 20px 10px;
                 box-sizing: border-box;
@@ -418,7 +418,7 @@
                         border-radius: 0 !important;
                         padding-left: 14px !important;
                         display: flex;
-                        align-items:center;
+                        align-items: center;
                         &:hover {
                             background-color: #666 !important;
                             color: #fff !important;
