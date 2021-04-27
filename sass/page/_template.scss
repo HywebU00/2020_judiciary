@@ -287,7 +287,7 @@ body {
         position: relative;
         
         a {
-            &.doc, &.docx, &.odf, &.xml, &.odt, &.ods, &.pdf, &.epub, &.xls, &.xlsx, &.csv, &.ppt, &.ppt, &.pptx, &.odp, &.jpg, &.tif, &.mp3, &.mp4, &.wma, &.wmv, &.avi, &.mov, &.txt, &.dot, &.zip, &.sevenz, &.other, &.verdict, &.searchcontent {
+            &.doc, &.docx, &.odf, &.xml, &.odt, &.ods, &.pdf, &.epub, &.xls, &.xlsx, &.csv, &.ppt, &.ppt, &.pptx, &.odp, &.jpg, &.tif, &.mp3, &.mp4, &.wma, &.wmv, &.avi, &.mov, &.txt, &.dot, &.zip, &.sevenz, &.other, &.verdict, &.searchcontent, &.rar {
                 width: 21px;
                 height: 24px;
                 display: inline-block;
@@ -371,6 +371,9 @@ body {
             }
             &.zip {
                 background: url(../images/basic/icon_zip.jpg);
+            }
+            &.rar {
+                background: url(../images/basic/icon_rar.jpg);
             }
             &.sevenz {
                 background: url(../images/basic/icon_7z.jpg);
