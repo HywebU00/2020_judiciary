@@ -13,8 +13,8 @@ $(function() {
         lazyLoad: 'ondemand',
         ease: 'ease',
         customPaging: function(slider, i) {
-             var title = $(slider.$slides[i]).find('img').attr('alt').trim();
-            return $('<button type="button" aria-label="'+title+'"/>').text(title);
+            var title = $(slider.$slides[i]).find('img').attr('alt').trim();
+            return $('<button type="button" aria-label="' + title + '"/>').text(title);
         }
     });
     // 廣告輪播1
@@ -327,7 +327,7 @@ $(function() {
             arrow: true,
             customPaging: function(slider, i) {
                 var title = $(slider.$slides[i]).find('.title').html().trim();
-                return $('<button type="button" aria-label="'+title+'"/>').text(title);
+                return $('<button type="button" aria-label="' + title + '"/>').text(title);
             }
         });
     });
@@ -419,7 +419,7 @@ $(function() {
         }],
         customPaging: function(slider, i) {
             var title = $(slider.$slides[i]).find('img').attr('alt').trim();
-            return $('<button type="button" aria-label="'+title+'"/>').text(title);
+            return $('<button type="button" aria-label="' + title + '"/>').text(title);
         }
     });
     // cp_photo
@@ -638,7 +638,7 @@ $(function() {
         }],
         customPaging: function(slider, i) {
             var title = $(slider.$slides[i]).find('img').attr('alt').trim();
-            return $('<button type="button" aria-label="'+title+'"/>').text(title);
+            return $('<button type="button" aria-label="' + title + '"/>').text(title);
         }
     });
 });
@@ -751,4 +751,28 @@ $('.navlist ul li .unitsbtn').click(function(event) {
 });
 $('.header .units').click(function() {
     $('.units_block').fadeIn();
+})
+// 彈出訊息
+$(function() {
+    var popupStatus = false;
+    if ($('body').find('.pop_up_block').length > 0) {
+        popupStatus = true;
+    }
+    if (popupStatus = true) {
+        $('body').addClass('fixed');
+        $('.pop_up_block').addClass('goin');
+        $('.pop_up .closebtn').click(function() {
+            $('.pop_up_block').fadeOut();
+            $('body').removeClass('fixed');
+        });
+        $('.pop_up_block').click(function() {
+            $('.pop_up_block').fadeOut();
+            $('body').removeClass('fixed');
+        });
+        $('body').keydown(function(e) {
+            if (e.keyCode == 27) {
+                $(".pop_up_block").fadeOut();
+            }
+        });
+    }
 })

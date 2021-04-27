@@ -217,7 +217,7 @@ $(function() {
             /////////////// PC版設定 /////////////
             /*-----------------------------------*/
             hideSidebar();
-            _body.removeClass('noscroll');
+            // _body.removeClass('noscroll');
             // h1.prependTo('.header .container');
             _nav.insertAfter('.header h1');
             // _search.insertAfter('.header .navigation .navlist li>.searchbtn');;
