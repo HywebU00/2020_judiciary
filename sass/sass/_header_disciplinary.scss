@@ -597,10 +597,23 @@
     right: 0;
     top: 0;
     background-image: none;
-    background: $megamenu;
-    background: $megamenulinear;
+    background-color: $primaryColor;
+    // background: $megamenu;
+    // background: $megamenulinear;
     z-index: 999;
     padding-top: 0;
+    box-shadow: 0 0 10px #333;
+    border-bottom: 3px solid #ddc380;
+    &:after {
+        content: '';
+        background: $megamenu;
+        background: $megamenulinear;
+        height: 60px;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        border-top: 3px solid #ddc380;
+    }
     @include screen('tablet') {
         background: #FFF;
     }

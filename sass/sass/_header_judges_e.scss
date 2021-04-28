@@ -574,10 +574,21 @@
     right: 0;
     top: 0;
     background-image: none;
-    background: $megamenu;
-    background: $megamenulinear;
+    background-color: #fff; 
+    // background: $megamenu;
+    // background: $megamenulinear;
     z-index: 999;
     padding-top: 0;
+    box-shadow: 0 0 10px #333;
+    &:after {
+        content: '';
+        background: $secondaryColor;
+        background: $secondaryColor;
+        height: 60px;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+    }
     @include screen('tablet') {
         background: #FFF;
     }

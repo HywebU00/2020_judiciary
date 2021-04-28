@@ -580,10 +580,22 @@
     right: 0;
     top: 0;
     background-image: none;
-    background: $megamenu;
-    background: $megamenulinear;
+    background: rgb(253, 253, 253);
+    background: linear-gradient(180deg, rgba(253, 253, 253, 1) 45%, rgba(231, 232, 231, 1) 100%);
+    // background: $megamenu;
+    // background: $megamenulinear;
     z-index: 999;
     padding-top: 0;
+    box-shadow: 0 0 10px #333;
+    &:after {
+        content: '';
+        background: $megamenu;
+        background: $megamenulinear;
+        height: 60px;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+    }
     @include screen('tablet') {
         background: #FFF;
     }

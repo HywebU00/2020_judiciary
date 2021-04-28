@@ -43,3 +43,30 @@
         }
     }
 }
+.header.fixed {
+    position: fixed;
+    width: 100%;
+    right: 0;
+    top: 0;
+    background-image: $headerbg;
+    background-repeat:repeat-x;
+    background-position: center 0;
+    // background: $megamenu;
+    // background: $megamenulinear;
+    
+    z-index: 999;
+    padding-top: 0;
+    box-shadow: 0 0 10px #333;
+    &:after {
+        content: '';
+        // background: $megamenu;
+        // background: $megamenulinear;
+        height: 60px;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+    }
+    @include screen('tablet') {
+        background: #FFF;
+    }
+}

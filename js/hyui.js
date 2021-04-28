@@ -338,7 +338,7 @@ $(function() {
         });
     }
     if ($('header .megamenu').length > 0) {
-        var stickyMenuTop2 = Math.floor($('header .megamenu').offset().top);
+        var stickyMenuTop2 = Math.floor($('header').offset().top);
         // console.log(stickyMenuTop);
         headerHeight = Math.floor($('.header').outerHeight(true));
         megamenuH = Math.floor(_megamenu.outerHeight(true));
@@ -346,7 +346,7 @@ $(function() {
             ww = _window.outerWidth();
             if (ww >= wwMedium && $(this).scrollTop() > stickyMenuTop2) {
                 $('.header').addClass('fixed');
-                $('.header').css('margin-top', -1 * customHeight);
+                $('.header').css('margin-top',0);
                 $('.main').css('margin-top', 159);
                 // $('.main').css('margin-top', 0);
             } else {
