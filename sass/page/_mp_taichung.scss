@@ -163,7 +163,7 @@
     position: fixed;
     top: 197px;
     right: 10px;
-    z-index: 10;
+    z-index: 9999;
     padding: 0 !important;
     transition: .5s;
     @include screen('tablet') {
