@@ -677,7 +677,7 @@ $(function() {
     $('.qa_list>ul>li,.meeting_list>ul>li').each(function() {
         $(this).find('.answer').hide();
         var _qaItem = $(this).children('.question').children('a');
-        var _scrollTop = Math.floor($(this).offset().top - 150);
+        var _scrollTop = Math.floor($(this).offset().top - 250);
         _qaItem.each(function() {
             function qa(e) {
                 $('html, body').stop(true, true).animate({ scrollTop: _scrollTop }, 100, 'easeOutExpo');
