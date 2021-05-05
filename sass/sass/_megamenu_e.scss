@@ -5,7 +5,8 @@
     // 預設選單 ul
     clear: both;
     margin: 0;
-    flex:auto;
+    flex: auto;
+    flex-basis: 100%;
     @include screen('tablet') {
         display: none;
     }
