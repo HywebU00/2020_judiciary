@@ -166,7 +166,6 @@
             padding-right: 160px;
         }
         @extend %clearfix;
-        // overflow: hidden;
         box-sizing:border-box;
         display: flex;
         .navlist {
@@ -178,17 +177,13 @@
                 margin: 0;
                 font-size: .938em;
                 list-style: none;
-                display: flex;
-                justify-content: flex-end;
-                align-items: center;
-                 @extend %header_navbg2;
+                @extend %header_navbg2;
                 height: 47px;
                 >li {
-                    flex: 0 0 auto;
+                    float: left;
                     position: relative;
                     &:first-child {
                         a {
-                           
                             padding-left: 25px;
                             @media(max-width: 1070px) {
                                 padding-left: 15px
@@ -211,9 +206,9 @@
                             color: $header_navhovercolor;
                             background-color: $header_navhover;
                         }
-                        &:focus{
+                        &:focus {
                             box-shadow: 0 0px 0px 2px $header_navfocus inset !important;
-                         }
+                        }
                         &.emailbtn {
                             padding: 12px 25px 12px 8px;
                             &:after {
@@ -239,7 +234,7 @@
                             background-repeat: no-repeat;
                             background-size: 21px 20px;
                             display: block;
-                            height:47px; 
+                            height: 47px;
                             &:before {
                                 content: '';
                                 width: 1px;
@@ -256,8 +251,7 @@
                         &.unitsbtn {
                             background-image: url('../images/icon/icon_sitemap_black.svg');
                         }
-                        
-                         &.live {
+                        &.live {
                             display: block;
                             background-color: #fdfdfd;
                             color: $color-red;
@@ -455,7 +449,7 @@
                 width: 70%;
                 margin-right: 6px;
                 &:focus {
-                    box-shadow: 0 0px 0px 2px $color-yellow ;
+                    box-shadow: 0 0px 0px 2px $color-yellow;
                     border: none;
                 }
             }
@@ -464,9 +458,9 @@
                 padding: .2em .8em;
                 width: calc(100% - 70% - 6px);
             }
-             &:focus{
+            &:focus {
                 box-shadow: 0 0px 0px 2px $color-yellow inset;
-                border:none;
+                border: none;
             }
         }
     }

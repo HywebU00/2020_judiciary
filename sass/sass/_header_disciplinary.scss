@@ -176,7 +176,6 @@
             padding-right: 160px;
         }
         @extend %clearfix;
-        // overflow: hidden;
         box-sizing:border-box;
         display: flex;
         .navlist {
@@ -188,13 +187,10 @@
                 margin: 0;
                 font-size: .938em;
                 list-style: none;
-                display: flex;
-                justify-content: flex-end;
-                align-items: center;
                 @extend %header_navbg2;
                 height: 47px;
                 >li {
-                    flex: 0 0 auto;
+                    float: left;
                     position: relative;
                     &:first-child {
                         a {
@@ -210,7 +206,7 @@
                         text-decoration: none;
                         color: #333;
                         background-color: $header_navbg;
-                         height: 100%;
+                        height: 100%;
                         @include box-sizing;
                         transition: .5s;
                         @media(max-width: 1070px) {
