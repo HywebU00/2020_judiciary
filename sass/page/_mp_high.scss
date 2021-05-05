@@ -180,7 +180,7 @@
     position: fixed;
     top: 197px;
     right: 0px;
-    z-index: 9999;
+    z-index: 9;
     padding: 0 !important;
     transition: .5s;
     @include screen('tablet') {
@@ -281,7 +281,7 @@
         position: fixed;
         top: 197px;
         right: 0px;
-        z-index: 9999;
+        z-index: 9;
         padding: 0 !important;
         @media(max-width: 1360px) {
             display: block;

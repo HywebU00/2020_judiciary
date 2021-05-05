@@ -61,6 +61,12 @@
         max-width: $container-max;
         overflow: visible;
         position: relative; // menu
+        display: flex;
+        flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: 100%;
+        flex-wrap: wrap;
+        justify-content: space-between;
         .accesskey {
             top: 5px;
         }
@@ -112,7 +118,7 @@
         }
     }
     h1 {
-        max-width: 272px;
+        flex: auto;
         height: 64px;
         margin: 20px 0 15px 30px;
         padding: 0;
@@ -177,6 +183,8 @@
                 display: flex;
                 justify-content: flex-end;
                 align-items: center;
+                background-color: $header_navbg;
+                height: 47px;
                 >li {
                     flex: 0 0 auto;
                     position: relative;
@@ -193,7 +201,7 @@
                         padding: 12px 14px;
                         text-decoration: none;
                         color: #fff;
-                        background-color: $header_navbg;
+                        height: 100%;
                         @include box-sizing;
                         transition: .5s;
                         @media(max-width: 1070px) {
@@ -250,7 +258,7 @@
                         }
                         &.live {
                             display: block;
-                            background-color: transparent;
+                            background-color: $header_navlivecolor;;
                             color: $secondaryColor;
                             position: relative;
                             font-weight: 400;
@@ -307,6 +315,7 @@
                             padding-right: 15px;
                             font-size: 1.063em;
                             transition: .5s;
+                            height: 47px;
                             &:hover {
                                 background-color: $QAcolor_hover;
                                 color:#fff;

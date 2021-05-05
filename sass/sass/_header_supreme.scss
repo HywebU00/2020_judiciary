@@ -62,6 +62,12 @@
         max-width: $container-max;
         overflow: visible;
         position: relative; // menu
+        display: flex;
+        flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: 100%;
+        flex-wrap: wrap;
+        justify-content: space-between;
         .accesskey {
             top: 5px;
         }
@@ -113,7 +119,7 @@
         }
     }
     h1 {
-        max-width: 272px;
+        flex: auto;
         height: 64px;
         margin: 20px 0 15px 30px;
         padding: 0;
@@ -179,7 +185,7 @@
                 justify-content: flex-end;
                 align-items: center;
                 @extend %header_navbg2;
-                border-radius: 3px;
+                height: 47px;
                 >li {
                     flex: 0 0 auto;
                     position: relative;
@@ -197,6 +203,7 @@
                         text-decoration: none;
                         color: #082354;
                         background-color: $header_navbg;
+                        height: 100%;
                         @include box-sizing;
                         transition: .5s;
                         @media(max-width: 1070px) {
@@ -263,6 +270,7 @@
                             font-size: 1.188em;
                             letter-spacing: 0.1em;
                             transition: .5s;
+                            height: 47px;
                             &:hover {
                                 background-color: $color-red;
                                 color: #fff;
@@ -310,6 +318,7 @@
                             padding-right: 15px;
                             font-size: 1.063em;
                             transition: .5s;
+                            height: 47px;
                             &:hover {
                                 background-color: $QAcolor_hover;
                             }
