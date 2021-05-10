@@ -720,7 +720,7 @@ var unitStatus = false; // 假的判斷式，先設定沒有開啟。
 function openuni() {
     $('.units_block').css('top', '0px');
     $('.units_block').slideDown(600, 'easeOutQuart');
-    $('body').addClass('noscroll');
+    $('body').addClass('fixed');
     $(this).hide();
     // $('nav.units_block .close>a').focus();
     unitStatus = true;
@@ -730,7 +730,7 @@ function closeuni() {
     $('.units_block').fadeOut(400, function() {
         $(this).css('top', '0px');
     });
-    $('body').removeClass('noscroll');
+    $('body').removeClass('fixed');
     // $('.navlist>ul>li>a.QA').focus();
 }
 if (unitStatus = true) {
