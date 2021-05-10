@@ -646,7 +646,7 @@
     left: 0px;
     padding: 30px;
     // min-height: auto;
-    overflow-y: auto;
+    overflow: hidden;
     font-size: 1.125em !important;
     box-sizing: border-box;
     .overlay {
@@ -705,7 +705,7 @@
         position: relative;
         z-index: 99999;
         text-align: left;
-        padding: 0;
+       padding: 0 0 50px;
         float: none;
         overflow-y: auto;
         >li {

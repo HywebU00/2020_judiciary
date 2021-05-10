@@ -720,7 +720,7 @@ var unitStatus = false; // 假的判斷式，先設定沒有開啟。
 function openuni() {
     $('.units_block').css('top', '0px');
     $('.units_block').slideDown(600, 'easeOutQuart');
-    $('body').addClass('fixed');
+    $('body').addClass('noscroll');
     $(this).hide();
     // $('nav.units_block .close>a').focus();
     unitStatus = true;
@@ -730,7 +730,7 @@ function closeuni() {
     $('.units_block').fadeOut(400, function() {
         $(this).css('top', '0px');
     });
-    $('body').removeClass('fixed');
+    $('body').removeClass('noscroll');
     // $('.navlist>ul>li>a.QA').focus();
 }
 if (unitStatus = true) {
@@ -749,9 +749,15 @@ $('.units_block>ul>li:last-child>ul>li:last-child a').focusout(function() {
 $('.navlist ul li .unitsbtn').click(function(event) {
     openuni();
 });
+
+$('.navlist ul li .unitsbtn').click(function(event) {
+    openuni();
+});
 $('.header .units').click(function() {
-    $('.units_block').fadeIn();
+    openuni();
 })
+
+
 // 彈出訊息
 $(function() {
     var popupStatus = false;

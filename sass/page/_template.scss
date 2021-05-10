@@ -16,7 +16,7 @@ body {
         padding: 0;
     }
     &.fixed{
-        position: static !important;
+        position: fixed !important;
         width: 100%;
         height: 100vh;
         overflow: hidden !important;
