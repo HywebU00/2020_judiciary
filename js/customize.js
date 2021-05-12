@@ -771,7 +771,7 @@ $(function() {
             $('.pop_up_block').fadeOut();
             $('body').removeClass('fixed');
         });
-        $('.pop_up_block').click(function() {
+        $('.pop_up_block .overlay').click(function() {
             $('.pop_up_block').fadeOut();
             $('body').removeClass('fixed');
         });
