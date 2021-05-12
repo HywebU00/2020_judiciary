@@ -15,7 +15,7 @@ body {
         margin: 0;
         padding: 0;
     }
-    &.fixed{
+    &.fixed {
         position: fixed !important;
         width: 100%;
         height: 100vh;
@@ -36,7 +36,6 @@ body {
         overflow: hidden;
         overflow-y: auto;
     }
-    
     &.mpwrap {
         // background-image: $mainbg;
         // background-position: center top;
@@ -56,10 +55,10 @@ body {
     padding: 0;
     // 可先設定一個中央區塊最大寬，限制accesskey對齊
     .accesskey {
-            top: -8px;
-            left: 0;
-            z-index: 999;
-        }
+        top: -8px;
+        left: 0;
+        z-index: 999;
+    }
     @include screen('tablet') {
         padding: 61px 0 0 0;
     }
@@ -123,7 +122,7 @@ body {
         // flex: 0 0 260px;
         // flex-basis: 260px;
         width: 260px;
-        float:left;
+        float: left;
         padding-bottom: 1.5em;
         position: relative;
         @include screen('tablet') {
@@ -293,9 +292,8 @@ body {
         // max-width: 100%;
         overflow: hidden;
         padding-bottom: 1.5em;
-        padding-top:5px;
+        padding-top: 5px;
         position: relative;
-        
         a {
             &.doc, &.docx, &.odf, &.xml, &.odt, &.ods, &.pdf, &.epub, &.xls, &.xlsx, &.csv, &.ppt, &.ppt, &.pptx, &.odp, &.jpg, &.tif, &.mp3, &.mp4, &.wma, &.wmv, &.avi, &.mov, &.txt, &.dot, &.zip, &.sevenz, &.other, &.verdict, &.searchcontent, &.rar {
                 width: 21px;
@@ -427,7 +425,6 @@ body {
 .gsc-above-wrapper-area {
     border-bottom: none !important;
 }
-
 // 彈出訊息
 .pop_up_block {
     width: 100%;
@@ -435,14 +432,35 @@ body {
     position: fixed;
     background-color: rgba(0, 0, 0, 0);
     overflow: hidden;
-    z-index: 999999;
-    transition: .2s;
-
+    z-index: 9999;
     &.goin {
-       background-color: rgba(0, 0, 0, 0.7);
-       .pop_up{
-        transform: translate(0,0);
-       }
+         background-color: rgba(51, 51, 51, .98);
+        .pop_up {
+            transform: translate(0, 0);
+        }
+        .closebtn{
+            transform: translate(0, 0);
+        }
+    }
+    .closebtn {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 15px;
+        right: 30px;
+        z-index: 99999;
+         transform: translate(0, -125%);
+        transition: 1s;
+        a {
+            display: block;
+            font-size: 0;
+            background-image: url('../images/basic/icon_close.png');
+            background-position: 0 0;
+            background-repeat: no-repeat;
+            background-size: 40px;
+            width: 40px;
+            height: 40px;
+        }
     }
     .overlay {
         position: absolute;
@@ -453,38 +471,27 @@ body {
         z-index: 1;
         background: none;
         overflow: hidden;
+
     }
     .pop_up {
         width: 600px;
-        height: 93vh;
+        height: 85vh;
+        overflow-y: auto;
+        overflow-x: hidden;
         margin: 30px auto 20px;
         border-radius: 10px;
         position: relative;
         background-color: #fff;
         box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
         padding: 20px 20px 50px;
-        transition: .7s;
-        transform: translate(0,-125%);
-        overflow: hidden;
-         z-index: 2;
+        transform: translate(0, -125%);
+        z-index: 2;
+        transition: 0.5s;
         @include box-sizing(border-box);
-        @include screen('mobile'){
-            width:90%;
-        }
-        .closebtn {
-            position: absolute;
-            right: 20px;
-            top: 20px;
-            a {
-                display: block;
-                font-size: 0;
-                background-image: url('../images/basic/icon_close.svg');
-                background-position: 0 0;
-                background-repeat: no-repeat;
-                background-size: 15px;
-                width: 20px;
-                height: 20px;
-            }
+        @include screen('mobile') {
+            width: 90%;
+            height:75vh;
+            margin: 60px auto 20px;
         }
         .title {
             font-size: 1.75em;
@@ -496,13 +503,7 @@ body {
             line-height: 1.45em;
         }
         .content {
-            overflow-y:auto;
-            overflow-x: hidden;
-            position:relative;
-            z-index: 9999999;
-            height: 100%;
-            width:100%;
-             @include box-sizing(border-box);
+            @include box-sizing(border-box);
             img {
                 width: 100%;
             }

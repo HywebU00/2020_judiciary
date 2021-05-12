@@ -767,7 +767,7 @@ $(function() {
     if (popupStatus == true) {
         $('body').addClass('fixed');
         $('.pop_up_block').addClass('goin');
-        $('.pop_up .closebtn').click(function() {
+        $('.pop_up_block .closebtn').click(function() {
             $('.pop_up_block').fadeOut();
             $('body').removeClass('fixed');
         });
