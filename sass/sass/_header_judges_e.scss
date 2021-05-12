@@ -3,7 +3,7 @@
     position: relative;
     z-index: 1030;
     margin: 0px auto;
-    background-color: #fff; 
+    background-color: #fff;
     padding-top: 0px;
     // transition: .5s;
     @extend %clearfix;
@@ -61,7 +61,7 @@
         max-width: $container-max;
         overflow: visible;
         position: relative; // menu
-       display: flex;
+        display: flex;
         flex-grow: 0;
         flex-shrink: 1;
         flex-basis: 100%;
@@ -158,19 +158,24 @@
         margin-top: 25px;
         position: relative;
         clear: none;
-        @include screen('tablet') {
-            display: none;
-        }
         &.have_language {
             padding-right: 160px;
         }
         @extend %clearfix;
         box-sizing:border-box;
-        display: flex;
+        // display: flex;
+        @include screen('tablet') {
+            display: none;
+            visibility: hidden;
+        }
         .navlist {
             flex: 1 1 auto;
             margin: 0;
             position: relative;
+            @include screen('tablet') {
+                display: none;
+                visibility: hidden;
+            }
             >ul {
                 padding: 0;
                 margin: 0;
@@ -219,8 +224,8 @@
                             }
                             &:hover {
                                 &:after {
-                                     border: 4px solid #fff;
-                                border-color: #fff transparent transparent transparent;
+                                    border: 4px solid #fff;
+                                    border-color: #fff transparent transparent transparent;
                                 }
                             }
                         }
@@ -251,7 +256,8 @@
                         }
                         &.live {
                             display: block;
-                            background-color: $header_navlivecolor;;
+                            background-color: $header_navlivecolor;
+                            ;
                             color: $secondaryColor;
                             position: relative;
                             font-weight: 400;
@@ -311,11 +317,11 @@
                             height: 47px;
                             &:hover {
                                 background-color: $QAcolor_hover;
-                                color:#fff;
+                                color: #fff;
                             }
                             &:focus {
                                 box-shadow: 0 0px 0px 2px $QAcolor_focus inset;
-                                color:#333;
+                                color: #333;
                             }
                             // &:before {
                             //     content: '';
@@ -426,7 +432,7 @@
         width: 100%;
         display: inline-block;
         vertical-align: middle;
-         margin-bottom: 6px;
+        margin-bottom: 6px;
         @include screen('tablet') {
             width: 100%;
         }
@@ -459,13 +465,12 @@
         }
     }
     .btn_grp {
-       width: 100%;
+        width: 100%;
         padding: 0;
         margin: 0;
         display: inline-block;
-       
         input, input[type="submit"] {
-           width: 100%;
+            width: 100%;
             padding: .2em .8em;
             margin: 0;
         }
@@ -578,7 +583,7 @@
     right: 0;
     top: 0;
     background-image: none;
-    background-color: #fff; 
+    background-color: #fff;
     // background: $megamenu;
     // background: $megamenulinear;
     z-index: 999;
@@ -705,7 +710,7 @@
         position: relative;
         z-index: 99999;
         text-align: left;
-       padding: 0 0 120px;
+        padding: 0 0 120px;
         float: none;
         overflow-y: auto;
         >li {

@@ -112,13 +112,12 @@ $(function() {
     _megamenu.find('li:last>a').focusout(function() {
         _megamenu.find('li .megamenu_2nd').hide();
     });
-    if (ww <= wwMedium) {
-        // 先複製過去
-        _nav.clone().prependTo(_mArea);
-        _menu.clone().prependTo(_mArea);
-        _megamenu.clone().prependTo(_mArea);
-        _search.clone(true).prependTo(_body).addClass('m_search');
-    }
+    // 先複製過去
+    _nav.clone().prependTo(_mArea);
+    _menu.clone().prependTo(_mArea);
+    _megamenu.clone().prependTo(_mArea);
+    _search.clone().prependTo(_body).addClass('m_search');
+    
     var liHasChild_level1 = $('aside .menu ul').children('li.hasChild'),
         liHasChild_level2 = $('aside .menu ul ul').children('li.hasChild'),
         liHasChild_level3 = $('aside .menu ul ul ul').children('li.hasChild'),
@@ -219,7 +218,7 @@ $(function() {
             hideSidebar();
             // _body.removeClass('noscroll');
             // h1.prependTo('.header .container');
-            _nav.insertAfter('.header h1');
+            // _nav.insertAfter('.header h1');
             // _search.insertAfter('.header .navigation .navlist li>.searchbtn');;
             _menu.appendTo('.header .container');
             _megamenu.appendTo('.header .container');
@@ -346,7 +345,7 @@ $(function() {
             ww = _window.outerWidth();
             if (ww >= wwMedium && $(this).scrollTop() > stickyMenuTop2) {
                 $('.header').addClass('fixed');
-                $('.header').css('margin-top',0);
+                $('.header').css('margin-top', 0);
                 $('.main').css('margin-top', 159);
                 // $('.main').css('margin-top', 0);
             } else {

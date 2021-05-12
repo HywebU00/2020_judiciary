@@ -158,19 +158,24 @@
         margin-top: 25px;
         position: relative;
         clear: none;
-        @include screen('tablet') {
-            display: none;
-        }
         &.have_language {
             padding-right: 160px;
         }
         @extend %clearfix;
         box-sizing:border-box;
-        display: flex;
+        // display: flex;
+        @include screen('tablet') {
+            display: none;
+            visibility: hidden;
+        }
         .navlist {
             flex: 1 1 auto;
             margin: 0;
             position: relative;
+            @include screen('tablet') {
+                display: none;
+                visibility: hidden;
+            }
             >ul {
                 padding: 0;
                 margin: 0;

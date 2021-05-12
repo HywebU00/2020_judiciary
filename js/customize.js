@@ -418,7 +418,7 @@ $(function() {
             }
         }],
         customPaging: function(slider, i) {
-            var title = $(slider.$slides[i]).find('img').attr('alt').trim();
+            var title = $(slider.$slides[i]).find('img').attr('alt');
             return $('<button type="button" aria-label="' + title + '"/>').text(title);
         }
     });
@@ -637,7 +637,7 @@ $(function() {
             }
         }],
         customPaging: function(slider, i) {
-            var title = $(slider.$slides[i]).find('img').attr('alt').trim();
+            var title = $(slider.$slides[i]).find('img').attr('alt');
             return $('<button type="button" aria-label="' + title + '"/>').text(title);
         }
     });
