@@ -36,6 +36,7 @@
                 background-image: $megamenu_line;
                 background-repeat: no-repeat;
                 background-position: left center;
+                word-break: normal;
             }
             &:first-child {
                 >a {
@@ -138,6 +139,7 @@
                         font-weight: normal;
                         font-weight: bolder;
                         @include box-sizing;
+                        word-break: normal;
                         &:hover, &:focus {
                             color: $lightColor;
                         }
