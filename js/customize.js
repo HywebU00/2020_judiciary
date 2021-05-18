@@ -546,21 +546,7 @@ $(function() {
     $('.list_second').find('li:last>a').focusout(function() {
         $('.list_second').hide();
     });
-    // search
-    var searchStatus = false; // 假的判斷式，先設定沒有開啟
     var _navlist = $('.header .navigation .navlist ul')
-    _navlist.find('.searchbtn').click(function() {
-        $(this).siblings('.search').stop().slideToggle();
-        $(this).parent('li').siblings().find('.list_second').slideUp();
-        searchStatus = true;
-    })
-    if (searchStatus = true) {
-        $('body').keydown(function(e) {
-            if (e.keyCode == 27) {
-                $('.search_block .search').slideUp();
-            }
-        });
-    }
     // 無障礙tab查詢
     if ($('.keywordHot>ul>li').length == 0) {
         $('.btn_grp input').focusout(function() {
@@ -749,15 +735,12 @@ $('.units_block>ul>li:last-child>ul>li:last-child a').focusout(function() {
 $('.navlist ul li .unitsbtn').click(function(event) {
     openuni();
 });
-
 $('.navlist ul li .unitsbtn').click(function(event) {
     openuni();
 });
 $('.header .units').click(function() {
     openuni();
 })
-
-
 // 彈出訊息
 $(function() {
     var popupStatus = false;
