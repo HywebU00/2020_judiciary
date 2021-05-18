@@ -112,14 +112,14 @@
         _megamenu.find('li:last>a').focusout(function() {
             _megamenu.find('li .megamenu_2nd').hide();
         });
-        if (ww <= wwMedium) {
-            // 先複製過去
-            _nav.children(".search_block").remove();
-            _nav.clone().prependTo(_mArea);
-            _menu.clone().prependTo(_mArea);
-            _megamenu.clone().prependTo(_mArea);
-            // _search.clone().prependTo(_body).addClass('m_search');   
-        }
+        // if (ww <= wwMedium) {
+        // 先複製過去
+        _nav.clone().prependTo(_mArea);
+        _mArea.find('.search_block').remove();
+        _menu.clone().prependTo(_mArea);
+        _megamenu.clone().prependTo(_mArea);
+        // _search.clone().prependTo(_body).addClass('m_search');   
+        // }
         var liHasChild_level1 = $('aside .menu ul').children('li.hasChild'),
             liHasChild_level2 = $('aside .menu ul ul').children('li.hasChild'),
             liHasChild_level3 = $('aside .menu ul ul ul').children('li.hasChild'),
