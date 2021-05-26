@@ -70,6 +70,9 @@
                 width: auto;
                 @include text-overflow;
                 @include box-sizing;
+                @include screen('notebook'){
+                    padding: 25px 15px 19px;
+                }
                 @include screen('tablet') {
                     background: rgb(238, 224, 203);
                     background: linear-gradient(90deg, rgba(238, 224, 203, 1) 0%, rgba(236, 208, 189, 1) 100%);

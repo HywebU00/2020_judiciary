@@ -73,6 +73,9 @@
                 width: auto;
                 @include text-overflow;
                 @include box-sizing;
+                @include screen('notebook'){
+                    padding: 25px 15px 19px;
+                }
                 @include screen('tablet') {
                     background-color: $primaryColor;
                 }
