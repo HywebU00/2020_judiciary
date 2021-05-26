@@ -469,6 +469,10 @@
             &:focus {
                 box-shadow: 0 0px 0px 2px $color-yellow inset;
                 border: none;
+                &[type="text"]{
+                    background-color:lighten($lightColor,20);
+                    color:#222;
+                }
             }
         }
     }

@@ -557,6 +557,16 @@ $(function() {
             $('.navlist .search').hide();
         });
     }
+    // 
+    if ($('.navlist .search .btn_grp').length == 0) {
+        $('.navlist .search .form_grp ').find('input:last').focusout(function() {
+            $('.navlist .search').hide();
+        });
+    } else {
+        $('.navlist .search .btn_grp ').find('input').focusout(function() {
+            $('.navlist .search').hide();
+        });
+    }
     // emailbtn
     var emailStatus = false; // 假的判斷式，先設定沒有開啟
     _navlist.find('.emailbtn').click(function() {
