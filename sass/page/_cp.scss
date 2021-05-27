@@ -117,7 +117,7 @@ h1.title, h2.title {
         }
     }
     ul, ol {
-        margin-bottom: 0;
+        margin-bottom: 1em;
     }
     img {
         &.float_left {
@@ -144,17 +144,15 @@ h1.title, h2.title {
         }
     }
     a {
-
         @include aSetting;
         color: $cp_acolor;
         &:hover {
             color: $aHover;
         }
-        &:focus{
-            img{
-              box-shadow: 0 0px 0px 2px $color-yellow ; 
+        &:focus {
+            img {
+                box-shadow: 0 0px 0px 2px $color-yellow;
             }
-            
         }
     }
     .info {
@@ -318,6 +316,28 @@ h1.title, h2.title {
             left: 0;
             right: 0;
             bottom: 0;
+        }
+    }
+    // 線上預約
+    .online_title {
+        margin: 0 0 20px;
+        background-color: $primaryColor;
+        color: #fff;
+        padding: 5px 19px;
+        display: inline-block;
+        font-size: 1.125em;
+        letter-spacing: 0.05em;
+        text-align: center;
+    }
+    .online_explain {
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 30px;
+        .image {
+            width:220px;
+            margin-bottom: 1em;
+            img{
+                width:100%;
+            }
         }
     }
 }

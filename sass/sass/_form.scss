@@ -50,6 +50,12 @@ select::-ms-expand {
         @include gutter();
         padding-top: 5px;
         white-space: nowrap;
+        &.longtitle{
+            width:100%;
+            +.form_content{
+                width:calc(100% - 10px);
+            }
+        }
         @include screen('mobile') {
             width: 100%;
         }
@@ -456,8 +462,8 @@ input[type="radio"] {
 }
 input[type="checkbox"]:checked, input[type="checkbox"]:focus,
 input[type="radio"]:checked, input[type="radio"]:focus {
-    border-color: $form-focus;
-    background-color: $form-focus;
+    border-color: $primaryColor;
+    background-color: $primaryColor;
     outline: none;
 }
 input[type="checkbox"]:checked {
@@ -465,21 +471,21 @@ input[type="checkbox"]:checked {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 98%;
-    box-shadow: $form-focus 0 0 0 1px;
+    box-shadow: $primaryColor 0 0 0 1px;
     @include border-radius(2px);
 }
 input[type="radio"]:checked {
-    box-shadow: #fff 0 0 0 3px inset, $form-focus 0 0 0 1px;
+    box-shadow: #fff 0 0 0 3px inset, $primaryColor 0 0 0 1px;
 }
 input[type="radio"]:focus{
-   border-color:$form-focus;
-   background-color: $form-focus;
-     box-shadow: #fff 0 0 0 3px inset, $form-focus 0 0 0 1px;
+   border-color:$primaryColor;
+   background-color: $primaryColor;
+     box-shadow: #fff 0 0 0 3px inset, $primaryColor 0 0 0 1px;
 }
 input[type="checkbox"]:focus{
-    border-color:$form-focus;
-   background-color: $form-focus;
-   box-shadow: $form-focus 0 0 0 1px;
+    border-color:$primaryColor;
+   background-color: $primaryColor;
+   box-shadow: $primaryColor 0 0 0 1px;
 }
 //---------------------------------------------readonly disable -------//
 input[readonly],

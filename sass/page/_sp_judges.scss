@@ -401,7 +401,7 @@
                     display: none;
                 }
             }
-            ul,ol{
+            ul, ol {
                 margin-bottom: 20px;
             }
         }
@@ -1998,5 +1998,307 @@
                 }
             }
         }
+    }
+}
+// 線上預約
+.online_appointment {
+    // 步驟
+    .online_stepblock {
+        background-color: #ececec;
+        border-radius: 5px;
+        padding: 70px 30px 30px;
+        font-size: 1em;
+        margin-bottom: 30px;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+        @media (max-width: 900px) {
+            padding: 50px 20px 30px 70px;
+        }
+        ul {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+            @media (max-width: 900px) {
+                display: block;
+            }
+            li {
+                flex: auto;
+                flex-basis: 21%;
+                margin: 0;
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 15px;
+                box-sizing: border-box;
+                min-height: 80px;
+                @media (max-width: 900px) {
+                    flex-basis: 100%;
+                }
+                div {
+                    border-radius: 5px;
+                    line-height: 1.2em;
+                    background-color: #bbb;
+                    color: #fff;
+                    padding: 15px;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 1.125em;
+                    span {
+                        font-size: 1.063em;
+                        margin: 0 0 5px;
+                        padding: 0;
+                        flex: auto;
+                        flex-basis: 100%;
+                        font-weight: bolder;
+                        em {
+                            padding: 0 5px;
+                            font-style: normal;
+                            font-weight: 900;
+                            font-size: 1.5em;
+                        }
+                    }
+                }
+                &:before {
+                    content: "";
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                    background-color: #fff;
+                    border: 6px solid #bbb;
+                    position: absolute;
+                    left: 50%;
+                    top: -46px;
+                    z-index: 3;
+                    margin-left: -20px;
+                    @media (max-width: 900px) {
+                        margin-left: -50px;
+                        left: 0;
+                        top: auto;
+                    }
+                }
+                &:after {
+                    content: "";
+                    width: 100%;
+                    height: 6px;
+                    background-color: #bbb;
+                    position: absolute;
+                    left: auto;
+                    right: 0;
+                    top: -32px;
+                    bottom: 0;
+                    z-index: 2;
+                    @media (max-width: 900px) {
+                        width: 6px;
+                        height: 100%;
+                        top: 0;
+                        bottom: 0;
+                        left: -36px;
+                        right: auto;
+                    }
+                }
+                &.active {
+                    div {
+                        background-color: $secondaryColor;
+                    }
+                    &:before {
+                        border: 6px solid $secondaryColor;
+                        background-color: $secondaryColor;
+                        background-image: url("../images/icon_tick.svg");
+                        background-position: 0;
+                        background-repeat: no-repeat;
+                        background-size: 20px;
+                    }
+                    &:after {
+                        background: $secondaryColor;
+                        background: linear-gradient(90deg,
+                            $secondaryColor 0%,
+                            $secondaryColor 50%,
+                            rgba(187, 187, 187, 1) 50%,
+                            rgba(187, 187, 187, 1) 100%);
+                        @media (max-width: 900px) {
+                            background: $secondaryColor;
+                            background: linear-gradient(180deg,
+                                $secondaryColor 0%,
+                                $secondaryColor 50%,
+                                rgba(187, 187, 187, 1) 50%,
+                                rgba(187, 187, 187, 1) 100%);
+                        }
+                    }
+                }
+                &.pass {
+                    div {
+                        background-color: lighten($secondaryColor, 50);
+                        color: darken($secondaryColor, 5);
+                    }
+                    &:before {
+                        border: 6px solid $secondaryColor;
+                    }
+                    &:after {
+                        background-color: $secondaryColor;
+                        @media (max-width: 900px) {
+                            background-color: $secondaryColor;
+                        }
+                    }
+                }
+                &:first-child {
+                    &:after {
+                        content: "";
+                        background: rgb(187, 187, 187);
+                        background: linear-gradient(-90deg,
+                            rgba(187, 187, 187, 1) 0%,
+                            rgba(187, 187, 187, 1) 50%,
+                            rgba(236, 236, 236, 1) 50%,
+                            rgba(236, 236, 236, 1) 100%);
+                        @media (max-width: 900px) {
+                            width: 6px;
+                            background: rgb(187, 187, 187);
+                            background: linear-gradient(0deg,
+                                rgba(187, 187, 187, 1) 0%,
+                                rgba(187, 187, 187, 1) 50%,
+                                rgba(236, 236, 236, 1) 50%,
+                                rgba(236, 236, 236, 1) 100%);
+                        }
+                    }
+                    &.pass {
+                        &:after {
+                            background: $secondaryColor;
+                            background: linear-gradient(-90deg,
+                                $secondaryColor 0%,
+                                $secondaryColor 50%,
+                                rgba(236, 236, 236, 1) 50%,
+                                rgba(236, 236, 236, 1) 100%);
+                            @media (max-width: 900px) {
+                                background: $secondaryColor;
+                                background: linear-gradient(0deg,
+                                    $secondaryColor 0%,
+                                    $secondaryColor 50%,
+                                    rgba(236, 236, 236, 1) 50%,
+                                    rgba(236, 236, 236, 1) 100%);
+                            }
+                        }
+                    }
+                }
+                &:last-child {
+                    &:after {
+                        background: rgb(187, 187, 187);
+                        background: linear-gradient(90deg,
+                            rgba(187, 187, 187, 1) 0%,
+                            rgba(187, 187, 187, 1) 50%,
+                            rgba(236, 236, 236, 1) 50%,
+                            rgba(236, 236, 236, 1) 100%);
+                    }
+                    &.active {
+                        &:after {
+                            background: $secondaryColor;
+                            background: linear-gradient(90deg,
+                                $secondaryColor 0%,
+                                $secondaryColor 50%,
+                                rgba(236, 236, 236, 1) 50%,
+                                rgba(236, 236, 236, 1) 100%);
+                        }
+                    }
+                    @media (max-width: 900px) {
+                        &:after {
+                            background: rgb(187, 187, 187);
+                            background: linear-gradient(180deg,
+                                rgba(187, 187, 187, 1) 0%,
+                                rgba(187, 187, 187, 1) 50%,
+                                rgba(236, 236, 236, 1) 50%,
+                                rgba(236, 236, 236, 1) 100%);
+                        }
+                        &.active {
+                            &:after {
+                                background: $secondaryColor;
+                                background: linear-gradient(180deg,
+                                    $secondaryColor 0%,
+                                    $secondaryColor 50%,
+                                    rgba(236, 236, 236, 1) 50%,
+                                    rgba(236, 236, 236, 1) 100%);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .online_content {
+        line-height: 2em;
+        padding: 20px 30px 0;
+        border: 2px solid #ececec;
+        border-radius: 5px;
+        margin-bottom: 40px;
+        .title {
+            margin: 0 0 15px;
+            padding-left: 20px;
+            font-size: 1.25em;
+            font-weight: bolder;
+            color: $secondaryColor;
+            position: relative;
+            &:before {
+                content: '';
+                border: 8px solid $secondaryColor;
+                border-top-color: transparent;
+                border-right-color: transparent;
+                border-bottom-color: transparent;
+                position: absolute;
+                left: 0;
+                top: 8px;
+            }
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        .form_grp+.btn_grp {
+            border-top: none;
+        }
+        .btn_grp {
+            border-top: 1px solid #ddd;
+        }
+    }
+}
+// 線上問卷
+.online_questionnaire {
+    .online_explain {
+        background-color: #ececec;
+        border-radius: 5px;
+        padding: 20px 30px;
+        margin-bottom: 30px;
+        p {
+            font-size: 1em;
+            line-height: 2em;
+            margin-top: 0em;
+            margin-bottom: 1em;
+        }
+        ul, ol {
+            line-height: 2em;
+            margin: 0 0 1em;
+        }
+    }
+    .result_title {
+        margin: 0 0 15px;
+        padding: 8px 20px;
+        font-size: 1.125em;
+        font-weight: bolder;
+        background-color: $secondaryColor;
+        position: relative;
+        color: #fff;
+        display: inline-block;
+        border-radius: 50px;
+
+    }
+    .chart_block{
+        padding: 20px 30px 0;
+        border: 2px solid #ececec;
+        border-radius: 5px;
+        margin-bottom: 40px;
+        min-height: 200px;
     }
 }
