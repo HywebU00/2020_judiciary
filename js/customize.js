@@ -614,7 +614,7 @@ $(function() {
     // 
     $('.picslider').slick({
         arrows: false,
-        dots: true,
+        dots: false,
         slidesToShow: 3,
         responsive: [{
             breakpoint: 992,
