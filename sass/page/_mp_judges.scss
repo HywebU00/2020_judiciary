@@ -2737,8 +2737,194 @@
         }
     }
 }
-// 遴選法官 圖片輪播 
-.selection_block {
+// 遴選法官 灰色底 圖片輪播 
+.selection_block_gray {
+    background-image: $e_course_block;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100%;
+    overflow: hidden;
+    position: relative;
+    background-color: #b3b3b3;
+    padding-bottom: 30px;
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 37%;
+        background-color: rgba(255, 255, 255, .4);
+        width: 100%;
+        transform: skew(-8deg);
+        z-index: 1;
+        @include screen('tablet') {
+            left: 20.2%;
+        }
+    }
+    .container {
+        padding: 0 !important;
+        @include screen('tablet') {
+            padding: 0 50px !important;
+        }
+        @include screen('xs_mobile') {
+            padding: 0 30px !important; //gutter 代表左右要留白
+        }
+    }
+    .selection {
+        position: relative;
+        z-index: 9;
+        h2 {
+            margin-bottom: 70px;
+            margin-top: 55px;
+        }
+    }
+    .picslider {
+        width: 120%;
+        margin-left: -10%;
+        margin-bottom: 50px;
+        @include screen('tablet') {
+            width: 100%;
+            margin-left: 0%;
+        }
+        @include screen('mobile') {
+            margin-bottom: 70px;
+        }
+        .pic_content {
+            position: relative;
+            padding: 0 20px;
+            @include screen('mobile') {
+                padding: 0;
+            }
+            .img-container {
+                @include aspect-ratio(16, 9);
+                position: relative;
+                a {
+                    display: block;
+                    text-align: center;
+                    color: #fff;
+                    &:before {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        width: 100%;
+                        height: 100%;
+                        background-color: rgba(0, 0, 0, .3);
+                        z-index: 1;
+                        transition: .5s;
+                    }
+                    &:hover {
+                        &:before {
+                            background-color: rgba(0, 0, 0, 0);
+                        }
+                        .title {
+                            text-shadow: 0px 0px 5px #333, 0px 0px 5px #333;
+                        }
+                    }
+                }
+                img {
+                    object-fit: cover;
+                    // @include screen('tablet') {
+                    //     width: auto !important;
+                    //     // height: 100% !important;
+                    // }
+                    // @media(max-width: 480px) {
+                    //     width: 100% !important;
+                    //     // height: auto !important;
+                    // }
+                }
+                .title {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    bottom: 0;
+                    right: 0;
+                    color: #fff;
+                    font-size: 1.625em;
+                    width: 100%;
+                    height: 100%;
+                    line-height: 1.45em;
+                    font-weight: bolder;
+                    z-index: 9;
+                    padding: 0 60px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    box-sizing: border-box;
+                    span {
+                        font-size: 0.875em;
+                        display: block;
+                    }
+                }
+                .moviebtn {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    margin-left: -24px;
+                    width: 48px;
+                    height: 48px;
+                    z-index: 9;
+                    @media(max-width: 380px) {
+                        top: 25%
+                    }
+                    img {
+                        width: 48px;
+                        height: 48px;
+                    }
+                }
+            }
+        }
+        // 箭頭
+        .slick-prev {
+            background-image: url(../vendor/slick/icon_arrow_up.svg);
+            background-size: 60px 30px;
+            background-position: center;
+            background-color: transparent;
+            width: 60px !important;
+            height: 40px !important;
+            transform: rotate(-90deg);
+            right: auto;
+            left: 200px;
+            top: -40px;
+            @include screen('mobile') {
+                left: 0px;
+                top: 40%;
+                background-color: rgba(255, 255, 255, .3);
+            }
+        }
+        .slick-next {
+            background-image: url('../vendor/slick/icon_arrow_down.svg');
+            background-size: 60px 30px;
+            background-position: center;
+            background-color: transparent;
+            width: 60px !important;
+            height: 40px !important;
+            right: 200px;
+            transform: rotate(-90deg);
+            top: -40px;
+            @include screen('mobile') {
+                right: 0px;
+                top: 40%;
+                background-color: rgba(255, 255, 255, .3);
+            }
+        }
+        // 點點
+        .slick-dots {
+            bottom: -30px;
+        }
+    }
+    .more {
+        margin-right: 10%;
+        @include screen('tablet') {
+            margin-right: 0;
+        }
+    }
+}
+// 遴選法官 粉紅色底 圖片輪播 
+.selection_block_pink {
     background-image: url('../images/judges/selection_bg.jpg');
     background-repeat: no-repeat;
     background-position: center top;
