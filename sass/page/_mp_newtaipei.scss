@@ -2468,10 +2468,9 @@
             background-color: transparent;
             right: auto;
             left: 150px;
-            background-color: rgba(0, 0, 0, .5);
+            background-color: rgba(0, 0, 0, .6);
             @include screen('tablet') {
                 left: 0px;
-                background-color: rgba(0, 0, 0, .5);
             }
         }
         .slick-next {
@@ -2479,10 +2478,9 @@
             background-position: center;
             background-color: transparent;
             right: 150px;
-            background-color: rgba(0, 0, 0, .5);
+            background-color: rgba(0, 0, 0, .6);
             @include screen('tablet') {
                 right: 0px;
-                background-color: rgba(0, 0, 0, .5);
             }
         }
         // 點點

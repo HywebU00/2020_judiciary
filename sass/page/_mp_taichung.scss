@@ -2526,36 +2526,24 @@
         }
         // 箭頭
         .slick-prev {
-            background-image: url(../vendor/slick/icon_arrow_up.svg);
-            background-size: 60px 30px;
+            background-image: url('../vendor/slick/icon_arrow_left_inverse_white.png');
             background-position: center;
             background-color: transparent;
-            width: 60px !important;
-            height: 40px !important;
-            transform: rotate(-90deg);
             right: auto;
-            left: 200px;
-            top: -40px;
-            @include screen('mobile') {
+            left: 150px;
+            background-color: rgba(0, 0, 0, .6);
+            @include screen('tablet') {
                 left: 0px;
-                top: 40%;
-                background-color: rgba(255, 255, 255, .3);
             }
         }
         .slick-next {
-            background-image: url('../vendor/slick/icon_arrow_down.svg');
-            background-size: 60px 30px;
+            background-image: url('../vendor/slick/icon_arrow_right_inverse_white.png');
             background-position: center;
             background-color: transparent;
-            width: 60px !important;
-            height: 40px !important;
-            right: 200px;
-            transform: rotate(-90deg);
-            top: -40px;
-            @include screen('mobile') {
+            right: 150px;
+            background-color: rgba(0, 0, 0, .6);
+            @include screen('tablet') {
                 right: 0px;
-                top: 40%;
-                background-color: rgba(255, 255, 255, .3);
             }
         }
         // 點點
