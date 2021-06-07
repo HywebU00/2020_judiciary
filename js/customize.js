@@ -613,7 +613,7 @@ $(function() {
     }
     // 
     $('.picslider').slick({
-        arrows: false,
+        arrows: true,
         dots: false,
         slidesToShow: 3,
         responsive: [{
