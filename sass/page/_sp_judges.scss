@@ -2229,39 +2229,40 @@
             }
         }
     }
-    .online_content {
-        line-height: 2em;
-        padding: 20px 30px 0;
-        border: 2px solid #ececec;
-        border-radius: 5px;
-        margin-bottom: 40px;
-        .title {
-            margin: 0 0 15px;
-            padding-left: 20px;
-            font-size: 1.25em;
-            font-weight: bolder;
-            color: $secondaryColor;
-            position: relative;
-            &:before {
-                content: '';
-                border: 8px solid $secondaryColor;
-                border-top-color: transparent;
-                border-right-color: transparent;
-                border-bottom-color: transparent;
-                position: absolute;
-                left: 0;
-                top: 8px;
-            }
+}
+// 個資同意書
+.online_content {
+    line-height: 2em;
+    padding: 20px 30px 0;
+    border: 2px solid #ececec;
+    border-radius: 5px;
+    margin-bottom: 40px;
+    .title {
+        margin: 0 0 15px;
+        padding-left: 20px;
+        font-size: 1.25em;
+        font-weight: bolder;
+        color: $secondaryColor;
+        position: relative;
+        &:before {
+            content: '';
+            border: 8px solid $secondaryColor;
+            border-top-color: transparent;
+            border-right-color: transparent;
+            border-bottom-color: transparent;
+            position: absolute;
+            left: 0;
+            top: 8px;
         }
-        p {
-            margin-bottom: 15px;
-        }
-        .form_grp+.btn_grp {
-            border-top: none;
-        }
-        .btn_grp {
-            border-top: 1px solid #ddd;
-        }
+    }
+    p {
+        margin-bottom: 15px;
+    }
+    .form_grp+.btn_grp {
+        border-top: none;
+    }
+    .btn_grp {
+        border-top: 1px solid #ddd;
     }
 }
 // 線上問卷
@@ -2292,9 +2293,8 @@
         color: #fff;
         display: inline-block;
         border-radius: 50px;
-
     }
-    .chart_block{
+    .chart_block {
         padding: 20px 30px 0;
         border: 2px solid #ececec;
         border-radius: 5px;
