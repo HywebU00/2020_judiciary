@@ -1788,6 +1788,7 @@
                     border-radius: 5px;
                     background-size: 60%;
                     z-index: 9;
+                    top: 45%;
                 }
                 .slick-next {
                     right: -40px;
@@ -1797,6 +1798,7 @@
                     border-radius: 5px;
                     background-size: 60%;
                     z-index: 9;
+                    top: 45%;
                 }
                 @include screen('xs_mobile') {
                     .slick-prev {
@@ -1812,30 +1814,75 @@
                 }
                 .period_slider {
                     flex: auto;
-                    width: 29%;
-                    margin: 0 2.16%;
-                    padding-bottom: 50px;
+                    flex-basis: 100%;
+                    max-width: 100%;
+                    margin: 0 0 55px;
+                    padding: 0 40px;
+                    box-sizing: border-box;
+                    @include screen('tablet') {
+                        flex-basis: 100%;
+                        max-width: 100%;
+                        margin: 0 0 55px;
+                        padding: 0 40px;
+                        &:nth-of-type(3) {
+                            flex-basis: 100%;
+                            max-width: 100%;
+                        }
+                    }
+                    @include screen('mobile') {
+                        flex-basis: 100%;
+                        max-width: 100%;
+                        margin: 0 0 55px;
+                        padding: 0 40px;
+                        &:nth-of-type(3) {
+                            flex-basis: 100%;
+                            max-width: 100%;
+                        }
+                    }
+                    @media(max-width: 650px) {
+                        flex-basis: 100%;
+                        max-width: 100%;
+                        margin: 0 0 55px;
+                        padding: 0 40px;
+                        &:nth-of-type(3) {
+                            flex-basis: 100%;
+                            max-width: 100%;
+                        }
+                    }
+                    @include screen('xs_mobile'){
+                         padding: 0 60px;
+                    }
                     // 箭頭
                     .slick-prev {
-                        left: -30px;
+                        top: 55%;
+                        left: 0px!important;
                         background: url(../vendor/slick/icon_arrow_left.png) center center no-repeat;
                         background-size: 60%;
                         z-index: 9;
                         width: 35px !important;
                         height: 35px !important;
+                        @include screen('xs_mobile'){
+                             left: 20px!important;
+                        }
                     }
                     .slick-next {
-                        right: -30px;
+                        top: 55%;
+                        right: 0px!important;
                         background: url(../vendor/slick/icon_arrow_right.png) center center no-repeat;
                         background-size: 60%;
                         z-index: 9;
                         width: 35px !important;
                         height: 35px !important;
+                        @include screen('xs_mobile'){
+                             right: 20px!important;
+                        }
                     }
                     // 點點
                     .slick-dots {
-                        bottom: 25px;
                         padding: 0;
+                        bottom: -30px;
+                        left: 0;
+                        right: 0;
                     }
                 }
             }
