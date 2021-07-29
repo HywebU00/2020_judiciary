@@ -776,6 +776,9 @@
                     &:hover {
                         color: $aHover;
                     }
+                    &:focus{
+                        box-shadow: 0 0px 0px 2px #fcc211;
+                    }
                 }
                 .images {
                     padding: 0;
@@ -852,6 +855,9 @@
                     padding: 0;
                     &:hover {
                         color: $aHover;
+                    }
+                    &:focus{
+                        box-shadow: 0 0px 0px 2px #fcc211;
                     }
                 }
                 .images {
