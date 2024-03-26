@@ -7840,7 +7840,7 @@ body.fixed {
 }
 @media screen and (max-width: 767px) {
   .wrapper {
-    background: #FFF;
+    background: #fff;
     overflow: hidden;
     overflow-y: auto;
   }
@@ -7859,7 +7859,7 @@ body.fixed {
 .main .accesskey {
   top: -8px;
   left: 0;
-  z-index: 999;
+  z-index: 99;
 }
 @media screen and (max-width: 991px) {
   .main {

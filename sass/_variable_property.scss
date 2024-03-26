@@ -3,7 +3,7 @@
 //-------------------------------------------------------------顏色---------//
 // 定義顏色 此顏色可自由變換
 $primaryColor: #554217; //主色
-$secondaryColor: #9e6b11; //輔色
+$secondaryColor: #97660f; //輔色
 $lightColor: #f7dc58; //點綴
 $linkColor: #21baff; //連結
 $importantColor: #ff3e4d; //重要
@@ -27,89 +27,88 @@ $form-btn: #21baff; //表單
 
 // 首內頁區塊顏色變數
 // header nav
-$header_navbg:rgba(9, 9, 8, .68);
-$header_navhover:$secondaryColor;
-$header_navhovercolor:#fff;
-$header_navfocus:$color-yellow;
-$header_navlivecolor:#dab65e;
-$QAbg:$lightColor;
-$QAcolor:darken($primaryColor, 5);
-$QAcolor_hover:lighten($lightColor, 10);
-$QAcolor_focus:darken($primaryColor, 5);
-$QAcolor_before:darken($primaryColor, 5);
-$QAcolor_after:$lightColor;
-$casebtn01:rgb(38,72,112);
-$casebtn02:rgb(117,53,60);
-$units_a:lighten($secondaryColor,15);
-$goCenter_bgcolor:$secondaryColor;
+$header_navbg: rgba(9, 9, 8, 0.68);
+$header_navhover: $secondaryColor;
+$header_navhovercolor: #fff;
+$header_navfocus: $color-yellow;
+$header_navlivecolor: #dab65e;
+$QAbg: $lightColor;
+$QAcolor: darken($primaryColor, 5);
+$QAcolor_hover: lighten($lightColor, 10);
+$QAcolor_focus: darken($primaryColor, 5);
+$QAcolor_before: darken($primaryColor, 5);
+$QAcolor_after: $lightColor;
+$casebtn01: rgb(38, 72, 112);
+$casebtn02: rgb(117, 53, 60);
+$units_a: lighten($secondaryColor, 15);
+$goCenter_bgcolor: $secondaryColor;
 // megamenu
-$megamenu:none ;
-$megamenulinear:rgba(9, 9, 8, .68);
-$megamenu_hover:transparent;
-$megamenu_hoverbefore:$color-yellow;
-$megamenu_2ndbgcolor: rgba(0, 0, 0, .9);
-$megamenu_2nd_acolor:#fff;	
-$megamenu_2nd_ahovercolor:$lightColor;
-$megamenu_2nd_ahoverbg:transparent;
+$megamenu: none;
+$megamenulinear: rgba(9, 9, 8, 0.68);
+$megamenu_hover: transparent;
+$megamenu_hoverbefore: $color-yellow;
+$megamenu_2ndbgcolor: rgba(0, 0, 0, 0.9);
+$megamenu_2nd_acolor: #fff;
+$megamenu_2nd_ahovercolor: $lightColor;
+$megamenu_2nd_ahoverbg: transparent;
 
 // 內頁左欄menu
 $left_title: #3e3322;
-$first-active:#dbdbdb;
-$first-active-color:$primaryColor;
-$second_active:#856A05;
-$second_hover-color:$primaryColor;
+$first-active: #dbdbdb;
+$first-active-color: $primaryColor;
+$second_active: #856a05;
+$second_hover-color: $primaryColor;
 
-$font_size_bgcolor:$primaryColor; //font_size點選到的顏色
+$font_size_bgcolor: $primaryColor; //font_size點選到的顏色
 // np
-$nphover:darken($primaryColor, 5);
+$nphover: darken($primaryColor, 5);
 //category
-$categorycolor:$primaryColor;
+$categorycolor: $primaryColor;
 // tableth
-$tableth:#767676;
-$tableth_color:#fff;
+$tableth: #767676;
+$tableth_color: #fff;
 // page
-$pagecolor:$primaryColor;
+$pagecolor: $primaryColor;
 // thumbnail
-$thumbnail_h3:$primaryColor;
+$thumbnail_h3: $primaryColor;
 // document
 $search_btn: $primaryColor;
 //箭頭底色
-$search_arrowbgcolor:$color-yellow;
-$event_title_bgclolr:lighten($primaryColor, 8);
+$search_arrowbgcolor: $color-yellow;
+$event_title_bgclolr: lighten($primaryColor, 8);
 
 // cp
-$block_title_color:$primaryColor;
-$info_leftborder:$primaryColor;
-$cp_acolor:$secondaryColor;
+$block_title_color: $primaryColor;
+$info_leftborder: $primaryColor;
+$cp_acolor: $secondaryColor;
 
 // sp
-$question_leftcolorbg:$primaryColor;
-$process_block_bgcolor:$secondaryColor;  //流程區塊顏色
-$event_title_bgcolor:lighten($primaryColor, 8);
-$court_schedule_span:lighten($primaryColor, 50); //表格內span的顏色
-$court_schedule_em:darken($primaryColor, 10); //表格內em的顏色
-$question_numbg:$secondaryColor;
-$question_activetext:$secondaryColor;
+$question_leftcolorbg: $primaryColor;
+$process_block_bgcolor: $secondaryColor; //流程區塊顏色
+$event_title_bgcolor: lighten($primaryColor, 8);
+$court_schedule_span: lighten($primaryColor, 50); //表格內span的顏色
+$court_schedule_em: darken($primaryColor, 10); //表格內em的顏色
+$question_numbg: $secondaryColor;
+$question_activetext: $secondaryColor;
 
 // sitemap
-$sitemap_color:$primaryColor;
+$sitemap_color: $primaryColor;
 
 // slick
-$slickdots:#fff;
-$slickdots-active:#4d3f20;
+$slickdots: #fff;
+$slickdots-active: #4d3f20;
 
 // footer
 $footer_connection: url('../images/property/footer_connection_bg.jpg');
-$footer_link:darken($primaryColor, 15);
-$footer_accesskey_color:#f6d06b;
+$footer_link: darken($primaryColor, 15);
+$footer_accesskey_color: #f6d06b;
 
 // template
 $morebg: $primaryColor;
-$morebg_hover:darken($primaryColor, 10);
+$morebg_hover: darken($primaryColor, 10);
 //-------------------------------------------------------------字型--------//
 // 字型設定
-$font-family: Lato, 'PingFang TC', 'Helvetica Neue', Helvetica, 微軟正黑體,
-Arial, sans-serif;
+$font-family: Lato, 'PingFang TC', 'Helvetica Neue', Helvetica, 微軟正黑體, Arial, sans-serif;
 $font-size: 1em;
 //-------------------------------------------------------------格線系統-----//
 // 格線系統
@@ -124,23 +123,22 @@ $screen-xs: 576px !default; //極小尺寸
 //-------------------------------------------------------------客製化------//
 $fatfooter-length: 6; //fatfooter選單一行個數
 $fatfooterBgColor: #3f3323; //fatFooter 底色
-$fatfooteraColor:#fff;
+$fatfooteraColor: #fff;
 //-------------------------------------------------------------客製化------//
-$rounded-angle:					 10px; //整站導角
+$rounded-angle: 10px; //整站導角
 // $mainbg:			 			 url('../images/property/bg01.jpg');
-$h2bg: 							 url('../images/property/h2_icon01.png');
-$megamenu_line: 				 none;
-$announcement_bg:				 url('../images/property/news_bg.jpg');
-$service_blockbg:				 url('../images/property/service_leftbg.jpg');
-$service_beforebg: 				 url('../images/property/service_rightbg.png');
-$fatfooterbg: 					 url('../images/property/fatfooter_bg01.jpg');
-$qaTitle:						 url('../images/property/icon_logo.png');
-$cph3beforebg:					 url('../images/property/icon_logo_blue.png');
-$cph3afterebg:					 url('../images/property/icon_category.png');
-$closepeoplebg:					 url('../images/property/closepeople_bg.jpg');
-$courtperiodbg:					 url('../images/property/court_period_bg.jpg');
+$h2bg: url('../images/property/h2_icon01.png');
+$megamenu_line: none;
+$announcement_bg: url('../images/property/news_bg.jpg');
+$service_blockbg: url('../images/property/service_leftbg.jpg');
+$service_beforebg: url('../images/property/service_rightbg.png');
+$fatfooterbg: url('../images/property/fatfooter_bg01.jpg');
+$qaTitle: url('../images/property/icon_logo.png');
+$cph3beforebg: url('../images/property/icon_logo_blue.png');
+$cph3afterebg: url('../images/property/icon_category.png');
+$closepeoplebg: url('../images/property/closepeople_bg.jpg');
+$courtperiodbg: url('../images/property/court_period_bg.jpg');
 
-$headerbg:						 url('../images/property/header_bg.jpg');
+$headerbg: url('../images/property/header_bg.jpg');
 
-$event_contentbg:				 url('../images/property/event_content_bg01.jpg');			
-
+$event_contentbg: url('../images/property/event_content_bg01.jpg');

@@ -2625,11 +2625,11 @@ img.loaded {
 }
 @media screen and (max-width: 991px) {
   .announcement .tabs > .tabItem > a, .pictab_block .tabs > .tabItem > a {
-    background-color: #9e6b11;
+    background-color: #97660f;
   }
 }
 .announcement .tabs > .tabItem > a:hover, .pictab_block .tabs > .tabItem > a:hover {
-  background-color: #82580e;
+  background-color: #7b530c;
   color: #fff;
 }
 .announcement .tabs .tabContent, .pictab_block .tabs .tabContent {
@@ -4583,7 +4583,7 @@ img.img-responsive {
 }
 .header .navigation .navlist > ul > li a:hover {
   color: #fff;
-  background-color: #9e6b11;
+  background-color: #97660f;
 }
 .header .navigation .navlist > ul > li a.emailbtn {
   padding: 12px 25px 12px 8px;
@@ -4852,7 +4852,7 @@ img.img-responsive {
   border-radius: 3px !important;
 }
 .search .keywordHot ul li a:hover {
-  background-color: #9e6b11 !important;
+  background-color: #97660f !important;
 }
 .search.m_search {
   width: 100% !important;
@@ -5070,7 +5070,7 @@ img.img-responsive {
   display: block;
   padding: 0;
   margin: 0;
-  color: #e39a18;
+  color: #dd9516;
   font-weight: bold;
 }
 .units_block > ul > li ul {
@@ -5147,13 +5147,13 @@ img.img-responsive {
   margin-right: 0.5em;
 }
 .units_block > ul > li li a:hover, .units_block > ul > li li a:focus {
-  color: #e39a18 !important;
+  color: #dd9516 !important;
 }
 .units_block > ul > li li a:focus {
-  box-shadow: 0 0px 0px 2px #e39a18 inset !important;
+  box-shadow: 0 0px 0px 2px #dd9516 inset !important;
 }
 .units_block > ul > li li a.active {
-  color: #e39a18;
+  color: #dd9516;
 }
 
 .language {
@@ -7778,7 +7778,7 @@ body.fixed {
 }
 @media screen and (max-width: 767px) {
   .wrapper {
-    background: #FFF;
+    background: #fff;
     overflow: hidden;
     overflow-y: auto;
   }
@@ -7797,7 +7797,7 @@ body.fixed {
 .main .accesskey {
   top: -8px;
   left: 0;
-  z-index: 999;
+  z-index: 99;
 }
 @media screen and (max-width: 991px) {
   .main {
@@ -8038,7 +8038,7 @@ body.fixed {
 }
 .innerpage .left_block nav > ul > li ul li a.active {
   color: #fff;
-  background: #856A05;
+  background: #856a05;
 }
 .innerpage .left_block nav > ul > li ul li a.active:before {
   content: "";
@@ -9337,7 +9337,7 @@ body.fixed {
 }
 .announcement_block .tabContent .news_block .news_pic3 time {
   color: #fff;
-  background-color: #9e6b11;
+  background-color: #97660f;
   padding: 4px 8px;
   position: absolute;
   top: 0;
@@ -11698,7 +11698,7 @@ h1.title:after, h2.title:after {
 .cp a {
   color: #413212;
   text-decoration: none;
-  color: #9e6b11;
+  color: #97660f;
 }
 .cp a:hover, .cp a:focus {
   color: #856a01;
@@ -12260,7 +12260,7 @@ div.tag ul li a:hover, div.tag ul li a:focus {
 }
 .qa_search a:after {
   content: "";
-  background: #9e6b11 url("../images/basic/icon_search2_.png") no-repeat center center;
+  background: #97660f url("../images/basic/icon_search2_.png") no-repeat center center;
   background-size: 20px;
   position: absolute;
   right: 0;
@@ -12451,7 +12451,7 @@ div.tag ul li a:hover, div.tag ul li a:focus {
 }
 .qa_list .question a.active .text,
 .meeting_list .question a.active .text {
-  color: #9e6b11;
+  color: #97660f;
 }
 .qa_list .question a.active:after,
 .meeting_list .question a.active:after {
@@ -12464,12 +12464,12 @@ div.tag ul li a:hover, div.tag ul li a:focus {
 }
 .qa_list .question a:focus .text,
 .meeting_list .question a:focus .text {
-  color: #9e6b11;
+  color: #97660f;
 }
 .qa_list .question .num,
 .meeting_list .question .num {
   font-family: "Century Gothic", "Futura", "Didact Gothic", san-serif;
-  background: #9e6b11;
+  background: #97660f;
   color: #fff;
   font-size: 1.375em;
   padding: 0.8em;
@@ -13217,7 +13217,7 @@ div.tag ul li a:hover, div.tag ul li a:focus {
   content: "";
   width: 1px;
   height: 100%;
-  background: #9e6b11;
+  background: #97660f;
   display: block;
   position: absolute;
   left: 39px;
@@ -13233,7 +13233,7 @@ div.tag ul li a:hover, div.tag ul li a:focus {
   margin-bottom: 2em;
 }
 .event > ul > li span.date {
-  background: #9e6b11;
+  background: #97660f;
   color: #fff;
   border-radius: 9px;
   padding: 0.6em 0.8em;
@@ -14480,7 +14480,7 @@ div.tag ul li a:hover, div.tag ul li a:focus {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #9e6b11;
+  background-color: #97660f;
   color: #fff;
   font-size: 1.438em;
   font-weight: bold;
@@ -14556,7 +14556,7 @@ div.tag ul li a:hover, div.tag ul li a:focus {
   width: 7px;
   height: 7px;
   border-radius: 50%;
-  background-color: #9e6b11;
+  background-color: #97660f;
   position: absolute;
   left: -18px;
   top: 9px;
@@ -15676,7 +15676,7 @@ a.goCenter {
   padding: 0 0.5em;
   height: 2em;
   line-height: 2em;
-  background: #9e6b11;
+  background: #97660f;
   color: #fff;
   text-decoration: none;
   z-index: 999999999999;
