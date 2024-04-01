@@ -7558,7 +7558,11 @@ div.function ul li.icon_forward a:before {
   background: transparent;
 }
 .function_panel .share ul li a:hover img, .function_panel .share ul li a:focus img {
-  filter: invert(0%);
+  filter: grayscale(1);
+}
+.function_panel .share ul li a:focus {
+  box-shadow: 0 0px 0px 3px #e31c1c;
+  background-color: #fff;
 }
 .function_panel .share a.shareButton {
   display: block;

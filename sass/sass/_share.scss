@@ -62,11 +62,15 @@
           &:focus {
             background: transparent;
             img {
-              filter: invert(0%);
+              // filter: invert(0%);
+              filter: grayscale(1);
             }
           }
           &:focus {
-            // outline: 1px solid $primaryColor;
+            // outline: 2px dashed $color-red;
+            // box-shadow: none;
+            box-shadow: 0 0px 0px 3px $color-red;
+            background-color: #fff;
           }
         }
       }
