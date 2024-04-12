@@ -12982,7 +12982,7 @@ div.tag ul li a:hover, div.tag ul li a:focus {
 .table_list_search_block,
 .table_list_search_block2 {
   clear: both;
-  margin: -45px 0 10px 0;
+  margin: 0px 0 10px 0;
   overflow: hidden;
 }
 @media screen and (max-width: 767px) {
@@ -13028,17 +13028,21 @@ div.tag ul li a:hover, div.tag ul li a:focus {
   content: "";
   background: #fcc211 url("../images/icon_more_.png") no-repeat center center;
   position: absolute;
-  right: 0;
-  top: 0;
+  right: 2px;
+  top: 2px;
   bottom: 0;
-  width: 40px;
+  width: 36px;
+  height: 36px;
   display: block;
 }
 .table_list_search_block .search_btn a:hover, .table_list_search_block .search_btn a:focus,
 .table_list_search_block2 .search_btn a:hover,
 .table_list_search_block2 .search_btn a:focus {
-  background: #374d41;
-  box-shadow: none;
+  background: #0d110f;
+}
+.table_list_search_block .search_btn a:focus,
+.table_list_search_block2 .search_btn a:focus {
+  box-shadow: 0 0px 0px 2px #e31c1c inset;
 }
 .table_list_search_block .table_list_search,
 .table_list_search_block2 .table_list_search {

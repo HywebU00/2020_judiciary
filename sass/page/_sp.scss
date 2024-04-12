@@ -676,7 +676,7 @@
 .table_list_search_block2 {
   // display: block;
   clear: both;
-  margin: -45px 0 10px 0;
+  margin: 0px 0 10px 0;
   overflow: hidden;
   @include screen('mobile') {
     margin: -10px 0 10px 0;
@@ -710,16 +710,19 @@
         content: '';
         background: $search_arrowbgcolor url('../images/icon_more_.png') no-repeat center center;
         position: absolute;
-        right: 0;
-        top: 0;
+        right: 2px;
+        top: 2px;
         bottom: 0;
-        width: 40px;
+        width: 36px;
+        height: 36px;
         display: block;
       }
       &:hover,
       &:focus {
-        background: lighten($search_btn, 10);
-        box-shadow: none;
+        background: darken($search_btn, 10);
+      }
+      &:focus {
+        box-shadow: 0 0px 0px 2px $color-red inset;
       }
     }
   }

@@ -416,7 +416,9 @@ $(function () {
     _accordionItem.each(function () {
       function accordion(e) {
         $(this).parent('li').siblings().children('a').removeClass('active');
+		$(this).parent('li').siblings().children('a').removeAttr('aria-selected');
         $(this).toggleClass('active');
+		$(this).attr('aria-selected', 'true');
         $(this).parent('li').siblings().children('.accordion-content').slideUp();
         $(this).next('.accordion-content').slideToggle();
         e.preventDefault();
@@ -598,7 +600,9 @@ $(function () {
           tabIndex = _tabItemNow.index() / 2,
           scollDistance = tvp + tabItemHeight * tabIndex - hh;
         _tabItem.removeClass('active');
+		_tabItem.removeAttr('aria-selected');
         _tabItemNow.addClass('active');
+		_tabItemNow.attr('aria-selected', 'true');
         if (ww <= wwMedium) {
           _tabItem.not('.active').next().slideUp();
           // _tabItemNow.next().slideDown();
@@ -658,7 +662,9 @@ $(function () {
           tabIndex = _tabItemNow.index() / 2,
           scollDistance = tvp + tabItemHeight * tabIndex - hh;
         _tabItem.removeClass('active');
+		_tabItem.removeAttr('aria-selected');
         _tabItemNow.addClass('active');
+		_tabItemNow.attr('aria-selected', 'true');
         if (ww <= wwSmall) {
           _tabItem.not('.active').next().slideUp();
           // _tabItemNow.next().slideDown();
@@ -771,7 +777,7 @@ $(function () {
   //////////分享按鈕 share dropdwon////////
   /*------------------------------------*/
   $('.function_panel .share, .answer .share, .movie_content .share').children('ul').hide();
-  $('.function_panel .share,.answer .share, .movie_content .share').prepend('<a href="#" class="shareButton">share分享按鈕</a>');
+  $('.function_panel .share,.answer .share, .movie_content .share').prepend('<a href="#" role="button" class="shareButton">share分享按鈕</a>');
   var _shareButton = $('.shareButton');
   _shareButton.off().click(function (e) {
     $(this).siblings('ul').stop(true, true).slideToggle();
