@@ -3,7 +3,7 @@
 //-------------------------------------------------------------顏色---------//
 // 定義顏色 此顏色可自由變換
 $primaryColor: #005ab0; //主色
-$secondaryColor: #618100; //輔色
+$secondaryColor: #617e04; //輔色
 $lightColor: #fcd618; //點綴
 $linkColor: #21baff; //連結
 $importantColor: #ff3e4d; //重要
@@ -20,97 +20,96 @@ $color-hr: #666; //hr顏色
 $color-word: #222; //一般字的顏色
 // 連結顏色
 $aColor: darken($secondaryColor, 10);
-$aHover:#856a01;
+$aHover: #856a01;
 // 表單focus顏色
 $form-focus: #21baff; //表單
 $form-btn: #21baff; //表單
 
 // 首內頁區塊顏色變數
 // header nav
-$header_navbg:$secondaryColor;
-$header_navhover:darken($secondaryColor, 5);
-$header_navhovercolor:#fff;
-$header_navfocus:$color-yellow;
-$header_navlivecolor:#fff;
-$QAbg:$primaryColor;
-$QAcolor:#fff;
-$QAcolor_hover:darken($primaryColor, 5 );
-$QAcolor_focus:$lightColor;
-$QAcolor_before:#fff;
-$QAcolor_after:$primaryColor;
+$header_navbg: $secondaryColor;
+$header_navhover: darken($secondaryColor, 5);
+$header_navhovercolor: #fff;
+$header_navfocus: $color-yellow;
+$header_navlivecolor: #fff;
+$QAbg: $primaryColor;
+$QAcolor: #fff;
+$QAcolor_hover: darken($primaryColor, 5);
+$QAcolor_focus: $lightColor;
+$QAcolor_before: #fff;
+$QAcolor_after: $primaryColor;
 $casebtn01: #875875;
-$casebtn02:#195c7d;
-$units_a:lighten($secondaryColor,20);
-$goCenter_bgcolor:$secondaryColor;
+$casebtn02: #195c7d;
+$units_a: lighten($secondaryColor, 20);
+$goCenter_bgcolor: $secondaryColor;
 // megamenu
 $megamenu: $primaryColor;
-$megamenulinear:$primaryColor;
-$megamenu_hover:#252b9b;
-$megamenu_hoverbefore:$color-yellow;
+$megamenulinear: $primaryColor;
+$megamenu_hover: #252b9b;
+$megamenu_hoverbefore: $color-yellow;
 $megamenu_2ndbgcolor: #252b9b;
-$megamenu_2nd_acolor:#fff;
-$megamenu_2nd_ahovercolor:$lightColor;
-$megamenu_2nd_ahoverbg:transparent;
+$megamenu_2nd_acolor: #fff;
+$megamenu_2nd_ahovercolor: $lightColor;
+$megamenu_2nd_ahoverbg: transparent;
 
 // 內頁左欄menu
-$left_title: #506a01;
-$first-active:#cbcbcb;
-$first-active-color:darken($secondaryColor,7);
-$second_active:#6a8b04;
-$second_hover-color:darken($secondaryColor,5);
+$left_title: #4d6601;
+$first-active: #cbcbcb;
+$first-active-color: darken($secondaryColor, 7);
+$second_active: #617e04;
+$second_hover-color: darken($secondaryColor, 5);
 
-$font_size_bgcolor:$secondaryColor; //font_size點選到的顏色
+$font_size_bgcolor: $secondaryColor; //font_size點選到的顏色
 
 // np
-$nphover:darken($primaryColor, 5);
+$nphover: darken($primaryColor, 5);
 //category
-$categorycolor:$secondaryColor;
+$categorycolor: $secondaryColor;
 // tableth
-$tableth:#e0b500;
-$tableth_color:#000;
+$tableth: #e0b500;
+$tableth_color: #000;
 // page
-$pagecolor:$secondaryColor;
+$pagecolor: $secondaryColor;
 // thumbnail
-$thumbnail_h3:$secondaryColor;
+$thumbnail_h3: $secondaryColor;
 // document
-$search_btn:$primaryColor;
+$search_btn: $primaryColor;
 //箭頭底色
-$search_arrowbgcolor:$color-yellow;
+$search_arrowbgcolor: $color-yellow;
 
 // cp
-$block_title_color:$secondaryColor;
-$info_leftborder:$secondaryColor;
-$cp_acolor:$secondaryColor;
+$block_title_color: $secondaryColor;
+$info_leftborder: $secondaryColor;
+$cp_acolor: $secondaryColor;
 
 // sp
-$question_leftcolorbg:$primaryColor;
-$process_block_bgcolor:$secondaryColor;  //流程區塊顏色
-$event_title_bgcolor:lighten($primaryColor, 8);
-$court_schedule_span:#cbd7a7; //表格內span的顏色
-$court_schedule_em:darken($secondaryColor, 10); //表格內em的顏色
-$question_numbg:$secondaryColor;
-$question_activetext:$secondaryColor;
+$question_leftcolorbg: $primaryColor;
+$process_block_bgcolor: $secondaryColor; //流程區塊顏色
+$event_title_bgcolor: lighten($primaryColor, 8);
+$court_schedule_span: #cbd7a7; //表格內span的顏色
+$court_schedule_em: darken($secondaryColor, 10); //表格內em的顏色
+$question_numbg: $secondaryColor;
+$question_activetext: $secondaryColor;
 
 // sitemap
-$sitemap_color:$secondaryColor;
+$sitemap_color: $secondaryColor;
 
 // slick
-$slickdots:#fff;
-$slickdots-active:$secondaryColor;
+$slickdots: #fff;
+$slickdots-active: $secondaryColor;
 
 // footer
-$footer_connection:$secondaryColor;
-$footer_link:$secondaryColor;
-$footer_accesskey_color:$secondaryColor;
-$footer_acolor:#fff;
+$footer_connection: $secondaryColor;
+$footer_link: $secondaryColor;
+$footer_accesskey_color: $secondaryColor;
+$footer_acolor: #fff;
 
 // template
 $morebg: $secondaryColor;
-$morebg_hover:darken($secondaryColor, 5);
+$morebg_hover: darken($secondaryColor, 5);
 //-------------------------------------------------------------字型--------//
 // 字型設定
-$font-family: Lato, 'PingFang TC', 'Helvetica Neue', Helvetica, 微軟正黑體,
-Arial, sans-serif;
+$font-family: Lato, 'PingFang TC', 'Helvetica Neue', Helvetica, 微軟正黑體, Arial, sans-serif;
 $font-size: 1em;
 //-------------------------------------------------------------格線系統-----//
 // 格線系統
@@ -125,21 +124,19 @@ $screen-xs: 576px !default; //極小尺寸
 //-------------------------------------------------------------客製化------//
 $fatfooter-length: 6; //fatfooter選單一行個數
 $fatfooterBgColor: #0058af; //fatFooter 底色
-$fatfooteraColor:#fccf10;
+$fatfooteraColor: #fccf10;
 //-------------------------------------------------------------客製化------//
-$rounded-angle: 				 10px; //整站導角
+$rounded-angle: 10px; //整站導角
 // $mainbg:						 url('../images/taichung/bg01.jpg');
-$h2bg: 							 url('../images/taichung/h2_icon01.png');
-$megamenu_line: 				 url('../images/taichung/menu_line.png');
-$announcement_bg: 				 url('../images/taichung/news_bg.jpg');
-$service_blockbg: 				 url('../images/taichung/service_blockbg.jpg');
-$service_beforebg: 				 url('../images/taichung/service_rightbg.png');
-$fatfooterbg: 					 url('../images/taichung/fatfooter_bg01.jpg');
-$qaTitle: 						 url('../images/taichung/icon_logo.png');
-$cph3beforebg: 					 url('../images/taichung/icon_logo_blue.png');
-$cph3afterebg: 					 url('../images/taichung/icon_category.png');
-$closepeoplebg: 				 url('../images/taichung/closepeople_bg.jpg');
-$courtperiodbg: 				 url('../images/taichung/court_period_bg.jpg');
-$event_contentbg:				 url('../images/taichung/event_content_bg01.jpg');			
-
-
+$h2bg: url('../images/taichung/h2_icon01.png');
+$megamenu_line: url('../images/taichung/menu_line.png');
+$announcement_bg: url('../images/taichung/news_bg.jpg');
+$service_blockbg: url('../images/taichung/service_blockbg.jpg');
+$service_beforebg: url('../images/taichung/service_rightbg.png');
+$fatfooterbg: url('../images/taichung/fatfooter_bg01.jpg');
+$qaTitle: url('../images/taichung/icon_logo.png');
+$cph3beforebg: url('../images/taichung/icon_logo_blue.png');
+$cph3afterebg: url('../images/taichung/icon_category.png');
+$closepeoplebg: url('../images/taichung/closepeople_bg.jpg');
+$courtperiodbg: url('../images/taichung/court_period_bg.jpg');
+$event_contentbg: url('../images/taichung/event_content_bg01.jpg');
