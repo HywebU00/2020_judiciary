@@ -238,7 +238,8 @@
       width: 100%;
       height: 100%;
       display: block;
-      box-shadow: 8px 0px 0px 0px $question_leftcolorbg inset;
+      border-left: 8px solid $question_leftcolorbg;
+      // box-shadow: 8px 0px 0px 0px $question_leftcolorbg inset;
       &:after {
         content: '';
         width: 20px;
@@ -262,7 +263,7 @@
       }
       &:focus {
         box-shadow: none;
-        box-shadow: 8px 0px 0px 0px $question_leftcolorbg inset;
+        box-shadow: 0px 0px 0 2px $color-yellow;
         .text {
           color: $question_activetext;
         }
