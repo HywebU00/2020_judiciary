@@ -762,7 +762,13 @@ $(function () {
         $('html, body').stop(true, true).animate({ scrollTop: _scrollTop }, 100, 'easeOutExpo');
         console.log(_scrollTop);
         $(this).parents('li').siblings().children('.question').children('a').removeClass('active');
+		$(this).parents('li').siblings().children('.question').children('a').attr('aria-expanded', 'false');
         $(this).toggleClass('active');
+		if ($(this).is('.active')) {
+          $(this).attr('aria-expanded', 'true');
+        } else {
+          $(this).attr('aria-expanded', 'false');
+        }
         $(this).parents('li').siblings().children('.answer').slideUp();
         $(this).parent('.question').next('.answer').slideToggle();
         e.preventDefault();
