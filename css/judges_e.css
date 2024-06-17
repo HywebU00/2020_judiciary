@@ -4284,11 +4284,6 @@ a:focus {
   outline: none;
   box-shadow: 0 0px 0px 2px #fcc211 inset;
 }
-@media screen and (max-width: 767px) {
-  a:focus {
-    box-shadow: none;
-  }
-}
 
 .accesskey {
   position: absolute;
@@ -4326,7 +4321,7 @@ a.more:after {
   content: "";
   width: 12px;
   height: 12px;
-  border: 2px solid #FFF;
+  border: 2px solid #fff;
   transform: rotate(45deg);
   position: absolute;
   right: -10px;
@@ -4365,7 +4360,7 @@ a.more:hover:after, a.more:focus:after, a.more.active:after {
   border-radius: 50%;
   background: url(../images/basic/top.png) no-repeat center top rgba(0, 0, 0, 0.4);
   text-align: center;
-  color: #FFF;
+  color: #fff;
   line-height: 50px;
   text-decoration: none;
   position: fixed;
@@ -4398,7 +4393,7 @@ img.img-responsive {
 }
 .tooltip span {
   display: inline-block;
-  background: #DEDEDE;
+  background: #dedede;
   text-align: center;
   padding: 10px;
   width: 100px;
@@ -4844,7 +4839,8 @@ img.img-responsive {
   margin: 0;
   display: inline-block;
 }
-.search .btn_grp input, .search .btn_grp input[type=submit] {
+.search .btn_grp input,
+.search .btn_grp input[type=submit] {
   width: 100%;
   padding: 0.2em 0.8em;
   margin: 0;
@@ -4940,7 +4936,7 @@ img.img-responsive {
   justify-content: flex-start;
 }
 .search.m_search .keywordHot a {
-  color: #FFF;
+  color: #fff;
 }
 .search.m_search .keywordHot a:hover, .search.m_search .keywordHot a:focus {
   color: #707070;
@@ -4968,7 +4964,7 @@ img.img-responsive {
 }
 @media screen and (max-width: 991px) {
   .header.fixed {
-    background: #FFF;
+    background: #fff;
   }
 }
 
@@ -5007,6 +5003,9 @@ img.img-responsive {
   background: url("../images/icon/icon_sitemap_black.svg") no-repeat center center;
   background-size: 30px;
   padding: 0;
+}
+.units a:focus {
+  box-shadow: 0 0px 0px 2px #fcc211 inset;
 }
 @media screen and (max-width: 575px) {
   .units a {
@@ -5066,7 +5065,7 @@ img.img-responsive {
 .units_block .units_title {
   max-width: 1200px;
   display: block;
-  color: #FFF;
+  color: #fff;
   font-weight: normal;
   text-align: center;
   border-bottom: 1px solid #999;
@@ -5844,7 +5843,7 @@ img.img-responsive {
   position: absolute;
   top: 0;
   left: 0;
-  color: #FFF;
+  color: #fff;
   width: 100%;
   height: 3em;
   background: #707070;
@@ -5856,7 +5855,7 @@ img.img-responsive {
   width: 100%;
   box-shadow: 0px 0px 4px RGBA(0, 0, 0, 0.4);
   margin-bottom: 1em;
-  background: #CCC;
+  background: #ccc;
   margin: 0;
 }
 .sidebar .m_area .megamenu a {
@@ -5880,13 +5879,13 @@ img.img-responsive {
   padding: 0.8em 1em;
   min-height: 2em;
   line-height: 1.2em;
-  background: #FFF;
-  border-bottom: 1px solid #CCC;
+  background: #fff;
+  border-bottom: 1px solid #ccc;
 }
 .sidebar .m_area .megamenu ul li.hasChild > a {
   padding: 0.5em 1em;
   color: #222;
-  background: #FFF;
+  background: #fff;
   padding-right: 36px;
   position: relative;
 }
@@ -5894,7 +5893,7 @@ img.img-responsive {
   content: "";
   position: absolute;
   right: 16px;
-  top: 1.25em;
+  top: 1em;
   width: 5px;
   line-height: 1.25em;
   height: 5px;
@@ -5928,7 +5927,7 @@ img.img-responsive {
 .sidebar .m_area .megamenu ul li ul li li a {
   background: rgba(0, 0, 0, 0.15) !important;
   padding: 0.5em 1em 0.5em 4em !important;
-  border-bottom: 1px solid #BBB;
+  border-bottom: 1px solid #bbb;
 }
 .sidebar .m_area .megamenu ul li ul li li a:hover, .sidebar .m_area .megamenu ul li ul li li a:focus {
   background: rgba(0, 0, 0, 0.25) !important;
@@ -5969,7 +5968,7 @@ img.img-responsive {
   line-height: 1.2em;
   padding: 0.5em 1em;
   font-size: 0.938em;
-  color: #FFF;
+  color: #fff;
   font-weight: bold;
   text-decoration: none;
   border: 1px solid rgba(255, 255, 255, 0.5);
