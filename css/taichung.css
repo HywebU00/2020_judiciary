@@ -13856,6 +13856,34 @@ div.tag ul li a:hover, div.tag ul li a:focus {
 .interpreter .court_schedule_search_block,
 .court_schedule .court_schedule_search_block {
   text-align: left;
+  padding: 15px 10px 10px 10px !important;
+}
+@media screen and (max-width: 767px) {
+  .schedule .court_schedule_search_block .form_grp,
+  .interpreter .court_schedule_search_block .form_grp,
+  .court_schedule .court_schedule_search_block .form_grp {
+    display: flex;
+    align-items: center;
+  }
+  .schedule .court_schedule_search_block .form_grp label,
+  .interpreter .court_schedule_search_block .form_grp label,
+  .court_schedule .court_schedule_search_block .form_grp label {
+    width: auto !important;
+    margin-bottom: 0;
+    white-space: nowrap;
+  }
+  .schedule .court_schedule_search_block .form_grp select,
+  .interpreter .court_schedule_search_block .form_grp select,
+  .court_schedule .court_schedule_search_block .form_grp select {
+    margin-right: 0.5em;
+  }
+}
+.schedule .court_schedule_search_block input[type=button],
+.interpreter .court_schedule_search_block input[type=button],
+.court_schedule .court_schedule_search_block input[type=button] {
+  margin: 0.25em 0 !important;
+  padding: 0.4em 0.5em !important;
+  min-width: auto !important;
 }
 .schedule .court_schedule_table,
 .interpreter .court_schedule_table,

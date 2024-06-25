@@ -1204,7 +1204,27 @@
     }
   }
   .court_schedule_search_block {
+    .form_grp {
+      @include screen('mobile') {
+        display: flex;
+        align-items: center;
+        label {
+          width: auto !important;
+          margin-bottom: 0;
+          white-space: nowrap;
+        }
+        select {
+          margin-right: 0.5em;
+        }
+      }
+    }
     text-align: left;
+    padding: 15px 10px 10px 10px !important;
+    input[type='button'] {
+      margin: 0.25em 0 !important;
+      padding: 0.4em 0.5em !important;
+      min-width: auto !important;
+    }
   }
   .court_schedule_table {
     margin-bottom: 30px;
