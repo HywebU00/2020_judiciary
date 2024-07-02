@@ -12774,12 +12774,12 @@ div.tag ul li a:hover, div.tag ul li a:focus {
 
 .document .advanced_search_block {
   clear: both;
-  margin: -45px 0 10px 0;
+  margin: 0px 0 10px 0;
   overflow: hidden;
 }
 @media screen and (max-width: 767px) {
   .document .advanced_search_block {
-    margin: 0 0 10px 0;
+    margin: -10px 0 10px 0;
   }
 }
 .document .advanced_search_block .search_btn {
@@ -12810,17 +12810,20 @@ div.tag ul li a:hover, div.tag ul li a:focus {
 }
 .document .advanced_search_block .search_btn a:after {
   content: "";
-  background: #fcc211 url(../images/icon_more_.png) no-repeat center center;
+  background: #fcc211 url("../images/icon_more_.png") no-repeat center center;
   position: absolute;
-  right: 0;
-  top: 0;
+  right: 2px;
+  top: 2px;
   bottom: 0;
-  width: 40px;
+  width: 36px;
+  height: 36px;
   display: block;
 }
 .document .advanced_search_block .search_btn a:hover, .document .advanced_search_block .search_btn a:focus {
-  background: #465165;
-  box-shadow: none;
+  background: #272d38;
+}
+.document .advanced_search_block .search_btn a:focus {
+  box-shadow: 0 0px 0px 2px #e31c1c inset;
 }
 .document .advanced_search_block .advanced_search {
   background: #e5e5e5;
