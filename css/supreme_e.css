@@ -11568,8 +11568,9 @@ body.fixed {
   color: #fff;
 }
 
-h1.title, h2.title {
-  line-height: 1.25em;
+h1.title,
+h2.title {
+  line-height: 1.7;
   font-size: 1.5em;
   margin: 0.4em 0;
   background-image: none;
@@ -11577,12 +11578,14 @@ h1.title, h2.title {
   text-align: left;
   font-family: Lato, "PingFang TC", "Helvetica Neue", Helvetica, 微軟正黑體, Arial, sans-serif;
   font-weight: 800;
-  letter-spacing: 0em;
+  letter-spacing: 0.16em;
 }
-h1.title:before, h2.title:before {
+h1.title:before,
+h2.title:before {
   display: none;
 }
-h1.title:after, h2.title:after {
+h1.title:after,
+h2.title:after {
   display: none;
 }
 
@@ -11672,16 +11675,18 @@ h1.title:after, h2.title:after {
   font-size: 1.125em;
 }
 .cp table {
-  background: #FFF;
+  background: #fff;
   margin-top: 10px;
 }
-.cp table th, .cp table td {
+.cp table th,
+.cp table td {
   border: #ddd 1px solid;
 }
 .cp table p {
   margin-bottom: 0;
 }
-.cp ul, .cp ol {
+.cp ul,
+.cp ol {
   margin-bottom: 1em;
 }
 .cp img.float_left {
@@ -11733,7 +11738,7 @@ h1.title:after, h2.title:after {
   border-left: solid 5px #ac533e;
   box-sizing: border-box;
   padding: 0.8em 1.5em 0.8em;
-  background: #F2F2F2;
+  background: #f2f2f2;
 }
 .cp .info li {
   width: 32%;
@@ -11769,7 +11774,7 @@ h1.title:after, h2.title:after {
   margin-right: 8px;
 }
 .cp .category a:hover, .cp .category a:focus {
-  color: #FFF;
+  color: #fff;
   background: #ac533e;
   box-shadow: none;
 }
@@ -11777,7 +11782,7 @@ h1.title:after, h2.title:after {
   border-color: transparent transparent transparent #fff;
 }
 .cp .category a.active {
-  color: #FFF;
+  color: #fff;
   background: #3c4556;
 }
 .cp .category a span {
@@ -12012,7 +12017,7 @@ div.tag ul li a {
   color: #864130;
   text-decoration: none;
   border-radius: 4px;
-  border: 1px solid #DDD;
+  border: 1px solid #ddd;
   padding: 0.2em 0.5em;
 }
 div.tag ul li a:hover, div.tag ul li a:focus {
@@ -12042,7 +12047,7 @@ div.tag ul li a:hover, div.tag ul li a:focus {
   position: relative;
   margin-bottom: 10px;
   padding-left: 35px;
-  border-bottom: 1px solid #EEE;
+  border-bottom: 1px solid #eee;
   clear: both;
   overflow: hidden;
   padding-bottom: 0.7em;
@@ -12059,7 +12064,7 @@ div.tag ul li a:hover, div.tag ul li a:focus {
 .file_download li .update,
 .file_download li .file_view {
   font-size: 0.813em;
-  color: #AAA;
+  color: #aaa;
   float: none;
   margin-top: 5px;
 }
@@ -12113,7 +12118,7 @@ div.tag ul li a:hover, div.tag ul li a:focus {
 .web_link li {
   position: relative;
   margin-bottom: 10px;
-  border-bottom: 1px solid #EEE;
+  border-bottom: 1px solid #eee;
 }
 .web_link li a {
   padding: 0.2em 0px 0.2em 35px;
@@ -12140,7 +12145,7 @@ div.tag ul li a:hover, div.tag ul li a:focus {
   margin: 0 0 0.7em 0;
   border-left: solid 5px #3c4556;
   padding: 0.8em 1.5em 0.8em;
-  background: #F2F2F2;
+  background: #f2f2f2;
   display: flex;
   flex-wrap: wrap;
   box-sizing: border-box;
