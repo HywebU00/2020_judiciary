@@ -4,15 +4,14 @@ h1.title,
 h2.title {
   line-height: 1.7;
   font-size: 1.5em;
-
   margin: 0.4em 0;
   background-image: none;
   padding: 0;
   text-align: left;
   font-family: Lato, 'PingFang TC', 'Helvetica Neue', Helvetica, 微軟正黑體, Arial, sans-serif;
   font-weight: 800;
-  letter-spacing: 0.14em;
-  word-spacing: 0.16em;
+  letter-spacing: 0.05em;
+  //   word-spacing: 0.16em;
   &:before {
     display: none;
   }

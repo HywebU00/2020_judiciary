@@ -11823,8 +11823,7 @@ h2.title {
   text-align: left;
   font-family: Lato, "PingFang TC", "Helvetica Neue", Helvetica, 微軟正黑體, Arial, sans-serif;
   font-weight: 800;
-  letter-spacing: 0.14em;
-  word-spacing: 0.16em;
+  letter-spacing: 0.05em;
 }
 h1.title:before,
 h2.title:before {
