@@ -10573,6 +10573,9 @@ body.fixed {
   z-index: 9;
   top: 45%;
 }
+.court_period_block .court_period .period_content .period_slider3 .slick-prev:focus {
+  box-shadow: 0 0px 0px 2px #fcc211 inset, 0 0px 0px 2px #5e287e !important;
+}
 .court_period_block .court_period .period_content .period_slider3 .slick-next {
   right: -40px;
   background-color: #554217;
@@ -10582,6 +10585,9 @@ body.fixed {
   background-size: 60%;
   z-index: 9;
   top: 45%;
+}
+.court_period_block .court_period .period_content .period_slider3 .slick-next:focus {
+  box-shadow: 0 0px 0px 3px #fcc211 inset, 0 0px 0px 3px #5e287e !important;
 }
 @media screen and (max-width: 575px) {
   .court_period_block .court_period .period_content .period_slider3 .slick-prev {
@@ -15413,7 +15419,7 @@ a.goCenter:focus {
 
 button:focus,
 input[type=button]:focus {
-  box-shadow: 0 0px 0px 2px #9140c0 inset !important;
+  box-shadow: 0 0px 0px 3px #9140c0 inset !important;
 }
 
 .slick-slide a:focus:before {

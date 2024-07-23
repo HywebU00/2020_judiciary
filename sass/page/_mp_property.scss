@@ -1905,6 +1905,9 @@
           background-size: 60%;
           z-index: 9;
           top: 45%;
+          &:focus {
+            box-shadow: 0 0px 0px 2px $color-yellow inset, 0 0px 0px 2px $header_navfocus2 !important;
+          }
         }
         .slick-next {
           right: -40px;
@@ -1915,6 +1918,9 @@
           background-size: 60%;
           z-index: 9;
           top: 45%;
+          &:focus {
+            box-shadow: 0 0px 0px 3px $color-yellow inset, 0 0px 0px 3px $header_navfocus2 !important;
+          }
         }
         @include screen('xs_mobile') {
           .slick-prev {
