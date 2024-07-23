@@ -1,72 +1,118 @@
 .main {
-    background-image: $announcement_bg;
-    background-repeat: repeat-y;
-    background-position: center top;
+  background-image: $announcement_bg;
+  background-repeat: repeat-y;
+  background-position: center top;
 }
 .innerpage {
-    background-image: none;
+  background-image: none;
 }
 .npbg {
-    background-image: url('../images/npbg.png');
-    background-repeat: no-repeat;
-    background-position: right bottom;
+  background-image: url('../images/npbg.png');
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+a.goCenter {
+  &:focus {
+    box-shadow: 0 0px 0px 2px $header_navfocus inset !important;
+  }
 }
 .header {
-    background: none;
-    background-image: $headerbg;
-    background-repeat: no-repeat;
-    background-position: center 0;
-    @include screen('tablet') {
-        background-image: none;
-        background: rgb(253, 253, 253);
-        background: linear-gradient(180deg, rgba(253, 253, 253, 1) 45%, rgba(231, 232, 231, 1) 100%);
+  background: none;
+  background-image: $headerbg;
+  background-repeat: no-repeat;
+  background-position: center 0;
+  @include screen('tablet') {
+    background-image: none;
+    background: rgb(253, 253, 253);
+    background: linear-gradient(180deg, rgba(253, 253, 253, 1) 45%, rgba(231, 232, 231, 1) 100%);
+  }
+  .accesskey {
+    color: #d3a826;
+    &:focus {
+      color: #000;
+      box-shadow: 0 0px 0px 2px $header_navfocus inset;
     }
-    .accesskey {
-        color: #d3a826;
+  }
+  h1 {
+    a {
+      &:focus {
+        box-shadow: 0 0px 0px 2px $header_navfocus inset;
+      }
     }
-    .navigation {
-        .navlist {
-            ul {
-                >li {
-                    a {
-                        &.casebtn01 {
-                            background: rgb(38, 72, 112);
-                            background: linear-gradient(180deg, rgba(38, 72, 112, 1) 0%, rgba(21, 48, 76, 1) 100%);
-                        }
-                        &.casebtn02 {
-                            background: rgb(117, 53, 60);
-                            background: linear-gradient(180deg, rgba(117, 53, 60, 1) 0%, rgba(90, 38, 45, 1) 100%);
-                        }
-                    }
-                }
+  }
+  .navigation {
+    .navlist {
+      ul {
+        > li {
+          a {
+            &.casebtn01 {
+              background: rgb(38, 72, 112);
+              background: linear-gradient(180deg, rgba(38, 72, 112, 1) 0%, rgba(21, 48, 76, 1) 100%);
             }
+            &.casebtn02 {
+              background: rgb(117, 53, 60);
+              background: linear-gradient(180deg, rgba(117, 53, 60, 1) 0%, rgba(90, 38, 45, 1) 100%);
+            }
+          }
         }
+      }
     }
+  }
 }
 .header.fixed {
-    position: fixed;
-    width: 100%;
-    right: 0;
-    top: 0;
-    background-image: $headerbg;
-    background-repeat:repeat-x;
-    background-position: center 0;
+  position: fixed;
+  width: 100%;
+  right: 0;
+  top: 0;
+  background-image: $headerbg;
+  background-repeat: repeat-x;
+  background-position: center 0;
+  // background: $megamenu;
+  // background: $megamenulinear;
+
+  z-index: 999;
+  padding-top: 0;
+  box-shadow: 0 0 10px #333;
+  &:after {
+    content: '';
     // background: $megamenu;
     // background: $megamenulinear;
-    
-    z-index: 999;
-    padding-top: 0;
-    box-shadow: 0 0 10px #333;
-    &:after {
-        content: '';
-        // background: $megamenu;
-        // background: $megamenulinear;
-        height: 60px;
-        width: 100%;
-        position: absolute;
-        bottom: 0;
-    }
-    @include screen('tablet') {
-        background: #FFF;
-    }
+    height: 60px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+  }
+  @include screen('tablet') {
+    background: #fff;
+  }
 }
+.mpSlider_block3 {
+  .slick-slide {
+    a {
+      &:focus {
+        &:before {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          z-index: 99;
+          @include box-shadow(0px 0px 0px 2px $header_navfocus inset);
+        }
+      }
+    }
+  }
+}
+// .slick-dots li button:focus:before {
+//   outline: solid $header_navfocus 2px;
+// }
+.fatfooter .btn-fatfooter:focus {
+  box-shadow: 0px 0px 0px 2px $header_navfocus inset;
+}
+button:focus,
+input[type='button']:focus {
+  box-shadow: 0 0px 0px 2px $header_navfocus inset !important;
+}
+// .slick-dots li button:focus:before {
+//   outline: solid $header_navfocus 2px;
+// }

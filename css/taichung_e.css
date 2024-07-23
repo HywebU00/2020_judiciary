@@ -6334,6 +6334,12 @@ footer .footer_data .footer_icon {
   flex-basis: 148px;
   text-align: right;
 }
+footer .footer_data .footer_icon a {
+  display: block;
+}
+footer .footer_data .footer_icon a:focus {
+  box-shadow: 0 0px 0px 2px #fcc211;
+}
 footer .footer_data .footer_icon img {
   width: 148px;
 }
@@ -6393,7 +6399,7 @@ footer .footer_link li a {
   display: block;
   padding: 0.3em 1em;
   background-color: #617e04;
-  color: #FFF;
+  color: #fff;
   border-radius: 2px;
   text-align: center;
   white-space: nowrap;
@@ -7431,6 +7437,9 @@ div.function ul li.icon_forward a:before {
 .share ul li a {
   display: block;
   height: 30px;
+}
+.share ul li a:focus {
+  box-shadow: 0 0px 0px 3px #e31c1c;
 }
 @media screen and (max-width: 991px) {
   .share ul li {

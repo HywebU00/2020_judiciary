@@ -215,7 +215,7 @@
               background-color: $header_navhover;
             }
             &:focus {
-              box-shadow: 0 0px 0px 2px $header_navfocus inset !important;
+              box-shadow: 0 0px 0px 2px $color-yellow inset;
             }
             &.emailbtn {
               padding: 12px 25px 12px 8px;
@@ -272,7 +272,8 @@
               font-size: 1.188em;
               letter-spacing: 0.1em;
               transition: 0.5s;
-              &:hover {
+              &:hover,
+              &:focus {
                 background-color: $color-red;
                 color: #fff;
                 &:before {
@@ -285,9 +286,9 @@
                   border-bottom-color: transparent;
                 }
               }
-              &:focus {
-                box-shadow: 0 0px 0px 2px $color-red inset;
-              }
+              // &:focus {
+              //   box-shadow: 0 0px 0px 2px $color-red inset;
+              // }
               &:before {
                 content: '';
                 width: 14px;
